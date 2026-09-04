@@ -1,0 +1,9 @@
+board_id,name,therapeutic_area,meeting_frequency,last_meeting_date,member_count
+AB001,Immuno-Oncology Advisory Board,Oncology,Quarterly,2024-01-18,12
+AB002,Melanoma Expert Panel,Oncology,Semi-Annual,2023-11-05,8
+AB003,Alzheimer's Disease Steering Committee,Neurology,Quarterly,2024-02-10,10
+AB004,Metabolic Diseases Advisory Council,Metabolic,Semi-Annual,2023-10-22,9
+AB005,Lung Cancer KOL Board,Oncology,Quarterly,2024-01-25,11
+AB006,Precision Medicine Advisory Group,Cross-Therapeutic,Annual,2023-09-15,14
+AB007,Real-World Evidence Expert Panel,Cross-Therapeutic,Quarterly,2024-02-05,7
+AB008,Biomarker Development Consortium,Oncology,Quarterly,2023-12-12,10

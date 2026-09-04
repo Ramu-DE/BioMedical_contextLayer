@@ -1,0 +1,15 @@
+disease_id,anatomy_id,primary_site,severity
+DIS001,AN001,Yes,High
+DIS002,AN002,Yes,High
+DIS003,AN003,Yes,High
+DIS004,AN004,Yes,High
+DIS005,AN005,Yes,High
+DIS005,AN008,No,Moderate
+DIS005,AN012,No,Moderate
+DIS006,AN006,Yes,High
+DIS006,AN007,Yes,Very High
+DIS007,AN012,Yes,High
+DIS007,AN008,No,Moderate
+DIS008,AN009,Yes,High
+DIS009,AN010,Yes,High
+DIS010,AN006,Yes,High

@@ -1,0 +1,11 @@
+site_id,name,country,city,gmp_certified,capacity_units_per_year,last_audit_date
+MS001,Merck Biologics West Point,USA,West Point,Yes,5000000,2023-09-15
+MS002,BMS Syracuse Facility,USA,Syracuse,Yes,3200000,2023-06-20
+MS003,Roche Penzberg Biotech,Germany,Penzberg,Yes,8000000,2023-11-01
+MS004,Novartis Stein AG,Switzerland,Stein,Yes,4500000,2023-04-10
+MS005,Samsung Biologics Plant 3,South Korea,Incheon,Yes,7200000,2023-08-22
+MS006,Lonza Portsmouth,USA,Portsmouth,Yes,2800000,2023-03-18
+MS007,Catalent Bloomington,USA,Bloomington,Yes,1900000,2023-07-05
+MS008,Fujifilm Diosynth Denmark,Denmark,Hillerod,Yes,3600000,2023-10-12
+MS009,Eisai Kashima Plant,Japan,Kashima,Yes,2400000,2023-05-30
+MS010,Eli Lilly Kinsale,Ireland,Kinsale,Yes,4100000,2023-12-01

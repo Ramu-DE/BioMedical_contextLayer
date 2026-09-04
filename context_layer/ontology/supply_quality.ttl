@@ -1,0 +1,154 @@
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix bio:     <https://biomedkg.org/ontology/> .
+
+
+bio:supply-quality-ontology
+    a owl:Ontology ;
+    rdfs:label "BioMedKG Supply & Quality Ontology" ;
+    dcterms:description "Manufacturing sites, drug batches, quality events, and supply chain traceability." .
+
+bio:ManufacturingSite
+    a owl:Class ;
+    rdfs:label "ManufacturingSite" ;
+    rdfs:comment "A pharmaceutical manufacturing facility." ;
+    rdfs:subClassOf owl:Thing ;
+    .
+
+bio:site_id
+    a owl:DatatypeProperty ;
+    rdfs:label "Site identifier" ;
+    rdfs:domain bio:ManufacturingSite ;
+    rdfs:range xsd:string .
+
+bio:name
+    a owl:DatatypeProperty ;
+    rdfs:label "Facility name" ;
+    rdfs:domain bio:ManufacturingSite ;
+    rdfs:range xsd:string .
+
+bio:country
+    a owl:DatatypeProperty ;
+    rdfs:label "Country" ;
+    rdfs:domain bio:ManufacturingSite ;
+    rdfs:range xsd:string .
+
+bio:city
+    a owl:DatatypeProperty ;
+    rdfs:label "City" ;
+    rdfs:domain bio:ManufacturingSite ;
+    rdfs:range xsd:string .
+
+bio:gmp_certified
+    a owl:DatatypeProperty ;
+    rdfs:label "GMP certified?" ;
+    rdfs:domain bio:ManufacturingSite ;
+    rdfs:range xsd:boolean .
+
+bio:capacity
+    a owl:DatatypeProperty ;
+    rdfs:label "Annual production capacity" ;
+    rdfs:domain bio:ManufacturingSite ;
+    rdfs:range xsd:integer .
+
+bio:DrugBatch
+    a owl:Class ;
+    rdfs:label "DrugBatch" ;
+    rdfs:comment "A manufactured lot of a pharmaceutical product." ;
+    rdfs:subClassOf owl:Thing ;
+    .
+
+bio:batch_id
+    a owl:DatatypeProperty ;
+    rdfs:label "Batch/Lot number" ;
+    rdfs:domain bio:DrugBatch ;
+    rdfs:range xsd:string .
+
+bio:production_date
+    a owl:DatatypeProperty ;
+    rdfs:label "Production date" ;
+    rdfs:domain bio:DrugBatch ;
+    rdfs:range xsd:string .
+
+bio:expiry_date
+    a owl:DatatypeProperty ;
+    rdfs:label "Expiry date" ;
+    rdfs:domain bio:DrugBatch ;
+    rdfs:range xsd:string .
+
+bio:quality_status
+    a owl:DatatypeProperty ;
+    rdfs:label "Released, Rejected, Quarantined" ;
+    rdfs:domain bio:DrugBatch ;
+    rdfs:range xsd:string .
+
+bio:batch_size
+    a owl:DatatypeProperty ;
+    rdfs:label "Batch size in units" ;
+    rdfs:domain bio:DrugBatch ;
+    rdfs:range xsd:integer .
+
+bio:QualityEvent
+    a owl:Class ;
+    rdfs:label "QualityEvent" ;
+    rdfs:comment "A quality deviation, investigation, or CAPA." ;
+    rdfs:subClassOf owl:Thing ;
+    .
+
+bio:event_id
+    a owl:DatatypeProperty ;
+    rdfs:label "Event identifier" ;
+    rdfs:domain bio:QualityEvent ;
+    rdfs:range xsd:string .
+
+bio:event_type
+    a owl:DatatypeProperty ;
+    rdfs:label "OOS Result, Contamination, Equipment Malfunction..." ;
+    rdfs:domain bio:QualityEvent ;
+    rdfs:range xsd:string .
+
+bio:severity
+    a owl:DatatypeProperty ;
+    rdfs:label "Critical, Major, Moderate, Minor" ;
+    rdfs:domain bio:QualityEvent ;
+    rdfs:range xsd:string .
+
+bio:capa_id
+    a owl:DatatypeProperty ;
+    rdfs:label "CAPA identifier" ;
+    rdfs:domain bio:QualityEvent ;
+    rdfs:range xsd:string .
+
+bio:detection_date
+    a owl:DatatypeProperty ;
+    rdfs:label "Date detected" ;
+    rdfs:domain bio:QualityEvent ;
+    rdfs:range xsd:string .
+
+bio:resolution_date
+    a owl:DatatypeProperty ;
+    rdfs:label "Date resolved" ;
+    rdfs:domain bio:QualityEvent ;
+    rdfs:range xsd:string .
+
+bio:manufacturedAt
+    a owl:ObjectProperty ;
+    rdfs:label "Batch manufactured at site" ;
+    rdfs:domain bio:DrugBatch ;
+    rdfs:range bio:ManufacturingSite .
+
+bio:producedFor
+    a owl:ObjectProperty ;
+    rdfs:label "Batch produced for drug" ;
+    rdfs:domain bio:DrugBatch ;
+    rdfs:range bio:Drug .
+
+bio:hasQualityEvent
+    a owl:ObjectProperty ;
+    rdfs:label "Batch has quality event" ;
+    rdfs:domain bio:DrugBatch ;
+    rdfs:range bio:QualityEvent .

@@ -1,0 +1,15 @@
+exposure_id,disease_id,relative_risk,evidence_level,mechanism
+EXP001,DIS001,15.0,Strong,Carcinogen-induced DNA damage
+EXP001,DIS009,2.5,Strong,Mutagenic compounds in smoke
+EXP002,DIS002,3.8,Strong,UV-induced DNA pyrimidine dimers
+EXP003,DIS001,5.2,Strong,Asbestos fiber-induced inflammation
+EXP004,DIS001,1.4,Moderate,Particulate-induced oxidative stress
+EXP005,DIS009,1.5,Moderate,Acetaldehyde-mediated DNA damage
+EXP006,DIS004,3.1,Strong,Ionizing radiation-induced chromosomal breaks
+EXP007,DIS004,2.8,Strong,Benzene metabolite-induced bone marrow toxicity
+EXP008,DIS009,4.5,Strong,Aflatoxin-DNA adduct formation
+EXP009,DIS001,1.3,Moderate,Alpha particle-induced DNA damage
+EXP011,DIS005,2.1,Moderate,Lipid-induced insulin resistance
+EXP011,DIS007,3.5,Strong,Caloric excess and adipogenesis
+EXP012,DIS005,1.8,Moderate,Reduced glucose uptake in muscle
+EXP012,DIS007,2.2,Moderate,Reduced energy expenditure

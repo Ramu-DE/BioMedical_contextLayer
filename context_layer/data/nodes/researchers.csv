@@ -1,0 +1,11 @@
+researcher_id,name,title,specialization,h_index,total_publications
+R001,Dr. Sarah Chen,Professor,Immuno-Oncology,78,245
+R002,Dr. Michael Rodriguez,Associate Professor,Clinical Trials,62,189
+R003,Dr. Emily Watson,Principal Investigator,Neurodegenerative Diseases,85,312
+R004,Dr. James Kim,Professor,Metabolic Disorders,71,223
+R005,Dr. Lisa Anderson,Chief Medical Officer,Oncology Drug Development,55,167
+R006,Dr. Robert Taylor,Professor,Molecular Biology,92,378
+R007,Dr. Maria Garcia,Associate Professor,Biomarker Discovery,48,134
+R008,Dr. David Lee,Principal Investigator,Precision Medicine,67,201
+R009,Dr. Jennifer White,Professor,Alzheimer's Research,81,289
+R010,Dr. Thomas Brown,Associate Professor,Diabetes Research,59,176

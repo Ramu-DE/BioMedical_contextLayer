@@ -1,0 +1,11 @@
+event_id,name,severity,category,frequency
+AE001,Immune-related pneumonitis,Severe,Immune-related,Uncommon
+AE002,Immune-related colitis,Moderate,Immune-related,Common
+AE003,Hypothyroidism,Mild,Endocrine,Common
+AE004,Hyperthyroidism,Moderate,Endocrine,Uncommon
+AE005,Nausea,Mild,Gastrointestinal,Very Common
+AE006,Diarrhea,Mild,Gastrointestinal,Very Common
+AE007,Hypoglycemia,Moderate,Metabolic,Common
+AE008,Infusion reaction,Moderate,Allergic,Common
+AE009,Amyloid-related imaging abnormalities,Severe,Neurological,Uncommon
+AE010,Pancreatitis,Severe,Gastrointestinal,Rare

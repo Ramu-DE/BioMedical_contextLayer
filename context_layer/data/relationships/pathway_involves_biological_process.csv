@@ -1,0 +1,19 @@
+pathway_id,process_id,relationship,description
+PW001,BP002,Regulates,PI3K-Akt promotes cell survival and proliferation
+PW001,BP001,Inhibits,PI3K-Akt suppresses apoptosis
+PW002,BP002,Regulates,MAPK drives cell proliferation
+PW002,BP007,Core mechanism,MAPK is a signal transduction cascade
+PW003,BP001,Activates,p53 triggers apoptosis
+PW003,BP006,Activates,p53 activates DNA repair
+PW004,BP002,Regulates,Cell cycle controls proliferation
+PW005,BP001,Core mechanism,Apoptosis pathway executes cell death
+PW006,BP003,Regulates,PD-1/PD-L1 modulates immune response
+PW006,BP004,Inhibits,Checkpoint suppresses T cell activation
+PW007,BP008,Regulates,AMPK controls glucose homeostasis
+PW008,BP008,Core mechanism,Insulin signaling drives glucose uptake
+PW009,BP009,Impaired,Alzheimer's impairs amyloid clearance
+PW009,BP010,Activates,Alzheimer's pathway triggers neuroinflammation
+PW010,BP002,Regulates,ErbB drives cell proliferation
+PW010,BP011,Activates,ErbB promotes angiogenesis
+PW011,BP008,Regulates,GLP-1 improves glucose homeostasis
+PW012,BP002,Activates,CML pathway drives myeloid proliferation

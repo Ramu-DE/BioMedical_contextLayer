@@ -1,0 +1,11 @@
+drug_id,name,generic_name,drug_type,approval_status,approval_year,mechanism
+D001,Pembrolizumab,pembrolizumab,Monoclonal Antibody,Approved,2014,PD-1 inhibitor
+D002,Nivolumab,nivolumab,Monoclonal Antibody,Approved,2014,PD-1 inhibitor
+D003,Atezolizumab,atezolizumab,Monoclonal Antibody,Approved,2016,PD-L1 inhibitor
+D004,Trastuzumab,trastuzumab,Monoclonal Antibody,Approved,1998,HER2 inhibitor
+D005,Imatinib,imatinib,Small Molecule,Approved,2001,BCR-ABL tyrosine kinase inhibitor
+D006,Metformin,metformin,Small Molecule,Approved,1995,AMPK activator
+D007,Aducanumab,aducanumab,Monoclonal Antibody,Approved,2021,Anti-amyloid beta
+D008,Lecanemab,lecanemab,Monoclonal Antibody,Approved,2023,Anti-amyloid beta
+D009,Semaglutide,semaglutide,Peptide,Approved,2017,GLP-1 receptor agonist
+D010,Tirzepatide,tirzepatide,Peptide,Approved,2022,GIP/GLP-1 receptor agonist

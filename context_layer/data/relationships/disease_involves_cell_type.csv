@@ -1,0 +1,18 @@
+disease_id,cell_type_id,involvement_type,mechanism
+DIS001,CT005,Primary affected,Malignant transformation
+DIS001,CT001,Therapeutic target,Immune evasion
+DIS002,CT005,Primary affected,Melanocyte transformation
+DIS002,CT001,Therapeutic target,Immune evasion
+DIS003,CT005,Primary affected,Ductal cell transformation
+DIS004,CT012,Primary affected,Myeloid proliferation
+DIS005,CT009,Primary affected,Beta cell dysfunction
+DIS005,CT011,Contributing,Insulin resistance
+DIS005,CT010,Contributing,Hepatic glucose output
+DIS006,CT006,Primary affected,Neuronal death
+DIS006,CT008,Contributing,Neuroinflammation
+DIS006,CT007,Contributing,Astrogliosis
+DIS007,CT011,Primary affected,Adipocyte hypertrophy
+DIS008,CT005,Primary affected,Renal cell transformation
+DIS009,CT005,Primary affected,Colonic epithelial transformation
+DIS010,CT006,Primary affected,Dopaminergic neuron loss
+DIS010,CT008,Contributing,Neuroinflammation

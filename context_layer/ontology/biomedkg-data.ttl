@@ -1,0 +1,3781 @@
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix bio:  <https://biomedkg.org/ontology/> .
+
+# BioMedKG A-Box — actual data instances from Neo4j Aura
+# Generated from 383 nodes and 496 relationships
+
+
+<https://biomedkg.org/ontology/Drug/190ab5964523b5ba>
+    a owl:NamedIndividual , bio:Drug ;
+    rdfs:label "Pembrolizumab" ;
+    bio:drug_id "D001" ;
+    bio:approval_status "Approved" ;
+    bio:drug_type "Monoclonal Antibody" ;
+    bio:generic_name "pembrolizumab" ;
+    bio:name "Pembrolizumab" .
+
+<https://biomedkg.org/ontology/Drug/d61142a99462bfac>
+    a owl:NamedIndividual , bio:Drug ;
+    rdfs:label "Nivolumab" ;
+    bio:drug_id "D002" ;
+    bio:approval_status "Approved" ;
+    bio:drug_type "Monoclonal Antibody" ;
+    bio:generic_name "nivolumab" ;
+    bio:name "Nivolumab" .
+
+<https://biomedkg.org/ontology/Drug/843b8121b93a1319>
+    a owl:NamedIndividual , bio:Drug ;
+    rdfs:label "Atezolizumab" ;
+    bio:drug_id "D003" ;
+    bio:approval_status "Approved" ;
+    bio:drug_type "Monoclonal Antibody" ;
+    bio:generic_name "atezolizumab" ;
+    bio:name "Atezolizumab" .
+
+<https://biomedkg.org/ontology/Drug/cd34a25cf0a97dee>
+    a owl:NamedIndividual , bio:Drug ;
+    rdfs:label "Trastuzumab" ;
+    bio:drug_id "D004" ;
+    bio:approval_status "Approved" ;
+    bio:drug_type "Monoclonal Antibody" ;
+    bio:generic_name "trastuzumab" ;
+    bio:name "Trastuzumab" .
+
+<https://biomedkg.org/ontology/Drug/9a76bc014eea3dea>
+    a owl:NamedIndividual , bio:Drug ;
+    rdfs:label "Imatinib" ;
+    bio:drug_id "D005" ;
+    bio:approval_status "Approved" ;
+    bio:drug_type "Small Molecule" ;
+    bio:generic_name "imatinib" ;
+    bio:name "Imatinib" .
+
+<https://biomedkg.org/ontology/Drug/e0a7c6f0710af59c>
+    a owl:NamedIndividual , bio:Drug ;
+    rdfs:label "Metformin" ;
+    bio:drug_id "D006" ;
+    bio:approval_status "Approved" ;
+    bio:drug_type "Small Molecule" ;
+    bio:generic_name "metformin" ;
+    bio:name "Metformin" .
+
+<https://biomedkg.org/ontology/Drug/7370364dffbba1b1>
+    a owl:NamedIndividual , bio:Drug ;
+    rdfs:label "Aducanumab" ;
+    bio:drug_id "D007" ;
+    bio:approval_status "Approved" ;
+    bio:drug_type "Monoclonal Antibody" ;
+    bio:generic_name "aducanumab" ;
+    bio:name "Aducanumab" .
+
+<https://biomedkg.org/ontology/Drug/29e6e2e91dc3a89f>
+    a owl:NamedIndividual , bio:Drug ;
+    rdfs:label "Lecanemab" ;
+    bio:drug_id "D008" ;
+    bio:approval_status "Approved" ;
+    bio:drug_type "Monoclonal Antibody" ;
+    bio:generic_name "lecanemab" ;
+    bio:name "Lecanemab" .
+
+<https://biomedkg.org/ontology/Drug/8ca17b00ffc6bcac>
+    a owl:NamedIndividual , bio:Drug ;
+    rdfs:label "Semaglutide" ;
+    bio:drug_id "D009" ;
+    bio:approval_status "Approved" ;
+    bio:drug_type "Peptide" ;
+    bio:generic_name "semaglutide" ;
+    bio:name "Semaglutide" .
+
+<https://biomedkg.org/ontology/Drug/2b1b32cfd4a4e198>
+    a owl:NamedIndividual , bio:Drug ;
+    rdfs:label "Tirzepatide" ;
+    bio:drug_id "D010" ;
+    bio:approval_status "Approved" ;
+    bio:drug_type "Peptide" ;
+    bio:generic_name "tirzepatide" ;
+    bio:name "Tirzepatide" .
+
+<https://biomedkg.org/ontology/Disease/5aff5b154ac58ce2>
+    a owl:NamedIndividual , bio:Disease ;
+    rdfs:label "Non-Small Cell Lung Cancer" ;
+    bio:prevalence "High" ;
+    bio:disease_id "DIS001" ;
+    bio:name "Non-Small Cell Lung Cancer" ;
+    bio:id "DIS001" ;
+    bio:category "Oncology" .
+
+<https://biomedkg.org/ontology/Disease/1fc646c29cf16c09>
+    a owl:NamedIndividual , bio:Disease ;
+    rdfs:label "Melanoma" ;
+    bio:prevalence "Medium" ;
+    bio:disease_id "DIS002" ;
+    bio:name "Melanoma" ;
+    bio:id "DIS002" ;
+    bio:category "Oncology" .
+
+<https://biomedkg.org/ontology/Disease/2bd88016bd932dd3>
+    a owl:NamedIndividual , bio:Disease ;
+    rdfs:label "Breast Cancer" ;
+    bio:prevalence "High" ;
+    bio:disease_id "DIS003" ;
+    bio:name "Breast Cancer" ;
+    bio:id "DIS003" ;
+    bio:category "Oncology" .
+
+<https://biomedkg.org/ontology/Disease/f8fb8aae754e144d>
+    a owl:NamedIndividual , bio:Disease ;
+    rdfs:label "Chronic Myeloid Leukemia" ;
+    bio:prevalence "Low" ;
+    bio:disease_id "DIS004" ;
+    bio:name "Chronic Myeloid Leukemia" ;
+    bio:id "DIS004" ;
+    bio:category "Oncology" .
+
+<https://biomedkg.org/ontology/Disease/8a861cb97e74e4ac>
+    a owl:NamedIndividual , bio:Disease ;
+    rdfs:label "Type 2 Diabetes" ;
+    bio:prevalence "Very High" ;
+    bio:disease_id "DIS005" ;
+    bio:name "Type 2 Diabetes" ;
+    bio:id "DIS005" ;
+    bio:category "Metabolic" .
+
+<https://biomedkg.org/ontology/Disease/aa8c47aa96dd0a0d>
+    a owl:NamedIndividual , bio:Disease ;
+    rdfs:label "Alzheimer's Disease" ;
+    bio:prevalence "High" ;
+    bio:disease_id "DIS006" ;
+    bio:name "Alzheimer's Disease" ;
+    bio:id "DIS006" ;
+    bio:category "Neurology" .
+
+<https://biomedkg.org/ontology/Disease/3ff887001975dbb6>
+    a owl:NamedIndividual , bio:Disease ;
+    rdfs:label "Obesity" ;
+    bio:prevalence "Very High" ;
+    bio:disease_id "DIS007" ;
+    bio:name "Obesity" ;
+    bio:id "DIS007" ;
+    bio:category "Metabolic" .
+
+<https://biomedkg.org/ontology/Disease/58f5045eeaf7210c>
+    a owl:NamedIndividual , bio:Disease ;
+    rdfs:label "Renal Cell Carcinoma" ;
+    bio:prevalence "Medium" ;
+    bio:disease_id "DIS008" ;
+    bio:name "Renal Cell Carcinoma" ;
+    bio:id "DIS008" ;
+    bio:category "Oncology" .
+
+<https://biomedkg.org/ontology/Disease/4294570d80d38208>
+    a owl:NamedIndividual , bio:Disease ;
+    rdfs:label "Colorectal Cancer" ;
+    bio:prevalence "High" ;
+    bio:disease_id "DIS009" ;
+    bio:name "Colorectal Cancer" ;
+    bio:id "DIS009" ;
+    bio:category "Oncology" .
+
+<https://biomedkg.org/ontology/Disease/5515a79fb115333d>
+    a owl:NamedIndividual , bio:Disease ;
+    rdfs:label "Parkinson's Disease" ;
+    bio:prevalence "Medium" ;
+    bio:disease_id "DIS010" ;
+    bio:name "Parkinson's Disease" ;
+    bio:id "DIS010" ;
+    bio:category "Neurology" .
+
+<https://biomedkg.org/ontology/Gene/6da75ba9d4da376e>
+    a owl:NamedIndividual , bio:Gene ;
+    rdfs:label "Epidermal Growth Factor Receptor" ;
+    bio:symbol "EGFR" ;
+    bio:chromosome "7" ;
+    bio:function "Cell growth and proliferation" ;
+    bio:name "Epidermal Growth Factor Receptor" ;
+    bio:id "G001" .
+
+<https://biomedkg.org/ontology/Gene/1730a16c0746bec6>
+    a owl:NamedIndividual , bio:Gene ;
+    rdfs:label "KRAS Proto-Oncogene" ;
+    bio:symbol "KRAS" ;
+    bio:chromosome "12" ;
+    bio:function "Cell signaling" ;
+    bio:name "KRAS Proto-Oncogene" ;
+    bio:id "G002" .
+
+<https://biomedkg.org/ontology/Gene/03cceedbdeab8651>
+    a owl:NamedIndividual , bio:Gene ;
+    rdfs:label "Tumor Protein P53" ;
+    bio:symbol "TP53" ;
+    bio:chromosome "17" ;
+    bio:function "Tumor suppressor" ;
+    bio:name "Tumor Protein P53" ;
+    bio:id "G003" .
+
+<https://biomedkg.org/ontology/Gene/5d824c795788d20a>
+    a owl:NamedIndividual , bio:Gene ;
+    rdfs:label "Breast Cancer Gene 1" ;
+    bio:symbol "BRCA1" ;
+    bio:chromosome "17" ;
+    bio:function "DNA repair" ;
+    bio:name "Breast Cancer Gene 1" ;
+    bio:id "G004" .
+
+<https://biomedkg.org/ontology/Gene/eeef6e83f1d23e59>
+    a owl:NamedIndividual , bio:Gene ;
+    rdfs:label "Breast Cancer Gene 2" ;
+    bio:symbol "BRCA2" ;
+    bio:chromosome "13" ;
+    bio:function "DNA repair" ;
+    bio:name "Breast Cancer Gene 2" ;
+    bio:id "G005" .
+
+<https://biomedkg.org/ontology/Gene/40ba8d76681a3773>
+    a owl:NamedIndividual , bio:Gene ;
+    rdfs:label "BCR-ABL Fusion Gene" ;
+    bio:symbol "BCR-ABL" ;
+    bio:chromosome "9/22" ;
+    bio:function "Tyrosine kinase activity" ;
+    bio:name "BCR-ABL Fusion Gene" ;
+    bio:id "G006" .
+
+<https://biomedkg.org/ontology/Gene/ea76c28036012a97>
+    a owl:NamedIndividual , bio:Gene ;
+    rdfs:label "Human Epidermal Growth Factor Receptor 2" ;
+    bio:symbol "HER2" ;
+    bio:chromosome "17" ;
+    bio:function "Cell growth" ;
+    bio:name "Human Epidermal Growth Factor Receptor 2" ;
+    bio:id "G007" .
+
+<https://biomedkg.org/ontology/Gene/c3e823466af9186c>
+    a owl:NamedIndividual , bio:Gene ;
+    rdfs:label "Programmed Death-Ligand 1" ;
+    bio:symbol "PD-L1" ;
+    bio:chromosome "9" ;
+    bio:function "Immune checkpoint" ;
+    bio:name "Programmed Death-Ligand 1" ;
+    bio:id "G008" .
+
+<https://biomedkg.org/ontology/Gene/5b5b35f1f31fcd6b>
+    a owl:NamedIndividual , bio:Gene ;
+    rdfs:label "Amyloid Precursor Protein" ;
+    bio:symbol "APP" ;
+    bio:chromosome "21" ;
+    bio:function "Amyloid beta production" ;
+    bio:name "Amyloid Precursor Protein" ;
+    bio:id "G009" .
+
+<https://biomedkg.org/ontology/Gene/376f4ad4cab716bc>
+    a owl:NamedIndividual , bio:Gene ;
+    rdfs:label "Apolipoprotein E" ;
+    bio:symbol "APOE" ;
+    bio:chromosome "19" ;
+    bio:function "Lipid metabolism" ;
+    bio:name "Apolipoprotein E" ;
+    bio:id "G010" .
+
+<https://biomedkg.org/ontology/Protein/809e47cbfdee0736>
+    a owl:NamedIndividual , bio:Protein ;
+    rdfs:label "PD-1" ;
+    bio:protein_id "P001" ;
+    bio:protein_class "Immune checkpoint" ;
+    bio:name "PD-1" ;
+    bio:cellular_location "Cell membrane" ;
+    bio:id "P001" .
+
+<https://biomedkg.org/ontology/Protein/0ad7334eaf2870d9>
+    a owl:NamedIndividual , bio:Protein ;
+    rdfs:label "PD-L1" ;
+    bio:protein_id "P002" ;
+    bio:protein_class "Immune checkpoint" ;
+    bio:name "PD-L1" ;
+    bio:cellular_location "Cell membrane" ;
+    bio:id "P002" .
+
+<https://biomedkg.org/ontology/Protein/49608f394d59a224>
+    a owl:NamedIndividual , bio:Protein ;
+    rdfs:label "EGFR" ;
+    bio:protein_id "P003" ;
+    bio:protein_class "Receptor tyrosine kinase" ;
+    bio:name "EGFR" ;
+    bio:cellular_location "Cell membrane" ;
+    bio:id "P003" .
+
+<https://biomedkg.org/ontology/Protein/248af50a3d8914f1>
+    a owl:NamedIndividual , bio:Protein ;
+    rdfs:label "HER2" ;
+    bio:protein_id "P004" ;
+    bio:protein_class "Receptor tyrosine kinase" ;
+    bio:name "HER2" ;
+    bio:cellular_location "Cell membrane" ;
+    bio:id "P004" .
+
+<https://biomedkg.org/ontology/Protein/4d8301e76189987e>
+    a owl:NamedIndividual , bio:Protein ;
+    rdfs:label "BCR-ABL" ;
+    bio:protein_id "P005" ;
+    bio:protein_class "Tyrosine kinase" ;
+    bio:name "BCR-ABL" ;
+    bio:cellular_location "Cytoplasm" ;
+    bio:id "P005" .
+
+<https://biomedkg.org/ontology/Protein/a302a1330186893c>
+    a owl:NamedIndividual , bio:Protein ;
+    rdfs:label "GLP-1R" ;
+    bio:protein_id "P006" ;
+    bio:protein_class "G-protein coupled receptor" ;
+    bio:name "GLP-1R" ;
+    bio:cellular_location "Cell membrane" ;
+    bio:id "P006" .
+
+<https://biomedkg.org/ontology/Protein/06f87fb69cc26fc3>
+    a owl:NamedIndividual , bio:Protein ;
+    rdfs:label "GIPR" ;
+    bio:protein_id "P007" ;
+    bio:protein_class "G-protein coupled receptor" ;
+    bio:name "GIPR" ;
+    bio:cellular_location "Cell membrane" ;
+    bio:id "P007" .
+
+<https://biomedkg.org/ontology/Protein/d756a5c2361c8815>
+    a owl:NamedIndividual , bio:Protein ;
+    rdfs:label "Amyloid-beta" ;
+    bio:protein_id "P008" ;
+    bio:protein_class "Peptide" ;
+    bio:name "Amyloid-beta" ;
+    bio:cellular_location "Extracellular" ;
+    bio:id "P008" .
+
+<https://biomedkg.org/ontology/Protein/d5d535eab7c5b09e>
+    a owl:NamedIndividual , bio:Protein ;
+    rdfs:label "Tau" ;
+    bio:protein_id "P009" ;
+    bio:protein_class "Microtubule-associated" ;
+    bio:name "Tau" ;
+    bio:cellular_location "Cytoplasm" ;
+    bio:id "P009" .
+
+<https://biomedkg.org/ontology/Protein/bdbc4be1b52ed921>
+    a owl:NamedIndividual , bio:Protein ;
+    rdfs:label "AMPK" ;
+    bio:protein_id "P010" ;
+    bio:protein_class "Serine/threonine kinase" ;
+    bio:name "AMPK" ;
+    bio:cellular_location "Cytoplasm" ;
+    bio:id "P010" .
+
+<https://biomedkg.org/ontology/Pathway/6090462fbf4ca9c3>
+    a owl:NamedIndividual , bio:Pathway ;
+    rdfs:label "PI3K-Akt Signaling Pathway" ;
+    bio:pathway_id "PW001" ;
+    bio:organism "Homo sapiens" ;
+    bio:name "PI3K-Akt Signaling Pathway" ;
+    bio:id "PW001" ;
+    bio:category "Signal transduction" .
+
+<https://biomedkg.org/ontology/Pathway/98be77f235a2598b>
+    a owl:NamedIndividual , bio:Pathway ;
+    rdfs:label "MAPK Signaling Pathway" ;
+    bio:pathway_id "PW002" ;
+    bio:organism "Homo sapiens" ;
+    bio:name "MAPK Signaling Pathway" ;
+    bio:id "PW002" ;
+    bio:category "Signal transduction" .
+
+<https://biomedkg.org/ontology/Pathway/e9a40d19a2c3c5c8>
+    a owl:NamedIndividual , bio:Pathway ;
+    rdfs:label "p53 Signaling Pathway" ;
+    bio:pathway_id "PW003" ;
+    bio:organism "Homo sapiens" ;
+    bio:name "p53 Signaling Pathway" ;
+    bio:id "PW003" ;
+    bio:category "Cell growth and death" .
+
+<https://biomedkg.org/ontology/Pathway/05950f7f5da0158c>
+    a owl:NamedIndividual , bio:Pathway ;
+    rdfs:label "Cell Cycle" ;
+    bio:pathway_id "PW004" ;
+    bio:organism "Homo sapiens" ;
+    bio:name "Cell Cycle" ;
+    bio:id "PW004" ;
+    bio:category "Cell growth and death" .
+
+<https://biomedkg.org/ontology/Pathway/d35aa07032574777>
+    a owl:NamedIndividual , bio:Pathway ;
+    rdfs:label "Apoptosis" ;
+    bio:pathway_id "PW005" ;
+    bio:organism "Homo sapiens" ;
+    bio:name "Apoptosis" ;
+    bio:id "PW005" ;
+    bio:category "Cell growth and death" .
+
+<https://biomedkg.org/ontology/Pathway/de4526b5d9228b49>
+    a owl:NamedIndividual , bio:Pathway ;
+    rdfs:label "PD-L1/PD-1 Checkpoint Pathway" ;
+    bio:pathway_id "PW006" ;
+    bio:organism "Homo sapiens" ;
+    bio:name "PD-L1/PD-1 Checkpoint Pathway" ;
+    bio:id "PW006" ;
+    bio:category "Immune system" .
+
+<https://biomedkg.org/ontology/Pathway/972e3f48477484e6>
+    a owl:NamedIndividual , bio:Pathway ;
+    rdfs:label "AMPK Signaling Pathway" ;
+    bio:pathway_id "PW007" ;
+    bio:organism "Homo sapiens" ;
+    bio:name "AMPK Signaling Pathway" ;
+    bio:id "PW007" ;
+    bio:category "Signal transduction" .
+
+<https://biomedkg.org/ontology/Pathway/469a964fde26b67e>
+    a owl:NamedIndividual , bio:Pathway ;
+    rdfs:label "Insulin Signaling Pathway" ;
+    bio:pathway_id "PW008" ;
+    bio:organism "Homo sapiens" ;
+    bio:name "Insulin Signaling Pathway" ;
+    bio:id "PW008" ;
+    bio:category "Endocrine system" .
+
+<https://biomedkg.org/ontology/Pathway/469bbfa9ee489785>
+    a owl:NamedIndividual , bio:Pathway ;
+    rdfs:label "Alzheimer's Disease Pathway" ;
+    bio:pathway_id "PW009" ;
+    bio:organism "Homo sapiens" ;
+    bio:name "Alzheimer's Disease Pathway" ;
+    bio:id "PW009" ;
+    bio:category "Neurodegenerative disease" .
+
+<https://biomedkg.org/ontology/Pathway/042a27bc574e861b>
+    a owl:NamedIndividual , bio:Pathway ;
+    rdfs:label "ErbB Signaling Pathway" ;
+    bio:pathway_id "PW010" ;
+    bio:organism "Homo sapiens" ;
+    bio:name "ErbB Signaling Pathway" ;
+    bio:id "PW010" ;
+    bio:category "Signal transduction" .
+
+<https://biomedkg.org/ontology/Pathway/696ddd2ff63f474b>
+    a owl:NamedIndividual , bio:Pathway ;
+    rdfs:label "GLP-1 Signaling Pathway" ;
+    bio:pathway_id "PW011" ;
+    bio:organism "Homo sapiens" ;
+    bio:name "GLP-1 Signaling Pathway" ;
+    bio:id "PW011" ;
+    bio:category "Endocrine system" .
+
+<https://biomedkg.org/ontology/Pathway/d7aa08eaae5a64a6>
+    a owl:NamedIndividual , bio:Pathway ;
+    rdfs:label "Chronic Myeloid Leukemia Pathway" ;
+    bio:pathway_id "PW012" ;
+    bio:organism "Homo sapiens" ;
+    bio:name "Chronic Myeloid Leukemia Pathway" ;
+    bio:id "PW012" ;
+    bio:category "Cancer" .
+
+<https://biomedkg.org/ontology/BiologicalProcess/1aba9583289db04e>
+    a owl:NamedIndividual , bio:BiologicalProcess ;
+    rdfs:label "Apoptotic Process" ;
+    bio:process_id "BP001" ;
+    bio:name "Apoptotic Process" ;
+    bio:description "Programmed cell death" ;
+    bio:id "BP001" ;
+    bio:category "Cell death" .
+
+<https://biomedkg.org/ontology/BiologicalProcess/9b4ce3498bf88932>
+    a owl:NamedIndividual , bio:BiologicalProcess ;
+    rdfs:label "Cell Proliferation" ;
+    bio:process_id "BP002" ;
+    bio:name "Cell Proliferation" ;
+    bio:description "Increase in cell number" ;
+    bio:id "BP002" ;
+    bio:category "Cell growth" .
+
+<https://biomedkg.org/ontology/BiologicalProcess/4969d9cf86d749cf>
+    a owl:NamedIndividual , bio:BiologicalProcess ;
+    rdfs:label "Immune Response" ;
+    bio:process_id "BP003" ;
+    bio:name "Immune Response" ;
+    bio:description "Defense against pathogens" ;
+    bio:id "BP003" ;
+    bio:category "Immune" .
+
+<https://biomedkg.org/ontology/BiologicalProcess/6b66639cbef5c6c9>
+    a owl:NamedIndividual , bio:BiologicalProcess ;
+    rdfs:label "T Cell Activation" ;
+    bio:process_id "BP004" ;
+    bio:name "T Cell Activation" ;
+    bio:description "Activation of T lymphocytes" ;
+    bio:id "BP004" ;
+    bio:category "Immune" .
+
+<https://biomedkg.org/ontology/BiologicalProcess/d618a305a256eeae>
+    a owl:NamedIndividual , bio:BiologicalProcess ;
+    rdfs:label "Inflammatory Response" ;
+    bio:process_id "BP005" ;
+    bio:name "Inflammatory Response" ;
+    bio:description "Response to tissue damage" ;
+    bio:id "BP005" ;
+    bio:category "Immune" .
+
+<https://biomedkg.org/ontology/BiologicalProcess/5a9d910628206b4f>
+    a owl:NamedIndividual , bio:BiologicalProcess ;
+    rdfs:label "DNA Repair" ;
+    bio:process_id "BP006" ;
+    bio:name "DNA Repair" ;
+    bio:description "Restoration of DNA structure" ;
+    bio:id "BP006" ;
+    bio:category "DNA maintenance" .
+
+<https://biomedkg.org/ontology/BiologicalProcess/f7f5d9b2da36bb7b>
+    a owl:NamedIndividual , bio:BiologicalProcess ;
+    rdfs:label "Signal Transduction" ;
+    bio:process_id "BP007" ;
+    bio:name "Signal Transduction" ;
+    bio:description "Cellular communication" ;
+    bio:id "BP007" ;
+    bio:category "Signaling" .
+
+<https://biomedkg.org/ontology/BiologicalProcess/42f9674dbeba6753>
+    a owl:NamedIndividual , bio:BiologicalProcess ;
+    rdfs:label "Glucose Homeostasis" ;
+    bio:process_id "BP008" ;
+    bio:name "Glucose Homeostasis" ;
+    bio:description "Blood sugar regulation" ;
+    bio:id "BP008" ;
+    bio:category "Metabolism" .
+
+<https://biomedkg.org/ontology/BiologicalProcess/f73b4044675fc4ee>
+    a owl:NamedIndividual , bio:BiologicalProcess ;
+    rdfs:label "Amyloid-beta Clearance" ;
+    bio:process_id "BP009" ;
+    bio:name "Amyloid-beta Clearance" ;
+    bio:description "Removal of amyloid plaques" ;
+    bio:id "BP009" ;
+    bio:category "Neurological" .
+
+<https://biomedkg.org/ontology/BiologicalProcess/d0e48e2a9aab460a>
+    a owl:NamedIndividual , bio:BiologicalProcess ;
+    rdfs:label "Neuroinflammation" ;
+    bio:process_id "BP010" ;
+    bio:name "Neuroinflammation" ;
+    bio:description "Inflammation in nervous system" ;
+    bio:id "BP010" ;
+    bio:category "Neurological" .
+
+<https://biomedkg.org/ontology/BiologicalProcess/db4439dc1b93b09d>
+    a owl:NamedIndividual , bio:BiologicalProcess ;
+    rdfs:label "Angiogenesis" ;
+    bio:process_id "BP011" ;
+    bio:name "Angiogenesis" ;
+    bio:description "Blood vessel formation" ;
+    bio:id "BP011" ;
+    bio:category "Development" .
+
+<https://biomedkg.org/ontology/BiologicalProcess/bfcae80fe4b2b332>
+    a owl:NamedIndividual , bio:BiologicalProcess ;
+    rdfs:label "Protein Phosphorylation" ;
+    bio:process_id "BP012" ;
+    bio:name "Protein Phosphorylation" ;
+    bio:description "Addition of phosphate groups" ;
+    bio:id "BP012" ;
+    bio:category "Signaling" .
+
+<https://biomedkg.org/ontology/MolecularFunction/f7bc5dce3cbc5192>
+    a owl:NamedIndividual , bio:MolecularFunction ;
+    rdfs:label "Protein Tyrosine Kinase Activity" ;
+    bio:name "Protein Tyrosine Kinase Activity" ;
+    bio:description "Phosphorylation of tyrosine residues" ;
+    bio:function_id "MF001" ;
+    bio:id "MF001" ;
+    bio:category "Kinase" .
+
+<https://biomedkg.org/ontology/MolecularFunction/3c219e9273504dca>
+    a owl:NamedIndividual , bio:MolecularFunction ;
+    rdfs:label "Receptor Tyrosine Kinase Activity" ;
+    bio:name "Receptor Tyrosine Kinase Activity" ;
+    bio:description "Transmembrane receptor signaling" ;
+    bio:function_id "MF002" ;
+    bio:id "MF002" ;
+    bio:category "Kinase" .
+
+<https://biomedkg.org/ontology/MolecularFunction/f45005cbf8dce025>
+    a owl:NamedIndividual , bio:MolecularFunction ;
+    rdfs:label "GTPase Activity" ;
+    bio:name "GTPase Activity" ;
+    bio:description "GTP hydrolysis" ;
+    bio:function_id "MF003" ;
+    bio:id "MF003" ;
+    bio:category "Hydrolase" .
+
+<https://biomedkg.org/ontology/MolecularFunction/4d288a6287ffb27b>
+    a owl:NamedIndividual , bio:MolecularFunction ;
+    rdfs:label "Tumor Suppressor Activity" ;
+    bio:name "Tumor Suppressor Activity" ;
+    bio:description "Negative regulation of cell cycle" ;
+    bio:function_id "MF004" ;
+    bio:id "MF004" ;
+    bio:category "Regulation" .
+
+<https://biomedkg.org/ontology/MolecularFunction/5ccd06e0d1106484>
+    a owl:NamedIndividual , bio:MolecularFunction ;
+    rdfs:label "DNA Binding" ;
+    bio:name "DNA Binding" ;
+    bio:description "Interaction with DNA" ;
+    bio:function_id "MF005" ;
+    bio:id "MF005" ;
+    bio:category "Binding" .
+
+<https://biomedkg.org/ontology/MolecularFunction/693e1beb45d1056f>
+    a owl:NamedIndividual , bio:MolecularFunction ;
+    rdfs:label "Immune Checkpoint Receptor Activity" ;
+    bio:name "Immune Checkpoint Receptor Activity" ;
+    bio:description "Immune regulation signaling" ;
+    bio:function_id "MF006" ;
+    bio:id "MF006" ;
+    bio:category "Receptor" .
+
+<https://biomedkg.org/ontology/MolecularFunction/7b8ebaa91c39b8ec>
+    a owl:NamedIndividual , bio:MolecularFunction ;
+    rdfs:label "Serine/Threonine Kinase Activity" ;
+    bio:name "Serine/Threonine Kinase Activity" ;
+    bio:description "Phosphorylation of serine/threonine" ;
+    bio:function_id "MF007" ;
+    bio:id "MF007" ;
+    bio:category "Kinase" .
+
+<https://biomedkg.org/ontology/MolecularFunction/25dfa674a73b1014>
+    a owl:NamedIndividual , bio:MolecularFunction ;
+    rdfs:label "G-Protein Coupled Receptor Activity" ;
+    bio:name "G-Protein Coupled Receptor Activity" ;
+    bio:description "Signal transduction via G-proteins" ;
+    bio:function_id "MF008" ;
+    bio:id "MF008" ;
+    bio:category "Receptor" .
+
+<https://biomedkg.org/ontology/MolecularFunction/6356b77b789b9d7c>
+    a owl:NamedIndividual , bio:MolecularFunction ;
+    rdfs:label "Amyloid-beta Binding" ;
+    bio:name "Amyloid-beta Binding" ;
+    bio:description "Interaction with amyloid-beta peptide" ;
+    bio:function_id "MF009" ;
+    bio:id "MF009" ;
+    bio:category "Binding" .
+
+<https://biomedkg.org/ontology/MolecularFunction/98c5422c4dd1c5f8>
+    a owl:NamedIndividual , bio:MolecularFunction ;
+    rdfs:label "Lipid Binding" ;
+    bio:name "Lipid Binding" ;
+    bio:description "Interaction with lipid molecules" ;
+    bio:function_id "MF010" ;
+    bio:id "MF010" ;
+    bio:category "Binding" .
+
+<https://biomedkg.org/ontology/MolecularFunction/7758a3644a056d91>
+    a owl:NamedIndividual , bio:MolecularFunction ;
+    rdfs:label "Insulin Receptor Binding" ;
+    bio:name "Insulin Receptor Binding" ;
+    bio:description "Interaction with insulin receptor" ;
+    bio:function_id "MF011" ;
+    bio:id "MF011" ;
+    bio:category "Binding" .
+
+<https://biomedkg.org/ontology/MolecularFunction/d7c8a1eb86b93ace>
+    a owl:NamedIndividual , bio:MolecularFunction ;
+    rdfs:label "Peptidase Activity" ;
+    bio:name "Peptidase Activity" ;
+    bio:description "Protein cleavage" ;
+    bio:function_id "MF012" ;
+    bio:id "MF012" ;
+    bio:category "Hydrolase" .
+
+<https://biomedkg.org/ontology/Anatomy/5f4f2ce6a3e79464>
+    a owl:NamedIndividual , bio:Anatomy ;
+    rdfs:label "Lung" ;
+    bio:system "Respiratory" ;
+    bio:uberon_id "UBERON:0002048" ;
+    bio:name "Lung" ;
+    bio:description "Organ of gas exchange" ;
+    bio:id "AN001" .
+
+<https://biomedkg.org/ontology/Anatomy/815f0a819515b90a>
+    a owl:NamedIndividual , bio:Anatomy ;
+    rdfs:label "Skin" ;
+    bio:system "Integumentary" ;
+    bio:uberon_id "UBERON:0002097" ;
+    bio:name "Skin" ;
+    bio:description "Outer covering of the body" ;
+    bio:id "AN002" .
+
+<https://biomedkg.org/ontology/Anatomy/a517805b7e761f08>
+    a owl:NamedIndividual , bio:Anatomy ;
+    rdfs:label "Breast" ;
+    bio:system "Reproductive" ;
+    bio:uberon_id "UBERON:0000310" ;
+    bio:name "Breast" ;
+    bio:description "Mammary gland tissue" ;
+    bio:id "AN003" .
+
+<https://biomedkg.org/ontology/Anatomy/8c4c88ccb4c4214d>
+    a owl:NamedIndividual , bio:Anatomy ;
+    rdfs:label "Bone Marrow" ;
+    bio:system "Hematopoietic" ;
+    bio:uberon_id "UBERON:0002371" ;
+    bio:name "Bone Marrow" ;
+    bio:description "Site of blood cell production" ;
+    bio:id "AN004" .
+
+<https://biomedkg.org/ontology/Anatomy/40800c2233937ffc>
+    a owl:NamedIndividual , bio:Anatomy ;
+    rdfs:label "Pancreas" ;
+    bio:system "Digestive/Endocrine" ;
+    bio:uberon_id "UBERON:0001264" ;
+    bio:name "Pancreas" ;
+    bio:description "Insulin-producing organ" ;
+    bio:id "AN005" .
+
+<https://biomedkg.org/ontology/Anatomy/b6257b3b9da3c06b>
+    a owl:NamedIndividual , bio:Anatomy ;
+    rdfs:label "Brain" ;
+    bio:system "Nervous" ;
+    bio:uberon_id "UBERON:0000955" ;
+    bio:name "Brain" ;
+    bio:description "Central nervous system organ" ;
+    bio:id "AN006" .
+
+<https://biomedkg.org/ontology/Anatomy/2bdc4b74a318d5b6>
+    a owl:NamedIndividual , bio:Anatomy ;
+    rdfs:label "Hippocampus" ;
+    bio:system "Nervous" ;
+    bio:uberon_id "UBERON:0002421" ;
+    bio:name "Hippocampus" ;
+    bio:description "Memory and learning center" ;
+    bio:id "AN007" .
+
+<https://biomedkg.org/ontology/Anatomy/83dcdccc0a8f11bc>
+    a owl:NamedIndividual , bio:Anatomy ;
+    rdfs:label "Liver" ;
+    bio:system "Digestive" ;
+    bio:uberon_id "UBERON:0002107" ;
+    bio:name "Liver" ;
+    bio:description "Metabolic organ" ;
+    bio:id "AN008" .
+
+<https://biomedkg.org/ontology/Anatomy/6120567b72e6faaa>
+    a owl:NamedIndividual , bio:Anatomy ;
+    rdfs:label "Kidney" ;
+    bio:system "Urinary" ;
+    bio:uberon_id "UBERON:0002113" ;
+    bio:name "Kidney" ;
+    bio:description "Filtration organ" ;
+    bio:id "AN009" .
+
+<https://biomedkg.org/ontology/Anatomy/bd1a2125460f8f50>
+    a owl:NamedIndividual , bio:Anatomy ;
+    rdfs:label "Colon" ;
+    bio:system "Digestive" ;
+    bio:uberon_id "UBERON:0001155" ;
+    bio:name "Colon" ;
+    bio:description "Large intestine" ;
+    bio:id "AN010" .
+
+<https://biomedkg.org/ontology/Anatomy/855fa2e37390a4be>
+    a owl:NamedIndividual , bio:Anatomy ;
+    rdfs:label "Thyroid" ;
+    bio:system "Endocrine" ;
+    bio:uberon_id "UBERON:0002046" ;
+    bio:name "Thyroid" ;
+    bio:description "Thyroid hormone production" ;
+    bio:id "AN011" .
+
+<https://biomedkg.org/ontology/Anatomy/c2d3651cd5454ba5>
+    a owl:NamedIndividual , bio:Anatomy ;
+    rdfs:label "Adipose Tissue" ;
+    bio:system "Integumentary" ;
+    bio:uberon_id "UBERON:0001013" ;
+    bio:name "Adipose Tissue" ;
+    bio:description "Fat storage tissue" ;
+    bio:id "AN012" .
+
+<https://biomedkg.org/ontology/CellType/6499804f136d0cb1>
+    a owl:NamedIndividual , bio:CellType ;
+    rdfs:label "T Cell" ;
+    bio:cell_ontology_id "CL:0000084" ;
+    bio:name "T Cell" ;
+    bio:location "Blood/Lymph nodes" ;
+    bio:id "CT001" ;
+    bio:category "Immune" .
+
+<https://biomedkg.org/ontology/CellType/31c8e045d0efbb8e>
+    a owl:NamedIndividual , bio:CellType ;
+    rdfs:label "B Cell" ;
+    bio:cell_ontology_id "CL:0000236" ;
+    bio:name "B Cell" ;
+    bio:location "Blood/Lymph nodes" ;
+    bio:id "CT002" ;
+    bio:category "Immune" .
+
+<https://biomedkg.org/ontology/CellType/c228aff28db47f11>
+    a owl:NamedIndividual , bio:CellType ;
+    rdfs:label "Natural Killer Cell" ;
+    bio:cell_ontology_id "CL:0000623" ;
+    bio:name "Natural Killer Cell" ;
+    bio:location "Blood/Spleen" ;
+    bio:id "CT003" ;
+    bio:category "Immune" .
+
+<https://biomedkg.org/ontology/CellType/c14fc957780a6694>
+    a owl:NamedIndividual , bio:CellType ;
+    rdfs:label "Macrophage" ;
+    bio:cell_ontology_id "CL:0000235" ;
+    bio:name "Macrophage" ;
+    bio:location "Tissues" ;
+    bio:id "CT004" ;
+    bio:category "Immune" .
+
+<https://biomedkg.org/ontology/CellType/a66b2894ef2c39c5>
+    a owl:NamedIndividual , bio:CellType ;
+    rdfs:label "Epithelial Cell" ;
+    bio:cell_ontology_id "CL:0000066" ;
+    bio:name "Epithelial Cell" ;
+    bio:location "Lung/Skin/Breast" ;
+    bio:id "CT005" ;
+    bio:category "Structural" .
+
+<https://biomedkg.org/ontology/CellType/b3ae9111f47dc445>
+    a owl:NamedIndividual , bio:CellType ;
+    rdfs:label "Neuron" ;
+    bio:cell_ontology_id "CL:0000540" ;
+    bio:name "Neuron" ;
+    bio:location "Brain/Nervous system" ;
+    bio:id "CT006" ;
+    bio:category "Neural" .
+
+<https://biomedkg.org/ontology/CellType/b246d4bcc62b57a7>
+    a owl:NamedIndividual , bio:CellType ;
+    rdfs:label "Astrocyte" ;
+    bio:cell_ontology_id "CL:0000127" ;
+    bio:name "Astrocyte" ;
+    bio:location "Brain" ;
+    bio:id "CT007" ;
+    bio:category "Neural" .
+
+<https://biomedkg.org/ontology/CellType/80f1e0db9a4642ce>
+    a owl:NamedIndividual , bio:CellType ;
+    rdfs:label "Microglia" ;
+    bio:cell_ontology_id "CL:0000129" ;
+    bio:name "Microglia" ;
+    bio:location "Brain" ;
+    bio:id "CT008" ;
+    bio:category "Neural/Immune" .
+
+<https://biomedkg.org/ontology/CellType/bfb513f6f5efccbe>
+    a owl:NamedIndividual , bio:CellType ;
+    rdfs:label "Beta Cell" ;
+    bio:cell_ontology_id "CL:0000169" ;
+    bio:name "Beta Cell" ;
+    bio:location "Pancreas" ;
+    bio:id "CT009" ;
+    bio:category "Endocrine" .
+
+<https://biomedkg.org/ontology/CellType/7f26c3330d2aff2a>
+    a owl:NamedIndividual , bio:CellType ;
+    rdfs:label "Hepatocyte" ;
+    bio:cell_ontology_id "CL:0000182" ;
+    bio:name "Hepatocyte" ;
+    bio:location "Liver" ;
+    bio:id "CT010" ;
+    bio:category "Metabolic" .
+
+<https://biomedkg.org/ontology/CellType/2b5bafc6d151494e>
+    a owl:NamedIndividual , bio:CellType ;
+    rdfs:label "Adipocyte" ;
+    bio:cell_ontology_id "CL:0000136" ;
+    bio:name "Adipocyte" ;
+    bio:location "Adipose tissue" ;
+    bio:id "CT011" ;
+    bio:category "Metabolic" .
+
+<https://biomedkg.org/ontology/CellType/13d4372e68b5206d>
+    a owl:NamedIndividual , bio:CellType ;
+    rdfs:label "Myeloid Progenitor" ;
+    bio:cell_ontology_id "CL:0000049" ;
+    bio:name "Myeloid Progenitor" ;
+    bio:location "Bone marrow" ;
+    bio:id "CT012" ;
+    bio:category "Hematopoietic" .
+
+<https://biomedkg.org/ontology/Phenotype/f91e0a9158264055>
+    a owl:NamedIndividual , bio:Phenotype ;
+    rdfs:label "Cachexia" ;
+    bio:hpo_id "HP:0004326" ;
+    bio:name "Cachexia" ;
+    bio:description "Severe weight loss and muscle wasting" ;
+    bio:phenotype_id "PHE001" ;
+    bio:id "PHE001" .
+
+<https://biomedkg.org/ontology/Phenotype/a3a8df671d035b4b>
+    a owl:NamedIndividual , bio:Phenotype ;
+    rdfs:label "Dyspnea" ;
+    bio:hpo_id "HP:0002094" ;
+    bio:name "Dyspnea" ;
+    bio:description "Difficulty breathing" ;
+    bio:phenotype_id "PHE002" ;
+    bio:id "PHE002" .
+
+<https://biomedkg.org/ontology/Phenotype/659e307005f8fcf4>
+    a owl:NamedIndividual , bio:Phenotype ;
+    rdfs:label "Peripheral Neuropathy" ;
+    bio:hpo_id "HP:0009830" ;
+    bio:name "Peripheral Neuropathy" ;
+    bio:description "Nerve damage in extremities" ;
+    bio:phenotype_id "PHE003" ;
+    bio:id "PHE003" .
+
+<https://biomedkg.org/ontology/Phenotype/8dc6cb084260fe2b>
+    a owl:NamedIndividual , bio:Phenotype ;
+    rdfs:label "Hepatomegaly" ;
+    bio:hpo_id "HP:0002240" ;
+    bio:name "Hepatomegaly" ;
+    bio:description "Enlarged liver" ;
+    bio:phenotype_id "PHE004" ;
+    bio:id "PHE004" .
+
+<https://biomedkg.org/ontology/Phenotype/ac234a10bded3705>
+    a owl:NamedIndividual , bio:Phenotype ;
+    rdfs:label "Hyperglycemia" ;
+    bio:hpo_id "HP:0003074" ;
+    bio:name "Hyperglycemia" ;
+    bio:description "Elevated blood glucose" ;
+    bio:phenotype_id "PHE005" ;
+    bio:id "PHE005" .
+
+<https://biomedkg.org/ontology/Phenotype/739bc2393d5f489a>
+    a owl:NamedIndividual , bio:Phenotype ;
+    rdfs:label "Cognitive Decline" ;
+    bio:hpo_id "HP:0001268" ;
+    bio:name "Cognitive Decline" ;
+    bio:description "Progressive loss of cognitive function" ;
+    bio:phenotype_id "PHE006" ;
+    bio:id "PHE006" .
+
+<https://biomedkg.org/ontology/Phenotype/ccc281e07f9139cf>
+    a owl:NamedIndividual , bio:Phenotype ;
+    rdfs:label "Fatigue" ;
+    bio:hpo_id "HP:0012378" ;
+    bio:name "Fatigue" ;
+    bio:description "Persistent tiredness and exhaustion" ;
+    bio:phenotype_id "PHE007" ;
+    bio:id "PHE007" .
+
+<https://biomedkg.org/ontology/Phenotype/0926ede6010cd697>
+    a owl:NamedIndividual , bio:Phenotype ;
+    rdfs:label "Anemia" ;
+    bio:hpo_id "HP:0001903" ;
+    bio:name "Anemia" ;
+    bio:description "Reduced red blood cell count" ;
+    bio:phenotype_id "PHE008" ;
+    bio:id "PHE008" .
+
+<https://biomedkg.org/ontology/Phenotype/4316faef0d81975f>
+    a owl:NamedIndividual , bio:Phenotype ;
+    rdfs:label "Hypertension" ;
+    bio:hpo_id "HP:0000822" ;
+    bio:name "Hypertension" ;
+    bio:description "Elevated blood pressure" ;
+    bio:phenotype_id "PHE009" ;
+    bio:id "PHE009" .
+
+<https://biomedkg.org/ontology/Phenotype/a0014d96c3b024a4>
+    a owl:NamedIndividual , bio:Phenotype ;
+    rdfs:label "Immunodeficiency" ;
+    bio:hpo_id "HP:0002721" ;
+    bio:name "Immunodeficiency" ;
+    bio:description "Impaired immune response" ;
+    bio:phenotype_id "PHE010" ;
+    bio:id "PHE010" .
+
+<https://biomedkg.org/ontology/Phenotype/0103eb1860c9c906>
+    a owl:NamedIndividual , bio:Phenotype ;
+    rdfs:label "Tremor" ;
+    bio:hpo_id "HP:0001337" ;
+    bio:name "Tremor" ;
+    bio:description "Involuntary rhythmic muscle movement" ;
+    bio:phenotype_id "PHE011" ;
+    bio:id "PHE011" .
+
+<https://biomedkg.org/ontology/Phenotype/847d4a27f54b9ce8>
+    a owl:NamedIndividual , bio:Phenotype ;
+    rdfs:label "Insulin Resistance" ;
+    bio:hpo_id "HP:0000855" ;
+    bio:name "Insulin Resistance" ;
+    bio:description "Reduced cellular response to insulin" ;
+    bio:phenotype_id "PHE012" ;
+    bio:id "PHE012" .
+
+<https://biomedkg.org/ontology/Exposure/7e742c653c2eb45f>
+    a owl:NamedIndividual , bio:Exposure ;
+    rdfs:label "Tobacco Smoke" ;
+    bio:risk_level "High" ;
+    bio:exposure_id "EXP001" ;
+    bio:exposure_type "Chemical" ;
+    bio:name "Tobacco Smoke" ;
+    bio:id "EXP001" .
+
+<https://biomedkg.org/ontology/Exposure/73b39d690ac07048>
+    a owl:NamedIndividual , bio:Exposure ;
+    rdfs:label "Ultraviolet Radiation" ;
+    bio:risk_level "High" ;
+    bio:exposure_id "EXP002" ;
+    bio:exposure_type "Radiation" ;
+    bio:name "Ultraviolet Radiation" ;
+    bio:id "EXP002" .
+
+<https://biomedkg.org/ontology/Exposure/6aaeef2d72e9ec95>
+    a owl:NamedIndividual , bio:Exposure ;
+    rdfs:label "Asbestos" ;
+    bio:risk_level "High" ;
+    bio:exposure_id "EXP003" ;
+    bio:exposure_type "Chemical" ;
+    bio:name "Asbestos" ;
+    bio:id "EXP003" .
+
+<https://biomedkg.org/ontology/Exposure/157b7880ff303e33>
+    a owl:NamedIndividual , bio:Exposure ;
+    rdfs:label "Air Pollution (PM2.5)" ;
+    bio:risk_level "Medium" ;
+    bio:exposure_id "EXP004" ;
+    bio:exposure_type "Chemical" ;
+    bio:name "Air Pollution (PM2.5)" ;
+    bio:id "EXP004" .
+
+<https://biomedkg.org/ontology/Exposure/53517aa80eff37b8>
+    a owl:NamedIndividual , bio:Exposure ;
+    rdfs:label "Alcohol Consumption" ;
+    bio:risk_level "Medium" ;
+    bio:exposure_id "EXP005" ;
+    bio:exposure_type "Chemical" ;
+    bio:name "Alcohol Consumption" ;
+    bio:id "EXP005" .
+
+<https://biomedkg.org/ontology/Exposure/a30214158d0c61a3>
+    a owl:NamedIndividual , bio:Exposure ;
+    rdfs:label "Ionizing Radiation" ;
+    bio:risk_level "High" ;
+    bio:exposure_id "EXP006" ;
+    bio:exposure_type "Radiation" ;
+    bio:name "Ionizing Radiation" ;
+    bio:id "EXP006" .
+
+<https://biomedkg.org/ontology/Exposure/a855c9d6c43ea84e>
+    a owl:NamedIndividual , bio:Exposure ;
+    rdfs:label "Benzene" ;
+    bio:risk_level "High" ;
+    bio:exposure_id "EXP007" ;
+    bio:exposure_type "Chemical" ;
+    bio:name "Benzene" ;
+    bio:id "EXP007" .
+
+<https://biomedkg.org/ontology/Exposure/6da214ad75c8c6dc>
+    a owl:NamedIndividual , bio:Exposure ;
+    rdfs:label "Aflatoxin B1" ;
+    bio:risk_level "High" ;
+    bio:exposure_id "EXP008" ;
+    bio:exposure_type "Biological" ;
+    bio:name "Aflatoxin B1" ;
+    bio:id "EXP008" .
+
+<https://biomedkg.org/ontology/Exposure/c6c621c5ab6db1f4>
+    a owl:NamedIndividual , bio:Exposure ;
+    rdfs:label "Radon Gas" ;
+    bio:risk_level "Medium" ;
+    bio:exposure_id "EXP009" ;
+    bio:exposure_type "Radiation" ;
+    bio:name "Radon Gas" ;
+    bio:id "EXP009" .
+
+<https://biomedkg.org/ontology/Exposure/466e1f5d74063275>
+    a owl:NamedIndividual , bio:Exposure ;
+    rdfs:label "Formaldehyde" ;
+    bio:risk_level "Medium" ;
+    bio:exposure_id "EXP010" ;
+    bio:exposure_type "Chemical" ;
+    bio:name "Formaldehyde" ;
+    bio:id "EXP010" .
+
+<https://biomedkg.org/ontology/Exposure/7f55dafe73aad4c4>
+    a owl:NamedIndividual , bio:Exposure ;
+    rdfs:label "High-Fat Diet" ;
+    bio:risk_level "Medium" ;
+    bio:exposure_id "EXP011" ;
+    bio:exposure_type "Dietary" ;
+    bio:name "High-Fat Diet" ;
+    bio:id "EXP011" .
+
+<https://biomedkg.org/ontology/Exposure/186cd154c7027328>
+    a owl:NamedIndividual , bio:Exposure ;
+    rdfs:label "Sedentary Lifestyle" ;
+    bio:risk_level "Medium" ;
+    bio:exposure_id "EXP012" ;
+    bio:exposure_type "Behavioral" ;
+    bio:name "Sedentary Lifestyle" ;
+    bio:id "EXP012" .
+
+<https://biomedkg.org/ontology/Biomarker/8a2b86560469a89f>
+    a owl:NamedIndividual , bio:Biomarker ;
+    rdfs:label "PD-L1 Expression" ;
+    bio:biomarker_id "B001" ;
+    bio:clinical_significance "Predicts immunotherapy response" ;
+    bio:name "PD-L1 Expression" ;
+    bio:measurement_unit "Tumor Proportion Score" ;
+    bio:id "B001" .
+
+<https://biomedkg.org/ontology/Biomarker/546a97a632008ce3>
+    a owl:NamedIndividual , bio:Biomarker ;
+    rdfs:label "EGFR Mutation" ;
+    bio:biomarker_id "B002" ;
+    bio:clinical_significance "Predicts EGFR inhibitor response" ;
+    bio:name "EGFR Mutation" ;
+    bio:measurement_unit "Mutation Status" ;
+    bio:id "B002" .
+
+<https://biomedkg.org/ontology/Biomarker/19fb155d720a6385>
+    a owl:NamedIndividual , bio:Biomarker ;
+    rdfs:label "HbA1c" ;
+    bio:biomarker_id "B003" ;
+    bio:clinical_significance "Diabetes control marker" ;
+    bio:name "HbA1c" ;
+    bio:measurement_unit "Percentage" ;
+    bio:id "B003" .
+
+<https://biomedkg.org/ontology/Biomarker/8801537373178adb>
+    a owl:NamedIndividual , bio:Biomarker ;
+    rdfs:label "Amyloid-beta 42" ;
+    bio:biomarker_id "B004" ;
+    bio:clinical_significance "Alzheimer's diagnostic marker" ;
+    bio:name "Amyloid-beta 42" ;
+    bio:measurement_unit "pg/mL" ;
+    bio:id "B004" .
+
+<https://biomedkg.org/ontology/Biomarker/3e4df9d90456ca13>
+    a owl:NamedIndividual , bio:Biomarker ;
+    rdfs:label "Tau Protein" ;
+    bio:biomarker_id "B005" ;
+    bio:clinical_significance "Neurodegeneration marker" ;
+    bio:name "Tau Protein" ;
+    bio:measurement_unit "pg/mL" ;
+    bio:id "B005" .
+
+<https://biomedkg.org/ontology/Biomarker/ec464ec084557974>
+    a owl:NamedIndividual , bio:Biomarker ;
+    rdfs:label "BCR-ABL Transcript" ;
+    bio:biomarker_id "B006" ;
+    bio:clinical_significance "CML monitoring" ;
+    bio:name "BCR-ABL Transcript" ;
+    bio:measurement_unit "Ratio" ;
+    bio:id "B006" .
+
+<https://biomedkg.org/ontology/Biomarker/ff092c25eb786935>
+    a owl:NamedIndividual , bio:Biomarker ;
+    rdfs:label "HER2 Status" ;
+    bio:biomarker_id "B007" ;
+    bio:clinical_significance "Breast cancer prognosis" ;
+    bio:name "HER2 Status" ;
+    bio:measurement_unit "IHC Score" ;
+    bio:id "B007" .
+
+<https://biomedkg.org/ontology/Biomarker/9ed401591c469ebd>
+    a owl:NamedIndividual , bio:Biomarker ;
+    rdfs:label "KRAS Mutation" ;
+    bio:biomarker_id "B008" ;
+    bio:clinical_significance "Colorectal cancer prognosis" ;
+    bio:name "KRAS Mutation" ;
+    bio:measurement_unit "Mutation Status" ;
+    bio:id "B008" .
+
+<https://biomedkg.org/ontology/Biomarker/a27d313565e6affb>
+    a owl:NamedIndividual , bio:Biomarker ;
+    rdfs:label "Fasting Glucose" ;
+    bio:biomarker_id "B009" ;
+    bio:clinical_significance "Diabetes screening" ;
+    bio:name "Fasting Glucose" ;
+    bio:measurement_unit "mg/dL" ;
+    bio:id "B009" .
+
+<https://biomedkg.org/ontology/Biomarker/8a064757047ce977>
+    a owl:NamedIndividual , bio:Biomarker ;
+    rdfs:label "C-Reactive Protein" ;
+    bio:biomarker_id "B010" ;
+    bio:clinical_significance "Inflammation marker" ;
+    bio:name "C-Reactive Protein" ;
+    bio:measurement_unit "mg/L" ;
+    bio:id "B010" .
+
+<https://biomedkg.org/ontology/ClinicalTrial/6499804f136d0cb1>
+    a owl:NamedIndividual , bio:ClinicalTrial ;
+    bio:phase "Phase 3" ;
+    bio:trial_id "CT001" ;
+    bio:sponsor "Merck" ;
+    bio:nct_id "NCT02142738" ;
+    bio:id "CT001" .
+
+<https://biomedkg.org/ontology/ClinicalTrial/31c8e045d0efbb8e>
+    a owl:NamedIndividual , bio:ClinicalTrial ;
+    bio:phase "Phase 3" ;
+    bio:trial_id "CT002" ;
+    bio:sponsor "Bristol Myers Squibb" ;
+    bio:nct_id "NCT01721772" ;
+    bio:id "CT002" .
+
+<https://biomedkg.org/ontology/ClinicalTrial/c228aff28db47f11>
+    a owl:NamedIndividual , bio:ClinicalTrial ;
+    bio:phase "Phase 2" ;
+    bio:trial_id "CT003" ;
+    bio:sponsor "Roche" ;
+    bio:nct_id "NCT02008227" ;
+    bio:id "CT003" .
+
+<https://biomedkg.org/ontology/ClinicalTrial/c14fc957780a6694>
+    a owl:NamedIndividual , bio:ClinicalTrial ;
+    bio:phase "Phase 3" ;
+    bio:trial_id "CT004" ;
+    bio:sponsor "Eisai" ;
+    bio:nct_id "NCT03715114" ;
+    bio:id "CT004" .
+
+<https://biomedkg.org/ontology/ClinicalTrial/a66b2894ef2c39c5>
+    a owl:NamedIndividual , bio:ClinicalTrial ;
+    bio:phase "Phase 3" ;
+    bio:trial_id "CT005" ;
+    bio:sponsor "Novo Nordisk" ;
+    bio:nct_id "NCT01900665" ;
+    bio:id "CT005" .
+
+<https://biomedkg.org/ontology/ClinicalTrial/b3ae9111f47dc445>
+    a owl:NamedIndividual , bio:ClinicalTrial ;
+    bio:phase "Phase 3" ;
+    bio:trial_id "CT006" ;
+    bio:sponsor "Eli Lilly" ;
+    bio:nct_id "NCT04184622" ;
+    bio:id "CT006" .
+
+<https://biomedkg.org/ontology/ClinicalTrial/b246d4bcc62b57a7>
+    a owl:NamedIndividual , bio:ClinicalTrial ;
+    bio:phase "Phase 3" ;
+    bio:trial_id "CT007" ;
+    bio:sponsor "Novartis" ;
+    bio:nct_id "NCT00006150" ;
+    bio:id "CT007" .
+
+<https://biomedkg.org/ontology/ClinicalTrial/80f1e0db9a4642ce>
+    a owl:NamedIndividual , bio:ClinicalTrial ;
+    bio:phase "Phase 3" ;
+    bio:trial_id "CT008" ;
+    bio:sponsor "Merck" ;
+    bio:nct_id "NCT02425891" ;
+    bio:id "CT008" .
+
+<https://biomedkg.org/ontology/ClinicalTrial/bfb513f6f5efccbe>
+    a owl:NamedIndividual , bio:ClinicalTrial ;
+    bio:phase "Phase 3" ;
+    bio:trial_id "CT009" ;
+    bio:sponsor "Bristol Myers Squibb" ;
+    bio:nct_id "NCT01844505" ;
+    bio:id "CT009" .
+
+<https://biomedkg.org/ontology/ClinicalTrial/7f26c3330d2aff2a>
+    a owl:NamedIndividual , bio:ClinicalTrial ;
+    bio:phase "Phase 2" ;
+    bio:trial_id "CT010" ;
+    bio:sponsor "NIH" ;
+    bio:nct_id "NCT03987919" ;
+    bio:id "CT010" .
+
+<https://biomedkg.org/ontology/AdverseEvent/5d6c12e12089fbd6>
+    a owl:NamedIndividual , bio:AdverseEvent ;
+    rdfs:label "Immune-related pneumonitis" ;
+    bio:severity "Severe" ;
+    bio:event_id "AE001" ;
+    bio:name "Immune-related pneumonitis" ;
+    bio:id "AE001" ;
+    bio:category "Immune-related" .
+
+<https://biomedkg.org/ontology/AdverseEvent/099e53d1f62acc3f>
+    a owl:NamedIndividual , bio:AdverseEvent ;
+    rdfs:label "Immune-related colitis" ;
+    bio:severity "Moderate" ;
+    bio:event_id "AE002" ;
+    bio:name "Immune-related colitis" ;
+    bio:id "AE002" ;
+    bio:category "Immune-related" .
+
+<https://biomedkg.org/ontology/AdverseEvent/4195d47499ccbee7>
+    a owl:NamedIndividual , bio:AdverseEvent ;
+    rdfs:label "Hypothyroidism" ;
+    bio:severity "Mild" ;
+    bio:event_id "AE003" ;
+    bio:name "Hypothyroidism" ;
+    bio:id "AE003" ;
+    bio:category "Endocrine" .
+
+<https://biomedkg.org/ontology/AdverseEvent/37a7976ba48097d9>
+    a owl:NamedIndividual , bio:AdverseEvent ;
+    rdfs:label "Hyperthyroidism" ;
+    bio:severity "Moderate" ;
+    bio:event_id "AE004" ;
+    bio:name "Hyperthyroidism" ;
+    bio:id "AE004" ;
+    bio:category "Endocrine" .
+
+<https://biomedkg.org/ontology/AdverseEvent/40b3cdf7d06d7c38>
+    a owl:NamedIndividual , bio:AdverseEvent ;
+    rdfs:label "Nausea" ;
+    bio:severity "Mild" ;
+    bio:event_id "AE005" ;
+    bio:name "Nausea" ;
+    bio:id "AE005" ;
+    bio:category "Gastrointestinal" .
+
+<https://biomedkg.org/ontology/AdverseEvent/fa50c2342b19957b>
+    a owl:NamedIndividual , bio:AdverseEvent ;
+    rdfs:label "Diarrhea" ;
+    bio:severity "Mild" ;
+    bio:event_id "AE006" ;
+    bio:name "Diarrhea" ;
+    bio:id "AE006" ;
+    bio:category "Gastrointestinal" .
+
+<https://biomedkg.org/ontology/AdverseEvent/1c4417d5f68e5d8d>
+    a owl:NamedIndividual , bio:AdverseEvent ;
+    rdfs:label "Hypoglycemia" ;
+    bio:severity "Moderate" ;
+    bio:event_id "AE007" ;
+    bio:name "Hypoglycemia" ;
+    bio:id "AE007" ;
+    bio:category "Metabolic" .
+
+<https://biomedkg.org/ontology/AdverseEvent/53844ac28eed7f1d>
+    a owl:NamedIndividual , bio:AdverseEvent ;
+    rdfs:label "Infusion reaction" ;
+    bio:severity "Moderate" ;
+    bio:event_id "AE008" ;
+    bio:name "Infusion reaction" ;
+    bio:id "AE008" ;
+    bio:category "Allergic" .
+
+<https://biomedkg.org/ontology/AdverseEvent/de4db0ee868e470b>
+    a owl:NamedIndividual , bio:AdverseEvent ;
+    rdfs:label "Amyloid-related imaging abnormalities" ;
+    bio:severity "Severe" ;
+    bio:event_id "AE009" ;
+    bio:name "Amyloid-related imaging abnormalities" ;
+    bio:id "AE009" ;
+    bio:category "Neurological" .
+
+<https://biomedkg.org/ontology/AdverseEvent/a0e83e93a3ec9f39>
+    a owl:NamedIndividual , bio:AdverseEvent ;
+    rdfs:label "Pancreatitis" ;
+    bio:severity "Severe" ;
+    bio:event_id "AE010" ;
+    bio:name "Pancreatitis" ;
+    bio:id "AE010" ;
+    bio:category "Gastrointestinal" .
+
+<https://biomedkg.org/ontology/PatientOutcome/ce50e4a60f80a4a7>
+    a owl:NamedIndividual , bio:PatientOutcome ;
+    bio:overall_survival_months "28.5" ;
+    bio:outcome_id "OUT001" ;
+    bio:patient_id "PAT001" ;
+    bio:treatment_id "D001" ;
+    bio:response_type "Partial Response" .
+
+<https://biomedkg.org/ontology/PatientOutcome/2fb0eb9abca62a75>
+    a owl:NamedIndividual , bio:PatientOutcome ;
+    bio:overall_survival_months "22.3" ;
+    bio:outcome_id "OUT002" ;
+    bio:patient_id "PAT001" ;
+    bio:treatment_id "D003" ;
+    bio:response_type "Stable Disease" .
+
+<https://biomedkg.org/ontology/PatientOutcome/2823411e74959031>
+    a owl:NamedIndividual , bio:PatientOutcome ;
+    bio:overall_survival_months "36.0" ;
+    bio:outcome_id "OUT003" ;
+    bio:patient_id "PAT002" ;
+    bio:treatment_id "D002" ;
+    bio:response_type "Complete Response" .
+
+<https://biomedkg.org/ontology/PatientOutcome/2dfed06dac235fac>
+    a owl:NamedIndividual , bio:PatientOutcome ;
+    bio:overall_survival_months "30.2" ;
+    bio:outcome_id "OUT004" ;
+    bio:patient_id "PAT003" ;
+    bio:treatment_id "D004" ;
+    bio:response_type "Partial Response" .
+
+<https://biomedkg.org/ontology/PatientOutcome/c8ca2e5339dc3937>
+    a owl:NamedIndividual , bio:PatientOutcome ;
+    bio:overall_survival_months "72.0" ;
+    bio:outcome_id "OUT005" ;
+    bio:patient_id "PAT004" ;
+    bio:treatment_id "D005" ;
+    bio:response_type "Complete Response" .
+
+<https://biomedkg.org/ontology/PatientOutcome/4ad93c10546b12b2>
+    a owl:NamedIndividual , bio:PatientOutcome ;
+    bio:overall_survival_months "12.8" ;
+    bio:outcome_id "OUT006" ;
+    bio:patient_id "PAT005" ;
+    bio:treatment_id "D001" ;
+    bio:response_type "Progressive Disease" .
+
+<https://biomedkg.org/ontology/PatientOutcome/3603c80d07c1869a>
+    a owl:NamedIndividual , bio:PatientOutcome ;
+    bio:overall_survival_months "24.6" ;
+    bio:outcome_id "OUT007" ;
+    bio:patient_id "PAT005" ;
+    bio:treatment_id "D003" ;
+    bio:response_type "Partial Response" .
+
+<https://biomedkg.org/ontology/PatientOutcome/693624665fb58410>
+    a owl:NamedIndividual , bio:PatientOutcome ;
+    bio:overall_survival_months "18.0" ;
+    bio:outcome_id "OUT008" ;
+    bio:patient_id "PAT006" ;
+    bio:treatment_id "D008" ;
+    bio:response_type "Stable Disease" .
+
+<https://biomedkg.org/ontology/PatientOutcome/096df5d6c675cb2d>
+    a owl:NamedIndividual , bio:PatientOutcome ;
+    bio:overall_survival_months "32.1" ;
+    bio:outcome_id "OUT009" ;
+    bio:patient_id "PAT007" ;
+    bio:treatment_id "D002" ;
+    bio:response_type "Partial Response" .
+
+<https://biomedkg.org/ontology/PatientOutcome/599195c8ca61c1d3>
+    a owl:NamedIndividual , bio:PatientOutcome ;
+    bio:overall_survival_months "20.4" ;
+    bio:outcome_id "OUT010" ;
+    bio:patient_id "PAT008" ;
+    bio:treatment_id "D001" ;
+    bio:response_type "Stable Disease" .
+
+<https://biomedkg.org/ontology/PatientOutcome/1c3b78298d74a6ee>
+    a owl:NamedIndividual , bio:PatientOutcome ;
+    bio:overall_survival_months "34.0" ;
+    bio:outcome_id "OUT011" ;
+    bio:patient_id "PAT009" ;
+    bio:treatment_id "D002" ;
+    bio:response_type "Complete Response" .
+
+<https://biomedkg.org/ontology/PatientOutcome/3e9d06aee2ba1db6>
+    a owl:NamedIndividual , bio:PatientOutcome ;
+    bio:overall_survival_months "14.5" ;
+    bio:outcome_id "OUT012" ;
+    bio:patient_id "PAT010" ;
+    bio:treatment_id "D007" ;
+    bio:response_type "Stable Disease" .
+
+<https://biomedkg.org/ontology/PatientOutcome/cffe01208392db07>
+    a owl:NamedIndividual , bio:PatientOutcome ;
+    bio:overall_survival_months "28.7" ;
+    bio:outcome_id "OUT013" ;
+    bio:patient_id "PAT011" ;
+    bio:treatment_id "D004" ;
+    bio:response_type "Partial Response" .
+
+<https://biomedkg.org/ontology/PatientOutcome/b4d18162fa2c6578>
+    a owl:NamedIndividual , bio:PatientOutcome ;
+    bio:overall_survival_months "10.2" ;
+    bio:outcome_id "OUT014" ;
+    bio:patient_id "PAT012" ;
+    bio:treatment_id "D001" ;
+    bio:response_type "Progressive Disease" .
+
+<https://biomedkg.org/ontology/PatientOutcome/f6b005b35c42243b>
+    a owl:NamedIndividual , bio:PatientOutcome ;
+    bio:overall_survival_months "26.3" ;
+    bio:outcome_id "OUT015" ;
+    bio:patient_id "PAT012" ;
+    bio:treatment_id "D002" ;
+    bio:response_type "Partial Response" .
+
+<https://biomedkg.org/ontology/PatientOutcome/12d3bebd1ce3986a>
+    a owl:NamedIndividual , bio:PatientOutcome ;
+    bio:overall_survival_months "24.0" ;
+    bio:outcome_id "OUT016" ;
+    bio:patient_id "PAT013" ;
+    bio:treatment_id "D009" ;
+    bio:response_type "Complete Response" .
+
+<https://biomedkg.org/ontology/PatientOutcome/b45d254adb02d023>
+    a owl:NamedIndividual , bio:PatientOutcome ;
+    bio:overall_survival_months "21.5" ;
+    bio:outcome_id "OUT017" ;
+    bio:patient_id "PAT014" ;
+    bio:treatment_id "D001" ;
+    bio:response_type "Stable Disease" .
+
+<https://biomedkg.org/ontology/PatientOutcome/68f01b0bb565f3d1>
+    a owl:NamedIndividual , bio:PatientOutcome ;
+    bio:overall_survival_months "27.8" ;
+    bio:outcome_id "OUT018" ;
+    bio:patient_id "PAT014" ;
+    bio:treatment_id "D003" ;
+    bio:response_type "Partial Response" .
+
+<https://biomedkg.org/ontology/PatientOutcome/dc4354439b1445e0>
+    a owl:NamedIndividual , bio:PatientOutcome ;
+    bio:overall_survival_months "22.0" ;
+    bio:outcome_id "OUT019" ;
+    bio:patient_id "PAT015" ;
+    bio:treatment_id "D002" ;
+    bio:response_type "Partial Response" .
+
+<https://biomedkg.org/ontology/PatientOutcome/a9e05bdc12eda11d>
+    a owl:NamedIndividual , bio:PatientOutcome ;
+    bio:overall_survival_months "32.5" ;
+    bio:outcome_id "OUT020" ;
+    bio:patient_id "PAT007" ;
+    bio:treatment_id "D001" ;
+    bio:response_type "Complete Response" .
+
+<https://biomedkg.org/ontology/ResearchPaper/809e47cbfdee0736>
+    a owl:NamedIndividual , bio:ResearchPaper ;
+    bio:journal "New England Journal of Medicine" ;
+    bio:citations "3421" ;
+    bio:publication_date "2016-10-08" ;
+    bio:id "P001" ;
+    bio:title "Pembrolizumab versus Chemotherapy for PD-L1 Positive NSCLC" .
+
+<https://biomedkg.org/ontology/ResearchPaper/0ad7334eaf2870d9>
+    a owl:NamedIndividual , bio:ResearchPaper ;
+    bio:journal "New England Journal of Medicine" ;
+    bio:citations "2987" ;
+    bio:publication_date "2015-03-04" ;
+    bio:id "P002" ;
+    bio:title "Nivolumab versus Docetaxel in Advanced NSCLC" .
+
+<https://biomedkg.org/ontology/ResearchPaper/49608f394d59a224>
+    a owl:NamedIndividual , bio:ResearchPaper ;
+    bio:journal "New England Journal of Medicine" ;
+    bio:citations "876" ;
+    bio:publication_date "2022-11-29" ;
+    bio:id "P003" ;
+    bio:title "Lecanemab in Early Alzheimer's Disease" .
+
+<https://biomedkg.org/ontology/ResearchPaper/248af50a3d8914f1>
+    a owl:NamedIndividual , bio:ResearchPaper ;
+    bio:journal "New England Journal of Medicine" ;
+    bio:citations "2134" ;
+    bio:publication_date "2016-11-10" ;
+    bio:id "P004" ;
+    bio:title "Semaglutide and Cardiovascular Outcomes in Type 2 Diabetes" .
+
+<https://biomedkg.org/ontology/ResearchPaper/4d8301e76189987e>
+    a owl:NamedIndividual , bio:ResearchPaper ;
+    bio:journal "New England Journal of Medicine" ;
+    bio:citations "4521" ;
+    bio:publication_date "2003-03-13" ;
+    bio:id "P005" ;
+    bio:title "Imatinib Compared with Interferon for CML" .
+
+<https://biomedkg.org/ontology/ResearchPaper/a302a1330186893c>
+    a owl:NamedIndividual , bio:ResearchPaper ;
+    bio:journal "New England Journal of Medicine" ;
+    bio:citations "654" ;
+    bio:publication_date "2021-08-05" ;
+    bio:id "P006" ;
+    bio:title "Tirzepatide versus Semaglutide Once Weekly" .
+
+<https://biomedkg.org/ontology/ResearchPaper/06f87fb69cc26fc3>
+    a owl:NamedIndividual , bio:ResearchPaper ;
+    bio:journal "Lancet" ;
+    bio:citations "1876" ;
+    bio:publication_date "2015-07-14" ;
+    bio:id "P007" ;
+    bio:title "Atezolizumab for Metastatic NSCLC" .
+
+<https://biomedkg.org/ontology/ResearchPaper/d756a5c2361c8815>
+    a owl:NamedIndividual , bio:ResearchPaper ;
+    bio:journal "JAMA Neurology" ;
+    bio:citations "432" ;
+    bio:publication_date "2020-06-15" ;
+    bio:id "P008" ;
+    bio:title "Metformin and Alzheimer's Disease Risk" .
+
+<https://biomedkg.org/ontology/ResearchPaper/d5d535eab7c5b09e>
+    a owl:NamedIndividual , bio:ResearchPaper ;
+    bio:journal "Nature" ;
+    bio:citations "5234" ;
+    bio:publication_date "2014-07-03" ;
+    bio:id "P009" ;
+    bio:title "PD-1 Blockade in Melanoma" .
+
+<https://biomedkg.org/ontology/ResearchPaper/bdbc4be1b52ed921>
+    a owl:NamedIndividual , bio:ResearchPaper ;
+    bio:journal "Science" ;
+    bio:citations "789" ;
+    bio:publication_date "2021-12-10" ;
+    bio:id "P010" ;
+    bio:title "Amyloid-beta Immunotherapy in Alzheimer's" .
+
+<https://biomedkg.org/ontology/Researcher/b7aed7d50605b19e>
+    a owl:NamedIndividual , bio:Researcher ;
+    rdfs:label "Dr. Sarah Chen" ;
+    bio:h_index "78" ;
+    bio:total_publications "245" ;
+    bio:name "Dr. Sarah Chen" ;
+    bio:specialization "Immuno-Oncology" ;
+    bio:id "R001" .
+
+<https://biomedkg.org/ontology/Researcher/69b6c129d3732f0b>
+    a owl:NamedIndividual , bio:Researcher ;
+    rdfs:label "Dr. Michael Rodriguez" ;
+    bio:h_index "62" ;
+    bio:total_publications "189" ;
+    bio:name "Dr. Michael Rodriguez" ;
+    bio:specialization "Clinical Trials" ;
+    bio:id "R002" .
+
+<https://biomedkg.org/ontology/Researcher/2f46b33b35e3a2a1>
+    a owl:NamedIndividual , bio:Researcher ;
+    rdfs:label "Dr. Emily Watson" ;
+    bio:h_index "85" ;
+    bio:total_publications "312" ;
+    bio:name "Dr. Emily Watson" ;
+    bio:specialization "Neurodegenerative Diseases" ;
+    bio:id "R003" .
+
+<https://biomedkg.org/ontology/Researcher/237aa22f671ffcab>
+    a owl:NamedIndividual , bio:Researcher ;
+    rdfs:label "Dr. James Kim" ;
+    bio:h_index "71" ;
+    bio:total_publications "223" ;
+    bio:name "Dr. James Kim" ;
+    bio:specialization "Metabolic Disorders" ;
+    bio:id "R004" .
+
+<https://biomedkg.org/ontology/Researcher/a045cb459bf96065>
+    a owl:NamedIndividual , bio:Researcher ;
+    rdfs:label "Dr. Lisa Anderson" ;
+    bio:h_index "55" ;
+    bio:total_publications "167" ;
+    bio:name "Dr. Lisa Anderson" ;
+    bio:specialization "Oncology Drug Development" ;
+    bio:id "R005" .
+
+<https://biomedkg.org/ontology/Researcher/55bc3d25bfe89484>
+    a owl:NamedIndividual , bio:Researcher ;
+    rdfs:label "Dr. Robert Taylor" ;
+    bio:h_index "92" ;
+    bio:total_publications "378" ;
+    bio:name "Dr. Robert Taylor" ;
+    bio:specialization "Molecular Biology" ;
+    bio:id "R006" .
+
+<https://biomedkg.org/ontology/Researcher/53a9fbd4386f623a>
+    a owl:NamedIndividual , bio:Researcher ;
+    rdfs:label "Dr. Maria Garcia" ;
+    bio:h_index "48" ;
+    bio:total_publications "134" ;
+    bio:name "Dr. Maria Garcia" ;
+    bio:specialization "Biomarker Discovery" ;
+    bio:id "R007" .
+
+<https://biomedkg.org/ontology/Researcher/48db297bc85aa6c2>
+    a owl:NamedIndividual , bio:Researcher ;
+    rdfs:label "Dr. David Lee" ;
+    bio:h_index "67" ;
+    bio:total_publications "201" ;
+    bio:name "Dr. David Lee" ;
+    bio:specialization "Precision Medicine" ;
+    bio:id "R008" .
+
+<https://biomedkg.org/ontology/Researcher/a32aacaa73ac87c2>
+    a owl:NamedIndividual , bio:Researcher ;
+    rdfs:label "Dr. Jennifer White" ;
+    bio:h_index "81" ;
+    bio:total_publications "289" ;
+    bio:name "Dr. Jennifer White" ;
+    bio:specialization "Alzheimer's Research" ;
+    bio:id "R009" .
+
+<https://biomedkg.org/ontology/Researcher/35ce404b29c8e87f>
+    a owl:NamedIndividual , bio:Researcher ;
+    rdfs:label "Dr. Thomas Brown" ;
+    bio:h_index "59" ;
+    bio:total_publications "176" ;
+    bio:name "Dr. Thomas Brown" ;
+    bio:specialization "Diabetes Research" ;
+    bio:id "R010" .
+
+<https://biomedkg.org/ontology/Institution/eab2a926a9e2807f>
+    a owl:NamedIndividual , bio:Institution ;
+    rdfs:label "Johns Hopkins University" ;
+    bio:country "USA" ;
+    bio:city "Baltimore" ;
+    bio:name "Johns Hopkins University" ;
+    bio:id "I001" ;
+    bio:research_budget_millions "2800" .
+
+<https://biomedkg.org/ontology/Institution/6d9ee1d0d83e2bcf>
+    a owl:NamedIndividual , bio:Institution ;
+    rdfs:label "Memorial Sloan Kettering" ;
+    bio:country "USA" ;
+    bio:city "New York" ;
+    bio:name "Memorial Sloan Kettering" ;
+    bio:id "I002" ;
+    bio:research_budget_millions "1200" .
+
+<https://biomedkg.org/ontology/Institution/f9560cbebd1403c6>
+    a owl:NamedIndividual , bio:Institution ;
+    rdfs:label "Mayo Clinic" ;
+    bio:country "USA" ;
+    bio:city "Rochester" ;
+    bio:name "Mayo Clinic" ;
+    bio:id "I003" ;
+    bio:research_budget_millions "950" .
+
+<https://biomedkg.org/ontology/Institution/51d02ab4642c06e1>
+    a owl:NamedIndividual , bio:Institution ;
+    rdfs:label "Pfizer" ;
+    bio:country "USA" ;
+    bio:city "New York" ;
+    bio:name "Pfizer" ;
+    bio:id "I004" ;
+    bio:research_budget_millions "13400" .
+
+<https://biomedkg.org/ontology/Institution/89f61a44a9c5a70b>
+    a owl:NamedIndividual , bio:Institution ;
+    rdfs:label "Novartis" ;
+    bio:country "Switzerland" ;
+    bio:city "Basel" ;
+    bio:name "Novartis" ;
+    bio:id "I005" ;
+    bio:research_budget_millions "9900" .
+
+<https://biomedkg.org/ontology/Institution/43ec37da82de3e54>
+    a owl:NamedIndividual , bio:Institution ;
+    rdfs:label "Roche" ;
+    bio:country "Switzerland" ;
+    bio:city "Basel" ;
+    bio:name "Roche" ;
+    bio:id "I006" ;
+    bio:research_budget_millions "14200" .
+
+<https://biomedkg.org/ontology/Institution/aad6139b44a2c069>
+    a owl:NamedIndividual , bio:Institution ;
+    rdfs:label "Stanford University" ;
+    bio:country "USA" ;
+    bio:city "Stanford" ;
+    bio:name "Stanford University" ;
+    bio:id "I007" ;
+    bio:research_budget_millions "1900" .
+
+<https://biomedkg.org/ontology/Institution/59b9bb46602d4603>
+    a owl:NamedIndividual , bio:Institution ;
+    rdfs:label "Harvard Medical School" ;
+    bio:country "USA" ;
+    bio:city "Boston" ;
+    bio:name "Harvard Medical School" ;
+    bio:id "I008" ;
+    bio:research_budget_millions "2100" .
+
+<https://biomedkg.org/ontology/Institution/30cd2a1c275cd912>
+    a owl:NamedIndividual , bio:Institution ;
+    rdfs:label "NIH" ;
+    bio:country "USA" ;
+    bio:city "Bethesda" ;
+    bio:name "NIH" ;
+    bio:id "I009" ;
+    bio:research_budget_millions "42000" .
+
+<https://biomedkg.org/ontology/Institution/512790ae63fc8d56>
+    a owl:NamedIndividual , bio:Institution ;
+    rdfs:label "Merck" ;
+    bio:country "USA" ;
+    bio:city "Rahway" ;
+    bio:name "Merck" ;
+    bio:id "I010" ;
+    bio:research_budget_millions "12800" .
+
+<https://biomedkg.org/ontology/Patient/304d88c6d93ba711>
+    a owl:NamedIndividual , bio:Patient ;
+    rdfs:label "PAT001" ;
+    bio:gender "Female" ;
+    bio:ethnicity "Caucasian" ;
+    bio:comorbidities "Hypertension;Type 2 Diabetes" ;
+    bio:patient_id "PAT001" ;
+    bio:age_group "50-59" .
+
+<https://biomedkg.org/ontology/Patient/00c90885fa272132>
+    a owl:NamedIndividual , bio:Patient ;
+    rdfs:label "PAT002" ;
+    bio:gender "Male" ;
+    bio:ethnicity "African American" ;
+    bio:comorbidities "None" ;
+    bio:patient_id "PAT002" ;
+    bio:age_group "60-69" .
+
+<https://biomedkg.org/ontology/Patient/fdfb0d73d96c6e15>
+    a owl:NamedIndividual , bio:Patient ;
+    rdfs:label "PAT003" ;
+    bio:gender "Female" ;
+    bio:ethnicity "Asian" ;
+    bio:comorbidities "Obesity" ;
+    bio:patient_id "PAT003" ;
+    bio:age_group "40-49" .
+
+<https://biomedkg.org/ontology/Patient/cef78898c41ba1bc>
+    a owl:NamedIndividual , bio:Patient ;
+    rdfs:label "PAT004" ;
+    bio:gender "Male" ;
+    bio:ethnicity "Caucasian" ;
+    bio:comorbidities "Cardiovascular Disease" ;
+    bio:patient_id "PAT004" ;
+    bio:age_group "70-79" .
+
+<https://biomedkg.org/ontology/Patient/c64a75a271c34f43>
+    a owl:NamedIndividual , bio:Patient ;
+    rdfs:label "PAT005" ;
+    bio:gender "Female" ;
+    bio:ethnicity "Hispanic" ;
+    bio:comorbidities "COPD" ;
+    bio:patient_id "PAT005" ;
+    bio:age_group "55-64" .
+
+<https://biomedkg.org/ontology/Patient/dd3d1ce237889584>
+    a owl:NamedIndividual , bio:Patient ;
+    rdfs:label "PAT006" ;
+    bio:gender "Male" ;
+    bio:ethnicity "Caucasian" ;
+    bio:comorbidities "Hypertension;Depression" ;
+    bio:patient_id "PAT006" ;
+    bio:age_group "65-74" .
+
+<https://biomedkg.org/ontology/Patient/245f66810bf046a5>
+    a owl:NamedIndividual , bio:Patient ;
+    rdfs:label "PAT007" ;
+    bio:gender "Female" ;
+    bio:ethnicity "Asian" ;
+    bio:comorbidities "None" ;
+    bio:patient_id "PAT007" ;
+    bio:age_group "45-54" .
+
+<https://biomedkg.org/ontology/Patient/380d2cc61b5dca78>
+    a owl:NamedIndividual , bio:Patient ;
+    rdfs:label "PAT008" ;
+    bio:gender "Male" ;
+    bio:ethnicity "African American" ;
+    bio:comorbidities "Type 2 Diabetes" ;
+    bio:patient_id "PAT008" ;
+    bio:age_group "60-69" .
+
+<https://biomedkg.org/ontology/Patient/3bb5e58949a58ab0>
+    a owl:NamedIndividual , bio:Patient ;
+    rdfs:label "PAT009" ;
+    bio:gender "Female" ;
+    bio:ethnicity "Caucasian" ;
+    bio:comorbidities "Autoimmune Thyroiditis" ;
+    bio:patient_id "PAT009" ;
+    bio:age_group "50-59" .
+
+<https://biomedkg.org/ontology/Patient/763d488ed05881a9>
+    a owl:NamedIndividual , bio:Patient ;
+    rdfs:label "PAT010" ;
+    bio:gender "Male" ;
+    bio:ethnicity "Hispanic" ;
+    bio:comorbidities "Cardiovascular Disease;Diabetes" ;
+    bio:patient_id "PAT010" ;
+    bio:age_group "75-84" .
+
+<https://biomedkg.org/ontology/Patient/e096b2ceb17a0a99>
+    a owl:NamedIndividual , bio:Patient ;
+    rdfs:label "PAT011" ;
+    bio:gender "Female" ;
+    bio:ethnicity "Caucasian" ;
+    bio:comorbidities "None" ;
+    bio:patient_id "PAT011" ;
+    bio:age_group "35-44" .
+
+<https://biomedkg.org/ontology/Patient/d0bf468991cbc627>
+    a owl:NamedIndividual , bio:Patient ;
+    rdfs:label "PAT012" ;
+    bio:gender "Male" ;
+    bio:ethnicity "Asian" ;
+    bio:comorbidities "Hypertension" ;
+    bio:patient_id "PAT012" ;
+    bio:age_group "60-69" .
+
+<https://biomedkg.org/ontology/Patient/f0e85bc8dc122c7c>
+    a owl:NamedIndividual , bio:Patient ;
+    rdfs:label "PAT013" ;
+    bio:gender "Female" ;
+    bio:ethnicity "African American" ;
+    bio:comorbidities "Obesity;Hypertension" ;
+    bio:patient_id "PAT013" ;
+    bio:age_group "55-64" .
+
+<https://biomedkg.org/ontology/Patient/b9e952f8381eea7f>
+    a owl:NamedIndividual , bio:Patient ;
+    rdfs:label "PAT014" ;
+    bio:gender "Male" ;
+    bio:ethnicity "Caucasian" ;
+    bio:comorbidities "None" ;
+    bio:patient_id "PAT014" ;
+    bio:age_group "40-49" .
+
+<https://biomedkg.org/ontology/Patient/d0a6ba2ede6a4b8c>
+    a owl:NamedIndividual , bio:Patient ;
+    rdfs:label "PAT015" ;
+    bio:gender "Female" ;
+    bio:ethnicity "Hispanic" ;
+    bio:comorbidities "Chronic Kidney Disease" ;
+    bio:patient_id "PAT015" ;
+    bio:age_group "65-74" .
+
+<https://biomedkg.org/ontology/PatientReportedOutcome/b9f7839064ce7945>
+    a owl:NamedIndividual , bio:PatientReportedOutcome ;
+    bio:questionnaire_type "EORTC QLQ-C30" ;
+    bio:score "68" ;
+    bio:notes "Moderate fatigue reported" ;
+    bio:pro_id "PRO001" ;
+    bio:patient_id "PAT001" .
+
+<https://biomedkg.org/ontology/PatientReportedOutcome/1f62af939bcf2099>
+    a owl:NamedIndividual , bio:PatientReportedOutcome ;
+    bio:questionnaire_type "EORTC QLQ-C30" ;
+    bio:score "72" ;
+    bio:notes "Improvement in physical function" ;
+    bio:pro_id "PRO002" ;
+    bio:patient_id "PAT001" .
+
+<https://biomedkg.org/ontology/PatientReportedOutcome/01df76fed0b262a4>
+    a owl:NamedIndividual , bio:PatientReportedOutcome ;
+    bio:questionnaire_type "FACT-M" ;
+    bio:score "82" ;
+    bio:notes "Good overall well-being" ;
+    bio:pro_id "PRO003" ;
+    bio:patient_id "PAT002" .
+
+<https://biomedkg.org/ontology/PatientReportedOutcome/4b2ea50d49224a6a>
+    a owl:NamedIndividual , bio:PatientReportedOutcome ;
+    bio:questionnaire_type "FACT-B" ;
+    bio:score "65" ;
+    bio:notes "Concerns about body image" ;
+    bio:pro_id "PRO004" ;
+    bio:patient_id "PAT003" .
+
+<https://biomedkg.org/ontology/PatientReportedOutcome/ff105c6efd4b4360>
+    a owl:NamedIndividual , bio:PatientReportedOutcome ;
+    bio:questionnaire_type "FACT-Leu" ;
+    bio:score "78" ;
+    bio:notes "Stable quality of life" ;
+    bio:pro_id "PRO005" ;
+    bio:patient_id "PAT004" .
+
+<https://biomedkg.org/ontology/PatientReportedOutcome/a52fff82573534cd>
+    a owl:NamedIndividual , bio:PatientReportedOutcome ;
+    bio:questionnaire_type "EORTC QLQ-LC13" ;
+    bio:score "55" ;
+    bio:notes "Dyspnea limiting daily activities" ;
+    bio:pro_id "PRO006" ;
+    bio:patient_id "PAT005" .
+
+<https://biomedkg.org/ontology/PatientReportedOutcome/9cc164b036749816>
+    a owl:NamedIndividual , bio:PatientReportedOutcome ;
+    bio:questionnaire_type "QOL-AD" ;
+    bio:score "45" ;
+    bio:notes "Caregiver-assisted completion" ;
+    bio:pro_id "PRO007" ;
+    bio:patient_id "PAT006" .
+
+<https://biomedkg.org/ontology/PatientReportedOutcome/565b708cd1c210bc>
+    a owl:NamedIndividual , bio:PatientReportedOutcome ;
+    bio:questionnaire_type "FKSI-DRS" ;
+    bio:score "74" ;
+    bio:notes "No significant kidney-related symptoms" ;
+    bio:pro_id "PRO008" ;
+    bio:patient_id "PAT007" .
+
+<https://biomedkg.org/ontology/PatientReportedOutcome/04731f3b907cfca3>
+    a owl:NamedIndividual , bio:PatientReportedOutcome ;
+    bio:questionnaire_type "FACT-C" ;
+    bio:score "60" ;
+    bio:notes "GI symptoms impacting appetite" ;
+    bio:pro_id "PRO009" ;
+    bio:patient_id "PAT008" .
+
+<https://biomedkg.org/ontology/PatientReportedOutcome/1d9772545ed1a183>
+    a owl:NamedIndividual , bio:PatientReportedOutcome ;
+    bio:questionnaire_type "FACT-M" ;
+    bio:score "76" ;
+    bio:notes "Stable emotional well-being" ;
+    bio:pro_id "PRO010" ;
+    bio:patient_id "PAT009" .
+
+<https://biomedkg.org/ontology/PatientReportedOutcome/266d94a378d2d2ae>
+    a owl:NamedIndividual , bio:PatientReportedOutcome ;
+    bio:questionnaire_type "QOL-AD" ;
+    bio:score "38" ;
+    bio:notes "Decline in cognitive function noted" ;
+    bio:pro_id "PRO011" ;
+    bio:patient_id "PAT010" .
+
+<https://biomedkg.org/ontology/PatientReportedOutcome/f53ef7cca4d4b987>
+    a owl:NamedIndividual , bio:PatientReportedOutcome ;
+    bio:questionnaire_type "FACT-B" ;
+    bio:score "80" ;
+    bio:notes "High physical functioning" ;
+    bio:pro_id "PRO012" ;
+    bio:patient_id "PAT011" .
+
+<https://biomedkg.org/ontology/PatientReportedOutcome/1fa99cef49656cdc>
+    a owl:NamedIndividual , bio:PatientReportedOutcome ;
+    bio:questionnaire_type "EORTC QLQ-LC13" ;
+    bio:score "52" ;
+    bio:notes "Cough and chest pain reported" ;
+    bio:pro_id "PRO013" ;
+    bio:patient_id "PAT012" .
+
+<https://biomedkg.org/ontology/PatientReportedOutcome/8ed6c552aa59ddbd>
+    a owl:NamedIndividual , bio:PatientReportedOutcome ;
+    bio:questionnaire_type "EQ-5D-5L" ;
+    bio:score "70" ;
+    bio:notes "Moderate pain/discomfort" ;
+    bio:pro_id "PRO014" ;
+    bio:patient_id "PAT013" .
+
+<https://biomedkg.org/ontology/PatientReportedOutcome/4687dd741cb06033>
+    a owl:NamedIndividual , bio:PatientReportedOutcome ;
+    bio:questionnaire_type "FACT-C" ;
+    bio:score "73" ;
+    bio:notes "Mild nausea post-treatment" ;
+    bio:pro_id "PRO015" ;
+    bio:patient_id "PAT014" .
+
+<https://biomedkg.org/ontology/ManufacturingSite/a93682d4562f36e6>
+    a owl:NamedIndividual , bio:ManufacturingSite ;
+    rdfs:label "Merck Biologics West Point" ;
+    bio:country "USA" ;
+    bio:capacity_units_per_year "5000000" ;
+    bio:city "West Point" ;
+    bio:gmp_certified "Yes" ;
+    bio:last_audit_date "2023-09-15" .
+
+<https://biomedkg.org/ontology/ManufacturingSite/2086b0057fe39431>
+    a owl:NamedIndividual , bio:ManufacturingSite ;
+    rdfs:label "BMS Syracuse Facility" ;
+    bio:country "USA" ;
+    bio:capacity_units_per_year "3200000" ;
+    bio:city "Syracuse" ;
+    bio:gmp_certified "Yes" ;
+    bio:last_audit_date "2023-06-20" .
+
+<https://biomedkg.org/ontology/ManufacturingSite/c4b80724cbdd64cf>
+    a owl:NamedIndividual , bio:ManufacturingSite ;
+    rdfs:label "Roche Penzberg Biotech" ;
+    bio:country "Germany" ;
+    bio:capacity_units_per_year "8000000" ;
+    bio:city "Penzberg" ;
+    bio:gmp_certified "Yes" ;
+    bio:last_audit_date "2023-11-01" .
+
+<https://biomedkg.org/ontology/ManufacturingSite/1f0d1784332e30e7>
+    a owl:NamedIndividual , bio:ManufacturingSite ;
+    rdfs:label "Novartis Stein AG" ;
+    bio:country "Switzerland" ;
+    bio:capacity_units_per_year "4500000" ;
+    bio:city "Stein" ;
+    bio:gmp_certified "Yes" ;
+    bio:last_audit_date "2023-04-10" .
+
+<https://biomedkg.org/ontology/ManufacturingSite/72d8b5c8f00b7e95>
+    a owl:NamedIndividual , bio:ManufacturingSite ;
+    rdfs:label "Samsung Biologics Plant 3" ;
+    bio:country "South Korea" ;
+    bio:capacity_units_per_year "7200000" ;
+    bio:city "Incheon" ;
+    bio:gmp_certified "Yes" ;
+    bio:last_audit_date "2023-08-22" .
+
+<https://biomedkg.org/ontology/ManufacturingSite/1f69eceb736de48e>
+    a owl:NamedIndividual , bio:ManufacturingSite ;
+    rdfs:label "Lonza Portsmouth" ;
+    bio:country "USA" ;
+    bio:capacity_units_per_year "2800000" ;
+    bio:city "Portsmouth" ;
+    bio:gmp_certified "Yes" ;
+    bio:last_audit_date "2023-03-18" .
+
+<https://biomedkg.org/ontology/ManufacturingSite/63ec1315c4704373>
+    a owl:NamedIndividual , bio:ManufacturingSite ;
+    rdfs:label "Catalent Bloomington" ;
+    bio:country "USA" ;
+    bio:capacity_units_per_year "1900000" ;
+    bio:city "Bloomington" ;
+    bio:gmp_certified "Yes" ;
+    bio:last_audit_date "2023-07-05" .
+
+<https://biomedkg.org/ontology/ManufacturingSite/aa3411af522ad253>
+    a owl:NamedIndividual , bio:ManufacturingSite ;
+    rdfs:label "Fujifilm Diosynth Denmark" ;
+    bio:country "Denmark" ;
+    bio:capacity_units_per_year "3600000" ;
+    bio:city "Hillerod" ;
+    bio:gmp_certified "Yes" ;
+    bio:last_audit_date "2023-10-12" .
+
+<https://biomedkg.org/ontology/ManufacturingSite/2fa2b6b00d5477cb>
+    a owl:NamedIndividual , bio:ManufacturingSite ;
+    rdfs:label "Eisai Kashima Plant" ;
+    bio:country "Japan" ;
+    bio:capacity_units_per_year "2400000" ;
+    bio:city "Kashima" ;
+    bio:gmp_certified "Yes" ;
+    bio:last_audit_date "2023-05-30" .
+
+<https://biomedkg.org/ontology/ManufacturingSite/293e940f1816a5e8>
+    a owl:NamedIndividual , bio:ManufacturingSite ;
+    rdfs:label "Eli Lilly Kinsale" ;
+    bio:country "Ireland" ;
+    bio:capacity_units_per_year "4100000" ;
+    bio:city "Kinsale" ;
+    bio:gmp_certified "Yes" ;
+    bio:last_audit_date "2023-12-01" .
+
+<https://biomedkg.org/ontology/DrugBatch/17bc80d729f868b1>
+    a owl:NamedIndividual , bio:DrugBatch ;
+    bio:drug_id "D001" ;
+    bio:quality_status "Released" ;
+    bio:batch_size "50000" ;
+    bio:batch_id "BAT001" ;
+    bio:release_date "2023-02-20" .
+
+<https://biomedkg.org/ontology/DrugBatch/bcfe8137fcedcb13>
+    a owl:NamedIndividual , bio:DrugBatch ;
+    bio:drug_id "D001" ;
+    bio:quality_status "Released" ;
+    bio:batch_size "50000" ;
+    bio:batch_id "BAT002" ;
+    bio:release_date "2023-05-12" .
+
+<https://biomedkg.org/ontology/DrugBatch/03008fc50add1e89>
+    a owl:NamedIndividual , bio:DrugBatch ;
+    bio:drug_id "D002" ;
+    bio:quality_status "Released" ;
+    bio:batch_size "35000" ;
+    bio:batch_id "BAT003" ;
+    bio:release_date "2023-03-15" .
+
+<https://biomedkg.org/ontology/DrugBatch/eb573e7c786c00a4>
+    a owl:NamedIndividual , bio:DrugBatch ;
+    bio:drug_id "D002" ;
+    bio:quality_status "Released" ;
+    bio:batch_size "35000" ;
+    bio:batch_id "BAT004" ;
+    bio:release_date "2023-07-25" .
+
+<https://biomedkg.org/ontology/DrugBatch/8117e5b55e38afcf>
+    a owl:NamedIndividual , bio:DrugBatch ;
+    bio:drug_id "D003" ;
+    bio:quality_status "Released" ;
+    bio:batch_size "42000" ;
+    bio:batch_id "BAT005" ;
+    bio:release_date "2023-04-05" .
+
+<https://biomedkg.org/ontology/DrugBatch/cbca888cddef20cb>
+    a owl:NamedIndividual , bio:DrugBatch ;
+    bio:drug_id "D003" ;
+    bio:quality_status "Quarantined" ;
+    bio:batch_size "42000" ;
+    bio:batch_id "BAT006" .
+
+<https://biomedkg.org/ontology/DrugBatch/4e5c82e9af374c0b>
+    a owl:NamedIndividual , bio:DrugBatch ;
+    bio:drug_id "D004" ;
+    bio:quality_status "Released" ;
+    bio:batch_size "60000" ;
+    bio:batch_id "BAT007" ;
+    bio:release_date "2023-02-28" .
+
+<https://biomedkg.org/ontology/DrugBatch/5850ebed3fc2ea08>
+    a owl:NamedIndividual , bio:DrugBatch ;
+    bio:drug_id "D005" ;
+    bio:quality_status "Released" ;
+    bio:batch_size "120000" ;
+    bio:batch_id "BAT008" ;
+    bio:release_date "2023-06-08" .
+
+<https://biomedkg.org/ontology/DrugBatch/4e280f42d46496e6>
+    a owl:NamedIndividual , bio:DrugBatch ;
+    bio:drug_id "D006" ;
+    bio:quality_status "Released" ;
+    bio:batch_size "500000" ;
+    bio:batch_id "BAT009" ;
+    bio:release_date "2023-04-15" .
+
+<https://biomedkg.org/ontology/DrugBatch/11c4a84859a8b6b1>
+    a owl:NamedIndividual , bio:DrugBatch ;
+    bio:drug_id "D007" ;
+    bio:quality_status "Released" ;
+    bio:batch_size "25000" ;
+    bio:batch_id "BAT010" ;
+    bio:release_date "2023-09-10" .
+
+<https://biomedkg.org/ontology/DrugBatch/9aec646c92f445ac>
+    a owl:NamedIndividual , bio:DrugBatch ;
+    bio:drug_id "D008" ;
+    bio:quality_status "Released" ;
+    bio:batch_size "30000" ;
+    bio:batch_id "BAT011" ;
+    bio:release_date "2023-10-20" .
+
+<https://biomedkg.org/ontology/DrugBatch/2104cf35c9b4a38e>
+    a owl:NamedIndividual , bio:DrugBatch ;
+    bio:drug_id "D009" ;
+    bio:quality_status "Released" ;
+    bio:batch_size "80000" ;
+    bio:batch_id "BAT012" ;
+    bio:release_date "2023-04-01" .
+
+<https://biomedkg.org/ontology/DrugBatch/e3b8679b62e2a842>
+    a owl:NamedIndividual , bio:DrugBatch ;
+    bio:drug_id "D009" ;
+    bio:quality_status "Released" ;
+    bio:batch_size "80000" ;
+    bio:batch_id "BAT013" ;
+    bio:release_date "2023-07-10" .
+
+<https://biomedkg.org/ontology/DrugBatch/ddbbe71eb80f3cd3>
+    a owl:NamedIndividual , bio:DrugBatch ;
+    bio:drug_id "D010" ;
+    bio:quality_status "Released" ;
+    bio:batch_size "65000" ;
+    bio:batch_id "BAT014" ;
+    bio:release_date "2023-05-25" .
+
+<https://biomedkg.org/ontology/DrugBatch/282937ee5890a841>
+    a owl:NamedIndividual , bio:DrugBatch ;
+    bio:drug_id "D010" ;
+    bio:quality_status "Rejected" ;
+    bio:batch_size "65000" ;
+    bio:batch_id "BAT015" .
+
+<https://biomedkg.org/ontology/DrugBatch/b38809216b4b4e4f>
+    a owl:NamedIndividual , bio:DrugBatch ;
+    bio:drug_id "D001" ;
+    bio:quality_status "Released" ;
+    bio:batch_size "55000" ;
+    bio:batch_id "BAT016" ;
+    bio:release_date "2023-10-05" .
+
+<https://biomedkg.org/ontology/DrugBatch/e16dc25da7447c32>
+    a owl:NamedIndividual , bio:DrugBatch ;
+    bio:drug_id "D002" ;
+    bio:quality_status "Under Review" ;
+    bio:batch_size "40000" ;
+    bio:batch_id "BAT017" .
+
+<https://biomedkg.org/ontology/DrugBatch/15f8a8e295ee3ed3>
+    a owl:NamedIndividual , bio:DrugBatch ;
+    bio:drug_id "D004" ;
+    bio:quality_status "Released" ;
+    bio:batch_size "58000" ;
+    bio:batch_id "BAT018" ;
+    bio:release_date "2023-12-05" .
+
+<https://biomedkg.org/ontology/DrugBatch/a9ba3693c5eeeee7>
+    a owl:NamedIndividual , bio:DrugBatch ;
+    bio:drug_id "D008" ;
+    bio:quality_status "Released" ;
+    bio:batch_size "28000" ;
+    bio:batch_id "BAT019" ;
+    bio:release_date "2023-08-28" .
+
+<https://biomedkg.org/ontology/DrugBatch/bdd8c004a1f725c3>
+    a owl:NamedIndividual , bio:DrugBatch ;
+    bio:drug_id "D001" ;
+    bio:quality_status "Released" ;
+    bio:batch_size "50000" ;
+    bio:batch_id "BAT020" ;
+    bio:release_date "2023-12-15" .
+
+<https://biomedkg.org/ontology/QualityEvent/e0b09c01dae57c1d>
+    a owl:NamedIndividual , bio:QualityEvent ;
+    bio:severity "Major" ;
+    bio:event_id "QE001" ;
+    bio:event_type "OOS Result" ;
+    bio:batch_id "BAT006" ;
+    bio:resolution_date "2023-09-15" .
+
+<https://biomedkg.org/ontology/QualityEvent/36ee0c56c2b094fd>
+    a owl:NamedIndividual , bio:QualityEvent ;
+    bio:severity "Critical" ;
+    bio:event_id "QE002" ;
+    bio:event_type "Contamination" ;
+    bio:batch_id "BAT015" .
+
+<https://biomedkg.org/ontology/QualityEvent/e49799a90387a383>
+    a owl:NamedIndividual , bio:QualityEvent ;
+    bio:severity "Minor" ;
+    bio:event_id "QE003" ;
+    bio:event_type "Documentation Error" ;
+    bio:batch_id "BAT017" ;
+    bio:resolution_date "2023-11-05" .
+
+<https://biomedkg.org/ontology/QualityEvent/b62bf5c798720178>
+    a owl:NamedIndividual , bio:QualityEvent ;
+    bio:severity "Major" ;
+    bio:event_id "QE004" ;
+    bio:event_type "Temperature Excursion" ;
+    bio:batch_id "BAT003" ;
+    bio:resolution_date "2023-03-20" .
+
+<https://biomedkg.org/ontology/QualityEvent/a6d2c10bffa6d8f0>
+    a owl:NamedIndividual , bio:QualityEvent ;
+    bio:severity "Minor" ;
+    bio:event_id "QE005" ;
+    bio:event_type "Labeling Error" ;
+    bio:batch_id "BAT009" ;
+    bio:resolution_date "2023-04-12" .
+
+<https://biomedkg.org/ontology/QualityEvent/383b989cf3bad06b>
+    a owl:NamedIndividual , bio:QualityEvent ;
+    bio:severity "Moderate" ;
+    bio:event_id "QE006" ;
+    bio:event_type "Particulate Matter" ;
+    bio:batch_id "BAT012" ;
+    bio:resolution_date "2023-03-28" .
+
+<https://biomedkg.org/ontology/QualityEvent/394bf2313e3d89b0>
+    a owl:NamedIndividual , bio:QualityEvent ;
+    bio:severity "Moderate" ;
+    bio:event_id "QE007" ;
+    bio:event_type "Equipment Malfunction" ;
+    bio:batch_id "BAT001" ;
+    bio:resolution_date "2023-02-01" .
+
+<https://biomedkg.org/ontology/QualityEvent/b5b22964b7e5c053>
+    a owl:NamedIndividual , bio:QualityEvent ;
+    bio:severity "Minor" ;
+    bio:event_id "QE008" ;
+    bio:event_type "OOS Result" ;
+    bio:batch_id "BAT007" ;
+    bio:resolution_date "2023-02-18" .
+
+<https://biomedkg.org/ontology/QualityEvent/dd076c46bb309a61>
+    a owl:NamedIndividual , bio:QualityEvent ;
+    bio:severity "Major" ;
+    bio:event_id "QE009" ;
+    bio:event_type "Stability Failure" ;
+    bio:batch_id "BAT010" .
+
+<https://biomedkg.org/ontology/QualityEvent/dd230f8bf76960a9>
+    a owl:NamedIndividual , bio:QualityEvent ;
+    bio:severity "Moderate" ;
+    bio:event_id "QE010" ;
+    bio:event_type "Process Deviation" ;
+    bio:batch_id "BAT014" ;
+    bio:resolution_date "2023-05-20" .
+
+<https://biomedkg.org/ontology/QualityEvent/43a5c4375ad8b0ff>
+    a owl:NamedIndividual , bio:QualityEvent ;
+    bio:severity "Minor" ;
+    bio:event_id "QE011" ;
+    bio:event_type "Foreign Material" ;
+    bio:batch_id "BAT016" ;
+    bio:resolution_date "2023-09-10" .
+
+<https://biomedkg.org/ontology/QualityEvent/2714ac44e7d12495>
+    a owl:NamedIndividual , bio:QualityEvent ;
+    bio:severity "Moderate" ;
+    bio:event_id "QE012" ;
+    bio:event_type "Temperature Excursion" ;
+    bio:batch_id "BAT019" ;
+    bio:resolution_date "2023-08-12" .
+
+<https://biomedkg.org/ontology/DataGovernancePolicy/7a7935733a353f4c>
+    a owl:NamedIndividual , bio:DataGovernancePolicy ;
+    bio:owner "Chief Privacy Officer" ;
+    bio:review_date "2024-01-01" ;
+    bio:policy_id "POL001" ;
+    bio:scope "All patient-related data" ;
+    bio:effective_date "2022-01-01" .
+
+<https://biomedkg.org/ontology/DataGovernancePolicy/23aa4d92801d90df>
+    a owl:NamedIndividual , bio:DataGovernancePolicy ;
+    bio:owner "VP Clinical Operations" ;
+    bio:review_date "2024-06-15" ;
+    bio:policy_id "POL002" ;
+    bio:scope "Clinical trial datasets" ;
+    bio:effective_date "2022-06-15" .
+
+<https://biomedkg.org/ontology/DataGovernancePolicy/0b27a6576de5a89a>
+    a owl:NamedIndividual , bio:DataGovernancePolicy ;
+    bio:owner "Head of Drug Safety" ;
+    bio:review_date "2023-09-01" ;
+    bio:policy_id "POL003" ;
+    bio:scope "Safety data collection and reporting" ;
+    bio:effective_date "2021-09-01" .
+
+<https://biomedkg.org/ontology/DataGovernancePolicy/9b38895bab6ef422>
+    a owl:NamedIndividual , bio:DataGovernancePolicy ;
+    bio:owner "Chief Data Officer" ;
+    bio:review_date "2025-01-15" ;
+    bio:policy_id "POL004" ;
+    bio:scope "Genomic and proteomic biomarker data" ;
+    bio:effective_date "2023-01-15" .
+
+<https://biomedkg.org/ontology/DataGovernancePolicy/b98ceeccf47bd5b8>
+    a owl:NamedIndividual , bio:DataGovernancePolicy ;
+    bio:owner "VP Quality Assurance" ;
+    bio:review_date "2024-03-01" ;
+    bio:policy_id "POL005" ;
+    bio:scope "All GMP/GLP/GCP regulated data" ;
+    bio:effective_date "2022-03-01" .
+
+<https://biomedkg.org/ontology/DataGovernancePolicy/00cc4f3781d69e43>
+    a owl:NamedIndividual , bio:DataGovernancePolicy ;
+    bio:owner "Head of Research Partnerships" ;
+    bio:review_date "2025-04-01" ;
+    bio:policy_id "POL006" ;
+    bio:scope "External academic collaborations" ;
+    bio:effective_date "2023-04-01" .
+
+<https://biomedkg.org/ontology/DataGovernancePolicy/1d4a036609ad4ad3>
+    a owl:NamedIndividual , bio:DataGovernancePolicy ;
+    bio:owner "VP Real-World Evidence" ;
+    bio:review_date "2025-07-01" ;
+    bio:policy_id "POL007" ;
+    bio:scope "RWE and registry datasets" ;
+    bio:effective_date "2023-07-01" .
+
+<https://biomedkg.org/ontology/DataGovernancePolicy/8489e9d518a934ae>
+    a owl:NamedIndividual , bio:DataGovernancePolicy ;
+    bio:owner "Chief Digital Officer" ;
+    bio:review_date "2024-10-01" ;
+    bio:policy_id "POL008" ;
+    bio:scope "Machine learning models in drug development" ;
+    bio:effective_date "2023-10-01" .
+
+<https://biomedkg.org/ontology/ComplianceRecord/2bb004d0b4edef5c>
+    a owl:NamedIndividual , bio:ComplianceRecord ;
+    bio:record_id "CR001" ;
+    bio:entity_type "ClinicalTrial" ;
+    bio:policy_id "POL001" ;
+    bio:findings "No findings" ;
+    bio:audit_date "2023-03-15" .
+
+<https://biomedkg.org/ontology/ComplianceRecord/03dfde321b6a03f2>
+    a owl:NamedIndividual , bio:ComplianceRecord ;
+    bio:record_id "CR002" ;
+    bio:entity_type "ClinicalTrial" ;
+    bio:policy_id "POL001" ;
+    bio:findings "No findings" ;
+    bio:audit_date "2023-04-20" .
+
+<https://biomedkg.org/ontology/ComplianceRecord/3283a9897ef3d101>
+    a owl:NamedIndividual , bio:ComplianceRecord ;
+    bio:record_id "CR003" ;
+    bio:entity_type "ClinicalTrial" ;
+    bio:policy_id "POL002" ;
+    bio:findings "Data sharing agreement pending update" ;
+    bio:audit_date "2023-05-10" .
+
+<https://biomedkg.org/ontology/ComplianceRecord/06e6914cb89f5014>
+    a owl:NamedIndividual , bio:ComplianceRecord ;
+    bio:record_id "CR004" ;
+    bio:entity_type "Drug" ;
+    bio:policy_id "POL003" ;
+    bio:findings "Timely ICSR submissions confirmed" ;
+    bio:audit_date "2023-02-28" .
+
+<https://biomedkg.org/ontology/ComplianceRecord/fe60f819048af993>
+    a owl:NamedIndividual , bio:ComplianceRecord ;
+    bio:record_id "CR005" ;
+    bio:entity_type "Drug" ;
+    bio:policy_id "POL003" ;
+    bio:findings "All SAE reports within 15-day window" ;
+    bio:audit_date "2023-02-28" .
+
+<https://biomedkg.org/ontology/ComplianceRecord/ad74ebf91af977da>
+    a owl:NamedIndividual , bio:ComplianceRecord ;
+    bio:record_id "CR006" ;
+    bio:entity_type "Biomarker" ;
+    bio:policy_id "POL004" ;
+    bio:findings "Retention schedule followed" ;
+    bio:audit_date "2023-06-15" .
+
+<https://biomedkg.org/ontology/ComplianceRecord/449c117f9a6e25a4>
+    a owl:NamedIndividual , bio:ComplianceRecord ;
+    bio:record_id "CR007" ;
+    bio:entity_type "ManufacturingSite" ;
+    bio:policy_id "POL005" ;
+    bio:findings "No 483 observations" ;
+    bio:audit_date "2023-09-20" .
+
+<https://biomedkg.org/ontology/ComplianceRecord/8ff959ccd65fe07a>
+    a owl:NamedIndividual , bio:ComplianceRecord ;
+    bio:record_id "CR008" ;
+    bio:entity_type "ManufacturingSite" ;
+    bio:policy_id "POL005" ;
+    bio:findings "Data integrity gap in batch records" ;
+    bio:audit_date "2023-11-05" .
+
+<https://biomedkg.org/ontology/ComplianceRecord/61b8eb2e5b1d3a10>
+    a owl:NamedIndividual , bio:ComplianceRecord ;
+    bio:record_id "CR009" ;
+    bio:entity_type "Institution" ;
+    bio:policy_id "POL006" ;
+    bio:findings "DTA current and complete" ;
+    bio:audit_date "2023-07-10" .
+
+<https://biomedkg.org/ontology/ComplianceRecord/5273ae23e63248eb>
+    a owl:NamedIndividual , bio:ComplianceRecord ;
+    bio:record_id "CR010" ;
+    bio:entity_type "Institution" ;
+    bio:policy_id "POL006" ;
+    bio:findings "IP clause requires amendment" ;
+    bio:audit_date "2023-08-22" .
+
+<https://biomedkg.org/ontology/ComplianceRecord/fc105fb074330dba>
+    a owl:NamedIndividual , bio:ComplianceRecord ;
+    bio:record_id "CR011" ;
+    bio:entity_type "ClinicalTrial" ;
+    bio:policy_id "POL007" ;
+    bio:findings "RWE data quality metrics met" ;
+    bio:audit_date "2023-10-01" .
+
+<https://biomedkg.org/ontology/ComplianceRecord/bf47f0cf24f63750>
+    a owl:NamedIndividual , bio:ComplianceRecord ;
+    bio:record_id "CR012" ;
+    bio:entity_type "Drug" ;
+    bio:policy_id "POL008" ;
+    bio:findings "Model documentation complete; bias testing passed" ;
+    bio:audit_date "2023-12-05" .
+
+<https://biomedkg.org/ontology/RegulatorySubmission/8b735ae9315c6c5b>
+    a owl:NamedIndividual , bio:RegulatorySubmission ;
+    bio:market "US" ;
+    bio:submission_id "SUB001" ;
+    bio:submission_date "2014-05-26" ;
+    bio:drug_id "D001" ;
+    bio:approval_date "2014-09-04" .
+
+<https://biomedkg.org/ontology/RegulatorySubmission/1c40e1504d355ac7>
+    a owl:NamedIndividual , bio:RegulatorySubmission ;
+    bio:market "EU" ;
+    bio:submission_id "SUB002" ;
+    bio:submission_date "2014-11-15" ;
+    bio:drug_id "D001" ;
+    bio:approval_date "2015-07-17" .
+
+<https://biomedkg.org/ontology/RegulatorySubmission/a71d8ffb599ae99a>
+    a owl:NamedIndividual , bio:RegulatorySubmission ;
+    bio:market "US" ;
+    bio:submission_id "SUB003" ;
+    bio:submission_date "2014-07-24" ;
+    bio:drug_id "D002" ;
+    bio:approval_date "2014-12-22" .
+
+<https://biomedkg.org/ontology/RegulatorySubmission/f8ea65494009ffe6>
+    a owl:NamedIndividual , bio:RegulatorySubmission ;
+    bio:market "US" ;
+    bio:submission_id "SUB004" ;
+    bio:submission_date "2015-09-10" ;
+    bio:drug_id "D003" ;
+    bio:approval_date "2016-05-18" .
+
+<https://biomedkg.org/ontology/RegulatorySubmission/4fa0f8683e0f85f6>
+    a owl:NamedIndividual , bio:RegulatorySubmission ;
+    bio:market "US" ;
+    bio:submission_id "SUB005" ;
+    bio:submission_date "2020-04-15" ;
+    bio:drug_id "D004" ;
+    bio:approval_date "2020-08-20" .
+
+<https://biomedkg.org/ontology/RegulatorySubmission/01b908040c873257>
+    a owl:NamedIndividual , bio:RegulatorySubmission ;
+    bio:market "US" ;
+    bio:submission_id "SUB006" ;
+    bio:submission_date "2022-01-06" ;
+    bio:drug_id "D008" ;
+    bio:approval_date "2023-01-06" .
+
+<https://biomedkg.org/ontology/RegulatorySubmission/da541e52e5c79821>
+    a owl:NamedIndividual , bio:RegulatorySubmission ;
+    bio:market "EU" ;
+    bio:submission_id "SUB007" ;
+    bio:submission_date "2023-01-18" ;
+    bio:drug_id "D008" .
+
+<https://biomedkg.org/ontology/RegulatorySubmission/fc96e960633c6ae2>
+    a owl:NamedIndividual , bio:RegulatorySubmission ;
+    bio:market "US" ;
+    bio:submission_id "SUB008" ;
+    bio:submission_date "2017-03-05" ;
+    bio:drug_id "D009" ;
+    bio:approval_date "2017-12-05" .
+
+<https://biomedkg.org/ontology/RegulatorySubmission/3e603980e2a2b095>
+    a owl:NamedIndividual , bio:RegulatorySubmission ;
+    bio:market "US" ;
+    bio:submission_id "SUB009" ;
+    bio:submission_date "2021-10-15" ;
+    bio:drug_id "D010" ;
+    bio:approval_date "2022-05-13" .
+
+<https://biomedkg.org/ontology/RegulatorySubmission/fb84123fa5cb6655>
+    a owl:NamedIndividual , bio:RegulatorySubmission ;
+    bio:market "Japan" ;
+    bio:submission_id "SUB010" ;
+    bio:submission_date "2022-03-20" ;
+    bio:drug_id "D010" ;
+    bio:approval_date "2022-09-26" .
+
+<https://biomedkg.org/ontology/MedicalInformationRequest/ba485c9a4b11984e>
+    a owl:NamedIndividual , bio:MedicalInformationRequest ;
+    bio:drug_id "D001" ;
+    bio:question_category "Dosing and Administration" ;
+    bio:request_date "2023-08-15" ;
+    bio:id "MIR001" ;
+    bio:therapeutic_area "Oncology" .
+
+<https://biomedkg.org/ontology/MedicalInformationRequest/de1bc4e9c3379a96>
+    a owl:NamedIndividual , bio:MedicalInformationRequest ;
+    bio:drug_id "D002" ;
+    bio:question_category "Drug Interactions" ;
+    bio:request_date "2023-08-22" ;
+    bio:id "MIR002" ;
+    bio:therapeutic_area "Oncology" .
+
+<https://biomedkg.org/ontology/MedicalInformationRequest/4521f42977cba0bb>
+    a owl:NamedIndividual , bio:MedicalInformationRequest ;
+    bio:drug_id "D001" ;
+    bio:question_category "Adverse Events" ;
+    bio:request_date "2023-09-01" ;
+    bio:id "MIR003" ;
+    bio:therapeutic_area "Oncology" .
+
+<https://biomedkg.org/ontology/MedicalInformationRequest/01e4c078933c785b>
+    a owl:NamedIndividual , bio:MedicalInformationRequest ;
+    bio:drug_id "D003" ;
+    bio:question_category "Storage and Handling" ;
+    bio:request_date "2023-09-10" ;
+    bio:id "MIR004" ;
+    bio:therapeutic_area "Oncology" .
+
+<https://biomedkg.org/ontology/MedicalInformationRequest/45aec3efea430b7e>
+    a owl:NamedIndividual , bio:MedicalInformationRequest ;
+    bio:drug_id "D008" ;
+    bio:question_category "Efficacy Data" ;
+    bio:request_date "2023-09-18" ;
+    bio:id "MIR005" ;
+    bio:therapeutic_area "Neurology" .
+
+<https://biomedkg.org/ontology/MedicalInformationRequest/a089e0cc77b6d7d0>
+    a owl:NamedIndividual , bio:MedicalInformationRequest ;
+    bio:drug_id "D009" ;
+    bio:question_category "Mechanism of Action" ;
+    bio:request_date "2023-10-02" ;
+    bio:id "MIR006" ;
+    bio:therapeutic_area "Metabolic" .
+
+<https://biomedkg.org/ontology/MedicalInformationRequest/9fcb50caee7ec2a4>
+    a owl:NamedIndividual , bio:MedicalInformationRequest ;
+    bio:drug_id "D004" ;
+    bio:question_category "Combination Therapy" ;
+    bio:request_date "2023-10-15" ;
+    bio:id "MIR007" ;
+    bio:therapeutic_area "Oncology" .
+
+<https://biomedkg.org/ontology/MedicalInformationRequest/1b6c1a4570765531>
+    a owl:NamedIndividual , bio:MedicalInformationRequest ;
+    bio:drug_id "D010" ;
+    bio:question_category "Dosing and Administration" ;
+    bio:request_date "2023-10-28" ;
+    bio:id "MIR008" ;
+    bio:therapeutic_area "Metabolic" .
+
+<https://biomedkg.org/ontology/MedicalInformationRequest/9695f577325e28bc>
+    a owl:NamedIndividual , bio:MedicalInformationRequest ;
+    bio:drug_id "D001" ;
+    bio:question_category "Biomarker Testing" ;
+    bio:request_date "2023-11-05" ;
+    bio:id "MIR009" ;
+    bio:therapeutic_area "Oncology" .
+
+<https://biomedkg.org/ontology/MedicalInformationRequest/9a721a0ef90eb376>
+    a owl:NamedIndividual , bio:MedicalInformationRequest ;
+    bio:drug_id "D007" ;
+    bio:question_category "Safety Data" ;
+    bio:request_date "2023-11-12" ;
+    bio:id "MIR010" ;
+    bio:therapeutic_area "Neurology" .
+
+<https://biomedkg.org/ontology/MedicalInformationRequest/2e54848da5b4f3df>
+    a owl:NamedIndividual , bio:MedicalInformationRequest ;
+    bio:drug_id "D002" ;
+    bio:question_category "Infusion Protocols" ;
+    bio:request_date "2023-11-20" ;
+    bio:id "MIR011" ;
+    bio:therapeutic_area "Oncology" .
+
+<https://biomedkg.org/ontology/MedicalInformationRequest/9e7297d704235ee2>
+    a owl:NamedIndividual , bio:MedicalInformationRequest ;
+    bio:drug_id "D001" ;
+    bio:question_category "Clinical Trial Access" ;
+    bio:request_date "2023-12-01" ;
+    bio:id "MIR012" ;
+    bio:therapeutic_area "Oncology" .
+
+<https://biomedkg.org/ontology/MedicalInformationRequest/d7fa09a551308007>
+    a owl:NamedIndividual , bio:MedicalInformationRequest ;
+    bio:drug_id "D003" ;
+    bio:question_category "Off-Label Use" ;
+    bio:request_date "2023-12-08" ;
+    bio:id "MIR013" ;
+    bio:therapeutic_area "Oncology" .
+
+<https://biomedkg.org/ontology/MedicalInformationRequest/49284e53c90cd137>
+    a owl:NamedIndividual , bio:MedicalInformationRequest ;
+    bio:drug_id "D006" ;
+    bio:question_category "Renal Dosing Adjustment" ;
+    bio:request_date "2023-12-15" ;
+    bio:id "MIR014" ;
+    bio:therapeutic_area "Metabolic" .
+
+<https://biomedkg.org/ontology/MedicalInformationRequest/6295f6187b3daf80>
+    a owl:NamedIndividual , bio:MedicalInformationRequest ;
+    bio:drug_id "D001" ;
+    bio:question_category "Combination Therapy" ;
+    bio:request_date "2024-01-10" ;
+    bio:id "MIR015" ;
+    bio:therapeutic_area "Oncology" .
+
+<https://biomedkg.org/ontology/AdvisoryBoard/9b77d90e827f3408>
+    a owl:NamedIndividual , bio:AdvisoryBoard ;
+    rdfs:label "Immuno-Oncology Advisory Board" ;
+    bio:meeting_frequency "Quarterly" ;
+    bio:board_id "AB001" ;
+    bio:last_meeting_date "2024-01-18" ;
+    bio:name "Immuno-Oncology Advisory Board" ;
+    bio:id "AB001" .
+
+<https://biomedkg.org/ontology/AdvisoryBoard/ee78c594f2b37fc7>
+    a owl:NamedIndividual , bio:AdvisoryBoard ;
+    rdfs:label "Melanoma Expert Panel" ;
+    bio:meeting_frequency "Semi-Annual" ;
+    bio:board_id "AB002" ;
+    bio:last_meeting_date "2023-11-05" ;
+    bio:name "Melanoma Expert Panel" ;
+    bio:id "AB002" .
+
+<https://biomedkg.org/ontology/AdvisoryBoard/f02920b8fadc388f>
+    a owl:NamedIndividual , bio:AdvisoryBoard ;
+    rdfs:label "Alzheimer's Disease Steering Committee" ;
+    bio:meeting_frequency "Quarterly" ;
+    bio:board_id "AB003" ;
+    bio:last_meeting_date "2024-02-10" ;
+    bio:name "Alzheimer's Disease Steering Committee" ;
+    bio:id "AB003" .
+
+<https://biomedkg.org/ontology/AdvisoryBoard/a42141738d4eb7c9>
+    a owl:NamedIndividual , bio:AdvisoryBoard ;
+    rdfs:label "Metabolic Diseases Advisory Council" ;
+    bio:meeting_frequency "Semi-Annual" ;
+    bio:board_id "AB004" ;
+    bio:last_meeting_date "2023-10-22" ;
+    bio:name "Metabolic Diseases Advisory Council" ;
+    bio:id "AB004" .
+
+<https://biomedkg.org/ontology/AdvisoryBoard/3ad229a1b0142e10>
+    a owl:NamedIndividual , bio:AdvisoryBoard ;
+    rdfs:label "Lung Cancer KOL Board" ;
+    bio:meeting_frequency "Quarterly" ;
+    bio:board_id "AB005" ;
+    bio:last_meeting_date "2024-01-25" ;
+    bio:name "Lung Cancer KOL Board" ;
+    bio:id "AB005" .
+
+<https://biomedkg.org/ontology/AdvisoryBoard/eec8144efa84cc5d>
+    a owl:NamedIndividual , bio:AdvisoryBoard ;
+    rdfs:label "Precision Medicine Advisory Group" ;
+    bio:meeting_frequency "Annual" ;
+    bio:board_id "AB006" ;
+    bio:last_meeting_date "2023-09-15" ;
+    bio:name "Precision Medicine Advisory Group" ;
+    bio:id "AB006" .
+
+<https://biomedkg.org/ontology/AdvisoryBoard/646dcc361b7b1276>
+    a owl:NamedIndividual , bio:AdvisoryBoard ;
+    rdfs:label "Real-World Evidence Expert Panel" ;
+    bio:meeting_frequency "Quarterly" ;
+    bio:board_id "AB007" ;
+    bio:last_meeting_date "2024-02-05" ;
+    bio:name "Real-World Evidence Expert Panel" ;
+    bio:id "AB007" .
+
+<https://biomedkg.org/ontology/AdvisoryBoard/92ea66a83be263f8>
+    a owl:NamedIndividual , bio:AdvisoryBoard ;
+    rdfs:label "Biomarker Development Consortium" ;
+    bio:meeting_frequency "Quarterly" ;
+    bio:board_id "AB008" ;
+    bio:last_meeting_date "2023-12-12" ;
+    bio:name "Biomarker Development Consortium" ;
+    bio:id "AB008" .
+
+<https://biomedkg.org/ontology/Cluster/e7b22a6547e69c5b>
+    a owl:NamedIndividual , bio:Cluster ;
+    rdfs:label "Oncology Drug-Target Network" ;
+    bio:cluster_id "CLU001" ;
+    bio:name "Oncology Drug-Target Network" ;
+    bio:description "Cluster of cancer drugs and their protein targets" ;
+    bio:id "CLU001" ;
+    bio:cluster_type "Drug-Protein" .
+
+<https://biomedkg.org/ontology/Cluster/2e5e652670d7f8af>
+    a owl:NamedIndividual , bio:Cluster ;
+    rdfs:label "Neurodegeneration Pathway Cluster" ;
+    bio:cluster_id "CLU002" ;
+    bio:name "Neurodegeneration Pathway Cluster" ;
+    bio:description "Genes and pathways involved in neurodegeneration" ;
+    bio:id "CLU002" ;
+    bio:cluster_type "Gene-Pathway" .
+
+<https://biomedkg.org/ontology/Cluster/c88e4def492385a8>
+    a owl:NamedIndividual , bio:Cluster ;
+    rdfs:label "Immune Checkpoint Module" ;
+    bio:cluster_id "CLU003" ;
+    bio:name "Immune Checkpoint Module" ;
+    bio:description "Immune checkpoint inhibitor network" ;
+    bio:id "CLU003" ;
+    bio:cluster_type "Drug-Gene-Disease" .
+
+<https://biomedkg.org/ontology/Cluster/91e0b84228912b4a>
+    a owl:NamedIndividual , bio:Cluster ;
+    rdfs:label "Metabolic Syndrome Hub" ;
+    bio:cluster_id "CLU004" ;
+    bio:name "Metabolic Syndrome Hub" ;
+    bio:description "Metabolic disease gene associations" ;
+    bio:id "CLU004" ;
+    bio:cluster_type "Gene-Disease" .
+
+<https://biomedkg.org/ontology/Cluster/de71c3afdbf06f58>
+    a owl:NamedIndividual , bio:Cluster ;
+    rdfs:label "Kinase Inhibitor Network" ;
+    bio:cluster_id "CLU005" ;
+    bio:name "Kinase Inhibitor Network" ;
+    bio:description "Kinase-targeting drug cluster" ;
+    bio:id "CLU005" ;
+    bio:cluster_type "Drug-Protein" .
+
+<https://biomedkg.org/ontology/Cluster/e940375d5a1a3d35>
+    a owl:NamedIndividual , bio:Cluster ;
+    rdfs:label "Inflammatory Response Module" ;
+    bio:cluster_id "CLU006" ;
+    bio:name "Inflammatory Response Module" ;
+    bio:description "Inflammation-related gene network" ;
+    bio:id "CLU006" ;
+    bio:cluster_type "Gene-BiologicalProcess" .
+
+<https://biomedkg.org/ontology/Cluster/c4eaf32d7532f7f8>
+    a owl:NamedIndividual , bio:Cluster ;
+    rdfs:label "Apoptosis Regulation Cluster" ;
+    bio:cluster_id "CLU007" ;
+    bio:name "Apoptosis Regulation Cluster" ;
+    bio:description "Programmed cell death regulatory network" ;
+    bio:id "CLU007" ;
+    bio:cluster_type "Pathway-Gene" .
+
+<https://biomedkg.org/ontology/Cluster/4a873199e81f6b81>
+    a owl:NamedIndividual , bio:Cluster ;
+    rdfs:label "Angiogenesis Module" ;
+    bio:cluster_id "CLU008" ;
+    bio:name "Angiogenesis Module" ;
+    bio:description "Blood vessel formation network" ;
+    bio:id "CLU008" ;
+    bio:cluster_type "Protein-Pathway" .
+
+<https://biomedkg.org/ontology/ClusterSummary/b6a28b98aab574fd>
+    a owl:NamedIndividual , bio:ClusterSummary ;
+    bio:cluster_id "CLU001" ;
+    bio:summary_id "CS001" ;
+    bio:therapeutic_relevance "High" ;
+    bio:confidence_score "0.92" ;
+    bio:summary_text "Cancer drugs primarily target receptor tyrosine kinases and immune checkpoints" .
+
+<https://biomedkg.org/ontology/ClusterSummary/a48e8136f04cf885>
+    a owl:NamedIndividual , bio:ClusterSummary ;
+    bio:cluster_id "CLU002" ;
+    bio:summary_id "CS002" ;
+    bio:therapeutic_relevance "High" ;
+    bio:confidence_score "0.88" ;
+    bio:summary_text "Neurodegeneration involves amyloid processing, tau phosphorylation, and mitochondrial dysfunction" .
+
+<https://biomedkg.org/ontology/ClusterSummary/c369bcc84af2533e>
+    a owl:NamedIndividual , bio:ClusterSummary ;
+    bio:cluster_id "CLU003" ;
+    bio:summary_id "CS003" ;
+    bio:therapeutic_relevance "High" ;
+    bio:confidence_score "0.95" ;
+    bio:summary_text "Immune checkpoint inhibitors block PD-1/PD-L1 axis to restore anti-tumor immunity" .
+
+<https://biomedkg.org/ontology/ClusterSummary/6f7da47ef5420a3d>
+    a owl:NamedIndividual , bio:ClusterSummary ;
+    bio:cluster_id "CLU004" ;
+    bio:summary_id "CS004" ;
+    bio:therapeutic_relevance "High" ;
+    bio:confidence_score "0.85" ;
+    bio:summary_text "Metabolic syndrome genes converge on insulin signaling and lipid metabolism pathways" .
+
+<https://biomedkg.org/ontology/ClusterSummary/80ce9360bf5d922b>
+    a owl:NamedIndividual , bio:ClusterSummary ;
+    bio:cluster_id "CLU005" ;
+    bio:summary_id "CS005" ;
+    bio:therapeutic_relevance "High" ;
+    bio:confidence_score "0.90" ;
+    bio:summary_text "Kinase inhibitors target BCR-ABL, EGFR, and BRAF with high selectivity" .
+
+<https://biomedkg.org/ontology/ClusterSummary/e03a95a7c0ab6e39>
+    a owl:NamedIndividual , bio:ClusterSummary ;
+    bio:cluster_id "CLU006" ;
+    bio:summary_id "CS006" ;
+    bio:therapeutic_relevance "Medium" ;
+    bio:confidence_score "0.82" ;
+    bio:summary_text "Inflammatory genes regulate NF-kB signaling and cytokine production" .
+
+<https://biomedkg.org/ontology/ClusterSummary/437435d4622bb03c>
+    a owl:NamedIndividual , bio:ClusterSummary ;
+    bio:cluster_id "CLU007" ;
+    bio:summary_id "CS007" ;
+    bio:therapeutic_relevance "High" ;
+    bio:confidence_score "0.91" ;
+    bio:summary_text "Apoptosis regulation involves BCL-2 family members and caspase cascades" .
+
+<https://biomedkg.org/ontology/ClusterSummary/e00f0d07e2b22824>
+    a owl:NamedIndividual , bio:ClusterSummary ;
+    bio:cluster_id "CLU008" ;
+    bio:summary_id "CS008" ;
+    bio:therapeutic_relevance "Medium" ;
+    bio:confidence_score "0.87" ;
+    bio:summary_text "Angiogenesis module centers on VEGF signaling and endothelial cell proliferation" .
+
+<https://biomedkg.org/ontology/Entity/724c80dfcd9ffe87>
+    a owl:NamedIndividual , bio:Entity ;
+    rdfs:label "Homo sapiens" ;
+    bio:entity_type "Organism" ;
+    bio:name "Homo sapiens" ;
+    bio:description "Human species" ;
+    bio:id "ENT001" ;
+    bio:source "NCBI Taxonomy" .
+
+<https://biomedkg.org/ontology/Entity/62ebbcee7a9fbed6>
+    a owl:NamedIndividual , bio:Entity ;
+    rdfs:label "Mus musculus" ;
+    bio:entity_type "Organism" ;
+    bio:name "Mus musculus" ;
+    bio:description "Mouse model organism" ;
+    bio:id "ENT002" ;
+    bio:source "NCBI Taxonomy" .
+
+<https://biomedkg.org/ontology/Entity/54fa63e5c2490e7d>
+    a owl:NamedIndividual , bio:Entity ;
+    rdfs:label "Rattus norvegicus" ;
+    bio:entity_type "Organism" ;
+    bio:name "Rattus norvegicus" ;
+    bio:description "Rat model organism" ;
+    bio:id "ENT003" ;
+    bio:source "NCBI Taxonomy" .
+
+<https://biomedkg.org/ontology/Entity/817ce692e748e646>
+    a owl:NamedIndividual , bio:Entity ;
+    rdfs:label "SARS-CoV-2" ;
+    bio:entity_type "Pathogen" ;
+    bio:name "SARS-CoV-2" ;
+    bio:description "COVID-19 causative virus" ;
+    bio:id "ENT004" ;
+    bio:source "NCBI Taxonomy" .
+
+<https://biomedkg.org/ontology/Entity/be6ea786409d0f86>
+    a owl:NamedIndividual , bio:Entity ;
+    rdfs:label "Mycobacterium tuberculosis" ;
+    bio:entity_type "Pathogen" ;
+    bio:name "Mycobacterium tuberculosis" ;
+    bio:description "Tuberculosis causative bacterium" ;
+    bio:id "ENT005" ;
+    bio:source "NCBI Taxonomy" .
+
+<https://biomedkg.org/ontology/Entity/09f70ce079bd69a2>
+    a owl:NamedIndividual , bio:Entity ;
+    rdfs:label "Staphylococcus aureus" ;
+    bio:entity_type "Pathogen" ;
+    bio:name "Staphylococcus aureus" ;
+    bio:description "Common bacterial pathogen" ;
+    bio:id "ENT006" ;
+    bio:source "NCBI Taxonomy" .
+
+<https://biomedkg.org/ontology/Entity/d1e5fca49c481ef2>
+    a owl:NamedIndividual , bio:Entity ;
+    rdfs:label "Escherichia coli" ;
+    bio:entity_type "Pathogen" ;
+    bio:name "Escherichia coli" ;
+    bio:description "Gram-negative bacterium" ;
+    bio:id "ENT007" ;
+    bio:source "NCBI Taxonomy" .
+
+<https://biomedkg.org/ontology/Entity/63e9d1e153f95174>
+    a owl:NamedIndividual , bio:Entity ;
+    rdfs:label "Helicobacter pylori" ;
+    bio:entity_type "Pathogen" ;
+    bio:name "Helicobacter pylori" ;
+    bio:description "Gastric ulcer-associated bacterium" ;
+    bio:id "ENT008" ;
+    bio:source "NCBI Taxonomy" .
+
+<https://biomedkg.org/ontology/Entity/a989eb93334ca28f>
+    a owl:NamedIndividual , bio:Entity ;
+    rdfs:label "Human Papillomavirus" ;
+    bio:entity_type "Pathogen" ;
+    bio:name "Human Papillomavirus" ;
+    bio:description "Cervical cancer-associated virus" ;
+    bio:id "ENT009" ;
+    bio:source "NCBI Taxonomy" .
+
+<https://biomedkg.org/ontology/Entity/3598a71d8c56df82>
+    a owl:NamedIndividual , bio:Entity ;
+    rdfs:label "Epstein-Barr Virus" ;
+    bio:entity_type "Pathogen" ;
+    bio:name "Epstein-Barr Virus" ;
+    bio:description "Lymphoma-associated virus" ;
+    bio:id "ENT010" ;
+    bio:source "NCBI Taxonomy" .
+
+<https://biomedkg.org/ontology/Entity/48fbe0a7aa2458f3>
+    a owl:NamedIndividual , bio:Entity ;
+    rdfs:label "Caenorhabditis elegans" ;
+    bio:entity_type "Organism" ;
+    bio:name "Caenorhabditis elegans" ;
+    bio:description "Nematode model organism" ;
+    bio:id "ENT011" ;
+    bio:source "NCBI Taxonomy" .
+
+<https://biomedkg.org/ontology/Entity/8bcb692c023f2403>
+    a owl:NamedIndividual , bio:Entity ;
+    rdfs:label "Drosophila melanogaster" ;
+    bio:entity_type "Organism" ;
+    bio:name "Drosophila melanogaster" ;
+    bio:description "Fruit fly model organism" ;
+    bio:id "ENT012" ;
+    bio:source "NCBI Taxonomy" .
+
+<https://biomedkg.org/ontology/ExternalMapping/190ab5964523b5ba>
+    a owl:NamedIndividual , bio:ExternalMapping ;
+    bio:standard "GS1_GTIN" ;
+    bio:entity_type "Drug" ;
+    bio:confidence "0.95" ;
+    bio:external_id "00006302001" ;
+    bio:id "D001" .
+
+<https://biomedkg.org/ontology/ExternalMapping/d61142a99462bfac>
+    a owl:NamedIndividual , bio:ExternalMapping ;
+    bio:standard "GS1_GTIN" ;
+    bio:entity_type "Drug" ;
+    bio:confidence "0.95" ;
+    bio:external_id "00003947811" ;
+    bio:id "D002" .
+
+<https://biomedkg.org/ontology/ExternalMapping/843b8121b93a1319>
+    a owl:NamedIndividual , bio:ExternalMapping ;
+    bio:standard "RxNorm" ;
+    bio:entity_type "Drug" ;
+    bio:confidence "1.0" ;
+    bio:external_id "1792776" ;
+    bio:id "D003" .
+
+<https://biomedkg.org/ontology/ExternalMapping/cd34a25cf0a97dee>
+    a owl:NamedIndividual , bio:ExternalMapping ;
+    bio:standard "GS1_GTIN" ;
+    bio:entity_type "Drug" ;
+    bio:confidence "0.95" ;
+    bio:external_id "50242013468" ;
+    bio:id "D004" .
+
+<https://biomedkg.org/ontology/ExternalMapping/9a76bc014eea3dea>
+    a owl:NamedIndividual , bio:ExternalMapping ;
+    bio:standard "RxNorm" ;
+    bio:entity_type "Drug" ;
+    bio:confidence "1.0" ;
+    bio:external_id "282388" ;
+    bio:id "D005" .
+
+<https://biomedkg.org/ontology/ExternalMapping/e0a7c6f0710af59c>
+    a owl:NamedIndividual , bio:ExternalMapping ;
+    bio:standard "RxNorm" ;
+    bio:entity_type "Drug" ;
+    bio:confidence "1.0" ;
+    bio:external_id "6809" ;
+    bio:id "D006" .
+
+<https://biomedkg.org/ontology/ExternalMapping/8ca17b00ffc6bcac>
+    a owl:NamedIndividual , bio:ExternalMapping ;
+    bio:standard "GS1_GTIN" ;
+    bio:entity_type "Drug" ;
+    bio:confidence "0.95" ;
+    bio:external_id "00169416312" ;
+    bio:id "D009" .
+
+<https://biomedkg.org/ontology/ExternalMapping/5aff5b154ac58ce2>
+    a owl:NamedIndividual , bio:ExternalMapping ;
+    bio:standard "SNOMED" ;
+    bio:entity_type "Disease" ;
+    bio:confidence "1.0" ;
+    bio:external_id "254637007" ;
+    bio:id "DIS001" .
+
+<https://biomedkg.org/ontology/ExternalMapping/1fc646c29cf16c09>
+    a owl:NamedIndividual , bio:ExternalMapping ;
+    bio:standard "SNOMED" ;
+    bio:entity_type "Disease" ;
+    bio:confidence "1.0" ;
+    bio:external_id "372244006" ;
+    bio:id "DIS002" .
+
+<https://biomedkg.org/ontology/ExternalMapping/2bd88016bd932dd3>
+    a owl:NamedIndividual , bio:ExternalMapping ;
+    bio:standard "SNOMED" ;
+    bio:entity_type "Disease" ;
+    bio:confidence "1.0" ;
+    bio:external_id "254838004" ;
+    bio:id "DIS003" .
+
+<https://biomedkg.org/ontology/ExternalMapping/f8fb8aae754e144d>
+    a owl:NamedIndividual , bio:ExternalMapping ;
+    bio:standard "SNOMED" ;
+    bio:entity_type "Disease" ;
+    bio:confidence "1.0" ;
+    bio:external_id "92818009" ;
+    bio:id "DIS004" .
+
+<https://biomedkg.org/ontology/ExternalMapping/8a861cb97e74e4ac>
+    a owl:NamedIndividual , bio:ExternalMapping ;
+    bio:standard "SNOMED" ;
+    bio:entity_type "Disease" ;
+    bio:confidence "1.0" ;
+    bio:external_id "44054006" ;
+    bio:id "DIS005" .
+
+<https://biomedkg.org/ontology/ExternalMapping/aa8c47aa96dd0a0d>
+    a owl:NamedIndividual , bio:ExternalMapping ;
+    bio:standard "SNOMED" ;
+    bio:entity_type "Disease" ;
+    bio:confidence "1.0" ;
+    bio:external_id "26929004" ;
+    bio:id "DIS006" .
+
+<https://biomedkg.org/ontology/ExternalMapping/4294570d80d38208>
+    a owl:NamedIndividual , bio:ExternalMapping ;
+    bio:standard "SNOMED" ;
+    bio:entity_type "Disease" ;
+    bio:confidence "1.0" ;
+    bio:external_id "363406005" ;
+    bio:id "DIS009" .
+
+<https://biomedkg.org/ontology/ExternalMapping/5d6c12e12089fbd6>
+    a owl:NamedIndividual , bio:ExternalMapping ;
+    bio:standard "MedDRA" ;
+    bio:entity_type "AdverseEvent" ;
+    bio:confidence "1.0" ;
+    bio:external_id "10035742" ;
+    bio:id "AE001" .
+
+<https://biomedkg.org/ontology/ExternalMapping/099e53d1f62acc3f>
+    a owl:NamedIndividual , bio:ExternalMapping ;
+    bio:standard "MedDRA" ;
+    bio:entity_type "AdverseEvent" ;
+    bio:confidence "1.0" ;
+    bio:external_id "10009887" ;
+    bio:id "AE002" .
+
+<https://biomedkg.org/ontology/ExternalMapping/4195d47499ccbee7>
+    a owl:NamedIndividual , bio:ExternalMapping ;
+    bio:standard "MedDRA" ;
+    bio:entity_type "AdverseEvent" ;
+    bio:confidence "1.0" ;
+    bio:external_id "10021114" ;
+    bio:id "AE003" .
+
+<https://biomedkg.org/ontology/ExternalMapping/40b3cdf7d06d7c38>
+    a owl:NamedIndividual , bio:ExternalMapping ;
+    bio:standard "MedDRA" ;
+    bio:entity_type "AdverseEvent" ;
+    bio:confidence "1.0" ;
+    bio:external_id "10028813" ;
+    bio:id "AE005" .
+
+<https://biomedkg.org/ontology/ExternalMapping/de4db0ee868e470b>
+    a owl:NamedIndividual , bio:ExternalMapping ;
+    bio:standard "MedDRA" ;
+    bio:entity_type "AdverseEvent" ;
+    bio:confidence "0.9" ;
+    bio:external_id "10002198" ;
+    bio:id "AE009" .
+
+<https://biomedkg.org/ontology/ExternalMapping/b7aed7d50605b19e>
+    a owl:NamedIndividual , bio:ExternalMapping ;
+    bio:standard "ORCID" ;
+    bio:entity_type "Researcher" ;
+    bio:confidence "0.85" ;
+    bio:external_id "0000-0001-8234-5671" ;
+    bio:id "R001" .
+
+<https://biomedkg.org/ontology/ExternalMapping/2f46b33b35e3a2a1>
+    a owl:NamedIndividual , bio:ExternalMapping ;
+    bio:standard "ORCID" ;
+    bio:entity_type "Researcher" ;
+    bio:confidence "0.85" ;
+    bio:external_id "0000-0002-4512-7893" ;
+    bio:id "R003" .
+
+<https://biomedkg.org/ontology/ExternalMapping/55bc3d25bfe89484>
+    a owl:NamedIndividual , bio:ExternalMapping ;
+    bio:standard "ORCID" ;
+    bio:entity_type "Researcher" ;
+    bio:confidence "0.85" ;
+    bio:external_id "0000-0003-1298-4567" ;
+    bio:id "R006" .
+
+<https://biomedkg.org/ontology/ExternalMapping/a32aacaa73ac87c2>
+    a owl:NamedIndividual , bio:ExternalMapping ;
+    bio:standard "ORCID" ;
+    bio:entity_type "Researcher" ;
+    bio:confidence "0.85" ;
+    bio:external_id "0000-0001-6745-2398" ;
+    bio:id "R009" .
+
+<https://biomedkg.org/ontology/ExternalMapping/eab2a926a9e2807f>
+    a owl:NamedIndividual , bio:ExternalMapping ;
+    bio:standard "ROR" ;
+    bio:entity_type "Institution" ;
+    bio:confidence "1.0" ;
+    bio:external_id "https://ror.org/00za53h95" ;
+    bio:id "I001" .
+
+<https://biomedkg.org/ontology/ExternalMapping/6d9ee1d0d83e2bcf>
+    a owl:NamedIndividual , bio:ExternalMapping ;
+    bio:standard "ROR" ;
+    bio:entity_type "Institution" ;
+    bio:confidence "1.0" ;
+    bio:external_id "https://ror.org/02yrq0923" ;
+    bio:id "I002" .
+
+<https://biomedkg.org/ontology/ExternalMapping/30cd2a1c275cd912>
+    a owl:NamedIndividual , bio:ExternalMapping ;
+    bio:standard "ROR" ;
+    bio:entity_type "Institution" ;
+    bio:confidence "1.0" ;
+    bio:external_id "https://ror.org/01cwqze88" ;
+    bio:id "I009" .
+
+<https://biomedkg.org/ontology/Drug/190ab5964523b5ba> bio:treats <https://biomedkg.org/ontology/Disease/5aff5b154ac58ce2> .
+<https://biomedkg.org/ontology/Drug/190ab5964523b5ba> bio:treats <https://biomedkg.org/ontology/Disease/1fc646c29cf16c09> .
+<https://biomedkg.org/ontology/Drug/190ab5964523b5ba> bio:targets <https://biomedkg.org/ontology/Protein/809e47cbfdee0736> .
+<https://biomedkg.org/ontology/Drug/190ab5964523b5ba> bio:manufacturedat <https://biomedkg.org/ontology/ManufacturingSite/a93682d4562f36e6> .
+<https://biomedkg.org/ontology/Drug/190ab5964523b5ba> bio:manufacturedat <https://biomedkg.org/ontology/ManufacturingSite/72d8b5c8f00b7e95> .
+<https://biomedkg.org/ontology/Drug/d61142a99462bfac> bio:treats <https://biomedkg.org/ontology/Disease/5aff5b154ac58ce2> .
+<https://biomedkg.org/ontology/Drug/d61142a99462bfac> bio:treats <https://biomedkg.org/ontology/Disease/1fc646c29cf16c09> .
+<https://biomedkg.org/ontology/Drug/d61142a99462bfac> bio:targets <https://biomedkg.org/ontology/Protein/809e47cbfdee0736> .
+<https://biomedkg.org/ontology/Drug/d61142a99462bfac> bio:manufacturedat <https://biomedkg.org/ontology/ManufacturingSite/2086b0057fe39431> .
+<https://biomedkg.org/ontology/Drug/d61142a99462bfac> bio:manufacturedat <https://biomedkg.org/ontology/ManufacturingSite/1f69eceb736de48e> .
+<https://biomedkg.org/ontology/Drug/843b8121b93a1319> bio:treats <https://biomedkg.org/ontology/Disease/5aff5b154ac58ce2> .
+<https://biomedkg.org/ontology/Drug/843b8121b93a1319> bio:targets <https://biomedkg.org/ontology/Protein/0ad7334eaf2870d9> .
+<https://biomedkg.org/ontology/Drug/843b8121b93a1319> bio:manufacturedat <https://biomedkg.org/ontology/ManufacturingSite/c4b80724cbdd64cf> .
+<https://biomedkg.org/ontology/Drug/cd34a25cf0a97dee> bio:treats <https://biomedkg.org/ontology/Disease/2bd88016bd932dd3> .
+<https://biomedkg.org/ontology/Drug/cd34a25cf0a97dee> bio:targets <https://biomedkg.org/ontology/Protein/248af50a3d8914f1> .
+<https://biomedkg.org/ontology/Drug/cd34a25cf0a97dee> bio:manufacturedat <https://biomedkg.org/ontology/ManufacturingSite/c4b80724cbdd64cf> .
+<https://biomedkg.org/ontology/Drug/cd34a25cf0a97dee> bio:manufacturedat <https://biomedkg.org/ontology/ManufacturingSite/63ec1315c4704373> .
+<https://biomedkg.org/ontology/Drug/9a76bc014eea3dea> bio:treats <https://biomedkg.org/ontology/Disease/f8fb8aae754e144d> .
+<https://biomedkg.org/ontology/Drug/9a76bc014eea3dea> bio:targets <https://biomedkg.org/ontology/Protein/4d8301e76189987e> .
+<https://biomedkg.org/ontology/Drug/9a76bc014eea3dea> bio:manufacturedat <https://biomedkg.org/ontology/ManufacturingSite/1f0d1784332e30e7> .
+<https://biomedkg.org/ontology/Drug/e0a7c6f0710af59c> bio:treats <https://biomedkg.org/ontology/Disease/8a861cb97e74e4ac> .
+<https://biomedkg.org/ontology/Drug/e0a7c6f0710af59c> bio:targets <https://biomedkg.org/ontology/Protein/bdbc4be1b52ed921> .
+<https://biomedkg.org/ontology/Drug/e0a7c6f0710af59c> bio:manufacturedat <https://biomedkg.org/ontology/ManufacturingSite/1f0d1784332e30e7> .
+<https://biomedkg.org/ontology/Drug/7370364dffbba1b1> bio:treats <https://biomedkg.org/ontology/Disease/aa8c47aa96dd0a0d> .
+<https://biomedkg.org/ontology/Drug/7370364dffbba1b1> bio:targets <https://biomedkg.org/ontology/Protein/d756a5c2361c8815> .
+<https://biomedkg.org/ontology/Drug/7370364dffbba1b1> bio:manufacturedat <https://biomedkg.org/ontology/ManufacturingSite/2fa2b6b00d5477cb> .
+<https://biomedkg.org/ontology/Drug/29e6e2e91dc3a89f> bio:treats <https://biomedkg.org/ontology/Disease/aa8c47aa96dd0a0d> .
+<https://biomedkg.org/ontology/Drug/29e6e2e91dc3a89f> bio:targets <https://biomedkg.org/ontology/Protein/d756a5c2361c8815> .
+<https://biomedkg.org/ontology/Drug/29e6e2e91dc3a89f> bio:manufacturedat <https://biomedkg.org/ontology/ManufacturingSite/aa3411af522ad253> .
+<https://biomedkg.org/ontology/Drug/29e6e2e91dc3a89f> bio:manufacturedat <https://biomedkg.org/ontology/ManufacturingSite/2fa2b6b00d5477cb> .
+<https://biomedkg.org/ontology/Drug/8ca17b00ffc6bcac> bio:treats <https://biomedkg.org/ontology/Disease/8a861cb97e74e4ac> .
+<https://biomedkg.org/ontology/Drug/8ca17b00ffc6bcac> bio:treats <https://biomedkg.org/ontology/Disease/3ff887001975dbb6> .
+<https://biomedkg.org/ontology/Drug/8ca17b00ffc6bcac> bio:targets <https://biomedkg.org/ontology/Protein/a302a1330186893c> .
+<https://biomedkg.org/ontology/Drug/8ca17b00ffc6bcac> bio:manufacturedat <https://biomedkg.org/ontology/ManufacturingSite/293e940f1816a5e8> .
+<https://biomedkg.org/ontology/Drug/2b1b32cfd4a4e198> bio:treats <https://biomedkg.org/ontology/Disease/8a861cb97e74e4ac> .
+<https://biomedkg.org/ontology/Drug/2b1b32cfd4a4e198> bio:treats <https://biomedkg.org/ontology/Disease/3ff887001975dbb6> .
+<https://biomedkg.org/ontology/Drug/2b1b32cfd4a4e198> bio:targets <https://biomedkg.org/ontology/Protein/a302a1330186893c> .
+<https://biomedkg.org/ontology/Drug/2b1b32cfd4a4e198> bio:targets <https://biomedkg.org/ontology/Protein/06f87fb69cc26fc3> .
+<https://biomedkg.org/ontology/Drug/2b1b32cfd4a4e198> bio:manufacturedat <https://biomedkg.org/ontology/ManufacturingSite/293e940f1816a5e8> .
+<https://biomedkg.org/ontology/Disease/5aff5b154ac58ce2> bio:affectsanatomy <https://biomedkg.org/ontology/Anatomy/5f4f2ce6a3e79464> .
+<https://biomedkg.org/ontology/Disease/5aff5b154ac58ce2> bio:hasphenotype <https://biomedkg.org/ontology/Phenotype/f91e0a9158264055> .
+<https://biomedkg.org/ontology/Disease/5aff5b154ac58ce2> bio:hasphenotype <https://biomedkg.org/ontology/Phenotype/a3a8df671d035b4b> .
+<https://biomedkg.org/ontology/Disease/5aff5b154ac58ce2> bio:hasphenotype <https://biomedkg.org/ontology/Phenotype/ccc281e07f9139cf> .
+<https://biomedkg.org/ontology/Disease/5aff5b154ac58ce2> bio:involvescelltype <https://biomedkg.org/ontology/CellType/6499804f136d0cb1> .
+<https://biomedkg.org/ontology/Disease/5aff5b154ac58ce2> bio:involvescelltype <https://biomedkg.org/ontology/CellType/a66b2894ef2c39c5> .
+<https://biomedkg.org/ontology/Disease/1fc646c29cf16c09> bio:affectsanatomy <https://biomedkg.org/ontology/Anatomy/815f0a819515b90a> .
+<https://biomedkg.org/ontology/Disease/1fc646c29cf16c09> bio:involvescelltype <https://biomedkg.org/ontology/CellType/6499804f136d0cb1> .
+<https://biomedkg.org/ontology/Disease/1fc646c29cf16c09> bio:involvescelltype <https://biomedkg.org/ontology/CellType/a66b2894ef2c39c5> .
+<https://biomedkg.org/ontology/Disease/2bd88016bd932dd3> bio:affectsanatomy <https://biomedkg.org/ontology/Anatomy/a517805b7e761f08> .
+<https://biomedkg.org/ontology/Disease/2bd88016bd932dd3> bio:hasphenotype <https://biomedkg.org/ontology/Phenotype/ccc281e07f9139cf> .
+<https://biomedkg.org/ontology/Disease/2bd88016bd932dd3> bio:hasphenotype <https://biomedkg.org/ontology/Phenotype/0926ede6010cd697> .
+<https://biomedkg.org/ontology/Disease/2bd88016bd932dd3> bio:involvescelltype <https://biomedkg.org/ontology/CellType/a66b2894ef2c39c5> .
+<https://biomedkg.org/ontology/Disease/f8fb8aae754e144d> bio:affectsanatomy <https://biomedkg.org/ontology/Anatomy/8c4c88ccb4c4214d> .
+<https://biomedkg.org/ontology/Disease/f8fb8aae754e144d> bio:hasphenotype <https://biomedkg.org/ontology/Phenotype/ccc281e07f9139cf> .
+<https://biomedkg.org/ontology/Disease/f8fb8aae754e144d> bio:hasphenotype <https://biomedkg.org/ontology/Phenotype/0926ede6010cd697> .
+<https://biomedkg.org/ontology/Disease/f8fb8aae754e144d> bio:involvescelltype <https://biomedkg.org/ontology/CellType/13d4372e68b5206d> .
+<https://biomedkg.org/ontology/Disease/8a861cb97e74e4ac> bio:affectsanatomy <https://biomedkg.org/ontology/Anatomy/40800c2233937ffc> .
+<https://biomedkg.org/ontology/Disease/8a861cb97e74e4ac> bio:affectsanatomy <https://biomedkg.org/ontology/Anatomy/83dcdccc0a8f11bc> .
+<https://biomedkg.org/ontology/Disease/8a861cb97e74e4ac> bio:affectsanatomy <https://biomedkg.org/ontology/Anatomy/c2d3651cd5454ba5> .
+<https://biomedkg.org/ontology/Disease/8a861cb97e74e4ac> bio:hasphenotype <https://biomedkg.org/ontology/Phenotype/ac234a10bded3705> .
+<https://biomedkg.org/ontology/Disease/8a861cb97e74e4ac> bio:hasphenotype <https://biomedkg.org/ontology/Phenotype/4316faef0d81975f> .
+<https://biomedkg.org/ontology/Disease/8a861cb97e74e4ac> bio:hasphenotype <https://biomedkg.org/ontology/Phenotype/847d4a27f54b9ce8> .
+<https://biomedkg.org/ontology/Disease/8a861cb97e74e4ac> bio:involvescelltype <https://biomedkg.org/ontology/CellType/bfb513f6f5efccbe> .
+<https://biomedkg.org/ontology/Disease/8a861cb97e74e4ac> bio:involvescelltype <https://biomedkg.org/ontology/CellType/7f26c3330d2aff2a> .
+<https://biomedkg.org/ontology/Disease/8a861cb97e74e4ac> bio:involvescelltype <https://biomedkg.org/ontology/CellType/2b5bafc6d151494e> .
+<https://biomedkg.org/ontology/Disease/aa8c47aa96dd0a0d> bio:affectsanatomy <https://biomedkg.org/ontology/Anatomy/b6257b3b9da3c06b> .
+<https://biomedkg.org/ontology/Disease/aa8c47aa96dd0a0d> bio:affectsanatomy <https://biomedkg.org/ontology/Anatomy/2bdc4b74a318d5b6> .
+<https://biomedkg.org/ontology/Disease/aa8c47aa96dd0a0d> bio:hasphenotype <https://biomedkg.org/ontology/Phenotype/739bc2393d5f489a> .
+<https://biomedkg.org/ontology/Disease/aa8c47aa96dd0a0d> bio:hasphenotype <https://biomedkg.org/ontology/Phenotype/0103eb1860c9c906> .
+<https://biomedkg.org/ontology/Disease/aa8c47aa96dd0a0d> bio:involvescelltype <https://biomedkg.org/ontology/CellType/b3ae9111f47dc445> .
+<https://biomedkg.org/ontology/Disease/aa8c47aa96dd0a0d> bio:involvescelltype <https://biomedkg.org/ontology/CellType/b246d4bcc62b57a7> .
+<https://biomedkg.org/ontology/Disease/aa8c47aa96dd0a0d> bio:involvescelltype <https://biomedkg.org/ontology/CellType/80f1e0db9a4642ce> .
+<https://biomedkg.org/ontology/Disease/3ff887001975dbb6> bio:affectsanatomy <https://biomedkg.org/ontology/Anatomy/83dcdccc0a8f11bc> .
+<https://biomedkg.org/ontology/Disease/3ff887001975dbb6> bio:affectsanatomy <https://biomedkg.org/ontology/Anatomy/c2d3651cd5454ba5> .
+<https://biomedkg.org/ontology/Disease/3ff887001975dbb6> bio:hasphenotype <https://biomedkg.org/ontology/Phenotype/4316faef0d81975f> .
+<https://biomedkg.org/ontology/Disease/3ff887001975dbb6> bio:hasphenotype <https://biomedkg.org/ontology/Phenotype/847d4a27f54b9ce8> .
+<https://biomedkg.org/ontology/Disease/3ff887001975dbb6> bio:involvescelltype <https://biomedkg.org/ontology/CellType/2b5bafc6d151494e> .
+<https://biomedkg.org/ontology/Disease/58f5045eeaf7210c> bio:affectsanatomy <https://biomedkg.org/ontology/Anatomy/6120567b72e6faaa> .
+<https://biomedkg.org/ontology/Disease/58f5045eeaf7210c> bio:involvescelltype <https://biomedkg.org/ontology/CellType/a66b2894ef2c39c5> .
+<https://biomedkg.org/ontology/Disease/4294570d80d38208> bio:affectsanatomy <https://biomedkg.org/ontology/Anatomy/bd1a2125460f8f50> .
+<https://biomedkg.org/ontology/Disease/4294570d80d38208> bio:involvescelltype <https://biomedkg.org/ontology/CellType/a66b2894ef2c39c5> .
+<https://biomedkg.org/ontology/Disease/5515a79fb115333d> bio:affectsanatomy <https://biomedkg.org/ontology/Anatomy/b6257b3b9da3c06b> .
+<https://biomedkg.org/ontology/Disease/5515a79fb115333d> bio:hasphenotype <https://biomedkg.org/ontology/Phenotype/739bc2393d5f489a> .
+<https://biomedkg.org/ontology/Disease/5515a79fb115333d> bio:hasphenotype <https://biomedkg.org/ontology/Phenotype/0103eb1860c9c906> .
+<https://biomedkg.org/ontology/Disease/5515a79fb115333d> bio:involvescelltype <https://biomedkg.org/ontology/CellType/b3ae9111f47dc445> .
+<https://biomedkg.org/ontology/Disease/5515a79fb115333d> bio:involvescelltype <https://biomedkg.org/ontology/CellType/80f1e0db9a4642ce> .
+<https://biomedkg.org/ontology/Gene/6da75ba9d4da376e> bio:associatedwith <https://biomedkg.org/ontology/Disease/5aff5b154ac58ce2> .
+<https://biomedkg.org/ontology/Gene/6da75ba9d4da376e> bio:hasmolecularfunction <https://biomedkg.org/ontology/MolecularFunction/f7bc5dce3cbc5192> .
+<https://biomedkg.org/ontology/Gene/6da75ba9d4da376e> bio:hasmolecularfunction <https://biomedkg.org/ontology/MolecularFunction/3c219e9273504dca> .
+<https://biomedkg.org/ontology/Gene/6da75ba9d4da376e> bio:involvedin <https://biomedkg.org/ontology/BiologicalProcess/9b4ce3498bf88932> .
+<https://biomedkg.org/ontology/Gene/6da75ba9d4da376e> bio:involvedin <https://biomedkg.org/ontology/BiologicalProcess/f7f5d9b2da36bb7b> .
+<https://biomedkg.org/ontology/Gene/6da75ba9d4da376e> bio:involvedin <https://biomedkg.org/ontology/BiologicalProcess/db4439dc1b93b09d> .
+<https://biomedkg.org/ontology/Gene/6da75ba9d4da376e> bio:participatesin <https://biomedkg.org/ontology/Pathway/6090462fbf4ca9c3> .
+<https://biomedkg.org/ontology/Gene/6da75ba9d4da376e> bio:participatesin <https://biomedkg.org/ontology/Pathway/98be77f235a2598b> .
+<https://biomedkg.org/ontology/Gene/6da75ba9d4da376e> bio:participatesin <https://biomedkg.org/ontology/Pathway/042a27bc574e861b> .
+<https://biomedkg.org/ontology/Gene/1730a16c0746bec6> bio:associatedwith <https://biomedkg.org/ontology/Disease/5aff5b154ac58ce2> .
+<https://biomedkg.org/ontology/Gene/1730a16c0746bec6> bio:associatedwith <https://biomedkg.org/ontology/Disease/4294570d80d38208> .
+<https://biomedkg.org/ontology/Gene/1730a16c0746bec6> bio:hasmolecularfunction <https://biomedkg.org/ontology/MolecularFunction/f45005cbf8dce025> .
+<https://biomedkg.org/ontology/Gene/1730a16c0746bec6> bio:involvedin <https://biomedkg.org/ontology/BiologicalProcess/9b4ce3498bf88932> .
+<https://biomedkg.org/ontology/Gene/1730a16c0746bec6> bio:involvedin <https://biomedkg.org/ontology/BiologicalProcess/f7f5d9b2da36bb7b> .
+<https://biomedkg.org/ontology/Gene/1730a16c0746bec6> bio:participatesin <https://biomedkg.org/ontology/Pathway/6090462fbf4ca9c3> .
+<https://biomedkg.org/ontology/Gene/1730a16c0746bec6> bio:participatesin <https://biomedkg.org/ontology/Pathway/98be77f235a2598b> .
+<https://biomedkg.org/ontology/Gene/03cceedbdeab8651> bio:associatedwith <https://biomedkg.org/ontology/Disease/5aff5b154ac58ce2> .
+<https://biomedkg.org/ontology/Gene/03cceedbdeab8651> bio:associatedwith <https://biomedkg.org/ontology/Disease/2bd88016bd932dd3> .
+<https://biomedkg.org/ontology/Gene/03cceedbdeab8651> bio:hasmolecularfunction <https://biomedkg.org/ontology/MolecularFunction/4d288a6287ffb27b> .
+<https://biomedkg.org/ontology/Gene/03cceedbdeab8651> bio:hasmolecularfunction <https://biomedkg.org/ontology/MolecularFunction/5ccd06e0d1106484> .
+<https://biomedkg.org/ontology/Gene/03cceedbdeab8651> bio:involvedin <https://biomedkg.org/ontology/BiologicalProcess/1aba9583289db04e> .
+<https://biomedkg.org/ontology/Gene/03cceedbdeab8651> bio:involvedin <https://biomedkg.org/ontology/BiologicalProcess/6b66639cbef5c6c9> .
+<https://biomedkg.org/ontology/Gene/03cceedbdeab8651> bio:involvedin <https://biomedkg.org/ontology/BiologicalProcess/5a9d910628206b4f> .
+<https://biomedkg.org/ontology/Gene/03cceedbdeab8651> bio:participatesin <https://biomedkg.org/ontology/Pathway/e9a40d19a2c3c5c8> .
+<https://biomedkg.org/ontology/Gene/03cceedbdeab8651> bio:participatesin <https://biomedkg.org/ontology/Pathway/05950f7f5da0158c> .
+<https://biomedkg.org/ontology/Gene/03cceedbdeab8651> bio:participatesin <https://biomedkg.org/ontology/Pathway/d35aa07032574777> .
+<https://biomedkg.org/ontology/Gene/5d824c795788d20a> bio:associatedwith <https://biomedkg.org/ontology/Disease/2bd88016bd932dd3> .
+<https://biomedkg.org/ontology/Gene/5d824c795788d20a> bio:hasmolecularfunction <https://biomedkg.org/ontology/MolecularFunction/5ccd06e0d1106484> .
+<https://biomedkg.org/ontology/Gene/5d824c795788d20a> bio:involvedin <https://biomedkg.org/ontology/BiologicalProcess/5a9d910628206b4f> .
+<https://biomedkg.org/ontology/Gene/5d824c795788d20a> bio:participatesin <https://biomedkg.org/ontology/Pathway/e9a40d19a2c3c5c8> .
+<https://biomedkg.org/ontology/Gene/5d824c795788d20a> bio:participatesin <https://biomedkg.org/ontology/Pathway/de4526b5d9228b49> .
+<https://biomedkg.org/ontology/Gene/eeef6e83f1d23e59> bio:associatedwith <https://biomedkg.org/ontology/Disease/2bd88016bd932dd3> .
+<https://biomedkg.org/ontology/Gene/eeef6e83f1d23e59> bio:hasmolecularfunction <https://biomedkg.org/ontology/MolecularFunction/5ccd06e0d1106484> .
+<https://biomedkg.org/ontology/Gene/eeef6e83f1d23e59> bio:involvedin <https://biomedkg.org/ontology/BiologicalProcess/5a9d910628206b4f> .
+<https://biomedkg.org/ontology/Gene/eeef6e83f1d23e59> bio:participatesin <https://biomedkg.org/ontology/Pathway/e9a40d19a2c3c5c8> .
+<https://biomedkg.org/ontology/Gene/eeef6e83f1d23e59> bio:participatesin <https://biomedkg.org/ontology/Pathway/de4526b5d9228b49> .
+<https://biomedkg.org/ontology/Gene/40ba8d76681a3773> bio:associatedwith <https://biomedkg.org/ontology/Disease/f8fb8aae754e144d> .
+<https://biomedkg.org/ontology/Gene/40ba8d76681a3773> bio:hasmolecularfunction <https://biomedkg.org/ontology/MolecularFunction/f7bc5dce3cbc5192> .
+<https://biomedkg.org/ontology/Gene/40ba8d76681a3773> bio:involvedin <https://biomedkg.org/ontology/BiologicalProcess/9b4ce3498bf88932> .
+<https://biomedkg.org/ontology/Gene/40ba8d76681a3773> bio:involvedin <https://biomedkg.org/ontology/BiologicalProcess/bfcae80fe4b2b332> .
+<https://biomedkg.org/ontology/Gene/40ba8d76681a3773> bio:participatesin <https://biomedkg.org/ontology/Pathway/98be77f235a2598b> .
+<https://biomedkg.org/ontology/Gene/40ba8d76681a3773> bio:participatesin <https://biomedkg.org/ontology/Pathway/d7aa08eaae5a64a6> .
+<https://biomedkg.org/ontology/Gene/ea76c28036012a97> bio:associatedwith <https://biomedkg.org/ontology/Disease/2bd88016bd932dd3> .
+<https://biomedkg.org/ontology/Gene/ea76c28036012a97> bio:hasmolecularfunction <https://biomedkg.org/ontology/MolecularFunction/3c219e9273504dca> .
+<https://biomedkg.org/ontology/Gene/ea76c28036012a97> bio:involvedin <https://biomedkg.org/ontology/BiologicalProcess/9b4ce3498bf88932> .
+<https://biomedkg.org/ontology/Gene/ea76c28036012a97> bio:involvedin <https://biomedkg.org/ontology/BiologicalProcess/f7f5d9b2da36bb7b> .
+<https://biomedkg.org/ontology/Gene/ea76c28036012a97> bio:participatesin <https://biomedkg.org/ontology/Pathway/6090462fbf4ca9c3> .
+<https://biomedkg.org/ontology/Gene/ea76c28036012a97> bio:participatesin <https://biomedkg.org/ontology/Pathway/042a27bc574e861b> .
+<https://biomedkg.org/ontology/Gene/c3e823466af9186c> bio:associatedwith <https://biomedkg.org/ontology/Disease/5aff5b154ac58ce2> .
+<https://biomedkg.org/ontology/Gene/c3e823466af9186c> bio:hasmolecularfunction <https://biomedkg.org/ontology/MolecularFunction/693e1beb45d1056f> .
+<https://biomedkg.org/ontology/Gene/c3e823466af9186c> bio:involvedin <https://biomedkg.org/ontology/BiologicalProcess/4969d9cf86d749cf> .
+<https://biomedkg.org/ontology/Gene/c3e823466af9186c> bio:involvedin <https://biomedkg.org/ontology/BiologicalProcess/6b66639cbef5c6c9> .
+<https://biomedkg.org/ontology/Gene/c3e823466af9186c> bio:participatesin <https://biomedkg.org/ontology/Pathway/de4526b5d9228b49> .
+<https://biomedkg.org/ontology/Gene/5b5b35f1f31fcd6b> bio:associatedwith <https://biomedkg.org/ontology/Disease/aa8c47aa96dd0a0d> .
+<https://biomedkg.org/ontology/Gene/5b5b35f1f31fcd6b> bio:hasmolecularfunction <https://biomedkg.org/ontology/MolecularFunction/6356b77b789b9d7c> .
+<https://biomedkg.org/ontology/Gene/5b5b35f1f31fcd6b> bio:hasmolecularfunction <https://biomedkg.org/ontology/MolecularFunction/d7c8a1eb86b93ace> .
+<https://biomedkg.org/ontology/Gene/5b5b35f1f31fcd6b> bio:involvedin <https://biomedkg.org/ontology/BiologicalProcess/f73b4044675fc4ee> .
+<https://biomedkg.org/ontology/Gene/5b5b35f1f31fcd6b> bio:involvedin <https://biomedkg.org/ontology/BiologicalProcess/d0e48e2a9aab460a> .
+<https://biomedkg.org/ontology/Gene/5b5b35f1f31fcd6b> bio:participatesin <https://biomedkg.org/ontology/Pathway/469bbfa9ee489785> .
+<https://biomedkg.org/ontology/Gene/376f4ad4cab716bc> bio:associatedwith <https://biomedkg.org/ontology/Disease/aa8c47aa96dd0a0d> .
+<https://biomedkg.org/ontology/Gene/376f4ad4cab716bc> bio:hasmolecularfunction <https://biomedkg.org/ontology/MolecularFunction/98c5422c4dd1c5f8> .
+<https://biomedkg.org/ontology/Gene/376f4ad4cab716bc> bio:involvedin <https://biomedkg.org/ontology/BiologicalProcess/42f9674dbeba6753> .
+<https://biomedkg.org/ontology/Gene/376f4ad4cab716bc> bio:involvedin <https://biomedkg.org/ontology/BiologicalProcess/f73b4044675fc4ee> .
+<https://biomedkg.org/ontology/Gene/376f4ad4cab716bc> bio:participatesin <https://biomedkg.org/ontology/Pathway/469bbfa9ee489785> .
+<https://biomedkg.org/ontology/Protein/809e47cbfdee0736> bio:hasmolecularfunction <https://biomedkg.org/ontology/MolecularFunction/693e1beb45d1056f> .
+<https://biomedkg.org/ontology/Protein/809e47cbfdee0736> bio:involvedin <https://biomedkg.org/ontology/BiologicalProcess/4969d9cf86d749cf> .
+<https://biomedkg.org/ontology/Protein/809e47cbfdee0736> bio:involvedin <https://biomedkg.org/ontology/BiologicalProcess/6b66639cbef5c6c9> .
+<https://biomedkg.org/ontology/Protein/809e47cbfdee0736> bio:expressedin <https://biomedkg.org/ontology/Anatomy/5f4f2ce6a3e79464> .
+<https://biomedkg.org/ontology/Protein/809e47cbfdee0736> bio:expressedin <https://biomedkg.org/ontology/Anatomy/815f0a819515b90a> .
+<https://biomedkg.org/ontology/Protein/809e47cbfdee0736> bio:involvedinpathway <https://biomedkg.org/ontology/Pathway/de4526b5d9228b49> .
+<https://biomedkg.org/ontology/Protein/0ad7334eaf2870d9> bio:hasmolecularfunction <https://biomedkg.org/ontology/MolecularFunction/693e1beb45d1056f> .
+<https://biomedkg.org/ontology/Protein/0ad7334eaf2870d9> bio:involvedin <https://biomedkg.org/ontology/BiologicalProcess/4969d9cf86d749cf> .
+<https://biomedkg.org/ontology/Protein/0ad7334eaf2870d9> bio:involvedin <https://biomedkg.org/ontology/BiologicalProcess/6b66639cbef5c6c9> .
+<https://biomedkg.org/ontology/Protein/0ad7334eaf2870d9> bio:expressedin <https://biomedkg.org/ontology/Anatomy/5f4f2ce6a3e79464> .
+<https://biomedkg.org/ontology/Protein/0ad7334eaf2870d9> bio:expressedin <https://biomedkg.org/ontology/Anatomy/815f0a819515b90a> .
+<https://biomedkg.org/ontology/Protein/0ad7334eaf2870d9> bio:involvedinpathway <https://biomedkg.org/ontology/Pathway/de4526b5d9228b49> .
+<https://biomedkg.org/ontology/Protein/49608f394d59a224> bio:hasmolecularfunction <https://biomedkg.org/ontology/MolecularFunction/f7bc5dce3cbc5192> .
+<https://biomedkg.org/ontology/Protein/49608f394d59a224> bio:hasmolecularfunction <https://biomedkg.org/ontology/MolecularFunction/3c219e9273504dca> .
+<https://biomedkg.org/ontology/Protein/49608f394d59a224> bio:involvedin <https://biomedkg.org/ontology/BiologicalProcess/9b4ce3498bf88932> .
+<https://biomedkg.org/ontology/Protein/49608f394d59a224> bio:involvedin <https://biomedkg.org/ontology/BiologicalProcess/f7f5d9b2da36bb7b> .
+<https://biomedkg.org/ontology/Protein/49608f394d59a224> bio:involvedin <https://biomedkg.org/ontology/BiologicalProcess/db4439dc1b93b09d> .
+<https://biomedkg.org/ontology/Protein/49608f394d59a224> bio:expressedin <https://biomedkg.org/ontology/Anatomy/5f4f2ce6a3e79464> .
+<https://biomedkg.org/ontology/Protein/49608f394d59a224> bio:expressedin <https://biomedkg.org/ontology/Anatomy/bd1a2125460f8f50> .
+<https://biomedkg.org/ontology/Protein/49608f394d59a224> bio:involvedinpathway <https://biomedkg.org/ontology/Pathway/98be77f235a2598b> .
+<https://biomedkg.org/ontology/Protein/49608f394d59a224> bio:involvedinpathway <https://biomedkg.org/ontology/Pathway/042a27bc574e861b> .
+<https://biomedkg.org/ontology/Protein/248af50a3d8914f1> bio:hasmolecularfunction <https://biomedkg.org/ontology/MolecularFunction/3c219e9273504dca> .
+<https://biomedkg.org/ontology/Protein/248af50a3d8914f1> bio:involvedin <https://biomedkg.org/ontology/BiologicalProcess/9b4ce3498bf88932> .
+<https://biomedkg.org/ontology/Protein/248af50a3d8914f1> bio:involvedin <https://biomedkg.org/ontology/BiologicalProcess/f7f5d9b2da36bb7b> .
+<https://biomedkg.org/ontology/Protein/248af50a3d8914f1> bio:expressedin <https://biomedkg.org/ontology/Anatomy/a517805b7e761f08> .
+<https://biomedkg.org/ontology/Protein/248af50a3d8914f1> bio:involvedinpathway <https://biomedkg.org/ontology/Pathway/6090462fbf4ca9c3> .
+<https://biomedkg.org/ontology/Protein/248af50a3d8914f1> bio:involvedinpathway <https://biomedkg.org/ontology/Pathway/042a27bc574e861b> .
+<https://biomedkg.org/ontology/Protein/4d8301e76189987e> bio:hasmolecularfunction <https://biomedkg.org/ontology/MolecularFunction/f7bc5dce3cbc5192> .
+<https://biomedkg.org/ontology/Protein/4d8301e76189987e> bio:involvedin <https://biomedkg.org/ontology/BiologicalProcess/9b4ce3498bf88932> .
+<https://biomedkg.org/ontology/Protein/4d8301e76189987e> bio:involvedin <https://biomedkg.org/ontology/BiologicalProcess/bfcae80fe4b2b332> .
+<https://biomedkg.org/ontology/Protein/4d8301e76189987e> bio:expressedin <https://biomedkg.org/ontology/Anatomy/8c4c88ccb4c4214d> .
+<https://biomedkg.org/ontology/Protein/4d8301e76189987e> bio:involvedinpathway <https://biomedkg.org/ontology/Pathway/98be77f235a2598b> .
+<https://biomedkg.org/ontology/Protein/4d8301e76189987e> bio:involvedinpathway <https://biomedkg.org/ontology/Pathway/d7aa08eaae5a64a6> .
+<https://biomedkg.org/ontology/Protein/a302a1330186893c> bio:hasmolecularfunction <https://biomedkg.org/ontology/MolecularFunction/25dfa674a73b1014> .
+<https://biomedkg.org/ontology/Protein/a302a1330186893c> bio:involvedin <https://biomedkg.org/ontology/BiologicalProcess/42f9674dbeba6753> .
+<https://biomedkg.org/ontology/Protein/a302a1330186893c> bio:expressedin <https://biomedkg.org/ontology/Anatomy/40800c2233937ffc> .
+<https://biomedkg.org/ontology/Protein/a302a1330186893c> bio:expressedin <https://biomedkg.org/ontology/Anatomy/b6257b3b9da3c06b> .
+<https://biomedkg.org/ontology/Protein/a302a1330186893c> bio:involvedinpathway <https://biomedkg.org/ontology/Pathway/469a964fde26b67e> .
+<https://biomedkg.org/ontology/Protein/a302a1330186893c> bio:involvedinpathway <https://biomedkg.org/ontology/Pathway/696ddd2ff63f474b> .
+<https://biomedkg.org/ontology/Protein/06f87fb69cc26fc3> bio:hasmolecularfunction <https://biomedkg.org/ontology/MolecularFunction/25dfa674a73b1014> .
+<https://biomedkg.org/ontology/Protein/06f87fb69cc26fc3> bio:involvedin <https://biomedkg.org/ontology/BiologicalProcess/42f9674dbeba6753> .
+<https://biomedkg.org/ontology/Protein/06f87fb69cc26fc3> bio:expressedin <https://biomedkg.org/ontology/Anatomy/40800c2233937ffc> .
+<https://biomedkg.org/ontology/Protein/06f87fb69cc26fc3> bio:expressedin <https://biomedkg.org/ontology/Anatomy/c2d3651cd5454ba5> .
+<https://biomedkg.org/ontology/Protein/06f87fb69cc26fc3> bio:involvedinpathway <https://biomedkg.org/ontology/Pathway/696ddd2ff63f474b> .
+<https://biomedkg.org/ontology/Protein/d756a5c2361c8815> bio:hasmolecularfunction <https://biomedkg.org/ontology/MolecularFunction/6356b77b789b9d7c> .
+<https://biomedkg.org/ontology/Protein/d756a5c2361c8815> bio:involvedin <https://biomedkg.org/ontology/BiologicalProcess/f73b4044675fc4ee> .
+<https://biomedkg.org/ontology/Protein/d756a5c2361c8815> bio:involvedin <https://biomedkg.org/ontology/BiologicalProcess/d0e48e2a9aab460a> .
+<https://biomedkg.org/ontology/Protein/d756a5c2361c8815> bio:expressedin <https://biomedkg.org/ontology/Anatomy/b6257b3b9da3c06b> .
+<https://biomedkg.org/ontology/Protein/d756a5c2361c8815> bio:expressedin <https://biomedkg.org/ontology/Anatomy/2bdc4b74a318d5b6> .
+<https://biomedkg.org/ontology/Protein/d756a5c2361c8815> bio:involvedinpathway <https://biomedkg.org/ontology/Pathway/469bbfa9ee489785> .
+<https://biomedkg.org/ontology/Protein/d5d535eab7c5b09e> bio:hasmolecularfunction <https://biomedkg.org/ontology/MolecularFunction/5ccd06e0d1106484> .
+<https://biomedkg.org/ontology/Protein/d5d535eab7c5b09e> bio:involvedin <https://biomedkg.org/ontology/BiologicalProcess/d0e48e2a9aab460a> .
+<https://biomedkg.org/ontology/Protein/d5d535eab7c5b09e> bio:expressedin <https://biomedkg.org/ontology/Anatomy/b6257b3b9da3c06b> .
+<https://biomedkg.org/ontology/Protein/d5d535eab7c5b09e> bio:expressedin <https://biomedkg.org/ontology/Anatomy/2bdc4b74a318d5b6> .
+<https://biomedkg.org/ontology/Protein/d5d535eab7c5b09e> bio:involvedinpathway <https://biomedkg.org/ontology/Pathway/469bbfa9ee489785> .
+<https://biomedkg.org/ontology/Protein/bdbc4be1b52ed921> bio:hasmolecularfunction <https://biomedkg.org/ontology/MolecularFunction/7b8ebaa91c39b8ec> .
+<https://biomedkg.org/ontology/Protein/bdbc4be1b52ed921> bio:hasmolecularfunction <https://biomedkg.org/ontology/MolecularFunction/7758a3644a056d91> .
+<https://biomedkg.org/ontology/Protein/bdbc4be1b52ed921> bio:involvedin <https://biomedkg.org/ontology/BiologicalProcess/42f9674dbeba6753> .
+<https://biomedkg.org/ontology/Protein/bdbc4be1b52ed921> bio:involvedin <https://biomedkg.org/ontology/BiologicalProcess/bfcae80fe4b2b332> .
+<https://biomedkg.org/ontology/Protein/bdbc4be1b52ed921> bio:expressedin <https://biomedkg.org/ontology/Anatomy/40800c2233937ffc> .
+<https://biomedkg.org/ontology/Protein/bdbc4be1b52ed921> bio:expressedin <https://biomedkg.org/ontology/Anatomy/83dcdccc0a8f11bc> .
+<https://biomedkg.org/ontology/Protein/bdbc4be1b52ed921> bio:expressedin <https://biomedkg.org/ontology/Anatomy/c2d3651cd5454ba5> .
+<https://biomedkg.org/ontology/Protein/bdbc4be1b52ed921> bio:involvedinpathway <https://biomedkg.org/ontology/Pathway/972e3f48477484e6> .
+<https://biomedkg.org/ontology/Protein/bdbc4be1b52ed921> bio:involvedinpathway <https://biomedkg.org/ontology/Pathway/469a964fde26b67e> .
+<https://biomedkg.org/ontology/Pathway/6090462fbf4ca9c3> bio:involvesprocess <https://biomedkg.org/ontology/BiologicalProcess/1aba9583289db04e> .
+<https://biomedkg.org/ontology/Pathway/6090462fbf4ca9c3> bio:involvesprocess <https://biomedkg.org/ontology/BiologicalProcess/9b4ce3498bf88932> .
+<https://biomedkg.org/ontology/Pathway/98be77f235a2598b> bio:involvesprocess <https://biomedkg.org/ontology/BiologicalProcess/9b4ce3498bf88932> .
+<https://biomedkg.org/ontology/Pathway/98be77f235a2598b> bio:involvesprocess <https://biomedkg.org/ontology/BiologicalProcess/f7f5d9b2da36bb7b> .
+<https://biomedkg.org/ontology/Pathway/e9a40d19a2c3c5c8> bio:involvesprocess <https://biomedkg.org/ontology/BiologicalProcess/1aba9583289db04e> .
+<https://biomedkg.org/ontology/Pathway/e9a40d19a2c3c5c8> bio:involvesprocess <https://biomedkg.org/ontology/BiologicalProcess/5a9d910628206b4f> .
+<https://biomedkg.org/ontology/Pathway/05950f7f5da0158c> bio:involvesprocess <https://biomedkg.org/ontology/BiologicalProcess/9b4ce3498bf88932> .
+<https://biomedkg.org/ontology/Pathway/d35aa07032574777> bio:involvesprocess <https://biomedkg.org/ontology/BiologicalProcess/1aba9583289db04e> .
+<https://biomedkg.org/ontology/Pathway/de4526b5d9228b49> bio:involvesprocess <https://biomedkg.org/ontology/BiologicalProcess/4969d9cf86d749cf> .
+<https://biomedkg.org/ontology/Pathway/de4526b5d9228b49> bio:involvesprocess <https://biomedkg.org/ontology/BiologicalProcess/6b66639cbef5c6c9> .
+<https://biomedkg.org/ontology/Pathway/972e3f48477484e6> bio:involvesprocess <https://biomedkg.org/ontology/BiologicalProcess/42f9674dbeba6753> .
+<https://biomedkg.org/ontology/Pathway/469a964fde26b67e> bio:involvesprocess <https://biomedkg.org/ontology/BiologicalProcess/42f9674dbeba6753> .
+<https://biomedkg.org/ontology/Pathway/469bbfa9ee489785> bio:involvesprocess <https://biomedkg.org/ontology/BiologicalProcess/f73b4044675fc4ee> .
+<https://biomedkg.org/ontology/Pathway/469bbfa9ee489785> bio:involvesprocess <https://biomedkg.org/ontology/BiologicalProcess/d0e48e2a9aab460a> .
+<https://biomedkg.org/ontology/Pathway/042a27bc574e861b> bio:involvesprocess <https://biomedkg.org/ontology/BiologicalProcess/9b4ce3498bf88932> .
+<https://biomedkg.org/ontology/Pathway/042a27bc574e861b> bio:involvesprocess <https://biomedkg.org/ontology/BiologicalProcess/db4439dc1b93b09d> .
+<https://biomedkg.org/ontology/Pathway/696ddd2ff63f474b> bio:involvesprocess <https://biomedkg.org/ontology/BiologicalProcess/42f9674dbeba6753> .
+<https://biomedkg.org/ontology/Pathway/d7aa08eaae5a64a6> bio:involvesprocess <https://biomedkg.org/ontology/BiologicalProcess/9b4ce3498bf88932> .
+<https://biomedkg.org/ontology/CellType/6499804f136d0cb1> bio:foundin <https://biomedkg.org/ontology/Anatomy/5f4f2ce6a3e79464> .
+<https://biomedkg.org/ontology/CellType/6499804f136d0cb1> bio:foundin <https://biomedkg.org/ontology/Anatomy/815f0a819515b90a> .
+<https://biomedkg.org/ontology/CellType/31c8e045d0efbb8e> bio:foundin <https://biomedkg.org/ontology/Anatomy/8c4c88ccb4c4214d> .
+<https://biomedkg.org/ontology/CellType/c228aff28db47f11> bio:foundin <https://biomedkg.org/ontology/Anatomy/5f4f2ce6a3e79464> .
+<https://biomedkg.org/ontology/CellType/c14fc957780a6694> bio:foundin <https://biomedkg.org/ontology/Anatomy/5f4f2ce6a3e79464> .
+<https://biomedkg.org/ontology/CellType/c14fc957780a6694> bio:foundin <https://biomedkg.org/ontology/Anatomy/b6257b3b9da3c06b> .
+<https://biomedkg.org/ontology/CellType/a66b2894ef2c39c5> bio:foundin <https://biomedkg.org/ontology/Anatomy/5f4f2ce6a3e79464> .
+<https://biomedkg.org/ontology/CellType/a66b2894ef2c39c5> bio:foundin <https://biomedkg.org/ontology/Anatomy/815f0a819515b90a> .
+<https://biomedkg.org/ontology/CellType/a66b2894ef2c39c5> bio:foundin <https://biomedkg.org/ontology/Anatomy/a517805b7e761f08> .
+<https://biomedkg.org/ontology/CellType/a66b2894ef2c39c5> bio:foundin <https://biomedkg.org/ontology/Anatomy/bd1a2125460f8f50> .
+<https://biomedkg.org/ontology/CellType/b3ae9111f47dc445> bio:foundin <https://biomedkg.org/ontology/Anatomy/b6257b3b9da3c06b> .
+<https://biomedkg.org/ontology/CellType/b3ae9111f47dc445> bio:foundin <https://biomedkg.org/ontology/Anatomy/2bdc4b74a318d5b6> .
+<https://biomedkg.org/ontology/CellType/b246d4bcc62b57a7> bio:foundin <https://biomedkg.org/ontology/Anatomy/b6257b3b9da3c06b> .
+<https://biomedkg.org/ontology/CellType/b246d4bcc62b57a7> bio:foundin <https://biomedkg.org/ontology/Anatomy/2bdc4b74a318d5b6> .
+<https://biomedkg.org/ontology/CellType/80f1e0db9a4642ce> bio:foundin <https://biomedkg.org/ontology/Anatomy/b6257b3b9da3c06b> .
+<https://biomedkg.org/ontology/CellType/80f1e0db9a4642ce> bio:foundin <https://biomedkg.org/ontology/Anatomy/2bdc4b74a318d5b6> .
+<https://biomedkg.org/ontology/CellType/bfb513f6f5efccbe> bio:foundin <https://biomedkg.org/ontology/Anatomy/40800c2233937ffc> .
+<https://biomedkg.org/ontology/CellType/7f26c3330d2aff2a> bio:foundin <https://biomedkg.org/ontology/Anatomy/83dcdccc0a8f11bc> .
+<https://biomedkg.org/ontology/CellType/2b5bafc6d151494e> bio:foundin <https://biomedkg.org/ontology/Anatomy/c2d3651cd5454ba5> .
+<https://biomedkg.org/ontology/CellType/13d4372e68b5206d> bio:foundin <https://biomedkg.org/ontology/Anatomy/8c4c88ccb4c4214d> .
+<https://biomedkg.org/ontology/Phenotype/f91e0a9158264055> bio:associatedwithgene <https://biomedkg.org/ontology/Gene/03cceedbdeab8651> .
+<https://biomedkg.org/ontology/Phenotype/a3a8df671d035b4b> bio:associatedwithgene <https://biomedkg.org/ontology/Gene/6da75ba9d4da376e> .
+<https://biomedkg.org/ontology/Phenotype/ac234a10bded3705> bio:associatedwithgene <https://biomedkg.org/ontology/Gene/ea76c28036012a97> .
+<https://biomedkg.org/ontology/Phenotype/739bc2393d5f489a> bio:associatedwithgene <https://biomedkg.org/ontology/Gene/5d824c795788d20a> .
+<https://biomedkg.org/ontology/Phenotype/739bc2393d5f489a> bio:associatedwithgene <https://biomedkg.org/ontology/Gene/40ba8d76681a3773> .
+<https://biomedkg.org/ontology/Phenotype/0926ede6010cd697> bio:associatedwithgene <https://biomedkg.org/ontology/Gene/03cceedbdeab8651> .
+<https://biomedkg.org/ontology/Phenotype/4316faef0d81975f> bio:associatedwithgene <https://biomedkg.org/ontology/Gene/ea76c28036012a97> .
+<https://biomedkg.org/ontology/Phenotype/a0014d96c3b024a4> bio:associatedwithgene <https://biomedkg.org/ontology/Gene/6da75ba9d4da376e> .
+<https://biomedkg.org/ontology/Phenotype/0103eb1860c9c906> bio:associatedwithgene <https://biomedkg.org/ontology/Gene/40ba8d76681a3773> .
+<https://biomedkg.org/ontology/Phenotype/847d4a27f54b9ce8> bio:associatedwithgene <https://biomedkg.org/ontology/Gene/ea76c28036012a97> .
+<https://biomedkg.org/ontology/Exposure/7e742c653c2eb45f> bio:affectsgene <https://biomedkg.org/ontology/Gene/6da75ba9d4da376e> .
+<https://biomedkg.org/ontology/Exposure/7e742c653c2eb45f> bio:affectsgene <https://biomedkg.org/ontology/Gene/03cceedbdeab8651> .
+<https://biomedkg.org/ontology/Exposure/7e742c653c2eb45f> bio:increasesrisk <https://biomedkg.org/ontology/Disease/5aff5b154ac58ce2> .
+<https://biomedkg.org/ontology/Exposure/7e742c653c2eb45f> bio:increasesrisk <https://biomedkg.org/ontology/Disease/4294570d80d38208> .
+<https://biomedkg.org/ontology/Exposure/73b39d690ac07048> bio:affectsgene <https://biomedkg.org/ontology/Gene/eeef6e83f1d23e59> .
+<https://biomedkg.org/ontology/Exposure/73b39d690ac07048> bio:increasesrisk <https://biomedkg.org/ontology/Disease/1fc646c29cf16c09> .
+<https://biomedkg.org/ontology/Exposure/6aaeef2d72e9ec95> bio:affectsgene <https://biomedkg.org/ontology/Gene/03cceedbdeab8651> .
+<https://biomedkg.org/ontology/Exposure/6aaeef2d72e9ec95> bio:increasesrisk <https://biomedkg.org/ontology/Disease/5aff5b154ac58ce2> .
+<https://biomedkg.org/ontology/Exposure/157b7880ff303e33> bio:affectsgene <https://biomedkg.org/ontology/Gene/03cceedbdeab8651> .
+<https://biomedkg.org/ontology/Exposure/157b7880ff303e33> bio:increasesrisk <https://biomedkg.org/ontology/Disease/5aff5b154ac58ce2> .
+<https://biomedkg.org/ontology/Exposure/53517aa80eff37b8> bio:increasesrisk <https://biomedkg.org/ontology/Disease/4294570d80d38208> .
+<https://biomedkg.org/ontology/Exposure/a30214158d0c61a3> bio:affectsgene <https://biomedkg.org/ontology/Gene/eeef6e83f1d23e59> .
+<https://biomedkg.org/ontology/Exposure/a30214158d0c61a3> bio:increasesrisk <https://biomedkg.org/ontology/Disease/f8fb8aae754e144d> .
+<https://biomedkg.org/ontology/Exposure/a855c9d6c43ea84e> bio:affectsgene <https://biomedkg.org/ontology/Gene/03cceedbdeab8651> .
+<https://biomedkg.org/ontology/Exposure/a855c9d6c43ea84e> bio:increasesrisk <https://biomedkg.org/ontology/Disease/f8fb8aae754e144d> .
+<https://biomedkg.org/ontology/Exposure/6da214ad75c8c6dc> bio:increasesrisk <https://biomedkg.org/ontology/Disease/4294570d80d38208> .
+<https://biomedkg.org/ontology/Exposure/c6c621c5ab6db1f4> bio:increasesrisk <https://biomedkg.org/ontology/Disease/5aff5b154ac58ce2> .
+<https://biomedkg.org/ontology/Exposure/7f55dafe73aad4c4> bio:affectsgene <https://biomedkg.org/ontology/Gene/ea76c28036012a97> .
+<https://biomedkg.org/ontology/Exposure/7f55dafe73aad4c4> bio:increasesrisk <https://biomedkg.org/ontology/Disease/8a861cb97e74e4ac> .
+<https://biomedkg.org/ontology/Exposure/7f55dafe73aad4c4> bio:increasesrisk <https://biomedkg.org/ontology/Disease/3ff887001975dbb6> .
+<https://biomedkg.org/ontology/Exposure/186cd154c7027328> bio:affectsgene <https://biomedkg.org/ontology/Gene/ea76c28036012a97> .
+<https://biomedkg.org/ontology/Exposure/186cd154c7027328> bio:increasesrisk <https://biomedkg.org/ontology/Disease/8a861cb97e74e4ac> .
+<https://biomedkg.org/ontology/Exposure/186cd154c7027328> bio:increasesrisk <https://biomedkg.org/ontology/Disease/3ff887001975dbb6> .
+<https://biomedkg.org/ontology/Biomarker/8a2b86560469a89f> bio:predictsresponse <https://biomedkg.org/ontology/Drug/190ab5964523b5ba> .
+<https://biomedkg.org/ontology/Biomarker/8a2b86560469a89f> bio:predictsresponse <https://biomedkg.org/ontology/Drug/d61142a99462bfac> .
+<https://biomedkg.org/ontology/Biomarker/8a2b86560469a89f> bio:predictsresponse <https://biomedkg.org/ontology/Drug/843b8121b93a1319> .
+<https://biomedkg.org/ontology/Biomarker/546a97a632008ce3> bio:predictsresponse <https://biomedkg.org/ontology/Drug/190ab5964523b5ba> .
+<https://biomedkg.org/ontology/Biomarker/19fb155d720a6385> bio:predictsresponse <https://biomedkg.org/ontology/Drug/8ca17b00ffc6bcac> .
+<https://biomedkg.org/ontology/Biomarker/19fb155d720a6385> bio:predictsresponse <https://biomedkg.org/ontology/Drug/2b1b32cfd4a4e198> .
+<https://biomedkg.org/ontology/Biomarker/8801537373178adb> bio:predictsresponse <https://biomedkg.org/ontology/Drug/7370364dffbba1b1> .
+<https://biomedkg.org/ontology/Biomarker/8801537373178adb> bio:predictsresponse <https://biomedkg.org/ontology/Drug/29e6e2e91dc3a89f> .
+<https://biomedkg.org/ontology/Biomarker/ec464ec084557974> bio:predictsresponse <https://biomedkg.org/ontology/Drug/9a76bc014eea3dea> .
+<https://biomedkg.org/ontology/Biomarker/ff092c25eb786935> bio:predictsresponse <https://biomedkg.org/ontology/Drug/cd34a25cf0a97dee> .
+<https://biomedkg.org/ontology/ClinicalTrial/6499804f136d0cb1> bio:investigatesdrug <https://biomedkg.org/ontology/Drug/190ab5964523b5ba> .
+<https://biomedkg.org/ontology/ClinicalTrial/6499804f136d0cb1> bio:studiesdisease <https://biomedkg.org/ontology/Disease/5aff5b154ac58ce2> .
+<https://biomedkg.org/ontology/ClinicalTrial/6499804f136d0cb1> bio:reportsadverseevent <https://biomedkg.org/ontology/AdverseEvent/5d6c12e12089fbd6> .
+<https://biomedkg.org/ontology/ClinicalTrial/6499804f136d0cb1> bio:reportsadverseevent <https://biomedkg.org/ontology/AdverseEvent/099e53d1f62acc3f> .
+<https://biomedkg.org/ontology/ClinicalTrial/6499804f136d0cb1> bio:reportsadverseevent <https://biomedkg.org/ontology/AdverseEvent/4195d47499ccbee7> .
+<https://biomedkg.org/ontology/ClinicalTrial/31c8e045d0efbb8e> bio:investigatesdrug <https://biomedkg.org/ontology/Drug/d61142a99462bfac> .
+<https://biomedkg.org/ontology/ClinicalTrial/31c8e045d0efbb8e> bio:studiesdisease <https://biomedkg.org/ontology/Disease/5aff5b154ac58ce2> .
+<https://biomedkg.org/ontology/ClinicalTrial/31c8e045d0efbb8e> bio:reportsadverseevent <https://biomedkg.org/ontology/AdverseEvent/5d6c12e12089fbd6> .
+<https://biomedkg.org/ontology/ClinicalTrial/31c8e045d0efbb8e> bio:reportsadverseevent <https://biomedkg.org/ontology/AdverseEvent/099e53d1f62acc3f> .
+<https://biomedkg.org/ontology/ClinicalTrial/c228aff28db47f11> bio:investigatesdrug <https://biomedkg.org/ontology/Drug/843b8121b93a1319> .
+<https://biomedkg.org/ontology/ClinicalTrial/c228aff28db47f11> bio:studiesdisease <https://biomedkg.org/ontology/Disease/5aff5b154ac58ce2> .
+<https://biomedkg.org/ontology/ClinicalTrial/c228aff28db47f11> bio:reportsadverseevent <https://biomedkg.org/ontology/AdverseEvent/099e53d1f62acc3f> .
+<https://biomedkg.org/ontology/ClinicalTrial/c228aff28db47f11> bio:reportsadverseevent <https://biomedkg.org/ontology/AdverseEvent/4195d47499ccbee7> .
+<https://biomedkg.org/ontology/ClinicalTrial/c14fc957780a6694> bio:investigatesdrug <https://biomedkg.org/ontology/Drug/29e6e2e91dc3a89f> .
+<https://biomedkg.org/ontology/ClinicalTrial/c14fc957780a6694> bio:studiesdisease <https://biomedkg.org/ontology/Disease/aa8c47aa96dd0a0d> .
+<https://biomedkg.org/ontology/ClinicalTrial/c14fc957780a6694> bio:reportsadverseevent <https://biomedkg.org/ontology/AdverseEvent/53844ac28eed7f1d> .
+<https://biomedkg.org/ontology/ClinicalTrial/c14fc957780a6694> bio:reportsadverseevent <https://biomedkg.org/ontology/AdverseEvent/de4db0ee868e470b> .
+<https://biomedkg.org/ontology/ClinicalTrial/a66b2894ef2c39c5> bio:investigatesdrug <https://biomedkg.org/ontology/Drug/8ca17b00ffc6bcac> .
+<https://biomedkg.org/ontology/ClinicalTrial/a66b2894ef2c39c5> bio:studiesdisease <https://biomedkg.org/ontology/Disease/8a861cb97e74e4ac> .
+<https://biomedkg.org/ontology/ClinicalTrial/a66b2894ef2c39c5> bio:reportsadverseevent <https://biomedkg.org/ontology/AdverseEvent/40b3cdf7d06d7c38> .
+<https://biomedkg.org/ontology/ClinicalTrial/a66b2894ef2c39c5> bio:reportsadverseevent <https://biomedkg.org/ontology/AdverseEvent/fa50c2342b19957b> .
+<https://biomedkg.org/ontology/ClinicalTrial/a66b2894ef2c39c5> bio:reportsadverseevent <https://biomedkg.org/ontology/AdverseEvent/1c4417d5f68e5d8d> .
+<https://biomedkg.org/ontology/ClinicalTrial/b3ae9111f47dc445> bio:investigatesdrug <https://biomedkg.org/ontology/Drug/2b1b32cfd4a4e198> .
+<https://biomedkg.org/ontology/ClinicalTrial/b3ae9111f47dc445> bio:studiesdisease <https://biomedkg.org/ontology/Disease/8a861cb97e74e4ac> .
+<https://biomedkg.org/ontology/ClinicalTrial/b3ae9111f47dc445> bio:reportsadverseevent <https://biomedkg.org/ontology/AdverseEvent/40b3cdf7d06d7c38> .
+<https://biomedkg.org/ontology/ClinicalTrial/b3ae9111f47dc445> bio:reportsadverseevent <https://biomedkg.org/ontology/AdverseEvent/fa50c2342b19957b> .
+<https://biomedkg.org/ontology/ClinicalTrial/b3ae9111f47dc445> bio:reportsadverseevent <https://biomedkg.org/ontology/AdverseEvent/1c4417d5f68e5d8d> .
+<https://biomedkg.org/ontology/ClinicalTrial/b246d4bcc62b57a7> bio:investigatesdrug <https://biomedkg.org/ontology/Drug/9a76bc014eea3dea> .
+<https://biomedkg.org/ontology/ClinicalTrial/b246d4bcc62b57a7> bio:studiesdisease <https://biomedkg.org/ontology/Disease/f8fb8aae754e144d> .
+<https://biomedkg.org/ontology/ClinicalTrial/80f1e0db9a4642ce> bio:investigatesdrug <https://biomedkg.org/ontology/Drug/190ab5964523b5ba> .
+<https://biomedkg.org/ontology/ClinicalTrial/80f1e0db9a4642ce> bio:studiesdisease <https://biomedkg.org/ontology/Disease/1fc646c29cf16c09> .
+<https://biomedkg.org/ontology/ClinicalTrial/80f1e0db9a4642ce> bio:reportsadverseevent <https://biomedkg.org/ontology/AdverseEvent/099e53d1f62acc3f> .
+<https://biomedkg.org/ontology/ClinicalTrial/80f1e0db9a4642ce> bio:reportsadverseevent <https://biomedkg.org/ontology/AdverseEvent/4195d47499ccbee7> .
+<https://biomedkg.org/ontology/ClinicalTrial/bfb513f6f5efccbe> bio:investigatesdrug <https://biomedkg.org/ontology/Drug/d61142a99462bfac> .
+<https://biomedkg.org/ontology/ClinicalTrial/bfb513f6f5efccbe> bio:studiesdisease <https://biomedkg.org/ontology/Disease/1fc646c29cf16c09> .
+<https://biomedkg.org/ontology/ClinicalTrial/bfb513f6f5efccbe> bio:reportsadverseevent <https://biomedkg.org/ontology/AdverseEvent/099e53d1f62acc3f> .
+<https://biomedkg.org/ontology/ClinicalTrial/bfb513f6f5efccbe> bio:reportsadverseevent <https://biomedkg.org/ontology/AdverseEvent/37a7976ba48097d9> .
+<https://biomedkg.org/ontology/ClinicalTrial/7f26c3330d2aff2a> bio:investigatesdrug <https://biomedkg.org/ontology/Drug/e0a7c6f0710af59c> .
+<https://biomedkg.org/ontology/ClinicalTrial/7f26c3330d2aff2a> bio:studiesdisease <https://biomedkg.org/ontology/Disease/aa8c47aa96dd0a0d> .
+<https://biomedkg.org/ontology/ResearchPaper/809e47cbfdee0736> bio:authoredby <https://biomedkg.org/ontology/Researcher/b7aed7d50605b19e> .
+<https://biomedkg.org/ontology/ResearchPaper/809e47cbfdee0736> bio:authoredby <https://biomedkg.org/ontology/Researcher/a045cb459bf96065> .
+<https://biomedkg.org/ontology/ResearchPaper/809e47cbfdee0736> bio:mentionsdisease <https://biomedkg.org/ontology/Disease/5aff5b154ac58ce2> .
+<https://biomedkg.org/ontology/ResearchPaper/809e47cbfdee0736> bio:mentionsdrug <https://biomedkg.org/ontology/Drug/190ab5964523b5ba> .
+<https://biomedkg.org/ontology/ResearchPaper/0ad7334eaf2870d9> bio:authoredby <https://biomedkg.org/ontology/Researcher/b7aed7d50605b19e> .
+<https://biomedkg.org/ontology/ResearchPaper/0ad7334eaf2870d9> bio:authoredby <https://biomedkg.org/ontology/Researcher/69b6c129d3732f0b> .
+<https://biomedkg.org/ontology/ResearchPaper/0ad7334eaf2870d9> bio:mentionsdisease <https://biomedkg.org/ontology/Disease/5aff5b154ac58ce2> .
+<https://biomedkg.org/ontology/ResearchPaper/0ad7334eaf2870d9> bio:mentionsdrug <https://biomedkg.org/ontology/Drug/d61142a99462bfac> .
+<https://biomedkg.org/ontology/ResearchPaper/49608f394d59a224> bio:authoredby <https://biomedkg.org/ontology/Researcher/2f46b33b35e3a2a1> .
+<https://biomedkg.org/ontology/ResearchPaper/49608f394d59a224> bio:authoredby <https://biomedkg.org/ontology/Researcher/a32aacaa73ac87c2> .
+<https://biomedkg.org/ontology/ResearchPaper/49608f394d59a224> bio:mentionsdisease <https://biomedkg.org/ontology/Disease/aa8c47aa96dd0a0d> .
+<https://biomedkg.org/ontology/ResearchPaper/49608f394d59a224> bio:mentionsdrug <https://biomedkg.org/ontology/Drug/29e6e2e91dc3a89f> .
+<https://biomedkg.org/ontology/ResearchPaper/248af50a3d8914f1> bio:authoredby <https://biomedkg.org/ontology/Researcher/237aa22f671ffcab> .
+<https://biomedkg.org/ontology/ResearchPaper/248af50a3d8914f1> bio:authoredby <https://biomedkg.org/ontology/Researcher/35ce404b29c8e87f> .
+<https://biomedkg.org/ontology/ResearchPaper/248af50a3d8914f1> bio:mentionsdisease <https://biomedkg.org/ontology/Disease/8a861cb97e74e4ac> .
+<https://biomedkg.org/ontology/ResearchPaper/248af50a3d8914f1> bio:mentionsdrug <https://biomedkg.org/ontology/Drug/8ca17b00ffc6bcac> .
+<https://biomedkg.org/ontology/ResearchPaper/4d8301e76189987e> bio:authoredby <https://biomedkg.org/ontology/Researcher/69b6c129d3732f0b> .
+<https://biomedkg.org/ontology/ResearchPaper/4d8301e76189987e> bio:mentionsdisease <https://biomedkg.org/ontology/Disease/f8fb8aae754e144d> .
+<https://biomedkg.org/ontology/ResearchPaper/4d8301e76189987e> bio:mentionsdrug <https://biomedkg.org/ontology/Drug/9a76bc014eea3dea> .
+<https://biomedkg.org/ontology/ResearchPaper/a302a1330186893c> bio:authoredby <https://biomedkg.org/ontology/Researcher/237aa22f671ffcab> .
+<https://biomedkg.org/ontology/ResearchPaper/a302a1330186893c> bio:authoredby <https://biomedkg.org/ontology/Researcher/35ce404b29c8e87f> .
+<https://biomedkg.org/ontology/ResearchPaper/a302a1330186893c> bio:mentionsdisease <https://biomedkg.org/ontology/Disease/8a861cb97e74e4ac> .
+<https://biomedkg.org/ontology/ResearchPaper/a302a1330186893c> bio:mentionsdrug <https://biomedkg.org/ontology/Drug/8ca17b00ffc6bcac> .
+<https://biomedkg.org/ontology/ResearchPaper/a302a1330186893c> bio:mentionsdrug <https://biomedkg.org/ontology/Drug/2b1b32cfd4a4e198> .
+<https://biomedkg.org/ontology/ResearchPaper/06f87fb69cc26fc3> bio:authoredby <https://biomedkg.org/ontology/Researcher/b7aed7d50605b19e> .
+<https://biomedkg.org/ontology/ResearchPaper/06f87fb69cc26fc3> bio:mentionsdisease <https://biomedkg.org/ontology/Disease/5aff5b154ac58ce2> .
+<https://biomedkg.org/ontology/ResearchPaper/06f87fb69cc26fc3> bio:mentionsdrug <https://biomedkg.org/ontology/Drug/843b8121b93a1319> .
+<https://biomedkg.org/ontology/ResearchPaper/d756a5c2361c8815> bio:authoredby <https://biomedkg.org/ontology/Researcher/2f46b33b35e3a2a1> .
+<https://biomedkg.org/ontology/ResearchPaper/d756a5c2361c8815> bio:authoredby <https://biomedkg.org/ontology/Researcher/a32aacaa73ac87c2> .
+<https://biomedkg.org/ontology/ResearchPaper/d756a5c2361c8815> bio:mentionsdisease <https://biomedkg.org/ontology/Disease/aa8c47aa96dd0a0d> .
+<https://biomedkg.org/ontology/ResearchPaper/d756a5c2361c8815> bio:mentionsdrug <https://biomedkg.org/ontology/Drug/e0a7c6f0710af59c> .
+<https://biomedkg.org/ontology/ResearchPaper/d5d535eab7c5b09e> bio:authoredby <https://biomedkg.org/ontology/Researcher/b7aed7d50605b19e> .
+<https://biomedkg.org/ontology/ResearchPaper/d5d535eab7c5b09e> bio:authoredby <https://biomedkg.org/ontology/Researcher/a045cb459bf96065> .
+<https://biomedkg.org/ontology/ResearchPaper/d5d535eab7c5b09e> bio:mentionsdisease <https://biomedkg.org/ontology/Disease/1fc646c29cf16c09> .
+<https://biomedkg.org/ontology/ResearchPaper/d5d535eab7c5b09e> bio:mentionsdrug <https://biomedkg.org/ontology/Drug/190ab5964523b5ba> .
+<https://biomedkg.org/ontology/ResearchPaper/d5d535eab7c5b09e> bio:mentionsdrug <https://biomedkg.org/ontology/Drug/d61142a99462bfac> .
+<https://biomedkg.org/ontology/ResearchPaper/bdbc4be1b52ed921> bio:authoredby <https://biomedkg.org/ontology/Researcher/2f46b33b35e3a2a1> .
+<https://biomedkg.org/ontology/ResearchPaper/bdbc4be1b52ed921> bio:authoredby <https://biomedkg.org/ontology/Researcher/a32aacaa73ac87c2> .
+<https://biomedkg.org/ontology/ResearchPaper/bdbc4be1b52ed921> bio:mentionsdisease <https://biomedkg.org/ontology/Disease/aa8c47aa96dd0a0d> .
+<https://biomedkg.org/ontology/ResearchPaper/bdbc4be1b52ed921> bio:mentionsdrug <https://biomedkg.org/ontology/Drug/7370364dffbba1b1> .
+<https://biomedkg.org/ontology/ResearchPaper/bdbc4be1b52ed921> bio:mentionsdrug <https://biomedkg.org/ontology/Drug/29e6e2e91dc3a89f> .
+<https://biomedkg.org/ontology/Researcher/b7aed7d50605b19e> bio:affiliatedwith <https://biomedkg.org/ontology/Institution/6d9ee1d0d83e2bcf> .
+<https://biomedkg.org/ontology/Researcher/b7aed7d50605b19e> bio:advises <https://biomedkg.org/ontology/AdvisoryBoard/9b77d90e827f3408> .
+<https://biomedkg.org/ontology/Researcher/b7aed7d50605b19e> bio:advises <https://biomedkg.org/ontology/AdvisoryBoard/3ad229a1b0142e10> .
+<https://biomedkg.org/ontology/Researcher/69b6c129d3732f0b> bio:affiliatedwith <https://biomedkg.org/ontology/Institution/eab2a926a9e2807f> .
+<https://biomedkg.org/ontology/Researcher/69b6c129d3732f0b> bio:advises <https://biomedkg.org/ontology/AdvisoryBoard/9b77d90e827f3408> .
+<https://biomedkg.org/ontology/Researcher/2f46b33b35e3a2a1> bio:affiliatedwith <https://biomedkg.org/ontology/Institution/59b9bb46602d4603> .
+<https://biomedkg.org/ontology/Researcher/2f46b33b35e3a2a1> bio:advises <https://biomedkg.org/ontology/AdvisoryBoard/f02920b8fadc388f> .
+<https://biomedkg.org/ontology/Researcher/237aa22f671ffcab> bio:affiliatedwith <https://biomedkg.org/ontology/Institution/aad6139b44a2c069> .
+<https://biomedkg.org/ontology/Researcher/237aa22f671ffcab> bio:advises <https://biomedkg.org/ontology/AdvisoryBoard/a42141738d4eb7c9> .
+<https://biomedkg.org/ontology/Researcher/a045cb459bf96065> bio:affiliatedwith <https://biomedkg.org/ontology/Institution/512790ae63fc8d56> .
+<https://biomedkg.org/ontology/Researcher/a045cb459bf96065> bio:advises <https://biomedkg.org/ontology/AdvisoryBoard/ee78c594f2b37fc7> .
+<https://biomedkg.org/ontology/Researcher/a045cb459bf96065> bio:advises <https://biomedkg.org/ontology/AdvisoryBoard/3ad229a1b0142e10> .
+<https://biomedkg.org/ontology/Researcher/55bc3d25bfe89484> bio:affiliatedwith <https://biomedkg.org/ontology/Institution/eab2a926a9e2807f> .
+<https://biomedkg.org/ontology/Researcher/55bc3d25bfe89484> bio:advises <https://biomedkg.org/ontology/AdvisoryBoard/eec8144efa84cc5d> .
+<https://biomedkg.org/ontology/Researcher/53a9fbd4386f623a> bio:affiliatedwith <https://biomedkg.org/ontology/Institution/f9560cbebd1403c6> .
+<https://biomedkg.org/ontology/Researcher/53a9fbd4386f623a> bio:advises <https://biomedkg.org/ontology/AdvisoryBoard/92ea66a83be263f8> .
+<https://biomedkg.org/ontology/Researcher/48db297bc85aa6c2> bio:affiliatedwith <https://biomedkg.org/ontology/Institution/aad6139b44a2c069> .
+<https://biomedkg.org/ontology/Researcher/48db297bc85aa6c2> bio:advises <https://biomedkg.org/ontology/AdvisoryBoard/9b77d90e827f3408> .
+<https://biomedkg.org/ontology/Researcher/48db297bc85aa6c2> bio:advises <https://biomedkg.org/ontology/AdvisoryBoard/eec8144efa84cc5d> .
+<https://biomedkg.org/ontology/Researcher/a32aacaa73ac87c2> bio:affiliatedwith <https://biomedkg.org/ontology/Institution/59b9bb46602d4603> .
+<https://biomedkg.org/ontology/Researcher/a32aacaa73ac87c2> bio:advises <https://biomedkg.org/ontology/AdvisoryBoard/f02920b8fadc388f> .
+<https://biomedkg.org/ontology/Researcher/35ce404b29c8e87f> bio:affiliatedwith <https://biomedkg.org/ontology/Institution/eab2a926a9e2807f> .
+<https://biomedkg.org/ontology/Researcher/35ce404b29c8e87f> bio:advises <https://biomedkg.org/ontology/AdvisoryBoard/a42141738d4eb7c9> .
+<https://biomedkg.org/ontology/Researcher/35ce404b29c8e87f> bio:advises <https://biomedkg.org/ontology/AdvisoryBoard/646dcc361b7b1276> .
+<https://biomedkg.org/ontology/Institution/eab2a926a9e2807f> bio:sponsors <https://biomedkg.org/ontology/ClinicalTrial/31c8e045d0efbb8e> .
+<https://biomedkg.org/ontology/Institution/6d9ee1d0d83e2bcf> bio:sponsors <https://biomedkg.org/ontology/ClinicalTrial/6499804f136d0cb1> .
+<https://biomedkg.org/ontology/Institution/f9560cbebd1403c6> bio:sponsors <https://biomedkg.org/ontology/ClinicalTrial/c14fc957780a6694> .
+<https://biomedkg.org/ontology/Institution/51d02ab4642c06e1> bio:sponsors <https://biomedkg.org/ontology/ClinicalTrial/a66b2894ef2c39c5> .
+<https://biomedkg.org/ontology/Institution/51d02ab4642c06e1> bio:sponsors <https://biomedkg.org/ontology/ClinicalTrial/b3ae9111f47dc445> .
+<https://biomedkg.org/ontology/Institution/89f61a44a9c5a70b> bio:sponsors <https://biomedkg.org/ontology/ClinicalTrial/b246d4bcc62b57a7> .
+<https://biomedkg.org/ontology/Institution/43ec37da82de3e54> bio:sponsors <https://biomedkg.org/ontology/ClinicalTrial/c228aff28db47f11> .
+<https://biomedkg.org/ontology/Institution/aad6139b44a2c069> bio:sponsors <https://biomedkg.org/ontology/ClinicalTrial/7f26c3330d2aff2a> .
+<https://biomedkg.org/ontology/Institution/59b9bb46602d4603> bio:sponsors <https://biomedkg.org/ontology/ClinicalTrial/c228aff28db47f11> .
+<https://biomedkg.org/ontology/Institution/30cd2a1c275cd912> bio:sponsors <https://biomedkg.org/ontology/ClinicalTrial/7f26c3330d2aff2a> .
+<https://biomedkg.org/ontology/Institution/512790ae63fc8d56> bio:sponsors <https://biomedkg.org/ontology/ClinicalTrial/6499804f136d0cb1> .
+<https://biomedkg.org/ontology/Institution/512790ae63fc8d56> bio:sponsors <https://biomedkg.org/ontology/ClinicalTrial/80f1e0db9a4642ce> .
+<https://biomedkg.org/ontology/Patient/304d88c6d93ba711> bio:enrolledin <https://biomedkg.org/ontology/ClinicalTrial/6499804f136d0cb1> .
+<https://biomedkg.org/ontology/Patient/304d88c6d93ba711> bio:hasoutcome <https://biomedkg.org/ontology/PatientOutcome/ce50e4a60f80a4a7> .
+<https://biomedkg.org/ontology/Patient/304d88c6d93ba711> bio:hasoutcome <https://biomedkg.org/ontology/PatientOutcome/2fb0eb9abca62a75> .
+<https://biomedkg.org/ontology/Patient/00c90885fa272132> bio:enrolledin <https://biomedkg.org/ontology/ClinicalTrial/bfb513f6f5efccbe> .
+<https://biomedkg.org/ontology/Patient/00c90885fa272132> bio:hasoutcome <https://biomedkg.org/ontology/PatientOutcome/2823411e74959031> .
+<https://biomedkg.org/ontology/Patient/fdfb0d73d96c6e15> bio:enrolledin <https://biomedkg.org/ontology/ClinicalTrial/80f1e0db9a4642ce> .
+<https://biomedkg.org/ontology/Patient/fdfb0d73d96c6e15> bio:hasoutcome <https://biomedkg.org/ontology/PatientOutcome/2dfed06dac235fac> .
+<https://biomedkg.org/ontology/Patient/cef78898c41ba1bc> bio:enrolledin <https://biomedkg.org/ontology/ClinicalTrial/b246d4bcc62b57a7> .
+<https://biomedkg.org/ontology/Patient/cef78898c41ba1bc> bio:hasoutcome <https://biomedkg.org/ontology/PatientOutcome/c8ca2e5339dc3937> .
+<https://biomedkg.org/ontology/Patient/c64a75a271c34f43> bio:enrolledin <https://biomedkg.org/ontology/ClinicalTrial/6499804f136d0cb1> .
+<https://biomedkg.org/ontology/Patient/c64a75a271c34f43> bio:hasoutcome <https://biomedkg.org/ontology/PatientOutcome/4ad93c10546b12b2> .
+<https://biomedkg.org/ontology/Patient/c64a75a271c34f43> bio:hasoutcome <https://biomedkg.org/ontology/PatientOutcome/3603c80d07c1869a> .
+<https://biomedkg.org/ontology/Patient/dd3d1ce237889584> bio:enrolledin <https://biomedkg.org/ontology/ClinicalTrial/c14fc957780a6694> .
+<https://biomedkg.org/ontology/Patient/dd3d1ce237889584> bio:hasoutcome <https://biomedkg.org/ontology/PatientOutcome/693624665fb58410> .
+<https://biomedkg.org/ontology/Patient/245f66810bf046a5> bio:enrolledin <https://biomedkg.org/ontology/ClinicalTrial/c228aff28db47f11> .
+<https://biomedkg.org/ontology/Patient/245f66810bf046a5> bio:hasoutcome <https://biomedkg.org/ontology/PatientOutcome/096df5d6c675cb2d> .
+<https://biomedkg.org/ontology/Patient/245f66810bf046a5> bio:hasoutcome <https://biomedkg.org/ontology/PatientOutcome/a9e05bdc12eda11d> .
+<https://biomedkg.org/ontology/Patient/380d2cc61b5dca78> bio:enrolledin <https://biomedkg.org/ontology/ClinicalTrial/6499804f136d0cb1> .
+<https://biomedkg.org/ontology/Patient/380d2cc61b5dca78> bio:hasoutcome <https://biomedkg.org/ontology/PatientOutcome/599195c8ca61c1d3> .
+<https://biomedkg.org/ontology/Patient/3bb5e58949a58ab0> bio:enrolledin <https://biomedkg.org/ontology/ClinicalTrial/bfb513f6f5efccbe> .
+<https://biomedkg.org/ontology/Patient/3bb5e58949a58ab0> bio:hasoutcome <https://biomedkg.org/ontology/PatientOutcome/1c3b78298d74a6ee> .
+<https://biomedkg.org/ontology/Patient/763d488ed05881a9> bio:enrolledin <https://biomedkg.org/ontology/ClinicalTrial/c14fc957780a6694> .
+<https://biomedkg.org/ontology/Patient/763d488ed05881a9> bio:hasoutcome <https://biomedkg.org/ontology/PatientOutcome/3e9d06aee2ba1db6> .
+<https://biomedkg.org/ontology/Patient/e096b2ceb17a0a99> bio:enrolledin <https://biomedkg.org/ontology/ClinicalTrial/80f1e0db9a4642ce> .
+<https://biomedkg.org/ontology/Patient/e096b2ceb17a0a99> bio:hasoutcome <https://biomedkg.org/ontology/PatientOutcome/cffe01208392db07> .
+<https://biomedkg.org/ontology/Patient/d0bf468991cbc627> bio:enrolledin <https://biomedkg.org/ontology/ClinicalTrial/31c8e045d0efbb8e> .
+<https://biomedkg.org/ontology/Patient/d0bf468991cbc627> bio:hasoutcome <https://biomedkg.org/ontology/PatientOutcome/b4d18162fa2c6578> .
+<https://biomedkg.org/ontology/Patient/d0bf468991cbc627> bio:hasoutcome <https://biomedkg.org/ontology/PatientOutcome/f6b005b35c42243b> .
+<https://biomedkg.org/ontology/Patient/f0e85bc8dc122c7c> bio:enrolledin <https://biomedkg.org/ontology/ClinicalTrial/a66b2894ef2c39c5> .
+<https://biomedkg.org/ontology/Patient/f0e85bc8dc122c7c> bio:hasoutcome <https://biomedkg.org/ontology/PatientOutcome/12d3bebd1ce3986a> .
+<https://biomedkg.org/ontology/Patient/b9e952f8381eea7f> bio:enrolledin <https://biomedkg.org/ontology/ClinicalTrial/6499804f136d0cb1> .
+<https://biomedkg.org/ontology/Patient/b9e952f8381eea7f> bio:hasoutcome <https://biomedkg.org/ontology/PatientOutcome/b45d254adb02d023> .
+<https://biomedkg.org/ontology/Patient/b9e952f8381eea7f> bio:hasoutcome <https://biomedkg.org/ontology/PatientOutcome/68f01b0bb565f3d1> .
+<https://biomedkg.org/ontology/Patient/d0a6ba2ede6a4b8c> bio:enrolledin <https://biomedkg.org/ontology/ClinicalTrial/c228aff28db47f11> .
+<https://biomedkg.org/ontology/Patient/d0a6ba2ede6a4b8c> bio:hasoutcome <https://biomedkg.org/ontology/PatientOutcome/dc4354439b1445e0> .
+<https://biomedkg.org/ontology/DrugBatch/17bc80d729f868b1> bio:producedfor <https://biomedkg.org/ontology/Drug/190ab5964523b5ba> .
+<https://biomedkg.org/ontology/DrugBatch/bcfe8137fcedcb13> bio:producedfor <https://biomedkg.org/ontology/Drug/190ab5964523b5ba> .
+<https://biomedkg.org/ontology/DrugBatch/03008fc50add1e89> bio:producedfor <https://biomedkg.org/ontology/Drug/d61142a99462bfac> .
+<https://biomedkg.org/ontology/DrugBatch/eb573e7c786c00a4> bio:producedfor <https://biomedkg.org/ontology/Drug/d61142a99462bfac> .
+<https://biomedkg.org/ontology/DrugBatch/8117e5b55e38afcf> bio:producedfor <https://biomedkg.org/ontology/Drug/843b8121b93a1319> .
+<https://biomedkg.org/ontology/DrugBatch/cbca888cddef20cb> bio:producedfor <https://biomedkg.org/ontology/Drug/843b8121b93a1319> .
+<https://biomedkg.org/ontology/DrugBatch/4e5c82e9af374c0b> bio:producedfor <https://biomedkg.org/ontology/Drug/cd34a25cf0a97dee> .
+<https://biomedkg.org/ontology/DrugBatch/5850ebed3fc2ea08> bio:producedfor <https://biomedkg.org/ontology/Drug/9a76bc014eea3dea> .
+<https://biomedkg.org/ontology/DrugBatch/4e280f42d46496e6> bio:producedfor <https://biomedkg.org/ontology/Drug/e0a7c6f0710af59c> .
+<https://biomedkg.org/ontology/DrugBatch/11c4a84859a8b6b1> bio:producedfor <https://biomedkg.org/ontology/Drug/7370364dffbba1b1> .
+<https://biomedkg.org/ontology/DrugBatch/9aec646c92f445ac> bio:producedfor <https://biomedkg.org/ontology/Drug/29e6e2e91dc3a89f> .
+<https://biomedkg.org/ontology/DrugBatch/2104cf35c9b4a38e> bio:producedfor <https://biomedkg.org/ontology/Drug/8ca17b00ffc6bcac> .
+<https://biomedkg.org/ontology/DrugBatch/e3b8679b62e2a842> bio:producedfor <https://biomedkg.org/ontology/Drug/8ca17b00ffc6bcac> .
+<https://biomedkg.org/ontology/DrugBatch/ddbbe71eb80f3cd3> bio:producedfor <https://biomedkg.org/ontology/Drug/2b1b32cfd4a4e198> .
+<https://biomedkg.org/ontology/DrugBatch/282937ee5890a841> bio:producedfor <https://biomedkg.org/ontology/Drug/2b1b32cfd4a4e198> .
+<https://biomedkg.org/ontology/DrugBatch/b38809216b4b4e4f> bio:producedfor <https://biomedkg.org/ontology/Drug/190ab5964523b5ba> .
+<https://biomedkg.org/ontology/DrugBatch/e16dc25da7447c32> bio:producedfor <https://biomedkg.org/ontology/Drug/d61142a99462bfac> .
+<https://biomedkg.org/ontology/DrugBatch/15f8a8e295ee3ed3> bio:producedfor <https://biomedkg.org/ontology/Drug/cd34a25cf0a97dee> .
+<https://biomedkg.org/ontology/DrugBatch/a9ba3693c5eeeee7> bio:producedfor <https://biomedkg.org/ontology/Drug/29e6e2e91dc3a89f> .
+<https://biomedkg.org/ontology/DrugBatch/bdd8c004a1f725c3> bio:producedfor <https://biomedkg.org/ontology/Drug/190ab5964523b5ba> .
+<https://biomedkg.org/ontology/RegulatorySubmission/8b735ae9315c6c5b> bio:submissionfor <https://biomedkg.org/ontology/Drug/190ab5964523b5ba> .
+<https://biomedkg.org/ontology/RegulatorySubmission/1c40e1504d355ac7> bio:submissionfor <https://biomedkg.org/ontology/Drug/190ab5964523b5ba> .
+<https://biomedkg.org/ontology/RegulatorySubmission/a71d8ffb599ae99a> bio:submissionfor <https://biomedkg.org/ontology/Drug/d61142a99462bfac> .
+<https://biomedkg.org/ontology/RegulatorySubmission/f8ea65494009ffe6> bio:submissionfor <https://biomedkg.org/ontology/Drug/843b8121b93a1319> .
+<https://biomedkg.org/ontology/RegulatorySubmission/4fa0f8683e0f85f6> bio:submissionfor <https://biomedkg.org/ontology/Drug/cd34a25cf0a97dee> .
+<https://biomedkg.org/ontology/RegulatorySubmission/01b908040c873257> bio:submissionfor <https://biomedkg.org/ontology/Drug/29e6e2e91dc3a89f> .
+<https://biomedkg.org/ontology/RegulatorySubmission/da541e52e5c79821> bio:submissionfor <https://biomedkg.org/ontology/Drug/29e6e2e91dc3a89f> .
+<https://biomedkg.org/ontology/RegulatorySubmission/fc96e960633c6ae2> bio:submissionfor <https://biomedkg.org/ontology/Drug/8ca17b00ffc6bcac> .
+<https://biomedkg.org/ontology/RegulatorySubmission/3e603980e2a2b095> bio:submissionfor <https://biomedkg.org/ontology/Drug/2b1b32cfd4a4e198> .
+<https://biomedkg.org/ontology/RegulatorySubmission/fb84123fa5cb6655> bio:submissionfor <https://biomedkg.org/ontology/Drug/2b1b32cfd4a4e198> .
+<https://biomedkg.org/ontology/Cluster/e7b22a6547e69c5b> bio:hassummary <https://biomedkg.org/ontology/ClusterSummary/b6a28b98aab574fd> .
+<https://biomedkg.org/ontology/Cluster/2e5e652670d7f8af> bio:hassummary <https://biomedkg.org/ontology/ClusterSummary/a48e8136f04cf885> .
+<https://biomedkg.org/ontology/Cluster/c88e4def492385a8> bio:hassummary <https://biomedkg.org/ontology/ClusterSummary/c369bcc84af2533e> .
+<https://biomedkg.org/ontology/Cluster/91e0b84228912b4a> bio:hassummary <https://biomedkg.org/ontology/ClusterSummary/6f7da47ef5420a3d> .
+<https://biomedkg.org/ontology/Cluster/de71c3afdbf06f58> bio:hassummary <https://biomedkg.org/ontology/ClusterSummary/80ce9360bf5d922b> .
+<https://biomedkg.org/ontology/Cluster/e940375d5a1a3d35> bio:hassummary <https://biomedkg.org/ontology/ClusterSummary/e03a95a7c0ab6e39> .
+<https://biomedkg.org/ontology/Cluster/c4eaf32d7532f7f8> bio:hassummary <https://biomedkg.org/ontology/ClusterSummary/437435d4622bb03c> .
+<https://biomedkg.org/ontology/Cluster/4a873199e81f6b81> bio:hassummary <https://biomedkg.org/ontology/ClusterSummary/e00f0d07e2b22824> .
+<https://biomedkg.org/ontology/Entity/724c80dfcd9ffe87> bio:associatedwithdisease <https://biomedkg.org/ontology/Disease/5aff5b154ac58ce2> .
+<https://biomedkg.org/ontology/Entity/724c80dfcd9ffe87> bio:associatedwithdisease <https://biomedkg.org/ontology/Disease/1fc646c29cf16c09> .
+<https://biomedkg.org/ontology/Entity/724c80dfcd9ffe87> bio:associatedwithdisease <https://biomedkg.org/ontology/Disease/2bd88016bd932dd3> .
+<https://biomedkg.org/ontology/Entity/724c80dfcd9ffe87> bio:associatedwithdisease <https://biomedkg.org/ontology/Disease/8a861cb97e74e4ac> .
+<https://biomedkg.org/ontology/Entity/724c80dfcd9ffe87> bio:associatedwithdisease <https://biomedkg.org/ontology/Disease/aa8c47aa96dd0a0d> .
+<https://biomedkg.org/ontology/Entity/62ebbcee7a9fbed6> bio:associatedwithdisease <https://biomedkg.org/ontology/Disease/8a861cb97e74e4ac> .
+<https://biomedkg.org/ontology/Entity/62ebbcee7a9fbed6> bio:associatedwithdisease <https://biomedkg.org/ontology/Disease/aa8c47aa96dd0a0d> .
+<https://biomedkg.org/ontology/Entity/54fa63e5c2490e7d> bio:associatedwithdisease <https://biomedkg.org/ontology/Disease/8a861cb97e74e4ac> .
+<https://biomedkg.org/ontology/Entity/817ce692e748e646> bio:associatedwithdisease <https://biomedkg.org/ontology/Disease/5aff5b154ac58ce2> .
+<https://biomedkg.org/ontology/Entity/63e9d1e153f95174> bio:associatedwithdisease <https://biomedkg.org/ontology/Disease/4294570d80d38208> .
+<https://biomedkg.org/ontology/Entity/a989eb93334ca28f> bio:associatedwithdisease <https://biomedkg.org/ontology/Disease/2bd88016bd932dd3> .
+<https://biomedkg.org/ontology/Entity/3598a71d8c56df82> bio:associatedwithdisease <https://biomedkg.org/ontology/Disease/f8fb8aae754e144d> .

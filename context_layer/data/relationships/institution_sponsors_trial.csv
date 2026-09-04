@@ -1,0 +1,13 @@
+institution_id,trial_id,funding_amount_millions,role
+I010,CT001,145.5,Primary Sponsor
+I010,CT008,98.3,Primary Sponsor
+I005,CT007,187.2,Primary Sponsor
+I006,CT003,112.7,Primary Sponsor
+I009,CT010,23.4,Primary Sponsor
+I004,CT005,234.8,Primary Sponsor
+I004,CT006,198.6,Primary Sponsor
+I001,CT002,15.2,Site
+I002,CT001,12.8,Site
+I003,CT004,18.9,Site
+I007,CT010,8.7,Site
+I008,CT003,11.3,Site

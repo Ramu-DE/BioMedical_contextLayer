@@ -1,0 +1,16 @@
+patient_id,trial_id,enrollment_date,arm,status
+PAT001,CT001,2019-05-10,Pembrolizumab Monotherapy,Completed
+PAT002,CT009,2020-02-15,Nivolumab,Completed
+PAT003,CT008,2021-03-20,Pembrolizumab + Chemotherapy,Active
+PAT004,CT007,2018-09-01,Imatinib 400mg,Completed
+PAT005,CT001,2020-01-08,Pembrolizumab Monotherapy,Completed
+PAT006,CT004,2019-06-15,Lecanemab 10mg/kg,Completed
+PAT007,CT003,2022-04-10,Atezolizumab,Active
+PAT008,CT001,2021-07-22,Pembrolizumab + Chemotherapy,Active
+PAT009,CT009,2020-11-05,Nivolumab + Ipilimumab,Completed
+PAT010,CT004,2019-08-20,Lecanemab 10mg/kg,Completed
+PAT011,CT008,2022-06-01,Pembrolizumab Monotherapy,Active
+PAT012,CT002,2021-09-14,Nivolumab,Active
+PAT013,CT005,2020-04-25,Semaglutide 1.0mg,Completed
+PAT014,CT001,2023-02-10,Pembrolizumab + Chemotherapy,Active
+PAT015,CT003,2019-11-30,Atezolizumab,Withdrawn

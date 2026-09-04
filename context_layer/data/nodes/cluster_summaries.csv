@@ -1,0 +1,9 @@
+summary_id,cluster_id,summary_text,key_entities,therapeutic_relevance,confidence_score
+CS001,CLU001,"Cancer drugs primarily target receptor tyrosine kinases and immune checkpoints","PD-1;HER2;EGFR;VEGFR",High,0.92
+CS002,CLU002,"Neurodegeneration involves amyloid processing, tau phosphorylation, and mitochondrial dysfunction","APP;MAPT;PINK1;PARK2",High,0.88
+CS003,CLU003,"Immune checkpoint inhibitors block PD-1/PD-L1 axis to restore anti-tumor immunity","PDCD1;CD274;CTLA4",High,0.95
+CS004,CLU004,"Metabolic syndrome genes converge on insulin signaling and lipid metabolism pathways","IRS1;PPARG;ADIPOQ;LEP",High,0.85
+CS005,CLU005,"Kinase inhibitors target BCR-ABL, EGFR, and BRAF with high selectivity","ABL1;EGFR;BRAF;KIT",High,0.90
+CS006,CLU006,"Inflammatory genes regulate NF-kB signaling and cytokine production","NFKB1;TNF;IL6;IL1B",Medium,0.82
+CS007,CLU007,"Apoptosis regulation involves BCL-2 family members and caspase cascades","BCL2;BAX;CASP3;TP53",High,0.91
+CS008,CLU008,"Angiogenesis module centers on VEGF signaling and endothelial cell proliferation","VEGFA;KDR;FLT1;ANG2",Medium,0.87

@@ -1,0 +1,11 @@
+submission_id,drug_id,indication
+SUB001,D001,Unresectable or metastatic melanoma
+SUB002,D001,Advanced non-small cell lung cancer
+SUB003,D002,Unresectable or metastatic melanoma
+SUB004,D003,Metastatic non-small cell lung cancer
+SUB005,D004,HER2-positive metastatic breast cancer
+SUB006,D008,Early Alzheimer's disease with confirmed amyloid pathology
+SUB007,D008,Early Alzheimer's disease
+SUB008,D009,Type 2 diabetes mellitus
+SUB009,D010,Type 2 diabetes mellitus
+SUB010,D010,Type 2 diabetes mellitus

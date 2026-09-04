@@ -1,0 +1,100 @@
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix bio:     <https://biomedkg.org/ontology/> .
+
+
+bio:patient-ontology
+    a owl:Ontology ;
+    rdfs:label "BioMedKG Patient Ontology" ;
+    dcterms:description "Patient demographics, enrollment, outcomes, and patient-reported data." .
+
+bio:Patient
+    a owl:Class ;
+    rdfs:label "Patient" ;
+    rdfs:comment "A de-identified patient record." ;
+    rdfs:subClassOf owl:Thing ;
+    .
+
+bio:patient_id
+    a owl:DatatypeProperty ;
+    rdfs:label "De-identified patient ID" ;
+    rdfs:domain bio:Patient ;
+    rdfs:range xsd:string .
+
+bio:age_group
+    a owl:DatatypeProperty ;
+    rdfs:label "Age group: pediatric, adult, geriatric" ;
+    rdfs:domain bio:Patient ;
+    rdfs:range xsd:string .
+
+bio:gender
+    a owl:DatatypeProperty ;
+    rdfs:label "Gender" ;
+    rdfs:domain bio:Patient ;
+    rdfs:range xsd:string .
+
+bio:PatientOutcome
+    a owl:Class ;
+    rdfs:label "PatientOutcome" ;
+    rdfs:comment "The result of clinical intervention." ;
+    rdfs:subClassOf owl:Thing ;
+    .
+
+bio:outcome_type
+    a owl:DatatypeProperty ;
+    rdfs:label "Response, Survival, Remission" ;
+    rdfs:domain bio:PatientOutcome ;
+    rdfs:range xsd:string .
+
+bio:value
+    a owl:DatatypeProperty ;
+    rdfs:label "Measured value" ;
+    rdfs:domain bio:PatientOutcome ;
+    rdfs:range xsd:string .
+
+bio:assessment_date
+    a owl:DatatypeProperty ;
+    rdfs:label "Date of assessment" ;
+    rdfs:domain bio:PatientOutcome ;
+    rdfs:range xsd:string .
+
+bio:PatientReportedOutcome
+    a owl:Class ;
+    rdfs:label "PatientReportedOutcome" ;
+    rdfs:comment "A health outcome reported directly by the patient." ;
+    rdfs:subClassOf owl:Thing ;
+    .
+
+bio:instrument
+    a owl:DatatypeProperty ;
+    rdfs:label "PRO instrument name" ;
+    rdfs:domain bio:PatientReportedOutcome ;
+    rdfs:range xsd:string .
+
+bio:score
+    a owl:DatatypeProperty ;
+    rdfs:label "Score" ;
+    rdfs:domain bio:PatientReportedOutcome ;
+    rdfs:range xsd:decimal .
+
+bio:domain
+    a owl:DatatypeProperty ;
+    rdfs:label "Domain: pain, quality of life..." ;
+    rdfs:domain bio:PatientReportedOutcome ;
+    rdfs:range xsd:string .
+
+bio:enrolledIn
+    a owl:ObjectProperty ;
+    rdfs:label "Patient enrolled in trial" ;
+    rdfs:domain bio:Patient ;
+    rdfs:range bio:ClinicalTrial .
+
+bio:hasOutcome
+    a owl:ObjectProperty ;
+    rdfs:label "Patient has outcome" ;
+    rdfs:domain bio:Patient ;
+    rdfs:range bio:PatientOutcome .

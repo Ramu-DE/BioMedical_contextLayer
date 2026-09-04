@@ -1,0 +1,21 @@
+gene_id,process_id,evidence_code,qualifier
+G001,BP002,IDA,Involved in
+G001,BP007,IDA,Involved in
+G001,BP011,IDA,Involved in
+G002,BP002,IDA,Involved in
+G002,BP007,IDA,Involved in
+G003,BP001,IDA,Involved in
+G003,BP006,IDA,Involved in
+G003,BP004,TAS,Involved in
+G004,BP006,IDA,Involved in
+G005,BP006,IDA,Involved in
+G006,BP002,IDA,Involved in
+G006,BP012,IDA,Involved in
+G007,BP002,IDA,Involved in
+G007,BP007,IDA,Involved in
+G008,BP003,IDA,Involved in
+G008,BP004,IDA,Involved in
+G009,BP009,IDA,Involved in
+G009,BP010,IDA,Involved in
+G010,BP009,IDA,Involved in
+G010,BP008,TAS,Involved in

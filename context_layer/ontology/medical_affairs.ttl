@@ -1,0 +1,143 @@
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix bio:     <https://biomedkg.org/ontology/> .
+
+
+bio:medical-affairs-ontology
+    a owl:Ontology ;
+    rdfs:label "BioMedKG Medical Affairs Ontology" ;
+    dcterms:description "Research publications, researchers, institutions, and advisory boards." .
+
+bio:ResearchPaper
+    a owl:Class ;
+    rdfs:label "ResearchPaper" ;
+    rdfs:comment "A scientific publication." ;
+    rdfs:subClassOf owl:Thing ;
+    .
+
+bio:title
+    a owl:DatatypeProperty ;
+    rdfs:label "Paper title" ;
+    rdfs:domain bio:ResearchPaper ;
+    rdfs:range xsd:string .
+
+bio:doi
+    a owl:DatatypeProperty ;
+    rdfs:label "DOI" ;
+    rdfs:domain bio:ResearchPaper ;
+    rdfs:range xsd:string .
+
+bio:publication_year
+    a owl:DatatypeProperty ;
+    rdfs:label "Year published" ;
+    rdfs:domain bio:ResearchPaper ;
+    rdfs:range xsd:string .
+
+bio:journal
+    a owl:DatatypeProperty ;
+    rdfs:label "Journal name" ;
+    rdfs:domain bio:ResearchPaper ;
+    rdfs:range xsd:string .
+
+bio:Researcher
+    a owl:Class ;
+    rdfs:label "Researcher" ;
+    rdfs:comment "A scientific researcher or clinician." ;
+    rdfs:subClassOf owl:Thing ;
+    .
+
+bio:name
+    a owl:DatatypeProperty ;
+    rdfs:label "Full name" ;
+    rdfs:domain bio:Researcher ;
+    rdfs:range xsd:string .
+
+bio:orcid
+    a owl:DatatypeProperty ;
+    rdfs:label "ORCID identifier" ;
+    rdfs:domain bio:Researcher ;
+    rdfs:range xsd:string .
+
+bio:affiliation
+    a owl:DatatypeProperty ;
+    rdfs:label "Primary affiliation" ;
+    rdfs:domain bio:Researcher ;
+    rdfs:range xsd:string .
+
+bio:Institution
+    a owl:Class ;
+    rdfs:label "Institution" ;
+    rdfs:comment "An academic or research institution." ;
+    rdfs:subClassOf owl:Thing ;
+    .
+
+bio:name
+    a owl:DatatypeProperty ;
+    rdfs:label "Institution name" ;
+    rdfs:domain bio:Institution ;
+    rdfs:range xsd:string .
+
+bio:country
+    a owl:DatatypeProperty ;
+    rdfs:label "Country" ;
+    rdfs:domain bio:Institution ;
+    rdfs:range xsd:string .
+
+bio:institution_type
+    a owl:DatatypeProperty ;
+    rdfs:label "University, Hospital, Biotech..." ;
+    rdfs:domain bio:Institution ;
+    rdfs:range xsd:string .
+
+bio:AdvisoryBoard
+    a owl:Class ;
+    rdfs:label "AdvisoryBoard" ;
+    rdfs:comment "A medical affairs advisory board." ;
+    rdfs:subClassOf owl:Thing ;
+    .
+
+bio:name
+    a owl:DatatypeProperty ;
+    rdfs:label "Board name" ;
+    rdfs:domain bio:AdvisoryBoard ;
+    rdfs:range xsd:string .
+
+bio:disease_area
+    a owl:DatatypeProperty ;
+    rdfs:label "Disease area focus" ;
+    rdfs:domain bio:AdvisoryBoard ;
+    rdfs:range xsd:string .
+
+bio:authoredBy
+    a owl:ObjectProperty ;
+    rdfs:label "Paper authored by researcher" ;
+    rdfs:domain bio:ResearchPaper ;
+    rdfs:range bio:Researcher .
+
+bio:mentionsDrug
+    a owl:ObjectProperty ;
+    rdfs:label "Paper mentions drug" ;
+    rdfs:domain bio:ResearchPaper ;
+    rdfs:range bio:Drug .
+
+bio:mentionsDisease
+    a owl:ObjectProperty ;
+    rdfs:label "Paper mentions disease" ;
+    rdfs:domain bio:ResearchPaper ;
+    rdfs:range bio:Disease .
+
+bio:affiliatedWith
+    a owl:ObjectProperty ;
+    rdfs:label "Researcher affiliated with institution" ;
+    rdfs:domain bio:Researcher ;
+    rdfs:range bio:Institution .
+
+bio:advises
+    a owl:ObjectProperty ;
+    rdfs:label "Researcher advises board" ;
+    rdfs:domain bio:Researcher ;
+    rdfs:range bio:AdvisoryBoard .

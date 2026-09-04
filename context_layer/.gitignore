@@ -1,0 +1,27 @@
+# ── Secrets: never commit ─────────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials
+credentials.json
+gh-token
+
+# Session handoff notes: contain live endpoints and instance identifiers
+RESUME.md
+
+# ── Environment ──────────────────────────────────────────────────────────────
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+
+# ── Local artefacts ──────────────────────────────────────────────────────────
+*.log
+.DS_Store
+dcat_catalog.ttl

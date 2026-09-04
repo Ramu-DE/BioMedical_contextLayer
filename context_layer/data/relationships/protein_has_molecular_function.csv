@@ -1,0 +1,13 @@
+protein_id,function_id,evidence_code,qualifier
+P001,MF006,IDA,Enables
+P002,MF006,IDA,Enables
+P003,MF002,IDA,Enables
+P003,MF001,IDA,Enables
+P004,MF002,IDA,Enables
+P005,MF001,IDA,Enables
+P006,MF008,IDA,Enables
+P007,MF008,IDA,Enables
+P008,MF009,IDA,Enables
+P009,MF005,IDA,Enables
+P010,MF007,IDA,Enables
+P010,MF011,IDA,Enables

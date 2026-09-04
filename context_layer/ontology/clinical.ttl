@@ -1,0 +1,118 @@
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix bio:     <https://biomedkg.org/ontology/> .
+
+
+bio:clinical-ontology
+    a owl:Ontology ;
+    rdfs:label "BioMedKG Clinical Ontology" ;
+    dcterms:description "Clinical trial, adverse events, and patient outcomes." .
+
+bio:ClinicalTrial
+    a owl:Class ;
+    rdfs:label "ClinicalTrial" ;
+    rdfs:comment "A research study evaluating medical interventions in humans." ;
+    rdfs:subClassOf owl:Thing ;
+    .
+
+bio:trial_id
+    a owl:DatatypeProperty ;
+    rdfs:label "Trial identifier (NCT...)" ;
+    rdfs:domain bio:ClinicalTrial ;
+    rdfs:range xsd:string .
+
+bio:title
+    a owl:DatatypeProperty ;
+    rdfs:label "Trial title" ;
+    rdfs:domain bio:ClinicalTrial ;
+    rdfs:range xsd:string .
+
+bio:phase
+    a owl:DatatypeProperty ;
+    rdfs:label "Phase I/II/III/IV" ;
+    rdfs:domain bio:ClinicalTrial ;
+    rdfs:range xsd:string .
+
+bio:status
+    a owl:DatatypeProperty ;
+    rdfs:label "Recruiting, Completed, Terminated..." ;
+    rdfs:domain bio:ClinicalTrial ;
+    rdfs:range xsd:string .
+
+bio:AdverseEvent
+    a owl:Class ;
+    rdfs:label "AdverseEvent" ;
+    rdfs:comment "An undesired harmful effect resulting from a medical treatment." ;
+    rdfs:subClassOf owl:Thing ;
+    .
+
+bio:name
+    a owl:DatatypeProperty ;
+    rdfs:label "Adverse event name" ;
+    rdfs:domain bio:AdverseEvent ;
+    rdfs:range xsd:string .
+
+bio:meddra_code
+    a owl:DatatypeProperty ;
+    rdfs:label "MedDRA code" ;
+    rdfs:domain bio:AdverseEvent ;
+    rdfs:range xsd:string .
+
+bio:severity
+    a owl:DatatypeProperty ;
+    rdfs:label "Severity: Mild, Moderate, Severe, Life-threatening" ;
+    rdfs:domain bio:AdverseEvent ;
+    rdfs:range xsd:string .
+
+bio:PatientOutcome
+    a owl:Class ;
+    rdfs:label "PatientOutcome" ;
+    rdfs:comment "The result of clinical intervention for a patient." ;
+    rdfs:subClassOf owl:Thing ;
+    .
+
+bio:outcome_id
+    a owl:DatatypeProperty ;
+    rdfs:label "Outcome identifier" ;
+    rdfs:domain bio:PatientOutcome ;
+    rdfs:range xsd:string .
+
+bio:outcome_type
+    a owl:DatatypeProperty ;
+    rdfs:label "Type: survival, response, remission" ;
+    rdfs:domain bio:PatientOutcome ;
+    rdfs:range xsd:string .
+
+bio:value
+    a owl:DatatypeProperty ;
+    rdfs:label "Measured value" ;
+    rdfs:domain bio:PatientOutcome ;
+    rdfs:range xsd:string .
+
+bio:investigatesDrug
+    a owl:ObjectProperty ;
+    rdfs:label "Trial investigates drug" ;
+    rdfs:domain bio:ClinicalTrial ;
+    rdfs:range bio:Drug .
+
+bio:studiesDisease
+    a owl:ObjectProperty ;
+    rdfs:label "Trial studies disease" ;
+    rdfs:domain bio:ClinicalTrial ;
+    rdfs:range bio:Disease .
+
+bio:reportsAdverseEvent
+    a owl:ObjectProperty ;
+    rdfs:label "Trial reports adverse event" ;
+    rdfs:domain bio:ClinicalTrial ;
+    rdfs:range bio:AdverseEvent .
+
+bio:hasOutcome
+    a owl:ObjectProperty ;
+    rdfs:label "Trial has patient outcome" ;
+    rdfs:domain bio:ClinicalTrial ;
+    rdfs:range bio:PatientOutcome .

@@ -1,0 +1,11 @@
+trial_id,disease_id,patient_population
+CT001,DIS001,Advanced NSCLC with PD-L1 ≥50%
+CT002,DIS001,Previously treated advanced NSCLC
+CT003,DIS001,Metastatic NSCLC after platinum therapy
+CT004,DIS006,Early Alzheimer's disease
+CT005,DIS005,Type 2 diabetes inadequately controlled
+CT006,DIS005,Type 2 diabetes on metformin
+CT007,DIS004,Newly diagnosed chronic phase CML
+CT008,DIS002,Advanced melanoma
+CT009,DIS002,Unresectable or metastatic melanoma
+CT010,DIS006,Mild cognitive impairment

@@ -1,0 +1,11 @@
+trial_id,nct_id,title,phase,status,start_date,enrollment,sponsor
+CT001,NCT02142738,Pembrolizumab in Advanced NSCLC,Phase 3,Completed,2014-03-15,1034,Merck
+CT002,NCT01721772,Nivolumab vs Docetaxel in NSCLC,Phase 3,Completed,2013-01-10,582,Bristol Myers Squibb
+CT003,NCT02008227,Atezolizumab in Metastatic NSCLC,Phase 2,Completed,2014-02-20,287,Roche
+CT004,NCT03715114,Lecanemab in Early Alzheimer's,Phase 3,Completed,2019-03-01,1795,Eisai
+CT005,NCT01900665,Semaglutide for Type 2 Diabetes,Phase 3,Completed,2013-07-15,3297,Novo Nordisk
+CT006,NCT04184622,Tirzepatide vs Semaglutide in T2D,Phase 3,Completed,2019-12-10,1879,Eli Lilly
+CT007,NCT00006150,Imatinib in CML,Phase 3,Completed,2000-08-01,1106,Novartis
+CT008,NCT02425891,Pembrolizumab in Melanoma,Phase 3,Completed,2015-04-20,514,Merck
+CT009,NCT01844505,Nivolumab in Melanoma,Phase 3,Completed,2013-05-15,418,Bristol Myers Squibb
+CT010,NCT03987919,Metformin in Alzheimer's Prevention,Phase 2,Active,2020-01-10,326,NIH

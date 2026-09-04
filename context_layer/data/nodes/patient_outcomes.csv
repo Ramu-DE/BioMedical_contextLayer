@@ -1,0 +1,21 @@
+outcome_id,patient_id,treatment_id,response_type,progression_free_months,overall_survival_months,quality_of_life_score
+OUT001,PAT001,D001,Partial Response,14.2,28.5,72
+OUT002,PAT001,D003,Stable Disease,8.1,22.3,65
+OUT003,PAT002,D002,Complete Response,24.0,36.0,85
+OUT004,PAT003,D004,Partial Response,18.5,30.2,70
+OUT005,PAT004,D005,Complete Response,60.0,72.0,78
+OUT006,PAT005,D001,Progressive Disease,3.2,12.8,55
+OUT007,PAT005,D003,Partial Response,11.4,24.6,68
+OUT008,PAT006,D008,Stable Disease,9.0,18.0,60
+OUT009,PAT007,D002,Partial Response,15.8,32.1,74
+OUT010,PAT008,D001,Stable Disease,7.5,20.4,62
+OUT011,PAT009,D002,Complete Response,22.0,34.0,82
+OUT012,PAT010,D007,Stable Disease,6.0,14.5,58
+OUT013,PAT011,D004,Partial Response,16.3,28.7,71
+OUT014,PAT012,D001,Progressive Disease,2.8,10.2,48
+OUT015,PAT012,D002,Partial Response,12.6,26.3,67
+OUT016,PAT013,D009,Complete Response,18.0,24.0,80
+OUT017,PAT014,D001,Stable Disease,9.8,21.5,66
+OUT018,PAT014,D003,Partial Response,13.2,27.8,72
+OUT019,PAT015,D002,Partial Response,10.5,22.0,63
+OUT020,PAT007,D001,Complete Response,20.0,32.5,79

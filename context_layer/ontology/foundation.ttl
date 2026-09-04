@@ -1,0 +1,367 @@
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix bio:     <https://biomedkg.org/ontology/> .
+
+
+bio:foundation-ontology
+    a owl:Ontology ;
+    rdfs:label "BioMedKG Foundation Ontology" ;
+    dcterms:description "Core biomedical entities: drugs, diseases, genes, proteins, pathways, anatomy." .
+
+bio:Drug
+    a owl:Class ;
+    rdfs:label "Drug" ;
+    rdfs:comment "A pharmaceutical substance used in treatment." ;
+    rdfs:subClassOf owl:Thing ;
+    .
+
+bio:name
+    a owl:DatatypeProperty ;
+    rdfs:label "Drug name" ;
+    rdfs:domain bio:Drug ;
+    rdfs:range xsd:string .
+
+bio:drug_id
+    a owl:DatatypeProperty ;
+    rdfs:label "Drug identifier" ;
+    rdfs:domain bio:Drug ;
+    rdfs:range xsd:string .
+
+bio:drug_type
+    a owl:DatatypeProperty ;
+    rdfs:label "Type: Small Molecule, Monoclonal Antibody..." ;
+    rdfs:domain bio:Drug ;
+    rdfs:range xsd:string .
+
+bio:approval_status
+    a owl:DatatypeProperty ;
+    rdfs:label "Approval status" ;
+    rdfs:domain bio:Drug ;
+    rdfs:range xsd:string .
+
+bio:mechanism
+    a owl:DatatypeProperty ;
+    rdfs:label "Mechanism of action" ;
+    rdfs:domain bio:Drug ;
+    rdfs:range xsd:string .
+
+bio:Disease
+    a owl:Class ;
+    rdfs:label "Disease" ;
+    rdfs:comment "A pathological condition affecting an organism." ;
+    rdfs:subClassOf owl:Thing ;
+    .
+
+bio:name
+    a owl:DatatypeProperty ;
+    rdfs:label "Disease name" ;
+    rdfs:domain bio:Disease ;
+    rdfs:range xsd:string .
+
+bio:disease_id
+    a owl:DatatypeProperty ;
+    rdfs:label "Disease identifier" ;
+    rdfs:domain bio:Disease ;
+    rdfs:range xsd:string .
+
+bio:icd10_code
+    a owl:DatatypeProperty ;
+    rdfs:label "ICD-10 code" ;
+    rdfs:domain bio:Disease ;
+    rdfs:range xsd:string .
+
+bio:category
+    a owl:DatatypeProperty ;
+    rdfs:label "Disease category" ;
+    rdfs:domain bio:Disease ;
+    rdfs:range xsd:string .
+
+bio:Gene
+    a owl:Class ;
+    rdfs:label "Gene" ;
+    rdfs:comment "A heritable unit of genetic information." ;
+    rdfs:subClassOf owl:Thing ;
+    .
+
+bio:symbol
+    a owl:DatatypeProperty ;
+    rdfs:label "Gene symbol (HGNC)" ;
+    rdfs:domain bio:Gene ;
+    rdfs:range xsd:string .
+
+bio:gene_id
+    a owl:DatatypeProperty ;
+    rdfs:label "Gene identifier" ;
+    rdfs:domain bio:Gene ;
+    rdfs:range xsd:string .
+
+bio:organism
+    a owl:DatatypeProperty ;
+    rdfs:label "Host organism" ;
+    rdfs:domain bio:Gene ;
+    rdfs:range xsd:string .
+
+bio:gene_type
+    a owl:DatatypeProperty ;
+    rdfs:label "Gene type: protein_coding, lncRNA..." ;
+    rdfs:domain bio:Gene ;
+    rdfs:range xsd:string .
+
+bio:Protein
+    a owl:Class ;
+    rdfs:label "Protein" ;
+    rdfs:comment "A polypeptide encoded by a gene." ;
+    rdfs:subClassOf owl:Thing ;
+    .
+
+bio:name
+    a owl:DatatypeProperty ;
+    rdfs:label "Protein name" ;
+    rdfs:domain bio:Protein ;
+    rdfs:range xsd:string .
+
+bio:uniprot_id
+    a owl:DatatypeProperty ;
+    rdfs:label "UniProt accession" ;
+    rdfs:domain bio:Protein ;
+    rdfs:range xsd:string .
+
+bio:function
+    a owl:DatatypeProperty ;
+    rdfs:label "Molecular function" ;
+    rdfs:domain bio:Protein ;
+    rdfs:range xsd:string .
+
+bio:Pathway
+    a owl:Class ;
+    rdfs:label "Pathway" ;
+    rdfs:comment "A biological pathway involving molecular interactions." ;
+    rdfs:subClassOf owl:Thing ;
+    .
+
+bio:name
+    a owl:DatatypeProperty ;
+    rdfs:label "Pathway name" ;
+    rdfs:domain bio:Pathway ;
+    rdfs:range xsd:string .
+
+bio:pathway_id
+    a owl:DatatypeProperty ;
+    rdfs:label "Pathway identifier" ;
+    rdfs:domain bio:Pathway ;
+    rdfs:range xsd:string .
+
+bio:source
+    a owl:DatatypeProperty ;
+    rdfs:label "Source database: KEGG, Reactome..." ;
+    rdfs:domain bio:Pathway ;
+    rdfs:range xsd:string .
+
+bio:Anatomy
+    a owl:Class ;
+    rdfs:label "Anatomy" ;
+    rdfs:comment "An anatomical structure or body region." ;
+    rdfs:subClassOf owl:Thing ;
+    .
+
+bio:name
+    a owl:DatatypeProperty ;
+    rdfs:label "Anatomical name" ;
+    rdfs:domain bio:Anatomy ;
+    rdfs:range xsd:string .
+
+bio:uberon_id
+    a owl:DatatypeProperty ;
+    rdfs:label "UBERON identifier" ;
+    rdfs:domain bio:Anatomy ;
+    rdfs:range xsd:string .
+
+bio:Biomarker
+    a owl:Class ;
+    rdfs:label "Biomarker" ;
+    rdfs:comment "A measurable indicator of a biological state." ;
+    rdfs:subClassOf owl:Thing ;
+    .
+
+bio:name
+    a owl:DatatypeProperty ;
+    rdfs:label "Biomarker name" ;
+    rdfs:domain bio:Biomarker ;
+    rdfs:range xsd:string .
+
+bio:biomarker_type
+    a owl:DatatypeProperty ;
+    rdfs:label "Type: prognostic, diagnostic, predictive" ;
+    rdfs:domain bio:Biomarker ;
+    rdfs:range xsd:string .
+
+bio:Exposure
+    a owl:Class ;
+    rdfs:label "Exposure" ;
+    rdfs:comment "An environmental or chemical exposure." ;
+    rdfs:subClassOf owl:Thing ;
+    .
+
+bio:name
+    a owl:DatatypeProperty ;
+    rdfs:label "Exposure name" ;
+    rdfs:domain bio:Exposure ;
+    rdfs:range xsd:string .
+
+bio:exposure_type
+    a owl:DatatypeProperty ;
+    rdfs:label "Type: chemical, radiation, dietary" ;
+    rdfs:domain bio:Exposure ;
+    rdfs:range xsd:string .
+
+bio:BiologicalProcess
+    a owl:Class ;
+    rdfs:label "BiologicalProcess" ;
+    rdfs:comment "A biological process from Gene Ontology." ;
+    rdfs:subClassOf owl:Thing ;
+    .
+
+bio:name
+    a owl:DatatypeProperty ;
+    rdfs:label "Process name" ;
+    rdfs:domain bio:BiologicalProcess ;
+    rdfs:range xsd:string .
+
+bio:go_id
+    a owl:DatatypeProperty ;
+    rdfs:label "Gene Ontology ID" ;
+    rdfs:domain bio:BiologicalProcess ;
+    rdfs:range xsd:string .
+
+bio:MolecularFunction
+    a owl:Class ;
+    rdfs:label "MolecularFunction" ;
+    rdfs:comment "A molecular function from Gene Ontology." ;
+    rdfs:subClassOf owl:Thing ;
+    .
+
+bio:name
+    a owl:DatatypeProperty ;
+    rdfs:label "Function name" ;
+    rdfs:domain bio:MolecularFunction ;
+    rdfs:range xsd:string .
+
+bio:go_id
+    a owl:DatatypeProperty ;
+    rdfs:label "Gene Ontology ID" ;
+    rdfs:domain bio:MolecularFunction ;
+    rdfs:range xsd:string .
+
+bio:CellType
+    a owl:Class ;
+    rdfs:label "CellType" ;
+    rdfs:comment "A cell type classification." ;
+    rdfs:subClassOf owl:Thing ;
+    .
+
+bio:name
+    a owl:DatatypeProperty ;
+    rdfs:label "Cell type name" ;
+    rdfs:domain bio:CellType ;
+    rdfs:range xsd:string .
+
+bio:cell_ontology_id
+    a owl:DatatypeProperty ;
+    rdfs:label "Cell Ontology ID" ;
+    rdfs:domain bio:CellType ;
+    rdfs:range xsd:string .
+
+bio:Phenotype
+    a owl:Class ;
+    rdfs:label "Phenotype" ;
+    rdfs:comment "An observable characteristic." ;
+    rdfs:subClassOf owl:Thing ;
+    .
+
+bio:name
+    a owl:DatatypeProperty ;
+    rdfs:label "Phenotype name" ;
+    rdfs:domain bio:Phenotype ;
+    rdfs:range xsd:string .
+
+bio:hp_id
+    a owl:DatatypeProperty ;
+    rdfs:label "HPO identifier" ;
+    rdfs:domain bio:Phenotype ;
+    rdfs:range xsd:string .
+
+bio:treats
+    a owl:ObjectProperty ;
+    rdfs:label "Drug treats Disease" ;
+    rdfs:domain bio:Drug ;
+    rdfs:range bio:Disease .
+
+bio:targets
+    a owl:ObjectProperty ;
+    rdfs:label "Drug targets Protein" ;
+    rdfs:domain bio:Drug ;
+    rdfs:range bio:Protein .
+
+bio:associatedWithDisease
+    a owl:ObjectProperty ;
+    rdfs:label "Gene associated with Disease" ;
+    rdfs:domain bio:Gene ;
+    rdfs:range bio:Disease .
+
+bio:encodedBy
+    a owl:ObjectProperty ;
+    rdfs:label "Protein encoded by Gene" ;
+    rdfs:domain bio:Protein ;
+    rdfs:range bio:Gene .
+
+bio:participatesIn
+    a owl:ObjectProperty ;
+    rdfs:label "Gene participates in Pathway" ;
+    rdfs:domain bio:Gene ;
+    rdfs:range bio:Pathway .
+
+bio:expressedIn
+    a owl:ObjectProperty ;
+    rdfs:label "Protein expressed in Anatomy" ;
+    rdfs:domain bio:Protein ;
+    rdfs:range bio:Anatomy .
+
+bio:involvedIn
+    a owl:ObjectProperty ;
+    rdfs:label "Gene involved in biological process" ;
+    rdfs:domain bio:Gene ;
+    rdfs:range bio:BiologicalProcess .
+
+bio:hasMolecularFunction
+    a owl:ObjectProperty ;
+    rdfs:label "Protein has molecular function" ;
+    rdfs:domain bio:Protein ;
+    rdfs:range bio:MolecularFunction .
+
+bio:foundIn
+    a owl:ObjectProperty ;
+    rdfs:label "Cell type found in anatomy" ;
+    rdfs:domain bio:CellType ;
+    rdfs:range bio:Anatomy .
+
+bio:affectsAnatomy
+    a owl:ObjectProperty ;
+    rdfs:label "Disease affects anatomy" ;
+    rdfs:domain bio:Disease ;
+    rdfs:range bio:Anatomy .
+
+bio:hasPhenotype
+    a owl:ObjectProperty ;
+    rdfs:label "Disease has phenotype" ;
+    rdfs:domain bio:Disease ;
+    rdfs:range bio:Phenotype .
+
+bio:predictedBy
+    a owl:ObjectProperty ;
+    rdfs:label "Disease predicted by biomarker" ;
+    rdfs:domain bio:Disease ;
+    rdfs:range bio:Biomarker .

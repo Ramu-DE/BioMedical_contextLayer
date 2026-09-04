@@ -1,0 +1,83 @@
+name: drug_safety
+# Research-scope safety and integrity rules. These deliberately stop short of
+# clinical decision support: they govern what may be *stated* about evidence,
+# not what treatment a patient should receive.
+#
+# Live material:
+#   Drug          -> approval_status, approval_year, drug_type, mechanism
+#   AdverseEvent  -> severity (Severe/Moderate/Mild), category, frequency
+#   ClinicalTrial -> phase, status, enrollment, sponsor
+#   Biomarker     -> PREDICTS_RESPONSE_TO edges with predictive_value
+
+rules:
+  - id: safety.severe_adverse_event_requires_disclosure
+    description: >
+      A severe adverse event in scope must be surfaced alongside any efficacy
+      claim.
+    severity: warn
+    policy_iri: bio:DataGovernancePolicy/POL003
+    references:
+      - "POL003 Adverse Event Reporting Standards"
+    rationale: >
+      A severe adverse event is present in the retrieved context. Efficacy
+      statements must be accompanied by this safety signal, per adverse event
+      reporting standards.
+    when:
+      entity: AdverseEvent
+      where:
+        severity:
+          equals: Severe
+
+  - id: safety.investigational_drug_not_approved
+    description: >
+      Drugs that are not approved must not be described as available therapy.
+    severity: block
+    rationale: >
+      This drug is not in an approved state, so it must be described as
+      investigational. Presenting it as available therapy would misstate its
+      regulatory status.
+    when:
+      entity: Drug
+      where:
+        approval_status:
+          not_in:
+            - Approved
+
+  - id: safety.trial_still_recruiting
+    description: >
+      Conclusions must not be drawn from a trial that has not completed.
+    severity: warn
+    rationale: >
+      This trial has not reached completed status, so its data is interim and
+      cannot support a definitive conclusion.
+    when:
+      entity: ClinicalTrial
+      where:
+        status:
+          not_in:
+            - Completed
+            - Terminated
+
+  - id: safety.underpowered_trial
+    description: >
+      Small trials do not support generalised efficacy claims.
+    severity: inform
+    rationale: >
+      Enrolment for this trial is under 100 participants, so its findings are
+      indicative rather than conclusive.
+    when:
+      entity: ClinicalTrial
+      where:
+        enrollment:
+          lt: 100
+
+  - id: safety.drug_without_external_identifier
+    description: >
+      Drugs referenced in output must resolve to a standard vocabulary.
+    severity: warn
+    rationale: >
+      This drug has no MAPS_TO link to an external vocabulary such as RxNorm,
+      so the reference cannot be reconciled with other systems.
+    when:
+      entity: Drug
+      without_relation: MAPS_TO

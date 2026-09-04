@@ -1,0 +1,11 @@
+institution_id,name,type,country,city,research_budget_millions
+I001,Johns Hopkins University,Academic,USA,Baltimore,2800
+I002,Memorial Sloan Kettering,Hospital,USA,New York,1200
+I003,Mayo Clinic,Hospital,USA,Rochester,950
+I004,Pfizer,Pharmaceutical,USA,New York,13400
+I005,Novartis,Pharmaceutical,Switzerland,Basel,9900
+I006,Roche,Pharmaceutical,Switzerland,Basel,14200
+I007,Stanford University,Academic,USA,Stanford,1900
+I008,Harvard Medical School,Academic,USA,Boston,2100
+I009,NIH,Government,USA,Bethesda,42000
+I010,Merck,Pharmaceutical,USA,Rahway,12800

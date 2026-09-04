@@ -1,0 +1,18 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix biomedkg: <https://biomedkg.org/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+biomedkg:InstitutionShape
+    a sh:NodeShape ;
+    sh:targetClass biomedkg:Institution ;
+    sh:property [
+        sh:path biomedkg:institutionId ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:string ;
+    ] ;
+    sh:property [
+        sh:path biomedkg:name ;
+        sh:minCount 1 ;
+        sh:datatype xsd:string ;
+    ] .

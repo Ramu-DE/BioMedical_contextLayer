@@ -1,0 +1,13 @@
+cell_type_id,name,cell_ontology_id,category,location
+CT001,T Cell,CL:0000084,Immune,Blood/Lymph nodes
+CT002,B Cell,CL:0000236,Immune,Blood/Lymph nodes
+CT003,Natural Killer Cell,CL:0000623,Immune,Blood/Spleen
+CT004,Macrophage,CL:0000235,Immune,Tissues
+CT005,Epithelial Cell,CL:0000066,Structural,Lung/Skin/Breast
+CT006,Neuron,CL:0000540,Neural,Brain/Nervous system
+CT007,Astrocyte,CL:0000127,Neural,Brain
+CT008,Microglia,CL:0000129,Neural/Immune,Brain
+CT009,Beta Cell,CL:0000169,Endocrine,Pancreas
+CT010,Hepatocyte,CL:0000182,Metabolic,Liver
+CT011,Adipocyte,CL:0000136,Metabolic,Adipose tissue
+CT012,Myeloid Progenitor,CL:0000049,Hematopoietic,Bone marrow

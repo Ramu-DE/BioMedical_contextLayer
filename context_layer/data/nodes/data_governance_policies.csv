@@ -1,0 +1,9 @@
+policy_id,title,category,scope,effective_date,review_date,owner,status
+POL001,Patient Data Privacy Policy,Data Privacy,All patient-related data,2022-01-01,2024-01-01,Chief Privacy Officer,Active
+POL002,Clinical Trial Data Sharing,Data Sharing,Clinical trial datasets,2022-06-15,2024-06-15,VP Clinical Operations,Active
+POL003,Adverse Event Reporting Standards,Pharmacovigilance,Safety data collection and reporting,2021-09-01,2023-09-01,Head of Drug Safety,Under Review
+POL004,Biomarker Data Retention,Data Retention,Genomic and proteomic biomarker data,2023-01-15,2025-01-15,Chief Data Officer,Active
+POL005,GxP Data Integrity,Quality Systems,All GMP/GLP/GCP regulated data,2022-03-01,2024-03-01,VP Quality Assurance,Active
+POL006,Research Collaboration Data Exchange,Data Sharing,External academic collaborations,2023-04-01,2025-04-01,Head of Research Partnerships,Active
+POL007,Real-World Evidence Data Governance,Data Quality,RWE and registry datasets,2023-07-01,2025-07-01,VP Real-World Evidence,Active
+POL008,AI/ML Model Governance,Model Governance,Machine learning models in drug development,2023-10-01,2024-10-01,Chief Digital Officer,Active

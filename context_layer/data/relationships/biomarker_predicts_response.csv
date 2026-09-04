@@ -1,0 +1,11 @@
+biomarker_id,drug_id,predictive_value,threshold
+B001,D001,0.78,≥50% TPS
+B001,D002,0.72,≥1% TPS
+B001,D003,0.75,≥5% TPS
+B002,D001,0.45,Mutation present
+B003,D009,0.68,<7%
+B003,D010,0.71,<7%
+B004,D007,0.62,<1000 pg/mL
+B004,D008,0.69,<1000 pg/mL
+B006,D005,0.92,BCR-ABL1 >10%
+B007,D004,0.88,IHC 3+

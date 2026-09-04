@@ -1,0 +1,12 @@
+drug_id,protein_id,binding_affinity,mechanism_type
+D001,P001,High,Antagonist
+D002,P001,High,Antagonist
+D003,P002,High,Antagonist
+D004,P004,Very High,Antagonist
+D005,P005,Very High,Inhibitor
+D006,P010,Moderate,Activator
+D007,P008,High,Antibody
+D008,P008,Very High,Antibody
+D009,P006,Very High,Agonist
+D010,P006,Very High,Agonist
+D010,P007,Very High,Agonist

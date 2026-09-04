@@ -1,0 +1,19 @@
+protein_id,process_id,evidence_code,qualifier
+P001,BP003,IDA,Involved in
+P001,BP004,IDA,Involved in
+P002,BP003,IDA,Involved in
+P002,BP004,IDA,Involved in
+P003,BP002,IDA,Involved in
+P003,BP007,IDA,Involved in
+P003,BP011,IDA,Involved in
+P004,BP002,IDA,Involved in
+P004,BP007,IDA,Involved in
+P005,BP002,IDA,Involved in
+P005,BP012,IDA,Involved in
+P006,BP008,IDA,Involved in
+P007,BP008,IDA,Involved in
+P008,BP009,IDA,Involved in
+P008,BP010,IDA,Involved in
+P009,BP010,IDA,Involved in
+P010,BP008,IDA,Involved in
+P010,BP012,IDA,Involved in

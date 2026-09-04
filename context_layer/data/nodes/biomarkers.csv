@@ -1,0 +1,11 @@
+biomarker_id,name,type,measurement_unit,clinical_significance
+B001,PD-L1 Expression,Protein,Tumor Proportion Score,Predicts immunotherapy response
+B002,EGFR Mutation,Genetic,Mutation Status,Predicts EGFR inhibitor response
+B003,HbA1c,Metabolic,Percentage,Diabetes control marker
+B004,Amyloid-beta 42,Protein,pg/mL,Alzheimer's diagnostic marker
+B005,Tau Protein,Protein,pg/mL,Neurodegeneration marker
+B006,BCR-ABL Transcript,Genetic,Ratio,CML monitoring
+B007,HER2 Status,Protein,IHC Score,Breast cancer prognosis
+B008,KRAS Mutation,Genetic,Mutation Status,Colorectal cancer prognosis
+B009,Fasting Glucose,Metabolic,mg/dL,Diabetes screening
+B010,C-Reactive Protein,Protein,mg/L,Inflammation marker

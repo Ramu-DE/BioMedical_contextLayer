@@ -1,0 +1,13 @@
+exposure_id,name,exposure_type,category,risk_level,source
+EXP001,Tobacco Smoke,Chemical,Environmental,High,IARC
+EXP002,Ultraviolet Radiation,Radiation,Environmental,High,WHO
+EXP003,Asbestos,Chemical,Occupational,High,IARC
+EXP004,Air Pollution (PM2.5),Chemical,Environmental,Medium,EPA
+EXP005,Alcohol Consumption,Chemical,Lifestyle,Medium,WHO
+EXP006,Ionizing Radiation,Radiation,Medical/Environmental,High,ICRP
+EXP007,Benzene,Chemical,Occupational,High,IARC
+EXP008,Aflatoxin B1,Biological,Dietary,High,IARC
+EXP009,Radon Gas,Radiation,Environmental,Medium,EPA
+EXP010,Formaldehyde,Chemical,Occupational,Medium,IARC
+EXP011,High-Fat Diet,Dietary,Lifestyle,Medium,WHO
+EXP012,Sedentary Lifestyle,Behavioral,Lifestyle,Medium,WHO

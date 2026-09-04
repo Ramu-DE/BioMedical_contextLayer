@@ -1,0 +1,20 @@
+gene_id,pathway_id,role,evidence
+G001,PW001,Activator,High
+G001,PW002,Activator,High
+G001,PW010,Core component,High
+G002,PW002,Core component,High
+G002,PW001,Activator,High
+G003,PW003,Core component,High
+G003,PW004,Regulator,High
+G003,PW005,Activator,High
+G004,PW006,Indirect,Medium
+G004,PW003,Regulator,High
+G005,PW006,Indirect,Medium
+G005,PW003,Regulator,High
+G006,PW012,Core component,High
+G006,PW002,Activator,High
+G007,PW010,Core component,High
+G007,PW001,Activator,High
+G008,PW006,Core component,High
+G009,PW009,Core component,High
+G010,PW009,Risk factor,High

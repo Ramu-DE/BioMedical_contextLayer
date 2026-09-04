@@ -1,0 +1,13 @@
+pathway_id,name,kegg_id,category,organism
+PW001,PI3K-Akt Signaling Pathway,hsa04151,Signal transduction,Homo sapiens
+PW002,MAPK Signaling Pathway,hsa04010,Signal transduction,Homo sapiens
+PW003,p53 Signaling Pathway,hsa04115,Cell growth and death,Homo sapiens
+PW004,Cell Cycle,hsa04110,Cell growth and death,Homo sapiens
+PW005,Apoptosis,hsa04210,Cell growth and death,Homo sapiens
+PW006,PD-L1/PD-1 Checkpoint Pathway,hsa04274,Immune system,Homo sapiens
+PW007,AMPK Signaling Pathway,hsa04152,Signal transduction,Homo sapiens
+PW008,Insulin Signaling Pathway,hsa04910,Endocrine system,Homo sapiens
+PW009,Alzheimer's Disease Pathway,hsa05010,Neurodegenerative disease,Homo sapiens
+PW010,ErbB Signaling Pathway,hsa04012,Signal transduction,Homo sapiens
+PW011,GLP-1 Signaling Pathway,hsa04024,Endocrine system,Homo sapiens
+PW012,Chronic Myeloid Leukemia Pathway,hsa05220,Cancer,Homo sapiens

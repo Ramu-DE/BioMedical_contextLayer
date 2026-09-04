@@ -1,0 +1,9 @@
+cluster_id,name,cluster_type,algorithm,node_count,description
+CLU001,Oncology Drug-Target Network,Drug-Protein,Louvain,45,Cluster of cancer drugs and their protein targets
+CLU002,Neurodegeneration Pathway Cluster,Gene-Pathway,Louvain,32,Genes and pathways involved in neurodegeneration
+CLU003,Immune Checkpoint Module,Drug-Gene-Disease,Louvain,28,Immune checkpoint inhibitor network
+CLU004,Metabolic Syndrome Hub,Gene-Disease,Louvain,38,Metabolic disease gene associations
+CLU005,Kinase Inhibitor Network,Drug-Protein,Leiden,22,Kinase-targeting drug cluster
+CLU006,Inflammatory Response Module,Gene-BiologicalProcess,Louvain,35,Inflammation-related gene network
+CLU007,Apoptosis Regulation Cluster,Pathway-Gene,Leiden,26,Programmed cell death regulatory network
+CLU008,Angiogenesis Module,Protein-Pathway,Louvain,19,Blood vessel formation network

@@ -1,0 +1,75 @@
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix bio:     <https://biomedkg.org/ontology/> .
+
+
+bio:commercial-ontology
+    a owl:Ontology ;
+    rdfs:label "BioMedKG Commercial Ontology" ;
+    dcterms:description "Commercial and regulatory entities for pharmaceutical products." .
+
+bio:RegulatorySubmission
+    a owl:Class ;
+    rdfs:label "RegulatorySubmission" ;
+    rdfs:comment "A regulatory filing submitted to a health authority." ;
+    rdfs:subClassOf owl:Thing ;
+    .
+
+bio:submission_id
+    a owl:DatatypeProperty ;
+    rdfs:label "Submission ID" ;
+    rdfs:domain bio:RegulatorySubmission ;
+    rdfs:range xsd:string .
+
+bio:agency
+    a owl:DatatypeProperty ;
+    rdfs:label "FDA, EMA, PMDA..." ;
+    rdfs:domain bio:RegulatorySubmission ;
+    rdfs:range xsd:string .
+
+bio:submission_type
+    a owl:DatatypeProperty ;
+    rdfs:label "NDA, BLA, sNDA..." ;
+    rdfs:domain bio:RegulatorySubmission ;
+    rdfs:range xsd:string .
+
+bio:status
+    a owl:DatatypeProperty ;
+    rdfs:label "Approved, Under Review, Withdrawn" ;
+    rdfs:domain bio:RegulatorySubmission ;
+    rdfs:range xsd:string .
+
+bio:ExternalMapping
+    a owl:Class ;
+    rdfs:label "ExternalMapping" ;
+    rdfs:comment "A mapping from BioMedKG entity to an external vocabulary code." ;
+    rdfs:subClassOf owl:Thing ;
+    .
+
+bio:source_vocab
+    a owl:DatatypeProperty ;
+    rdfs:label "Source vocabulary: RxNorm, ICD-10..." ;
+    rdfs:domain bio:ExternalMapping ;
+    rdfs:range xsd:string .
+
+bio:code
+    a owl:DatatypeProperty ;
+    rdfs:label "External code" ;
+    rdfs:domain bio:ExternalMapping ;
+    rdfs:range xsd:string .
+
+bio:confidence
+    a owl:DatatypeProperty ;
+    rdfs:label "Mapping confidence 0-1" ;
+    rdfs:domain bio:ExternalMapping ;
+    rdfs:range xsd:decimal .
+
+bio:submissionFor
+    a owl:ObjectProperty ;
+    rdfs:label "Submission for drug" ;
+    rdfs:domain bio:RegulatorySubmission ;
+    rdfs:range bio:Drug .

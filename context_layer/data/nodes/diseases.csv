@@ -1,0 +1,11 @@
+disease_id,name,category,icd10_code,prevalence
+DIS001,Non-Small Cell Lung Cancer,Oncology,C34.9,High
+DIS002,Melanoma,Oncology,C43.9,Medium
+DIS003,Breast Cancer,Oncology,C50.9,High
+DIS004,Chronic Myeloid Leukemia,Oncology,C92.1,Low
+DIS005,Type 2 Diabetes,Metabolic,E11,Very High
+DIS006,Alzheimer's Disease,Neurology,G30,High
+DIS007,Obesity,Metabolic,E66,Very High
+DIS008,Renal Cell Carcinoma,Oncology,C64,Medium
+DIS009,Colorectal Cancer,Oncology,C18,High
+DIS010,Parkinson's Disease,Neurology,G20,Medium

@@ -1,0 +1,14 @@
+gene_id,function_id,evidence_code,qualifier
+G001,MF002,IDA,Enables
+G001,MF001,IDA,Enables
+G002,MF003,IDA,Enables
+G003,MF004,IDA,Enables
+G003,MF005,IDA,Enables
+G004,MF005,IDA,Enables
+G005,MF005,IDA,Enables
+G006,MF001,IDA,Enables
+G007,MF002,IDA,Enables
+G008,MF006,IDA,Enables
+G009,MF009,IDA,Enables
+G009,MF012,IDA,Enables
+G010,MF010,IDA,Enables

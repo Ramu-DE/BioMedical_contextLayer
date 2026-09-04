@@ -1,0 +1,13 @@
+anatomy_id,name,uberon_id,system,description
+AN001,Lung,UBERON:0002048,Respiratory,Organ of gas exchange
+AN002,Skin,UBERON:0002097,Integumentary,Outer covering of the body
+AN003,Breast,UBERON:0000310,Reproductive,Mammary gland tissue
+AN004,Bone Marrow,UBERON:0002371,Hematopoietic,Site of blood cell production
+AN005,Pancreas,UBERON:0001264,Digestive/Endocrine,Insulin-producing organ
+AN006,Brain,UBERON:0000955,Nervous,Central nervous system organ
+AN007,Hippocampus,UBERON:0002421,Nervous,Memory and learning center
+AN008,Liver,UBERON:0002107,Digestive,Metabolic organ
+AN009,Kidney,UBERON:0002113,Urinary,Filtration organ
+AN010,Colon,UBERON:0001155,Digestive,Large intestine
+AN011,Thyroid,UBERON:0002046,Endocrine,Thyroid hormone production
+AN012,Adipose Tissue,UBERON:0001013,Integumentary,Fat storage tissue

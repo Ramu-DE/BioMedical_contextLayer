@@ -1,0 +1,21 @@
+cell_type_id,anatomy_id,abundance,state
+CT001,AN001,Moderate,Resident/Infiltrating
+CT001,AN002,Moderate,Infiltrating
+CT002,AN004,High,Maturing
+CT003,AN001,Low,Infiltrating
+CT004,AN001,Moderate,Resident
+CT004,AN006,Low,Resident (microglia-like)
+CT005,AN001,Very High,Resident
+CT005,AN002,Very High,Resident
+CT005,AN003,Very High,Resident
+CT005,AN010,Very High,Resident
+CT006,AN006,Very High,Resident
+CT006,AN007,Very High,Resident
+CT007,AN006,High,Resident
+CT007,AN007,High,Resident
+CT008,AN006,Moderate,Resident
+CT008,AN007,Moderate,Resident
+CT009,AN005,High,Resident
+CT010,AN008,Very High,Resident
+CT011,AN012,Very High,Resident
+CT012,AN004,Very High,Resident

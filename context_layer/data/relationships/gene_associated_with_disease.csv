@@ -1,0 +1,13 @@
+gene_id,disease_id,association_strength,evidence_level
+G001,DIS001,Strong,High
+G002,DIS001,Strong,High
+G002,DIS009,Strong,High
+G003,DIS001,Moderate,High
+G003,DIS003,Strong,High
+G004,DIS003,Very Strong,High
+G005,DIS003,Very Strong,High
+G006,DIS004,Very Strong,High
+G007,DIS003,Strong,High
+G008,DIS001,Moderate,Medium
+G009,DIS006,Strong,High
+G010,DIS006,Very Strong,High

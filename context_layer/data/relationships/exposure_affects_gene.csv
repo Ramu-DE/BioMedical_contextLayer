@@ -1,0 +1,10 @@
+exposure_id,gene_id,effect_type,mechanism,evidence_level
+EXP001,G001,Mutation,Tobacco carcinogens cause EGFR mutations,Strong
+EXP001,G003,Mutation,Smoking-induced TP53 mutations,Strong
+EXP002,G005,Mutation,UV-induced BRAF V600E mutations,Strong
+EXP003,G003,Mutation,Asbestos-induced TP53 alterations,Moderate
+EXP004,G003,Epigenetic,PM2.5 alters TP53 methylation,Moderate
+EXP006,G005,Mutation,Radiation-induced BRAF rearrangements,Moderate
+EXP007,G003,Mutation,Benzene metabolites damage TP53,Strong
+EXP011,G007,Downregulation,High-fat diet reduces insulin receptor sensitivity,Strong
+EXP012,G007,Downregulation,Sedentary behavior reduces GLUT4 expression,Moderate

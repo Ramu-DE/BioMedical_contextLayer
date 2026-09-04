@@ -1,0 +1,13 @@
+entity_id,name,entity_type,source,description
+ENT001,Homo sapiens,Organism,NCBI Taxonomy,Human species
+ENT002,Mus musculus,Organism,NCBI Taxonomy,Mouse model organism
+ENT003,Rattus norvegicus,Organism,NCBI Taxonomy,Rat model organism
+ENT004,SARS-CoV-2,Pathogen,NCBI Taxonomy,COVID-19 causative virus
+ENT005,Mycobacterium tuberculosis,Pathogen,NCBI Taxonomy,Tuberculosis causative bacterium
+ENT006,Staphylococcus aureus,Pathogen,NCBI Taxonomy,Common bacterial pathogen
+ENT007,Escherichia coli,Pathogen,NCBI Taxonomy,Gram-negative bacterium
+ENT008,Helicobacter pylori,Pathogen,NCBI Taxonomy,Gastric ulcer-associated bacterium
+ENT009,Human Papillomavirus,Pathogen,NCBI Taxonomy,Cervical cancer-associated virus
+ENT010,Epstein-Barr Virus,Pathogen,NCBI Taxonomy,Lymphoma-associated virus
+ENT011,Caenorhabditis elegans,Organism,NCBI Taxonomy,Nematode model organism
+ENT012,Drosophila melanogaster,Organism,NCBI Taxonomy,Fruit fly model organism

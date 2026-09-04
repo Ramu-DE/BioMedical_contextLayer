@@ -1,0 +1,11 @@
+phenotype_id,gene_id,association_type,evidence_level
+PHE001,G003,Causal,Strong
+PHE002,G001,Associated,Moderate
+PHE005,G007,Causal,Strong
+PHE006,G004,Causal,Strong
+PHE006,G006,Associated,Moderate
+PHE008,G003,Associated,Moderate
+PHE009,G007,Associated,Moderate
+PHE011,G006,Causal,Strong
+PHE012,G007,Causal,Strong
+PHE010,G001,Associated,Moderate

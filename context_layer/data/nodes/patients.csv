@@ -1,0 +1,16 @@
+patient_id,age_group,gender,ethnicity,diagnosis_year,primary_disease,comorbidities,consent_status
+PAT001,50-59,Female,Caucasian,2019,DIS001,Hypertension;Type 2 Diabetes,Active
+PAT002,60-69,Male,African American,2020,DIS002,None,Active
+PAT003,40-49,Female,Asian,2021,DIS003,Obesity,Active
+PAT004,70-79,Male,Caucasian,2018,DIS004,Cardiovascular Disease,Active
+PAT005,55-64,Female,Hispanic,2020,DIS001,COPD,Active
+PAT006,65-74,Male,Caucasian,2019,DIS006,Hypertension;Depression,Active
+PAT007,45-54,Female,Asian,2022,DIS008,None,Active
+PAT008,60-69,Male,African American,2021,DIS009,Type 2 Diabetes,Active
+PAT009,50-59,Female,Caucasian,2020,DIS002,Autoimmune Thyroiditis,Active
+PAT010,75-84,Male,Hispanic,2019,DIS006,Cardiovascular Disease;Diabetes,Active
+PAT011,35-44,Female,Caucasian,2022,DIS003,None,Active
+PAT012,60-69,Male,Asian,2021,DIS001,Hypertension,Active
+PAT013,55-64,Female,African American,2020,DIS005,Obesity;Hypertension,Active
+PAT014,40-49,Male,Caucasian,2023,DIS009,None,Active
+PAT015,65-74,Female,Hispanic,2019,DIS008,Chronic Kidney Disease,Withdrawn

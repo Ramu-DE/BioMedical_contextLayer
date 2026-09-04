@@ -1,0 +1,13 @@
+record_id,policy_id,entity_type,entity_id,compliance_status,audit_date,auditor,findings
+CR001,POL001,ClinicalTrial,CT001,Compliant,2023-03-15,Deloitte,No findings
+CR002,POL001,ClinicalTrial,CT004,Compliant,2023-04-20,Deloitte,No findings
+CR003,POL002,ClinicalTrial,CT005,Partially Compliant,2023-05-10,PwC,Data sharing agreement pending update
+CR004,POL003,Drug,D001,Compliant,2023-02-28,Internal QA,Timely ICSR submissions confirmed
+CR005,POL003,Drug,D002,Compliant,2023-02-28,Internal QA,All SAE reports within 15-day window
+CR006,POL004,Biomarker,BM001,Compliant,2023-06-15,KPMG,Retention schedule followed
+CR007,POL005,ManufacturingSite,MS001,Compliant,2023-09-20,FDA Inspectorate,No 483 observations
+CR008,POL005,ManufacturingSite,MS003,Non-Compliant,2023-11-05,EMA GMP Inspector,Data integrity gap in batch records
+CR009,POL006,Institution,I001,Compliant,2023-07-10,Internal Legal,DTA current and complete
+CR010,POL006,Institution,I007,Partially Compliant,2023-08-22,Internal Legal,IP clause requires amendment
+CR011,POL007,ClinicalTrial,CT006,Compliant,2023-10-01,EY,RWE data quality metrics met
+CR012,POL008,Drug,D008,Compliant,2023-12-05,Internal AI Ethics Board,Model documentation complete; bias testing passed

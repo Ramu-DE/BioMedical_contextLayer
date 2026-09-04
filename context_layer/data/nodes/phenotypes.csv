@@ -1,0 +1,13 @@
+phenotype_id,name,hpo_id,category,description
+PHE001,Cachexia,HP:0004326,Constitutional,Severe weight loss and muscle wasting
+PHE002,Dyspnea,HP:0002094,Respiratory,Difficulty breathing
+PHE003,Peripheral Neuropathy,HP:0009830,Neurological,Nerve damage in extremities
+PHE004,Hepatomegaly,HP:0002240,Hepatic,Enlarged liver
+PHE005,Hyperglycemia,HP:0003074,Metabolic,Elevated blood glucose
+PHE006,Cognitive Decline,HP:0001268,Neurological,Progressive loss of cognitive function
+PHE007,Fatigue,HP:0012378,Constitutional,Persistent tiredness and exhaustion
+PHE008,Anemia,HP:0001903,Hematologic,Reduced red blood cell count
+PHE009,Hypertension,HP:0000822,Cardiovascular,Elevated blood pressure
+PHE010,Immunodeficiency,HP:0002721,Immunologic,Impaired immune response
+PHE011,Tremor,HP:0001337,Neurological,Involuntary rhythmic muscle movement
+PHE012,Insulin Resistance,HP:0000855,Metabolic,Reduced cellular response to insulin

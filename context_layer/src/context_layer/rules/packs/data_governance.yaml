@@ -1,0 +1,94 @@
+name: data_governance
+# Encodes the six Policy nodes already present in the enterprise governance
+# subgraph as executable rules. Each rule cites the policy_id it enforces, so a
+# verdict traces to a governance artifact rather than to a prompt.
+#
+# Live material:
+#   Policy      -> POL_HUB_DQ, POL_PII_MASK, POL_CROSS_BU,
+#                  POL_INCREMENTAL_KEY, POL_ARCHIVE_RAW, POL_SCD_AUDIT
+#   DQRule      -> ZERO nodes, so POL_HUB_DQ is violated by every hub table
+#   Table       -> fqn, layer, schema_name, table_name
+#   ARD         -> certified, dq_pass_rate, owner, grain, row_count_millions
+#   Entity      -> load_type, file_type
+
+rules:
+  - id: governance.hub_table_without_dq_rule
+    description: >
+      Hub layer tables must have at least one critical data quality rule.
+    severity: block
+    policy_iri: "graph:Policy/POL_HUB_DQ"
+    references:
+      - "POL_HUB_DQ Hub tables require DQ"
+    rationale: >
+      Policy POL_HUB_DQ requires every hub layer table to carry at least one
+      critical data quality rule. This table has none, so figures derived from
+      it are not certifiable.
+    when:
+      entity: Table
+      where:
+        layer:
+          equals: hub
+      without_relation: HAS_DQ_RULE
+
+  - id: governance.uncertified_ard_in_use
+    description: >
+      An analytics-ready dataset that is not certified must not be presented as
+      an authoritative figure.
+    severity: warn
+    rationale: >
+      This dataset is not marked certified, so any number taken from it is
+      provisional and must be labelled as such.
+    when:
+      entity: ARD
+      where:
+        certified:
+          not_equals: true
+
+  - id: governance.ard_below_dq_threshold
+    description: >
+      Analytics-ready datasets below a 99 percent data quality pass rate are not
+      fit for external reporting.
+    severity: warn
+    policy_iri: "graph:Policy/POL_HUB_DQ"
+    rationale: >
+      The recorded data quality pass rate for this dataset is below the 99
+      percent threshold required for external reporting use.
+    when:
+      entity: ARD
+      where:
+        # dq_pass_rate is stored on a 0-100 percent scale in this graph
+        # (observed range 97.8 .. 100.0), NOT as a 0-1 fraction. A threshold of
+        # 0.99 here would never fire.
+        dq_pass_rate:
+          lt: 99
+
+  - id: governance.ard_without_owner
+    description: >
+      Every analytics-ready dataset requires a named accountable owner.
+    severity: warn
+    rationale: >
+      No owner is recorded for this dataset, so there is no accountable party
+      for its accuracy or its access decisions.
+    when:
+      entity: ARD
+      where:
+        owner:
+          exists: false
+
+  - id: governance.incremental_load_without_key
+    description: >
+      INCREMENTAL load types require a primary key specification.
+    severity: block
+    policy_iri: "graph:Policy/POL_INCREMENTAL_KEY"
+    references:
+      - "POL_INCREMENTAL_KEY Incremental needs keys"
+    rationale: >
+      Policy POL_INCREMENTAL_KEY requires a primary key for INCREMENTAL loads.
+      Without one, the load cannot deduplicate and will silently corrupt the
+      target table.
+    when:
+      entity: Entity
+      where:
+        load_type:
+          equals: INCREMENTAL
+      without_relation: HAS_PRIMARY_KEY

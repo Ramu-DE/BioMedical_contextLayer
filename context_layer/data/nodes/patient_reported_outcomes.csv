@@ -1,0 +1,16 @@
+pro_id,patient_id,questionnaire_type,score,assessment_date,notes
+PRO001,PAT001,EORTC QLQ-C30,68,2020-03-15,Moderate fatigue reported
+PRO002,PAT001,EORTC QLQ-C30,72,2020-09-20,Improvement in physical function
+PRO003,PAT002,FACT-M,82,2021-01-10,Good overall well-being
+PRO004,PAT003,FACT-B,65,2021-06-22,Concerns about body image
+PRO005,PAT004,FACT-Leu,78,2019-04-18,Stable quality of life
+PRO006,PAT005,EORTC QLQ-LC13,55,2020-08-12,Dyspnea limiting daily activities
+PRO007,PAT006,QOL-AD,45,2020-02-28,Caregiver-assisted completion
+PRO008,PAT007,FKSI-DRS,74,2022-07-14,No significant kidney-related symptoms
+PRO009,PAT008,FACT-C,60,2021-11-05,GI symptoms impacting appetite
+PRO010,PAT009,FACT-M,76,2021-03-30,Stable emotional well-being
+PRO011,PAT010,QOL-AD,38,2020-06-15,Decline in cognitive function noted
+PRO012,PAT011,FACT-B,80,2022-09-01,High physical functioning
+PRO013,PAT012,EORTC QLQ-LC13,52,2022-01-20,Cough and chest pain reported
+PRO014,PAT013,EQ-5D-5L,70,2021-05-10,Moderate pain/discomfort
+PRO015,PAT014,FACT-C,73,2023-04-08,Mild nausea post-treatment

@@ -1,0 +1,11 @@
+trial_id,drug_id,arm_type,dosage
+CT001,D001,Experimental,200mg Q3W
+CT002,D002,Experimental,3mg/kg Q2W
+CT003,D003,Experimental,1200mg Q3W
+CT004,D008,Experimental,10mg/kg Q2W
+CT005,D009,Experimental,1mg weekly
+CT006,D010,Experimental,15mg weekly
+CT007,D005,Experimental,400mg daily
+CT008,D001,Experimental,200mg Q3W
+CT009,D002,Experimental,3mg/kg Q2W
+CT010,D006,Experimental,2000mg daily

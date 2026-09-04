@@ -1,0 +1,13 @@
+entity_id,disease_id,association_type,evidence,description
+ENT001,DIS001,Host,Clinical,Primary species affected
+ENT001,DIS002,Host,Clinical,Primary species affected
+ENT001,DIS003,Host,Clinical,Primary species affected
+ENT001,DIS005,Host,Clinical,Primary species affected
+ENT001,DIS006,Host,Clinical,Primary species affected
+ENT002,DIS006,Model,Preclinical,Transgenic mouse models of Alzheimer's
+ENT002,DIS005,Model,Preclinical,Ob/ob and db/db mouse models
+ENT003,DIS005,Model,Preclinical,Zucker diabetic fatty rat model
+ENT004,DIS001,Comorbidity,Clinical,COVID-19 worsens lung cancer outcomes
+ENT008,DIS009,Causative,Epidemiological,H. pylori increases gastric/colorectal cancer risk
+ENT009,DIS003,Causative,Epidemiological,HPV associated with some breast cancers
+ENT010,DIS004,Causative,Epidemiological,EBV associated with lymphoproliferative disorders

@@ -1,0 +1,52 @@
+name: patient_consent
+# Rules grounded in the live biomedical subgraph. Every property referenced
+# here exists on loaded nodes — verified against the graph, not invented.
+#
+# Live material:
+#   Patient.consent_status  -> 14 Active, 1 Withdrawn
+#   Patient.comorbidities   -> semicolon-delimited list
+#   DataGovernancePolicy    -> 8 nodes with GOVERNS_ENTITY edges
+
+rules:
+  - id: consent.withdrawn_patient_data
+    description: >
+      Patient data may not be used for analysis once consent is withdrawn.
+    severity: block
+    policy_iri: bio:DataGovernancePolicy/POL001
+    references:
+      - "POL001 Patient Data Privacy Policy"
+    rationale: >
+      Consent has been withdrawn for this patient, so their data cannot be
+      included in analysis or reporting regardless of the question asked.
+    when:
+      entity: Patient
+      where:
+        consent_status:
+          equals: Withdrawn
+
+  - id: consent.status_missing
+    description: >
+      Patient records must carry an explicit consent status.
+    severity: block
+    policy_iri: bio:DataGovernancePolicy/POL001
+    rationale: >
+      No consent status is recorded for this patient, so lawful basis for
+      processing cannot be established. Absence of a recorded objection is not
+      consent.
+    when:
+      entity: Patient
+      where:
+        consent_status:
+          exists: false
+
+  - id: consent.unlinked_patient
+    description: >
+      A patient record with no primary disease link cannot be scoped to a
+      study population.
+    severity: warn
+    rationale: >
+      This patient has no HAS_PRIMARY_DISEASE relationship, so cohort
+      membership cannot be verified from the graph.
+    when:
+      entity: Patient
+      without_relation: HAS_PRIMARY_DISEASE

@@ -1,0 +1,11 @@
+gene_id,symbol,name,chromosome,function
+G001,EGFR,Epidermal Growth Factor Receptor,7,Cell growth and proliferation
+G002,KRAS,KRAS Proto-Oncogene,12,Cell signaling
+G003,TP53,Tumor Protein P53,17,Tumor suppressor
+G004,BRCA1,Breast Cancer Gene 1,17,DNA repair
+G005,BRCA2,Breast Cancer Gene 2,13,DNA repair
+G006,BCR-ABL,BCR-ABL Fusion Gene,9/22,Tyrosine kinase activity
+G007,HER2,Human Epidermal Growth Factor Receptor 2,17,Cell growth
+G008,PD-L1,Programmed Death-Ligand 1,9,Immune checkpoint
+G009,APP,Amyloid Precursor Protein,21,Amyloid beta production
+G010,APOE,Apolipoprotein E,19,Lipid metabolism

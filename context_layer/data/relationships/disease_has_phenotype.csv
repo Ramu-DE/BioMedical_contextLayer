@@ -1,0 +1,17 @@
+disease_id,phenotype_id,frequency,onset,severity
+DIS001,PHE001,0.35,Late,Severe
+DIS001,PHE002,0.65,Early,Moderate
+DIS001,PHE007,0.80,Early,Moderate
+DIS003,PHE007,0.70,Early,Moderate
+DIS003,PHE008,0.25,Late,Moderate
+DIS004,PHE008,0.85,Early,Severe
+DIS004,PHE007,0.90,Early,Moderate
+DIS005,PHE005,0.95,Early,Moderate
+DIS005,PHE012,0.80,Early,Moderate
+DIS005,PHE009,0.45,Late,Moderate
+DIS006,PHE006,0.95,Early,Severe
+DIS006,PHE011,0.30,Late,Mild
+DIS007,PHE009,0.55,Late,Moderate
+DIS007,PHE012,0.70,Early,Moderate
+DIS010,PHE011,0.85,Early,Moderate
+DIS010,PHE006,0.40,Late,Moderate

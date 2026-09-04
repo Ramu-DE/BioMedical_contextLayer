@@ -1,0 +1,11 @@
+protein_id,name,uniprot_id,protein_class,cellular_location
+P001,PD-1,Q15116,Immune checkpoint,Cell membrane
+P002,PD-L1,Q9NZQ7,Immune checkpoint,Cell membrane
+P003,EGFR,P00533,Receptor tyrosine kinase,Cell membrane
+P004,HER2,P04626,Receptor tyrosine kinase,Cell membrane
+P005,BCR-ABL,P11274,Tyrosine kinase,Cytoplasm
+P006,GLP-1R,P43220,G-protein coupled receptor,Cell membrane
+P007,GIPR,P48546,G-protein coupled receptor,Cell membrane
+P008,Amyloid-beta,P05067,Peptide,Extracellular
+P009,Tau,P10636,Microtubule-associated,Cytoplasm
+P010,AMPK,Q13131,Serine/threonine kinase,Cytoplasm

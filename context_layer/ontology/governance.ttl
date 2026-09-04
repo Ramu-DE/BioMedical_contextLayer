@@ -1,0 +1,81 @@
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix bio:     <https://biomedkg.org/ontology/> .
+
+
+bio:governance-ontology
+    a owl:Ontology ;
+    rdfs:label "BioMedKG Data Governance Ontology" ;
+    dcterms:description "Data governance policies, compliance records, and regulatory frameworks." .
+
+bio:DataGovernancePolicy
+    a owl:Class ;
+    rdfs:label "DataGovernancePolicy" ;
+    rdfs:comment "A data governance policy governing data use." ;
+    rdfs:subClassOf owl:Thing ;
+    .
+
+bio:policy_id
+    a owl:DatatypeProperty ;
+    rdfs:label "Policy identifier" ;
+    rdfs:domain bio:DataGovernancePolicy ;
+    rdfs:range xsd:string .
+
+bio:policy_name
+    a owl:DatatypeProperty ;
+    rdfs:label "Policy name" ;
+    rdfs:domain bio:DataGovernancePolicy ;
+    rdfs:range xsd:string .
+
+bio:enforcement_level
+    a owl:DatatypeProperty ;
+    rdfs:label "Mandatory, Advisory, Informational" ;
+    rdfs:domain bio:DataGovernancePolicy ;
+    rdfs:range xsd:string .
+
+bio:jurisdiction
+    a owl:DatatypeProperty ;
+    rdfs:label "Geographic scope" ;
+    rdfs:domain bio:DataGovernancePolicy ;
+    rdfs:range xsd:string .
+
+bio:ComplianceRecord
+    a owl:Class ;
+    rdfs:label "ComplianceRecord" ;
+    rdfs:comment "A record of compliance with a governance policy." ;
+    rdfs:subClassOf owl:Thing ;
+    .
+
+bio:record_id
+    a owl:DatatypeProperty ;
+    rdfs:label "Record identifier" ;
+    rdfs:domain bio:ComplianceRecord ;
+    rdfs:range xsd:string .
+
+bio:status
+    a owl:DatatypeProperty ;
+    rdfs:label "Compliant, Non-compliant, Pending" ;
+    rdfs:domain bio:ComplianceRecord ;
+    rdfs:range xsd:string .
+
+bio:audit_date
+    a owl:DatatypeProperty ;
+    rdfs:label "Audit date" ;
+    rdfs:domain bio:ComplianceRecord ;
+    rdfs:range xsd:string .
+
+bio:auditor
+    a owl:DatatypeProperty ;
+    rdfs:label "Auditor name" ;
+    rdfs:domain bio:ComplianceRecord ;
+    rdfs:range xsd:string .
+
+bio:governsEntity
+    a owl:ObjectProperty ;
+    rdfs:label "Policy governs entity" ;
+    rdfs:domain bio:DataGovernancePolicy ;
+    rdfs:range owl:Thing .

@@ -1,0 +1,11 @@
+researcher_id,institution_id,start_year,role
+R001,I002,2010,Principal Investigator
+R002,I001,2012,Associate Professor
+R003,I008,2008,Professor
+R004,I007,2011,Associate Professor
+R005,I010,2015,Chief Medical Officer
+R006,I001,2005,Professor
+R007,I003,2014,Associate Professor
+R008,I007,2013,Principal Investigator
+R009,I008,2007,Professor
+R010,I001,2009,Associate Professor

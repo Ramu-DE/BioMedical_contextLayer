@@ -1,0 +1,13 @@
+function_id,name,go_id,category,description
+MF001,Protein Tyrosine Kinase Activity,GO:0004713,Kinase,Phosphorylation of tyrosine residues
+MF002,Receptor Tyrosine Kinase Activity,GO:0004714,Kinase,Transmembrane receptor signaling
+MF003,GTPase Activity,GO:0003924,Hydrolase,GTP hydrolysis
+MF004,Tumor Suppressor Activity,GO:0051726,Regulation,Negative regulation of cell cycle
+MF005,DNA Binding,GO:0003677,Binding,Interaction with DNA
+MF006,Immune Checkpoint Receptor Activity,GO:0004888,Receptor,Immune regulation signaling
+MF007,Serine/Threonine Kinase Activity,GO:0004674,Kinase,Phosphorylation of serine/threonine
+MF008,G-Protein Coupled Receptor Activity,GO:0004930,Receptor,Signal transduction via G-proteins
+MF009,Amyloid-beta Binding,GO:0001540,Binding,Interaction with amyloid-beta peptide
+MF010,Lipid Binding,GO:0008289,Binding,Interaction with lipid molecules
+MF011,Insulin Receptor Binding,GO:0005158,Binding,Interaction with insulin receptor
+MF012,Peptidase Activity,GO:0008233,Hydrolase,Protein cleavage

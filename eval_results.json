@@ -1,0 +1,56 @@
+{
+  "timestamp": "2026-09-04T15:06:42.249569",
+  "model": "us.anthropic.claude-haiku-4-5-20251001-v1:0",
+  "test_cases": 12,
+  "bad_outputs": 10,
+  "judge_variants": [
+    "naive",
+    "skeptical",
+    "with_rubric"
+  ],
+  "total_judgments": 30,
+  "false_passes": 16,
+  "false_pass_rate": 53.3,
+  "inconsistent_tests": 7,
+  "graph_stats": {
+    "total_nodes": 90,
+    "total_edges": 139,
+    "nodes_by_type": {
+      "TestCase": 12,
+      "Category": 9,
+      "Output": 12,
+      "EvalRun": 4,
+      "Verdict": 48,
+      "FailureMode": 5
+    },
+    "edges_by_type": {
+      "BELONGS_TO": 12,
+      "HAS_OUTPUT": 12,
+      "JUDGED_BY": 48,
+      "CONTAINS": 48,
+      "EXHIBITS": 19
+    }
+  },
+  "method_comparison": [
+    {
+      "method": "deterministic",
+      "accuracy": 91.7,
+      "false_passes": 1
+    },
+    {
+      "method": "llm_judge_naive",
+      "accuracy": 66.7,
+      "false_passes": 8
+    },
+    {
+      "method": "llm_judge_skeptical",
+      "accuracy": 29.4,
+      "false_passes": 0
+    },
+    {
+      "method": "llm_judge_with_rubric",
+      "accuracy": 50.0,
+      "false_passes": 5
+    }
+  ]
+}

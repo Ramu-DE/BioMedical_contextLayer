@@ -1,0 +1,16 @@
+request_id,requester_type,therapeutic_area,drug_id,question_category,response_time_hours,status,request_date
+MIR001,Physician,Oncology,D001,Dosing and Administration,4.5,Closed,2023-08-15
+MIR002,Pharmacist,Oncology,D002,Drug Interactions,6.2,Closed,2023-08-22
+MIR003,Physician,Oncology,D001,Adverse Events,3.8,Closed,2023-09-01
+MIR004,Nurse,Oncology,D003,Storage and Handling,2.1,Closed,2023-09-10
+MIR005,Physician,Neurology,D008,Efficacy Data,8.5,Closed,2023-09-18
+MIR006,Patient,Metabolic,D009,Mechanism of Action,12.0,Closed,2023-10-02
+MIR007,Physician,Oncology,D004,Combination Therapy,5.4,Closed,2023-10-15
+MIR008,Pharmacist,Metabolic,D010,Dosing and Administration,4.0,Closed,2023-10-28
+MIR009,Physician,Oncology,D001,Biomarker Testing,7.2,Closed,2023-11-05
+MIR010,Physician,Neurology,D007,Safety Data,9.8,Closed,2023-11-12
+MIR011,Nurse,Oncology,D002,Infusion Protocols,3.2,Closed,2023-11-20
+MIR012,Patient,Oncology,D001,Clinical Trial Access,24.0,Open,2023-12-01
+MIR013,Physician,Oncology,D003,Off-Label Use,6.8,Closed,2023-12-08
+MIR014,Pharmacist,Metabolic,D006,Renal Dosing Adjustment,5.1,Closed,2023-12-15
+MIR015,Physician,Oncology,D001,Combination Therapy,4.2,Open,2024-01-10

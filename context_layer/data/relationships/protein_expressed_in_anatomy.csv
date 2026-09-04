@@ -1,0 +1,20 @@
+protein_id,anatomy_id,expression_level,evidence
+P001,AN001,High,Experimental
+P001,AN002,High,Experimental
+P002,AN001,High,Experimental
+P002,AN002,High,Experimental
+P003,AN001,Very High,Experimental
+P003,AN010,High,Experimental
+P004,AN003,Very High,Experimental
+P005,AN004,Very High,Experimental
+P006,AN005,High,Experimental
+P006,AN006,Moderate,Experimental
+P007,AN005,High,Experimental
+P007,AN012,Moderate,Experimental
+P008,AN006,High,Experimental
+P008,AN007,Very High,Experimental
+P009,AN006,High,Experimental
+P009,AN007,Very High,Experimental
+P010,AN008,High,Experimental
+P010,AN005,High,Experimental
+P010,AN012,Moderate,Experimental

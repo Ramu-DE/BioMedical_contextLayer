@@ -1,0 +1,13 @@
+event_id,batch_id,event_type,severity,description,detection_date,resolution_date,capa_id
+QE001,BAT006,OOS Result,Major,Aggregation levels exceeded specification limit,2023-07-28,2023-09-15,CAPA-2023-042
+QE002,BAT015,Contamination,Critical,Endotoxin levels above acceptance criteria,2023-08-20,,CAPA-2023-051
+QE003,BAT017,Documentation Error,Minor,Incomplete batch record entries for hold step,2023-10-22,2023-11-05,CAPA-2023-063
+QE004,BAT003,Temperature Excursion,Major,Cold chain deviation during transport (+8.2C for 45min),2023-03-02,2023-03-20,CAPA-2023-018
+QE005,BAT009,Labeling Error,Minor,Incorrect expiry date printed on secondary packaging,2023-04-10,2023-04-12,CAPA-2023-025
+QE006,BAT012,Particulate Matter,Moderate,Visible particle detected in 2 of 100 vials inspected,2023-03-15,2023-03-28,CAPA-2023-019
+QE007,BAT001,Equipment Malfunction,Moderate,Filling machine stoppage; 200 units quarantined,2023-01-20,2023-02-01,CAPA-2023-005
+QE008,BAT007,OOS Result,Minor,Potency result at lower specification boundary,2023-02-10,2023-02-18,CAPA-2023-010
+QE009,BAT010,Stability Failure,Major,6-month stability showing degradation trend,2024-02-15,,CAPA-2024-008
+QE010,BAT014,Process Deviation,Moderate,pH drift during formulation buffer preparation,2023-05-05,2023-05-20,CAPA-2023-031
+QE011,BAT016,Foreign Material,Minor,Fiber found on stopper surface pre-crimp,2023-09-08,2023-09-10,CAPA-2023-055
+QE012,BAT019,Temperature Excursion,Moderate,Warehouse temperature spike to +9C for 20min,2023-08-05,2023-08-12,CAPA-2023-048

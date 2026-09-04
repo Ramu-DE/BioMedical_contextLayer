@@ -1,0 +1,16 @@
+protein_id,pathway_id,role,interaction_type
+P001,PW006,Receptor,Inhibitory signaling
+P002,PW006,Ligand,Inhibitory signaling
+P003,PW010,Receptor,Activating signaling
+P003,PW002,Upstream activator,Phosphorylation cascade
+P004,PW010,Receptor,Activating signaling
+P004,PW001,Upstream activator,Phosphorylation cascade
+P005,PW012,Kinase,Constitutive activation
+P005,PW002,Kinase,Phosphorylation cascade
+P006,PW011,Receptor,Agonist signaling
+P006,PW008,Cross-talk,Insulin sensitization
+P007,PW011,Receptor,Agonist signaling
+P008,PW009,Substrate,Aggregation
+P009,PW009,Structural,Tangle formation
+P010,PW007,Kinase,Energy sensing
+P010,PW008,Cross-talk,Glucose uptake
