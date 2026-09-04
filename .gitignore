@@ -18,10 +18,9 @@ venv/
 *.log
 .DS_Store
 
-# LinkedIn images (not part of the PoC)
-linkedin_*.jpg
-linkedin_*.png
-linkedin_*.svg
+# LinkedIn images (keep only linkedin_edge)
+linkedin_proof.*
+linkedin_edge.svg
 
 # IDE
 .idea/
