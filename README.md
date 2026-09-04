@@ -8,6 +8,14 @@ Built on a live pharma knowledge graph with Neo4j + Qdrant + Amazon Bedrock.
 
 ---
 
+## Technical Flow
+
+Step-by-step data flow showing how a query moves through entity linking, parallel graph + vector retrieval, deterministic governance gate, context assembly, and the eval proof framework.
+
+![Technical Flow](technical_flow.png)
+
+---
+
 ## The Thesis
 
 > **Your Context Is Your Edge.**
