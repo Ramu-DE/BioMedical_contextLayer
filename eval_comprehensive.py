@@ -3,10 +3,10 @@
 Comprehensive Eval Framework
 =============================
 Implements methodologies from:
-  - Hamel Husain's Critique Shadowing (TPR/TNR, bottom-up error analysis)
-  - Shreya Shankar's criteria drift & verification asymmetry
-  - arxiv 2411.15594v6 bias taxonomy (position, verbosity, self-enhancement, adversarial)
-  - AWS hybrid evaluator strategy (deterministic-first, LLM only for subjective)
+  - Critique Shadowing (TPR/TNR, bottom-up error analysis)
+  - Criteria drift & verification asymmetry
+  - Bias taxonomy (position, verbosity, self-enhancement, adversarial)
+  - Hybrid evaluator strategy (deterministic-first, LLM only for subjective)
 
 Modules:
   A. Bias Battery        — position, verbosity, self-enhancement, adversarial
@@ -370,7 +370,7 @@ def main():
 
     print("╔══════════════════════════════════════════════════════════════════════╗")
     print("║  COMPREHENSIVE EVAL FRAMEWORK                                      ║")
-    print("║  Husain/Shankar methodology + arxiv bias taxonomy + KG grounding    ║")
+    print("║  Critique Shadowing + bias taxonomy + KG grounding                  ║")
     print("╚══════════════════════════════════════════════════════════════════════╝\n")
 
     # ─── MODULE E: DOMAIN-GROUNDED CHECKS ─────────────────

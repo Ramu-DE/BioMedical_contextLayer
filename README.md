@@ -30,7 +30,7 @@ We tested 3 LLM judge variants against deterministic checks grounded in a knowle
 | LLM Judge (with rubric) | 100% | 100% | 100% | 1.000 | 0 |
 | LLM Judge (no rubric) | **58%** | 100% | **0%** | **0.000** | **5** |
 
-The judge without ground truth **rejected every correct output** (0% TNR). Its Cohen's κ = 0.000 — literally zero predictive value above random chance despite 58% raw accuracy. That's the **95% Agreement Illusion** (arxiv 2411.15594): raw accuracy hides the fact that the judge is just saying "FAIL" to everything.
+The judge without ground truth **rejected every correct output** (0% TNR). Its Cohen's κ = 0.000 — literally zero predictive value above random chance despite 58% raw accuracy. That's the **95% Agreement Illusion**: raw accuracy hides the fact that the judge is just saying "FAIL" to everything.
 
 ### Bias Battery Results
 
@@ -158,7 +158,7 @@ Relationships include: `ENROLLED_IN`, `INVESTIGATES_DRUG`, `STUDIES_DISEASE`, `R
 
 ## Comprehensive Eval Framework (`eval_comprehensive.py`)
 
-Implements methodologies from Hamel Husain's Critique Shadowing, Shreya Shankar's criteria drift analysis, and the arxiv 2411.15594v6 bias taxonomy:
+Implements Critique Shadowing, criteria drift analysis, and bias taxonomy methodologies:
 
 | Module | What It Tests | Key Finding |
 |--------|--------------|-------------|
@@ -171,11 +171,11 @@ Implements methodologies from Hamel Husain's Critique Shadowing, Shreya Shankar'
 
 ### The Agreement Illusion (Module B)
 
-The most important finding: **Cohen's κ = 0.000** for the LLM judge without rubric. This means 58% raw accuracy is entirely explained by chance — the judge has zero predictive value above random. This is the "95% Agreement Illusion" described in arxiv 2411.15594: raw agreement systematically overstates actual performance by 33-41 percentage points.
+The most important finding: **Cohen's κ = 0.000** for the LLM judge without rubric. This means 58% raw accuracy is entirely explained by chance — the judge has zero predictive value above random. This is the "95% Agreement Illusion": raw agreement systematically overstates actual performance by 33-41 percentage points.
 
 ### Error Taxonomy (Module C)
 
-Bottom-up error analysis following Husain's methodology:
+Bottom-up error analysis methodology:
 
 | Error Type | Risk Level | Why Deterministic Catches It |
 |-----------|-----------|------------------------------|

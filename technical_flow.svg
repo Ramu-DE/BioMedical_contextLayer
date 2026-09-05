@@ -1,0 +1,494 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1800" width="1400" height="1800">
+  <defs>
+    <filter id="sh">
+      <feDropShadow dx="1.5" dy="1.5" stdDeviation="2.5" flood-color="#000" flood-opacity="0.1"/>
+    </filter>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#6b7280"/>
+    </marker>
+    <marker id="ar-p" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#7c3aed"/>
+    </marker>
+    <marker id="ar-g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#059669"/>
+    </marker>
+    <marker id="ar-r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#dc2626"/>
+    </marker>
+    <marker id="ar-b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#2563eb"/>
+    </marker>
+    <marker id="ar-t" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#0891b2"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1400" height="1800" fill="#fafafa"/>
+
+  <!-- ═══ TITLE ═══ -->
+  <rect x="20" y="16" width="1360" height="52" rx="8" fill="#1f2937"/>
+  <text x="700" y="49" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,sans-serif"
+        font-size="22" font-weight="700" fill="white" letter-spacing="1.5">BIOMEDICAL CONTEXT LAYER — TECHNICAL FLOW</text>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- STEP 1: USER QUERY                              -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <g transform="translate(440, 90)" filter="url(#sh)">
+    <rect x="0" y="0" width="520" height="70" rx="35" fill="white" stroke="#6b7280" stroke-width="1.8"/>
+    <circle cx="40" cy="35" r="18" fill="#f3f4f6" stroke="#d1d5db" stroke-width="1.5"/>
+    <text x="40" y="40" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="16" fill="#6b7280">&#9786;</text>
+    <text x="72" y="28" font-family="'Segoe UI',Arial,sans-serif" font-size="12" font-weight="700" fill="#374151" letter-spacing="1">USER QUERY / API REQUEST</text>
+    <text x="72" y="48" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#6b7280">"Can I include PAT015 in the trial outcome analysis?"</text>
+  </g>
+
+  <!-- Step number -->
+  <circle cx="50" cy="125" r="18" fill="#7c3aed"/>
+  <text x="50" y="131" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="14" font-weight="800" fill="white">1</text>
+  <text x="80" y="131" font-family="'Segoe UI',Arial,sans-serif" font-size="12" font-weight="700" fill="#7c3aed">INPUT</text>
+
+  <!-- Arrow down -->
+  <line x1="700" y1="164" x2="700" y2="200" stroke="#6b7280" stroke-width="2" marker-end="url(#ar)"/>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- STEP 2: ENTITY LINKING                          -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <circle cx="50" cy="260" r="18" fill="#7c3aed"/>
+  <text x="50" y="266" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="14" font-weight="800" fill="white">2</text>
+  <text x="80" y="266" font-family="'Segoe UI',Arial,sans-serif" font-size="12" font-weight="700" fill="#7c3aed">ENTITY LINKING</text>
+
+  <g transform="translate(120, 208)" filter="url(#sh)">
+    <rect x="0" y="0" width="1160" height="108" rx="10" fill="white" stroke="#a78bfa" stroke-width="1.5"/>
+    <rect x="0" y="0" width="1160" height="32" rx="10" fill="#f5f3ff"/>
+    <rect x="0" y="18" width="1160" height="14" fill="#f5f3ff"/>
+    <text x="18" y="22" font-family="'Segoe UI',Arial,sans-serif" font-size="12" font-weight="700" fill="#6d28d9">entity_linker.py + term_index.py</text>
+
+    <!-- Input tokens -->
+    <g transform="translate(18, 44)">
+      <text x="0" y="0" font-family="'Segoe UI',Arial,sans-serif" font-size="10" font-weight="600" fill="#374151">Query tokens:</text>
+      <rect x="0" y="8" width="60" height="20" rx="4" fill="#fef3c7" stroke="#fbbf24" stroke-width="1"/>
+      <text x="30" y="22" text-anchor="middle" font-family="monospace" font-size="9" fill="#92400e">PAT015</text>
+      <rect x="68" y="8" width="40" height="20" rx="4" fill="#fef3c7" stroke="#fbbf24" stroke-width="1"/>
+      <text x="88" y="22" text-anchor="middle" font-family="monospace" font-size="9" fill="#92400e">trial</text>
+      <rect x="116" y="8" width="60" height="20" rx="4" fill="#fef3c7" stroke="#fbbf24" stroke-width="1"/>
+      <text x="146" y="22" text-anchor="middle" font-family="monospace" font-size="9" fill="#92400e">outcome</text>
+      <rect x="184" y="8" width="60" height="20" rx="4" fill="#fef3c7" stroke="#fbbf24" stroke-width="1"/>
+      <text x="214" y="22" text-anchor="middle" font-family="monospace" font-size="9" fill="#92400e">analysis</text>
+    </g>
+
+    <!-- Arrow -->
+    <text x="290" y="66" font-family="'Segoe UI',Arial,sans-serif" font-size="16" fill="#7c3aed">&#10132;</text>
+
+    <!-- Term index lookup -->
+    <g transform="translate(318, 44)">
+      <text x="0" y="0" font-family="'Segoe UI',Arial,sans-serif" font-size="10" font-weight="600" fill="#374151">Term Index Match:</text>
+      <rect x="0" y="8" width="110" height="20" rx="4" fill="#ede9fe" stroke="#a78bfa" stroke-width="1"/>
+      <text x="55" y="22" text-anchor="middle" font-family="monospace" font-size="9" fill="#5b21b6">Patient:PAT015</text>
+    </g>
+
+    <!-- Arrow -->
+    <text x="460" y="66" font-family="'Segoe UI',Arial,sans-serif" font-size="16" fill="#7c3aed">&#10132;</text>
+
+    <!-- Ontology grounding -->
+    <g transform="translate(490, 44)">
+      <text x="0" y="0" font-family="'Segoe UI',Arial,sans-serif" font-size="10" font-weight="600" fill="#374151">Ontology Grounding:</text>
+      <rect x="0" y="8" width="170" height="20" rx="4" fill="#eef2ff" stroke="#818cf8" stroke-width="1"/>
+      <text x="85" y="22" text-anchor="middle" font-family="monospace" font-size="9" fill="#4338ca">:Patient rdf:type :Entity</text>
+    </g>
+
+    <!-- Arrow -->
+    <text x="686" y="66" font-family="'Segoe UI',Arial,sans-serif" font-size="16" fill="#7c3aed">&#10132;</text>
+
+    <!-- Resolved entities -->
+    <g transform="translate(716, 44)">
+      <text x="0" y="0" font-family="'Segoe UI',Arial,sans-serif" font-size="10" font-weight="600" fill="#374151">Resolved Entities:</text>
+      <rect x="0" y="8" width="106" height="20" rx="4" fill="#ecfdf5" stroke="#6ee7b7" stroke-width="1"/>
+      <text x="53" y="22" text-anchor="middle" font-family="monospace" font-size="9" fill="#065f46">Patient PAT015</text>
+      <rect x="114" y="8" width="130" height="20" rx="4" fill="#ecfdf5" stroke="#6ee7b7" stroke-width="1"/>
+      <text x="179" y="22" text-anchor="middle" font-family="monospace" font-size="9" fill="#065f46">ClinicalTrial CT003</text>
+      <rect x="252" y="8" width="140" height="20" rx="4" fill="#ecfdf5" stroke="#6ee7b7" stroke-width="1"/>
+      <text x="322" y="22" text-anchor="middle" font-family="monospace" font-size="9" fill="#065f46">Disease: Renal Cell Ca.</text>
+    </g>
+  </g>
+
+  <!-- Arrow down -->
+  <line x1="700" y1="320" x2="700" y2="356" stroke="#6b7280" stroke-width="2" marker-end="url(#ar)"/>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- STEP 3: KNOWLEDGE RETRIEVAL (parallel)          -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <circle cx="50" cy="420" r="18" fill="#7c3aed"/>
+  <text x="50" y="426" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="14" font-weight="800" fill="white">3</text>
+  <text x="80" y="426" font-family="'Segoe UI',Arial,sans-serif" font-size="12" font-weight="700" fill="#7c3aed">KNOWLEDGE RETRIEVAL</text>
+  <text x="80" y="442" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#9ca3af">(parallel: graph + vector)</text>
+
+  <!-- Split arrow -->
+  <line x1="700" y1="356" x2="380" y2="370" stroke="#4f46e5" stroke-width="1.5" marker-end="url(#ar-b)"/>
+  <line x1="700" y1="356" x2="1020" y2="370" stroke="#7c3aed" stroke-width="1.5" marker-end="url(#ar-p)"/>
+
+  <!-- Neo4j Graph Traversal -->
+  <g transform="translate(120, 370)" filter="url(#sh)">
+    <rect x="0" y="0" width="530" height="180" rx="10" fill="white" stroke="#4f46e5" stroke-width="1.5"/>
+    <rect x="0" y="0" width="530" height="30" rx="10" fill="#4f46e5"/>
+    <rect x="0" y="16" width="530" height="14" fill="#4f46e5"/>
+    <text x="18" y="20" font-family="'Segoe UI',Arial,sans-serif" font-size="12" font-weight="700" fill="white">NEO4J GRAPH TRAVERSAL</text>
+    <text x="430" y="20" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#c7d2fe">graph_facts.py</text>
+
+    <!-- Cypher query -->
+    <g transform="translate(14, 40)">
+      <rect x="0" y="0" width="502" height="56" rx="6" fill="#1e1b4b"/>
+      <text x="12" y="16" font-family="monospace" font-size="10" fill="#a5b4fc">MATCH (p:Patient {id: "PAT015"})-[:ENROLLED_IN]->(t:ClinicalTrial)</text>
+      <text x="12" y="30" font-family="monospace" font-size="10" fill="#a5b4fc">MATCH (t)-[:INVESTIGATES_DRUG]->(d:Drug)</text>
+      <text x="12" y="44" font-family="monospace" font-size="10" fill="#a5b4fc">RETURN p.consent_status, t.id, d.name, t.phase</text>
+    </g>
+
+    <!-- Results -->
+    <g transform="translate(14, 105)">
+      <text x="0" y="0" font-family="'Segoe UI',Arial,sans-serif" font-size="10" font-weight="600" fill="#374151">Graph Facts Retrieved:</text>
+      <g transform="translate(0, 10)">
+        <rect x="0" y="0" width="150" height="18" rx="3" fill="#fef2f2" stroke="#fecaca" stroke-width="1"/>
+        <text x="8" y="13" font-family="monospace" font-size="9" fill="#dc2626">consent: Withdrawn</text>
+        <rect x="160" y="0" width="120" height="18" rx="3" fill="#eef2ff" stroke="#c7d2fe" stroke-width="1"/>
+        <text x="168" y="13" font-family="monospace" font-size="9" fill="#4338ca">trial: CT003</text>
+        <rect x="290" y="0" width="140" height="18" rx="3" fill="#eef2ff" stroke="#c7d2fe" stroke-width="1"/>
+        <text x="298" y="13" font-family="monospace" font-size="9" fill="#4338ca">drug: Atezolizumab</text>
+      </g>
+      <g transform="translate(0, 34)">
+        <rect x="0" y="0" width="130" height="18" rx="3" fill="#eef2ff" stroke="#c7d2fe" stroke-width="1"/>
+        <text x="8" y="13" font-family="monospace" font-size="9" fill="#4338ca">phase: Phase 2</text>
+        <rect x="140" y="0" width="200" height="18" rx="3" fill="#eef2ff" stroke="#c7d2fe" stroke-width="1"/>
+        <text x="148" y="13" font-family="monospace" font-size="9" fill="#4338ca">disease: Renal Cell Carcinoma</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Qdrant Vector Search -->
+  <g transform="translate(680, 370)" filter="url(#sh)">
+    <rect x="0" y="0" width="530" height="180" rx="10" fill="white" stroke="#7c3aed" stroke-width="1.5"/>
+    <rect x="0" y="0" width="530" height="30" rx="10" fill="#7c3aed"/>
+    <rect x="0" y="16" width="530" height="14" fill="#7c3aed"/>
+    <text x="18" y="20" font-family="'Segoe UI',Arial,sans-serif" font-size="12" font-weight="700" fill="white">QDRANT VECTOR SEARCH</text>
+    <text x="420" y="20" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#ddd6fe">retrievers.py</text>
+
+    <!-- Embed + search -->
+    <g transform="translate(14, 40)">
+      <rect x="0" y="0" width="235" height="44" rx="6" fill="#f5f3ff" stroke="#ddd6fe" stroke-width="1"/>
+      <text x="10" y="16" font-family="'Segoe UI',Arial,sans-serif" font-size="10" font-weight="600" fill="#6d28d9">Embed Query</text>
+      <text x="10" y="32" font-family="monospace" font-size="9" fill="#6b7280">Titan v2 → [0.23, -0.41, ...] 1024d</text>
+
+      <text x="248" y="26" font-family="'Segoe UI',Arial,sans-serif" font-size="14" fill="#7c3aed">&#10132;</text>
+
+      <rect x="268" y="0" width="235" height="44" rx="6" fill="#f5f3ff" stroke="#ddd6fe" stroke-width="1"/>
+      <text x="278" y="16" font-family="'Segoe UI',Arial,sans-serif" font-size="10" font-weight="600" fill="#6d28d9">Similarity Search</text>
+      <text x="278" y="32" font-family="monospace" font-size="9" fill="#6b7280">ctx_biomed_chunks top_k=5</text>
+    </g>
+
+    <!-- Retrieved chunks -->
+    <g transform="translate(14, 96)">
+      <text x="0" y="0" font-family="'Segoe UI',Arial,sans-serif" font-size="10" font-weight="600" fill="#374151">Semantic Chunks Retrieved:</text>
+      <g transform="translate(0, 10)">
+        <rect x="0" y="0" width="248" height="18" rx="3" fill="#f5f3ff" stroke="#ddd6fe" stroke-width="1"/>
+        <text x="8" y="13" font-family="monospace" font-size="9" fill="#5b21b6">chunk_42: "PAT015 RCC consent..."</text>
+        <rect x="256" y="0" width="248" height="18" rx="3" fill="#f5f3ff" stroke="#ddd6fe" stroke-width="1"/>
+        <text x="264" y="13" font-family="monospace" font-size="9" fill="#5b21b6">chunk_78: "Atezolizumab PD-L1..."</text>
+      </g>
+      <g transform="translate(0, 34)">
+        <rect x="0" y="0" width="248" height="18" rx="3" fill="#f5f3ff" stroke="#ddd6fe" stroke-width="1"/>
+        <text x="8" y="13" font-family="monospace" font-size="9" fill="#5b21b6">chunk_91: "CT003 Phase 2 RCC..."</text>
+        <rect x="256" y="0" width="248" height="18" rx="3" fill="#f5f3ff" stroke="#ddd6fe" stroke-width="1"/>
+        <text x="264" y="13" font-family="monospace" font-size="9" fill="#5b21b6">gov_12: "consent withdrawal..."</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Merge arrows -->
+  <line x1="385" y1="554" x2="700" y2="580" stroke="#4f46e5" stroke-width="1.5" marker-end="url(#ar)"/>
+  <line x1="945" y1="554" x2="700" y2="580" stroke="#7c3aed" stroke-width="1.5" marker-end="url(#ar)"/>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- STEP 4: GOVERNANCE GATE                         -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <circle cx="50" cy="650" r="18" fill="#7c3aed"/>
+  <text x="50" y="656" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="14" font-weight="800" fill="white">4</text>
+  <text x="80" y="652" font-family="'Segoe UI',Arial,sans-serif" font-size="12" font-weight="700" fill="#7c3aed">GOVERNANCE GATE</text>
+  <text x="80" y="668" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#9ca3af">(deterministic rules fire BEFORE LLM)</text>
+
+  <g transform="translate(120, 588)" filter="url(#sh)">
+    <rect x="0" y="0" width="1160" height="148" rx="10" fill="white" stroke="#dc2626" stroke-width="1.8"/>
+    <rect x="0" y="0" width="1160" height="30" rx="10" fill="#fef2f2"/>
+    <rect x="0" y="16" width="1160" height="14" fill="#fef2f2"/>
+    <text x="18" y="20" font-family="'Segoe UI',Arial,sans-serif" font-size="12" font-weight="700" fill="#dc2626">RULE ENGINE — gate.py + engine.py</text>
+    <text x="940" y="20" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#fca5a5">YAML rule packs: patient_consent / drug_safety / data_governance</text>
+
+    <!-- Rule 1 -->
+    <g transform="translate(14, 40)">
+      <rect x="0" y="0" width="360" height="90" rx="6" fill="#fef2f2" stroke="#fecaca" stroke-width="1"/>
+      <text x="10" y="16" font-family="'Segoe UI',Arial,sans-serif" font-size="10" font-weight="700" fill="#dc2626">RULE: patient_consent.yaml</text>
+      <rect x="10" y="24" width="340" height="32" rx="4" fill="#1e1b4b"/>
+      <text x="18" y="36" font-family="monospace" font-size="9" fill="#fca5a5">IF patient.consent_status == "Withdrawn"</text>
+      <text x="18" y="48" font-family="monospace" font-size="9" fill="#fca5a5">THEN BLOCK + cite policy GOV_CONSENT_01</text>
+      <text x="10" y="74" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#dc2626" font-weight="700">&#10060; FIRED → PAT015 consent = Withdrawn</text>
+    </g>
+
+    <!-- Arrow -->
+    <text x="390" y="88" font-family="'Segoe UI',Arial,sans-serif" font-size="18" fill="#dc2626">&#10132;</text>
+
+    <!-- Rule result -->
+    <g transform="translate(420, 40)">
+      <rect x="0" y="0" width="330" height="90" rx="6" fill="#fef2f2" stroke="#fecaca" stroke-width="1"/>
+      <text x="10" y="16" font-family="'Segoe UI',Arial,sans-serif" font-size="10" font-weight="700" fill="#dc2626">Ctx_RuleFiring CREATED:</text>
+      <text x="10" y="34" font-family="monospace" font-size="9" fill="#4b5563">rule: "consent_withdrawal_block"</text>
+      <text x="10" y="48" font-family="monospace" font-size="9" fill="#4b5563">entity: "PAT015"</text>
+      <text x="10" y="62" font-family="monospace" font-size="9" fill="#4b5563">action: BLOCK</text>
+      <text x="10" y="76" font-family="monospace" font-size="9" fill="#dc2626">policy: GOV_CONSENT_01</text>
+    </g>
+
+    <!-- Decision diamond -->
+    <g transform="translate(820, 40)">
+      <polygon points="150,0 300,45 150,90 0,45" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.5"/>
+      <text x="150" y="40" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="11" font-weight="700" fill="#92400e">Any rules</text>
+      <text x="150" y="56" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="11" font-weight="700" fill="#92400e">fired BLOCK?</text>
+    </g>
+
+    <!-- Yes/No paths from diamond -->
+    <text x="1010" y="38" font-family="'Segoe UI',Arial,sans-serif" font-size="11" font-weight="700" fill="#dc2626">YES ↓</text>
+    <text x="1128" y="80" font-family="'Segoe UI',Arial,sans-serif" font-size="11" font-weight="700" fill="#059669">NO →</text>
+  </g>
+
+  <!-- Blocked path arrow -->
+  <line x1="700" y1="740" x2="700" y2="776" stroke="#dc2626" stroke-width="2" marker-end="url(#ar-r)"/>
+  <!-- Pass path (to assembly) goes via note -->
+  <g transform="translate(1150, 740)">
+    <rect x="0" y="0" width="130" height="30" rx="6" fill="#ecfdf5" stroke="#059669" stroke-width="1.2"/>
+    <text x="65" y="20" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="10" font-weight="600" fill="#059669">skip to step 5 →</text>
+  </g>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- STEP 4b: BLOCKED RESPONSE (for this example)   -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <g transform="translate(120, 780)" filter="url(#sh)">
+    <rect x="0" y="0" width="1160" height="80" rx="10" fill="#fef2f2" stroke="#dc2626" stroke-width="1.5"/>
+    <rect x="0" y="0" width="1160" height="28" rx="10" fill="#dc2626"/>
+    <rect x="0" y="16" width="1160" height="12" fill="#dc2626"/>
+    <text x="18" y="19" font-family="'Segoe UI',Arial,sans-serif" font-size="12" font-weight="700" fill="white">&#9888; BLOCKED RESPONSE (governance violation detected)</text>
+
+    <text x="18" y="52" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#4b5563">
+      "PAT015 cannot be included in the trial outcome analysis. Consent status is <tspan font-weight="700" fill="#dc2626">Withdrawn</tspan>
+    </text>
+    <text x="18" y="68" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#4b5563">
+      (policy GOV_CONSENT_01). Only patients with Active consent may be included. CT003 has 1 eligible patient: PAT007."
+    </text>
+  </g>
+
+  <!-- Arrow down -->
+  <line x1="700" y1="864" x2="700" y2="900" stroke="#6b7280" stroke-width="2" marker-end="url(#ar)"/>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- STEP 5: CONTEXT ASSEMBLY                        -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <circle cx="50" cy="960" r="18" fill="#7c3aed"/>
+  <text x="50" y="966" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="14" font-weight="800" fill="white">5</text>
+  <text x="80" y="962" font-family="'Segoe UI',Arial,sans-serif" font-size="12" font-weight="700" fill="#7c3aed">CONTEXT ASSEMBLY</text>
+  <text x="80" y="978" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#9ca3af">(package.py builds the context package)</text>
+
+  <g transform="translate(120, 904)" filter="url(#sh)">
+    <rect x="0" y="0" width="1160" height="118" rx="10" fill="white" stroke="#0891b2" stroke-width="1.5"/>
+    <rect x="0" y="0" width="1160" height="30" rx="10" fill="#0891b2"/>
+    <rect x="0" y="16" width="1160" height="14" fill="#0891b2"/>
+    <text x="18" y="20" font-family="'Segoe UI',Arial,sans-serif" font-size="12" font-weight="700" fill="white">Ctx_Package ASSEMBLED → LLM PROMPT</text>
+    <text x="990" y="20" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#a5f3fc">package.py + Bedrock Claude Haiku 4.5</text>
+
+    <!-- Package components -->
+    <g transform="translate(14, 40)">
+      <rect x="0" y="0" width="220" height="60" rx="6" fill="#ecfeff" stroke="#a5f3fc" stroke-width="1"/>
+      <text x="10" y="16" font-family="'Segoe UI',Arial,sans-serif" font-size="10" font-weight="700" fill="#0e7490">Graph Facts</text>
+      <text x="10" y="32" font-family="monospace" font-size="9" fill="#6b7280">consent=Withdrawn, trial=CT003</text>
+      <text x="10" y="46" font-family="monospace" font-size="9" fill="#6b7280">drug=Atezolizumab, phase=2</text>
+    </g>
+    <text x="244" y="74" font-family="'Segoe UI',Arial,sans-serif" font-size="14" fill="#0891b2">+</text>
+    <g transform="translate(262, 40)">
+      <rect x="0" y="0" width="210" height="60" rx="6" fill="#ecfeff" stroke="#a5f3fc" stroke-width="1"/>
+      <text x="10" y="16" font-family="'Segoe UI',Arial,sans-serif" font-size="10" font-weight="700" fill="#0e7490">Semantic Chunks</text>
+      <text x="10" y="32" font-family="monospace" font-size="9" fill="#6b7280">4 relevant biomed chunks</text>
+      <text x="10" y="46" font-family="monospace" font-size="9" fill="#6b7280">1 governance doc chunk</text>
+    </g>
+    <text x="482" y="74" font-family="'Segoe UI',Arial,sans-serif" font-size="14" fill="#0891b2">+</text>
+    <g transform="translate(500, 40)">
+      <rect x="0" y="0" width="210" height="60" rx="6" fill="#ecfeff" stroke="#a5f3fc" stroke-width="1"/>
+      <text x="10" y="16" font-family="'Segoe UI',Arial,sans-serif" font-size="10" font-weight="700" fill="#0e7490">Rule Firings</text>
+      <text x="10" y="32" font-family="monospace" font-size="9" fill="#dc2626">BLOCK: consent_withdrawal</text>
+      <text x="10" y="46" font-family="monospace" font-size="9" fill="#6b7280">policy: GOV_CONSENT_01</text>
+    </g>
+    <text x="720" y="74" font-family="'Segoe UI',Arial,sans-serif" font-size="14" fill="#0891b2">&#10132;</text>
+    <g transform="translate(740, 40)">
+      <rect x="0" y="0" width="400" height="60" rx="6" fill="#0891b2"/>
+      <text x="10" y="16" font-family="'Segoe UI',Arial,sans-serif" font-size="10" font-weight="700" fill="white">Bedrock Claude Haiku 4.5 Generation</text>
+      <text x="10" y="32" font-family="monospace" font-size="9" fill="#cffafe">Prompt = query + graph_facts + chunks + rule_firings</text>
+      <text x="10" y="46" font-family="monospace" font-size="9" fill="#cffafe">→ Grounded response with provenance citations</text>
+    </g>
+  </g>
+
+  <!-- Arrow down -->
+  <line x1="700" y1="1026" x2="700" y2="1058" stroke="#6b7280" stroke-width="2" marker-end="url(#ar)"/>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- STEP 6: CONTEXT STORE                           -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <circle cx="50" cy="1115" r="18" fill="#7c3aed"/>
+  <text x="50" y="1121" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="14" font-weight="800" fill="white">6</text>
+  <text x="80" y="1117" font-family="'Segoe UI',Arial,sans-serif" font-size="12" font-weight="700" fill="#7c3aed">CONTEXT STORE</text>
+  <text x="80" y="1133" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#9ca3af">(persist decision + facts + embeddings)</text>
+
+  <g transform="translate(120, 1062)" filter="url(#sh)">
+    <rect x="0" y="0" width="1160" height="105" rx="10" fill="white" stroke="#6b7280" stroke-width="1.5"/>
+    <rect x="0" y="0" width="1160" height="28" rx="10" fill="#f3f4f6"/>
+    <rect x="0" y="16" width="1160" height="12" fill="#f3f4f6"/>
+    <text x="18" y="19" font-family="'Segoe UI',Arial,sans-serif" font-size="12" font-weight="700" fill="#374151">RUNTIME PERSISTENCE — store.py</text>
+
+    <!-- Neo4j persist -->
+    <g transform="translate(14, 38)">
+      <rect x="0" y="0" width="360" height="52" rx="6" fill="#eef2ff" stroke="#c7d2fe" stroke-width="1"/>
+      <text x="10" y="16" font-family="'Segoe UI',Arial,sans-serif" font-size="10" font-weight="700" fill="#4f46e5">Neo4j: Create Context Nodes</text>
+      <text x="10" y="32" font-family="monospace" font-size="9" fill="#6b7280">Ctx_Decision, Ctx_Fact, Ctx_RuleFiring</text>
+      <text x="10" y="44" font-family="monospace" font-size="9" fill="#6b7280">Ctx_Chunk, Ctx_Package → linked to KG</text>
+    </g>
+
+    <text x="388" y="68" font-family="'Segoe UI',Arial,sans-serif" font-size="14" fill="#6b7280">+</text>
+
+    <!-- Qdrant persist -->
+    <g transform="translate(410, 38)">
+      <rect x="0" y="0" width="360" height="52" rx="6" fill="#f5f3ff" stroke="#ddd6fe" stroke-width="1"/>
+      <text x="10" y="16" font-family="'Segoe UI',Arial,sans-serif" font-size="10" font-weight="700" fill="#7c3aed">Qdrant: Embed + Upsert Vectors</text>
+      <text x="10" y="32" font-family="monospace" font-size="9" fill="#6b7280">ctx_biomed_chunks: chunk embeddings</text>
+      <text x="10" y="44" font-family="monospace" font-size="9" fill="#6b7280">eval_verdicts: verdict embeddings</text>
+    </g>
+
+    <text x="784" y="68" font-family="'Segoe UI',Arial,sans-serif" font-size="14" fill="#6b7280">+</text>
+
+    <!-- Audit trail -->
+    <g transform="translate(806, 38)">
+      <rect x="0" y="0" width="340" height="52" rx="6" fill="#fefce8" stroke="#fde68a" stroke-width="1"/>
+      <text x="10" y="16" font-family="'Segoe UI',Arial,sans-serif" font-size="10" font-weight="700" fill="#a16207">Audit Trail</text>
+      <text x="10" y="32" font-family="monospace" font-size="9" fill="#6b7280">Full provenance chain: query → entities</text>
+      <text x="10" y="44" font-family="monospace" font-size="9" fill="#6b7280">→ facts → rules → decision → response</text>
+    </g>
+  </g>
+
+  <!-- Arrow down -->
+  <line x1="700" y1="1172" x2="700" y2="1204" stroke="#6b7280" stroke-width="2" marker-end="url(#ar)"/>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- STEP 7: EVAL FRAMEWORK                          -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <circle cx="50" cy="1275" r="18" fill="#7c3aed"/>
+  <text x="50" y="1281" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="14" font-weight="800" fill="white">7</text>
+  <text x="80" y="1277" font-family="'Segoe UI',Arial,sans-serif" font-size="12" font-weight="700" fill="#7c3aed">EVAL FRAMEWORK</text>
+  <text x="80" y="1293" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#9ca3af">(the proof: judge vs deterministic)</text>
+
+  <g transform="translate(120, 1210)" filter="url(#sh)">
+    <rect x="0" y="0" width="1160" height="135" rx="10" fill="white" stroke="#f59e0b" stroke-width="1.5"/>
+    <rect x="0" y="0" width="1160" height="28" rx="10" fill="#fef3c7"/>
+    <rect x="0" y="16" width="1160" height="12" fill="#fef3c7"/>
+    <text x="18" y="19" font-family="'Segoe UI',Arial,sans-serif" font-size="12" font-weight="700" fill="#92400e">EVAL: LLM-as-JUDGE vs DETERMINISTIC CHECKS</text>
+
+    <!-- LLM Judge path -->
+    <g transform="translate(14, 38)">
+      <rect x="0" y="0" width="360" height="82" rx="6" fill="#fef2f2" stroke="#fecaca" stroke-width="1"/>
+      <text x="10" y="16" font-family="'Segoe UI',Arial,sans-serif" font-size="10" font-weight="700" fill="#dc2626">LLM-as-Judge (Bedrock Claude Haiku)</text>
+      <text x="10" y="34" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#6b7280">No rubric variant: <tspan font-weight="700" fill="#dc2626">64% accuracy</tspan></text>
+      <text x="10" y="50" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#6b7280">Domain expert variant: <tspan font-weight="700" fill="#dc2626">64% accuracy</tspan></text>
+      <text x="10" y="66" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#6b7280">With rubric variant: 100%* <tspan font-size="9" fill="#9ca3af">(*circular)</tspan></text>
+    </g>
+
+    <!-- VS -->
+    <g transform="translate(396, 58)">
+      <rect x="0" y="0" width="50" height="30" rx="15" fill="white" stroke="#d1d5db" stroke-width="1.5"/>
+      <text x="25" y="21" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="13" font-weight="800" fill="#7c3aed">VS</text>
+    </g>
+
+    <!-- Deterministic path -->
+    <g transform="translate(468, 38)">
+      <rect x="0" y="0" width="360" height="82" rx="6" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="1"/>
+      <text x="10" y="16" font-family="'Segoe UI',Arial,sans-serif" font-size="10" font-weight="700" fill="#059669">Deterministic (KG-Grounded)</text>
+      <text x="10" y="34" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#6b7280">Regex + exact match + lambda: <tspan font-weight="700" fill="#059669">100%</tspan></text>
+      <text x="10" y="50" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#6b7280">Neo4j Cypher verification: <tspan font-weight="700" fill="#059669">100%</tspan></text>
+      <text x="10" y="66" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#6b7280">Zero false passes, zero false fails</text>
+    </g>
+
+    <!-- Verdicts synced -->
+    <g transform="translate(850, 38)">
+      <rect x="0" y="0" width="290" height="82" rx="6" fill="#f3f4f6" stroke="#d1d5db" stroke-width="1"/>
+      <text x="10" y="16" font-family="'Segoe UI',Arial,sans-serif" font-size="10" font-weight="700" fill="#374151">Verdicts Synced To:</text>
+      <text x="10" y="36" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#4f46e5">&#9679; Neo4j: Eval_Verdict + Eval_TestCase nodes</text>
+      <text x="10" y="52" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#7c3aed">&#9679; Qdrant: eval_verdicts collection</text>
+      <text x="10" y="68" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#6b7280">&#9679; JSON: eval_poc_*_results.json</text>
+    </g>
+  </g>
+
+  <!-- Arrow down -->
+  <line x1="700" y1="1350" x2="700" y2="1382" stroke="#6b7280" stroke-width="2" marker-end="url(#ar)"/>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- STEP 8: DASHBOARD                               -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <circle cx="50" cy="1440" r="18" fill="#7c3aed"/>
+  <text x="50" y="1446" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="14" font-weight="800" fill="white">8</text>
+  <text x="80" y="1442" font-family="'Segoe UI',Arial,sans-serif" font-size="12" font-weight="700" fill="#7c3aed">DASHBOARD</text>
+
+  <g transform="translate(120, 1388)" filter="url(#sh)">
+    <rect x="0" y="0" width="1160" height="105" rx="10" fill="white" stroke="#6b7280" stroke-width="1.5"/>
+    <rect x="0" y="0" width="1160" height="28" rx="10" fill="#374151"/>
+    <rect x="0" y="16" width="1160" height="12" fill="#374151"/>
+    <text x="18" y="19" font-family="'Segoe UI',Arial,sans-serif" font-size="12" font-weight="700" fill="white">NICEGUI DASHBOARD — app.py</text>
+
+    <g transform="translate(14, 38)">
+      <rect x="0" y="0" width="360" height="52" rx="6" fill="#f5f3ff" stroke="#c4b5fd" stroke-width="1"/>
+      <text x="14" y="18" font-family="'Segoe UI',Arial,sans-serif" font-size="11" font-weight="700" fill="#6d28d9">/ctx/</text>
+      <text x="50" y="18" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#6b7280">Pipeline Dashboard</text>
+      <text x="14" y="38" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#9ca3af">Run queries, trace entity linking, view context packages</text>
+    </g>
+
+    <g transform="translate(390, 38)">
+      <rect x="0" y="0" width="360" height="52" rx="6" fill="#fef3c7" stroke="#fbbf24" stroke-width="1"/>
+      <text x="14" y="18" font-family="'Segoe UI',Arial,sans-serif" font-size="11" font-weight="700" fill="#92400e">/ctx/eval</text>
+      <text x="74" y="18" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#6b7280">Eval Proof</text>
+      <text x="14" y="38" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#9ca3af">Live judge vs deterministic, run eval button, stats</text>
+    </g>
+
+    <g transform="translate(766, 38)">
+      <rect x="0" y="0" width="380" height="52" rx="6" fill="#ede9fe" stroke="#a78bfa" stroke-width="1"/>
+      <text x="14" y="18" font-family="'Segoe UI',Arial,sans-serif" font-size="11" font-weight="700" fill="#5b21b6">/ctx/membrane</text>
+      <text x="110" y="18" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#6b7280">Neurosymbolic Proof</text>
+      <text x="14" y="38" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#9ca3af">Animated architecture, live stats from Neo4j + Qdrant</text>
+    </g>
+  </g>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- LEGEND                                          -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <g transform="translate(120, 1520)" filter="url(#sh)">
+    <rect x="0" y="0" width="1160" height="60" rx="8" fill="white" stroke="#e5e7eb" stroke-width="1"/>
+    <text x="18" y="18" font-family="'Segoe UI',Arial,sans-serif" font-size="10" font-weight="700" fill="#374151" letter-spacing="1.5">LEGEND</text>
+
+    <g transform="translate(18, 30)" font-family="'Segoe UI',Arial,sans-serif" font-size="10">
+      <rect x="0" y="0" width="12" height="12" rx="2" fill="#4f46e5"/><text x="18" y="10" fill="#6b7280">Neo4j</text>
+      <rect x="80" y="0" width="12" height="12" rx="2" fill="#7c3aed"/><text x="98" y="10" fill="#6b7280">Qdrant</text>
+      <rect x="160" y="0" width="12" height="12" rx="2" fill="#0891b2"/><text x="178" y="10" fill="#6b7280">Bedrock</text>
+      <rect x="260" y="0" width="12" height="12" rx="2" fill="#dc2626"/><text x="278" y="10" fill="#6b7280">Rule Block</text>
+      <rect x="370" y="0" width="12" height="12" rx="2" fill="#059669"/><text x="388" y="10" fill="#6b7280">Deterministic Pass</text>
+      <rect x="510" y="0" width="12" height="12" rx="2" fill="#f59e0b"/><text x="528" y="10" fill="#6b7280">Eval Framework</text>
+      <rect x="640" y="0" width="12" height="12" rx="2" fill="#fef3c7" stroke="#fbbf24" stroke-width="1"/><text x="658" y="10" fill="#6b7280">Decision Point</text>
+      <line x1="790" y1="6" x2="820" y2="6" stroke="#6b7280" stroke-width="1.5" marker-end="url(#ar)"/>
+      <text x="828" y="10" fill="#6b7280">Data Flow</text>
+    </g>
+  </g>
+
+  <!-- ═══ THESIS BAR ═══ -->
+  <g transform="translate(20, 1600)">
+    <rect x="0" y="0" width="1360" height="42" rx="8" fill="#1f2937"/>
+    <text x="680" y="17" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif"
+          font-size="14" font-weight="700" fill="white" letter-spacing="1.5">YOUR CONTEXT IS YOUR EDGE</text>
+    <text x="680" y="34" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif"
+          font-size="11" fill="#9ca3af">Deterministic rules grounded in a knowledge graph catch what LLM judges cannot — with zero ambiguity</text>
+  </g>
+</svg>

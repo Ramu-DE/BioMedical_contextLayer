@@ -1,0 +1,374 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1050" width="1400" height="1050">
+  <defs>
+    <filter id="shadow">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.1"/>
+    </filter>
+    <filter id="shadow-sm">
+      <feDropShadow dx="1" dy="1" stdDeviation="2" flood-color="#000" flood-opacity="0.08"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#6b7280"/>
+    </marker>
+    <marker id="arrow-purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#7c3aed"/>
+    </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#059669"/>
+    </marker>
+    <marker id="arrow-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#ef4444"/>
+    </marker>
+    <linearGradient id="grad-neo4j" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5"/><stop offset="100%" stop-color="#3730a3"/>
+    </linearGradient>
+    <linearGradient id="grad-qdrant" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7c3aed"/><stop offset="100%" stop-color="#6d28d9"/>
+    </linearGradient>
+    <linearGradient id="grad-bedrock" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0891b2"/><stop offset="100%" stop-color="#0e7490"/>
+    </linearGradient>
+    <linearGradient id="grad-pipeline" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f5f3ff"/><stop offset="100%" stop-color="#ede9fe"/>
+    </linearGradient>
+    <linearGradient id="grad-eval" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fefce8"/><stop offset="100%" stop-color="#fef9c3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1400" height="1050" fill="#fafafa" rx="12"/>
+  <rect x="8" y="8" width="1384" height="1034" fill="none" stroke="#e5e7eb" stroke-width="1" rx="10"/>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- TITLE BAR                                          -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <rect x="20" y="16" width="1360" height="52" rx="8" fill="#1f2937"/>
+  <text x="700" y="49" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,sans-serif"
+        font-size="22" font-weight="700" fill="white" letter-spacing="1.5">
+    BIOMEDICAL CONTEXT LAYER — ARCHITECTURE
+  </text>
+  <text x="1340" y="49" text-anchor="end" font-family="'Segoe UI',Arial,sans-serif"
+        font-size="11" fill="#9ca3af">Neurosymbolic AI</text>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- ROW 1: USER QUERY                                  -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <g transform="translate(540, 88)" filter="url(#shadow-sm)">
+    <rect x="0" y="0" width="320" height="48" rx="24" fill="white" stroke="#d1d5db" stroke-width="1.5"/>
+    <text x="30" y="30" font-family="'Segoe UI',Arial,sans-serif" font-size="18" fill="#6b7280">&#128269;</text>
+    <text x="56" y="30" font-family="'Segoe UI',Arial,sans-serif" font-size="14" fill="#374151" font-weight="600">
+      User Query / API Request
+    </text>
+  </g>
+  <!-- Arrow down from query -->
+  <line x1="700" y1="140" x2="700" y2="172" stroke="#6b7280" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- ROW 2: CONTEXT LAYER PIPELINE                      -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <g transform="translate(50, 178)">
+    <rect x="0" y="0" width="1300" height="195" rx="12" fill="url(#grad-pipeline)" stroke="#c4b5fd" stroke-width="1.5" filter="url(#shadow)"/>
+    <text x="22" y="26" font-family="'Segoe UI',Arial,sans-serif" font-size="13" font-weight="700" fill="#7c3aed" letter-spacing="2">CONTEXT LAYER PIPELINE</text>
+
+    <!-- Stage 1: Entity Linking -->
+    <g transform="translate(30, 42)">
+      <rect x="0" y="0" width="230" height="130" rx="8" fill="white" stroke="#a78bfa" stroke-width="1.2"/>
+      <rect x="0" y="0" width="230" height="30" rx="8" fill="#7c3aed"/>
+      <rect x="0" y="14" width="230" height="16" fill="#7c3aed"/>
+      <text x="115" y="20" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="12" font-weight="700" fill="white" letter-spacing="1">1. ENTITY LINKING</text>
+      <text x="16" y="52" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#4b5563">Term Index Lookup</text>
+      <text x="16" y="68" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#4b5563">Ontology Grounding</text>
+      <text x="16" y="84" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#4b5563">Entity Resolution</text>
+      <text x="16" y="104" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#9ca3af" font-style="italic">Drugs, Diseases, Patients,</text>
+      <text x="16" y="118" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#9ca3af" font-style="italic">Trials, Biomarkers, Genes</text>
+    </g>
+
+    <!-- Arrow 1→2 -->
+    <line x1="268" y1="107" x2="295" y2="107" stroke="#7c3aed" stroke-width="1.8" marker-end="url(#arrow-purple)"/>
+
+    <!-- Stage 2: Knowledge Retrieval -->
+    <g transform="translate(302, 42)">
+      <rect x="0" y="0" width="230" height="130" rx="8" fill="white" stroke="#a78bfa" stroke-width="1.2"/>
+      <rect x="0" y="0" width="230" height="30" rx="8" fill="#7c3aed"/>
+      <rect x="0" y="14" width="230" height="16" fill="#7c3aed"/>
+      <text x="115" y="20" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="12" font-weight="700" fill="white" letter-spacing="1">2. KNOWLEDGE RETRIEVAL</text>
+      <text x="16" y="52" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#4b5563">Graph Traversal (Neo4j)</text>
+      <text x="16" y="68" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#4b5563">Vector Similarity (Qdrant)</text>
+      <text x="16" y="84" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#4b5563">SHACL Validation</text>
+      <text x="16" y="104" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#9ca3af" font-style="italic">Multi-hop paths, semantic</text>
+      <text x="16" y="118" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#9ca3af" font-style="italic">chunks, shape constraints</text>
+    </g>
+
+    <!-- Arrow 2→3 -->
+    <line x1="540" y1="107" x2="567" y2="107" stroke="#7c3aed" stroke-width="1.8" marker-end="url(#arrow-purple)"/>
+
+    <!-- Stage 3: Governance Gate -->
+    <g transform="translate(574, 42)">
+      <rect x="0" y="0" width="230" height="130" rx="8" fill="white" stroke="#a78bfa" stroke-width="1.2"/>
+      <rect x="0" y="0" width="230" height="30" rx="8" fill="#7c3aed"/>
+      <rect x="0" y="14" width="230" height="16" fill="#7c3aed"/>
+      <text x="115" y="20" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="12" font-weight="700" fill="white" letter-spacing="1">3. GOVERNANCE GATE</text>
+      <text x="16" y="52" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#4b5563">Rule Engine (YAML packs)</text>
+      <text x="16" y="68" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#4b5563">Patient Consent Check</text>
+      <text x="16" y="84" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#4b5563">Drug Safety Validation</text>
+      <text x="16" y="104" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#9ca3af" font-style="italic">Deterministic rules fire</text>
+      <text x="16" y="118" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#9ca3af" font-style="italic">before LLM generation</text>
+    </g>
+
+    <!-- Arrow 3→4 -->
+    <line x1="812" y1="107" x2="839" y2="107" stroke="#7c3aed" stroke-width="1.8" marker-end="url(#arrow-purple)"/>
+
+    <!-- Stage 4: Context Assembly + LLM -->
+    <g transform="translate(846, 42)">
+      <rect x="0" y="0" width="230" height="130" rx="8" fill="white" stroke="#a78bfa" stroke-width="1.2"/>
+      <rect x="0" y="0" width="230" height="30" rx="8" fill="#7c3aed"/>
+      <rect x="0" y="14" width="230" height="16" fill="#7c3aed"/>
+      <text x="115" y="20" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="12" font-weight="700" fill="white" letter-spacing="1">4. ASSEMBLY + LLM</text>
+      <text x="16" y="52" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#4b5563">Context Package Build</text>
+      <text x="16" y="68" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#4b5563">Prompt + KG Facts + Rules</text>
+      <text x="16" y="84" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#4b5563">Bedrock Generation</text>
+      <text x="16" y="104" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#9ca3af" font-style="italic">Grounded response with</text>
+      <text x="16" y="118" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#9ca3af" font-style="italic">provenance + decisions</text>
+    </g>
+
+    <!-- Output arrow -->
+    <line x1="1084" y1="107" x2="1120" y2="107" stroke="#7c3aed" stroke-width="1.8" marker-end="url(#arrow-purple)"/>
+    <g transform="translate(1125, 78)">
+      <rect x="0" y="0" width="140" height="58" rx="8" fill="#ecfdf5" stroke="#059669" stroke-width="1.5"/>
+      <text x="70" y="22" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="11" font-weight="700" fill="#059669" letter-spacing="1">GROUNDED</text>
+      <text x="70" y="42" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="11" font-weight="700" fill="#059669" letter-spacing="1">RESPONSE</text>
+    </g>
+  </g>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- ROW 3: DATA STORES                                 -->
+  <!-- ═══════════════════════════════════════════════════ -->
+
+  <!-- Neo4j Box -->
+  <g transform="translate(50, 410)" filter="url(#shadow)">
+    <rect x="0" y="0" width="410" height="220" rx="10" fill="white" stroke="#4f46e5" stroke-width="1.5"/>
+    <rect x="0" y="0" width="410" height="36" rx="10" fill="url(#grad-neo4j)"/>
+    <rect x="0" y="20" width="410" height="16" fill="url(#grad-neo4j)"/>
+    <text x="20" y="24" font-family="'Segoe UI',Arial,sans-serif" font-size="14" font-weight="700" fill="white">Neo4j Knowledge Graph</text>
+    <text x="350" y="24" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#c7d2fe">Aura</text>
+
+    <!-- Content columns -->
+    <g transform="translate(16, 50)">
+      <text x="0" y="0" font-family="'Segoe UI',Arial,sans-serif" font-size="11" font-weight="700" fill="#4f46e5">KG NODES (545)</text>
+      <text x="0" y="18" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#4b5563">Drug (10) - mechanisms, targets</text>
+      <text x="0" y="33" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#4b5563">Patient (15) - consent status</text>
+      <text x="0" y="48" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#4b5563">ClinicalTrial (10) - phase, status</text>
+      <text x="0" y="63" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#4b5563">Disease, Gene, Protein, Pathway</text>
+      <text x="0" y="78" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#4b5563">AdverseEvent - severity grades</text>
+      <text x="0" y="93" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#4b5563">Biomarker, Anatomy, Exposure</text>
+    </g>
+    <g transform="translate(210, 50)">
+      <text x="0" y="0" font-family="'Segoe UI',Arial,sans-serif" font-size="11" font-weight="700" fill="#4f46e5">CONTEXT NODES (303)</text>
+      <text x="0" y="18" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#4b5563">Ctx_Decision - query decisions</text>
+      <text x="0" y="33" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#4b5563">Ctx_Fact - retrieved KG facts</text>
+      <text x="0" y="48" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#4b5563">Ctx_RuleFiring - gate results</text>
+      <text x="0" y="63" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#4b5563">Ctx_Chunk - document chunks</text>
+      <text x="0" y="78" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#4b5563">Ctx_Package - assembled context</text>
+    </g>
+    <line x1="200" y1="46" x2="200" y2="180" stroke="#e0e7ff" stroke-width="1"/>
+
+    <!-- Ontology badge -->
+    <g transform="translate(16, 160)">
+      <rect x="0" y="0" width="376" height="42" rx="6" fill="#eef2ff" stroke="#c7d2fe" stroke-width="1"/>
+      <text x="12" y="16" font-family="'Segoe UI',Arial,sans-serif" font-size="10" font-weight="700" fill="#4f46e5">OWL/TTL ONTOLOGY</text>
+      <text x="12" y="32" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#6b7280">foundation.ttl  clinical.ttl  governance.ttl  patient.ttl  + SHACL shapes</text>
+    </g>
+  </g>
+
+  <!-- Arrow: Neo4j ↔ Pipeline -->
+  <line x1="255" y1="400" x2="255" y2="374" stroke="#4f46e5" stroke-width="1.8" marker-end="url(#arrow)"/>
+  <line x1="285" y1="374" x2="285" y2="400" stroke="#4f46e5" stroke-width="1.8" marker-end="url(#arrow)"/>
+  <text x="320" y="392" font-family="'Segoe UI',Arial,sans-serif" font-size="9" fill="#6b7280">Cypher queries</text>
+
+  <!-- Qdrant Box -->
+  <g transform="translate(500, 410)" filter="url(#shadow)">
+    <rect x="0" y="0" width="340" height="220" rx="10" fill="white" stroke="#7c3aed" stroke-width="1.5"/>
+    <rect x="0" y="0" width="340" height="36" rx="10" fill="url(#grad-qdrant)"/>
+    <rect x="0" y="20" width="340" height="16" fill="url(#grad-qdrant)"/>
+    <text x="20" y="24" font-family="'Segoe UI',Arial,sans-serif" font-size="14" font-weight="700" fill="white">Qdrant Vector Store</text>
+    <text x="290" y="24" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#ddd6fe">Cloud</text>
+
+    <g transform="translate(16, 50)">
+      <text x="0" y="0" font-family="'Segoe UI',Arial,sans-serif" font-size="11" font-weight="700" fill="#7c3aed">COLLECTIONS</text>
+      <text x="0" y="20" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#4b5563">ctx_biomed_chunks (96 vectors)</text>
+      <text x="0" y="36" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#4b5563">ctx_gov_chunks (31 vectors)</text>
+      <text x="0" y="52" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#4b5563">idp_chunks (524 vectors)</text>
+      <text x="0" y="68" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#4b5563">eval_verdicts (45+ vectors)</text>
+    </g>
+    <g transform="translate(16, 135)">
+      <rect x="0" y="0" width="306" height="30" rx="6" fill="#f5f3ff" stroke="#ddd6fe" stroke-width="1"/>
+      <text x="12" y="19" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#6b7280">Titan Embed v2 (1024-dim) via Bedrock</text>
+    </g>
+    <g transform="translate(16, 172)">
+      <rect x="0" y="0" width="306" height="30" rx="6" fill="#f5f3ff" stroke="#ddd6fe" stroke-width="1"/>
+      <text x="12" y="19" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#6b7280">Semantic retrieval + eval verdict embedding</text>
+    </g>
+  </g>
+
+  <!-- Arrow: Qdrant ↔ Pipeline -->
+  <line x1="650" y1="400" x2="650" y2="374" stroke="#7c3aed" stroke-width="1.8" marker-end="url(#arrow)"/>
+  <line x1="680" y1="374" x2="680" y2="400" stroke="#7c3aed" stroke-width="1.8" marker-end="url(#arrow)"/>
+  <text x="710" y="392" font-family="'Segoe UI',Arial,sans-serif" font-size="9" fill="#6b7280">vector search</text>
+
+  <!-- Bedrock Box -->
+  <g transform="translate(880, 410)" filter="url(#shadow)">
+    <rect x="0" y="0" width="290" height="220" rx="10" fill="white" stroke="#0891b2" stroke-width="1.5"/>
+    <rect x="0" y="0" width="290" height="36" rx="10" fill="url(#grad-bedrock)"/>
+    <rect x="0" y="20" width="290" height="16" fill="url(#grad-bedrock)"/>
+    <text x="20" y="24" font-family="'Segoe UI',Arial,sans-serif" font-size="14" font-weight="700" fill="white">Amazon Bedrock</text>
+    <text x="240" y="24" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#cffafe">AWS</text>
+
+    <g transform="translate(16, 50)">
+      <text x="0" y="0" font-family="'Segoe UI',Arial,sans-serif" font-size="11" font-weight="700" fill="#0891b2">MODELS</text>
+
+      <rect x="0" y="14" width="256" height="34" rx="6" fill="#ecfeff" stroke="#a5f3fc" stroke-width="1"/>
+      <text x="12" y="28" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#0e7490" font-weight="600">Claude Haiku 4.5</text>
+      <text x="12" y="42" font-family="'Segoe UI',Arial,sans-serif" font-size="9" fill="#6b7280">Generation + Judge eval</text>
+
+      <rect x="0" y="56" width="256" height="34" rx="6" fill="#ecfeff" stroke="#a5f3fc" stroke-width="1"/>
+      <text x="12" y="70" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#0e7490" font-weight="600">Amazon Titan Embed v2</text>
+      <text x="12" y="84" font-family="'Segoe UI',Arial,sans-serif" font-size="9" fill="#6b7280">1024-dim embeddings</text>
+    </g>
+
+    <g transform="translate(16, 155)">
+      <text x="0" y="0" font-family="'Segoe UI',Arial,sans-serif" font-size="11" font-weight="700" fill="#0891b2">USAGE</text>
+      <text x="0" y="18" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#4b5563">Context-grounded generation</text>
+      <text x="0" y="34" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#4b5563">LLM-as-Judge evaluation</text>
+      <text x="0" y="50" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#4b5563">Chunk + verdict embedding</text>
+    </g>
+  </g>
+
+  <!-- Arrow: Bedrock ↔ Pipeline -->
+  <line x1="1010" y1="400" x2="1010" y2="374" stroke="#0891b2" stroke-width="1.8" marker-end="url(#arrow)"/>
+  <line x1="1040" y1="374" x2="1040" y2="400" stroke="#0891b2" stroke-width="1.8" marker-end="url(#arrow)"/>
+  <text x="1065" y="392" font-family="'Segoe UI',Arial,sans-serif" font-size="9" fill="#6b7280">invoke model</text>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- ROW 4: EVAL FRAMEWORK (THE PROOF)                  -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <g transform="translate(50, 660)">
+    <rect x="0" y="0" width="1300" height="210" rx="12" fill="url(#grad-eval)" stroke="#eab308" stroke-width="1.5" filter="url(#shadow)"/>
+    <text x="22" y="26" font-family="'Segoe UI',Arial,sans-serif" font-size="13" font-weight="700" fill="#a16207" letter-spacing="2">EVAL FRAMEWORK — THE PROOF: LLM-as-JUDGE vs DETERMINISTIC</text>
+
+    <!-- Left: LLM Judge -->
+    <g transform="translate(30, 42)">
+      <rect x="0" y="0" width="360" height="148" rx="8" fill="white" stroke="#fbbf24" stroke-width="1.2"/>
+      <rect x="0" y="0" width="360" height="28" rx="8" fill="#fef3c7"/>
+      <rect x="0" y="14" width="360" height="14" fill="#fef3c7"/>
+      <text x="14" y="19" font-family="'Segoe UI',Arial,sans-serif" font-size="11" font-weight="700" fill="#92400e" letter-spacing="1">LLM-as-JUDGE (3 variants tested)</text>
+
+      <g transform="translate(14, 40)">
+        <rect x="0" y="0" width="155" height="24" rx="4" fill="#fef2f2" stroke="#fecaca" stroke-width="1"/>
+        <text x="8" y="16" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#ef4444" font-weight="600">No Rubric: 64%</text>
+
+        <rect x="170" y="0" width="155" height="24" rx="4" fill="#fef2f2" stroke="#fecaca" stroke-width="1"/>
+        <text x="178" y="16" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#ef4444" font-weight="600">Domain Expert: 64%</text>
+
+        <rect x="0" y="32" width="155" height="24" rx="4" fill="#fefce8" stroke="#fde68a" stroke-width="1"/>
+        <text x="8" y="48" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#a16207" font-weight="600">With Rubric: 100%*</text>
+
+        <text x="170" y="48" font-family="'Segoe UI',Arial,sans-serif" font-size="9" fill="#9ca3af" font-style="italic">*requires ground truth = circular</text>
+      </g>
+
+      <g transform="translate(14, 108)">
+        <circle cx="5" cy="5" r="4" fill="#ef4444"/>
+        <text x="16" y="9" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#6b7280">False fails correct outputs   </text>
+        <circle cx="185" cy="5" r="4" fill="#f59e0b"/>
+        <text x="196" y="9" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#6b7280">False passes wrong outputs</text>
+      </g>
+    </g>
+
+    <!-- Center: VS -->
+    <g transform="translate(430, 95)">
+      <rect x="0" y="0" width="60" height="40" rx="20" fill="white" stroke="#d1d5db" stroke-width="1.5"/>
+      <text x="30" y="26" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif" font-size="16" font-weight="800" fill="#7c3aed">VS</text>
+    </g>
+
+    <!-- Right: Deterministic -->
+    <g transform="translate(530, 42)">
+      <rect x="0" y="0" width="360" height="148" rx="8" fill="white" stroke="#a7f3d0" stroke-width="1.2"/>
+      <rect x="0" y="0" width="360" height="28" rx="8" fill="#ecfdf5"/>
+      <rect x="0" y="14" width="360" height="14" fill="#ecfdf5"/>
+      <text x="14" y="19" font-family="'Segoe UI',Arial,sans-serif" font-size="11" font-weight="700" fill="#065f46" letter-spacing="1">DETERMINISTIC (KG-Grounded)</text>
+
+      <g transform="translate(14, 40)">
+        <rect x="0" y="0" width="330" height="24" rx="4" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="1"/>
+        <text x="8" y="16" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#059669" font-weight="700">100% accuracy — zero false passes, zero false fails</text>
+      </g>
+
+      <g transform="translate(14, 76)">
+        <text x="0" y="0" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#4b5563" font-weight="600">Methods:</text>
+        <text x="0" y="16" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#6b7280">Regex match, exact match, lambda checks</text>
+        <text x="0" y="32" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#6b7280">Neo4j Cypher verification queries</text>
+        <text x="0" y="48" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#6b7280">Rule engine + SHACL shape constraints</text>
+      </g>
+    </g>
+
+    <!-- Results Summary -->
+    <g transform="translate(930, 42)">
+      <rect x="0" y="0" width="340" height="148" rx="8" fill="white" stroke="#d1d5db" stroke-width="1.2"/>
+      <rect x="0" y="0" width="340" height="28" rx="8" fill="#f3f4f6"/>
+      <rect x="0" y="14" width="340" height="14" fill="#f3f4f6"/>
+      <text x="14" y="19" font-family="'Segoe UI',Arial,sans-serif" font-size="11" font-weight="700" fill="#374151" letter-spacing="1">TEST COVERAGE</text>
+
+      <g transform="translate(14, 40)" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#4b5563">
+        <text x="0" y="0" font-weight="600">33 test cases across 3 eval suites:</text>
+        <text x="0" y="18">Consent governance queries</text>
+        <text x="0" y="34">Drug mechanism grounding</text>
+        <text x="0" y="50">Adverse event severity checks</text>
+        <text x="0" y="66">Clinical trial phase/status</text>
+        <text x="0" y="82">Cross-domain patient profiles</text>
+        <text x="0" y="98">Aggregate cohort governance</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Arrow: Eval ↔ Neo4j -->
+  <path d="M 160,660 L 160,640" fill="none" stroke="#4f46e5" stroke-width="1.5" marker-end="url(#arrow)" stroke-dasharray="4,3"/>
+  <text x="170" y="654" font-family="'Segoe UI',Arial,sans-serif" font-size="9" fill="#6b7280">verdicts synced</text>
+
+  <!-- Arrow: Eval ↔ Qdrant -->
+  <path d="M 640,660 L 640,640" fill="none" stroke="#7c3aed" stroke-width="1.5" marker-end="url(#arrow)" stroke-dasharray="4,3"/>
+  <text x="650" y="654" font-family="'Segoe UI',Arial,sans-serif" font-size="9" fill="#6b7280">vectors synced</text>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- ROW 5: DASHBOARD                                   -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <g transform="translate(50, 895)">
+    <rect x="0" y="0" width="1300" height="78" rx="10" fill="white" stroke="#d1d5db" stroke-width="1.2" filter="url(#shadow-sm)"/>
+    <text x="22" y="24" font-family="'Segoe UI',Arial,sans-serif" font-size="12" font-weight="700" fill="#374151" letter-spacing="2">NICEGUI DASHBOARD</text>
+
+    <!-- 3 page tabs -->
+    <g transform="translate(30, 38)">
+      <rect x="0" y="0" width="270" height="30" rx="6" fill="#f5f3ff" stroke="#c4b5fd" stroke-width="1"/>
+      <text x="12" y="20" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#7c3aed" font-weight="600">/ctx/</text>
+      <text x="44" y="20" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#6b7280">Pipeline Dashboard — query + trace</text>
+    </g>
+    <g transform="translate(330, 38)">
+      <rect x="0" y="0" width="370" height="30" rx="6" fill="#fef3c7" stroke="#fbbf24" stroke-width="1"/>
+      <text x="12" y="20" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#a16207" font-weight="600">/ctx/eval</text>
+      <text x="62" y="20" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#6b7280">Eval Proof — live judge vs deterministic comparison</text>
+    </g>
+    <g transform="translate(730, 38)">
+      <rect x="0" y="0" width="370" height="30" rx="6" fill="#ede9fe" stroke="#a78bfa" stroke-width="1"/>
+      <text x="12" y="20" font-family="'Segoe UI',Arial,sans-serif" font-size="11" fill="#6d28d9" font-weight="600">/ctx/membrane</text>
+      <text x="100" y="20" font-family="'Segoe UI',Arial,sans-serif" font-size="10" fill="#6b7280">Neurosymbolic Proof — animated architecture</text>
+    </g>
+  </g>
+
+  <!-- ═══════════════════════════════════════════════════ -->
+  <!-- BOTTOM: THESIS                                      -->
+  <!-- ═══════════════════════════════════════════════════ -->
+  <g transform="translate(50, 990)">
+    <rect x="0" y="0" width="1300" height="42" rx="8" fill="#1f2937"/>
+    <text x="650" y="17" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif"
+          font-size="14" font-weight="700" fill="white" letter-spacing="1.5">YOUR CONTEXT IS YOUR EDGE</text>
+    <text x="650" y="34" text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif"
+          font-size="11" fill="#9ca3af">Context is what you BUILD (ontology + rules + graph), not what you BUY (LLM judge API calls)</text>
+  </g>
+</svg>

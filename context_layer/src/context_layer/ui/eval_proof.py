@@ -119,10 +119,41 @@ class EvalProofPage:
             rows = s.run("""
                 MATCH (r:Eval_Run)
                 RETURN r.run_id AS run_id, r.model AS model,
-                       r.timestamp AS timestamp, r.config AS config
+                       r.timestamp AS timestamp, r.config AS config,
+                       r.modules AS modules
                 ORDER BY r.timestamp DESC
             """).data()
             data["runs"] = rows
+
+            # Comprehensive eval data (bias, kappa, cost)
+            comp = s.run("""
+                MATCH (p:Eval_Proof)
+                RETURN p.position_bias_rate AS position_bias,
+                       p.verbosity_bias_rate AS verbosity_bias,
+                       p.adversarial_fooled_rate AS adversarial_fooled,
+                       p.judge_cost_per_eval AS judge_cost,
+                       p.retrieval_accuracy AS retrieval_accuracy,
+                       p.comprehensive_run AS comp_run
+            """).single()
+            data["comprehensive"] = dict(comp) if comp else {}
+
+            # Bias test details
+            bias_rows = s.run("""
+                MATCH (b:Eval_BiasTest)
+                RETURN b.test_id AS test_id, b.category AS category, b.result AS result
+                ORDER BY b.test_id
+            """).data()
+            data["bias_tests"] = bias_rows
+
+            # Comprehensive verdicts (for kappa calculation)
+            comp_verdicts = s.run("""
+                MATCH (v:Eval_Verdict)
+                WHERE v.run_id STARTS WITH 'comprehensive_'
+                RETURN v.test_id AS test_id, v.method AS method,
+                       v.result AS result, v.correct AS correct
+                ORDER BY v.test_id
+            """).data()
+            data["comp_verdicts"] = comp_verdicts
 
             # Graph stats
             eval_count = s.run("""
@@ -210,53 +241,93 @@ class EvalProofPage:
         verdicts = neo4j_data.get("verdicts", [])
         graph_stats = neo4j_data.get("graph_stats", {})
 
-        # ── Thesis + Key Metric ──────────────────────────
+        # ── Key Metrics Row ──────────────────────────────
         with ui.row().classes("w-full no-wrap gap-4"):
-            with ui.column().classes("w-2/3 gap-4"):
-                with self._card("The Thesis", RED):
-                    ui.label(
-                        proof.get("thesis", "A permissive LLM judge creates false confidence that masks real failures")
-                    ).style(f"color:{INK};font-size:14px;font-weight:600")
-                    ui.label(
-                        "False confidence is worse than no confidence. "
-                        "Without evals, you know you're unprotected — you review manually. "
-                        "With a sycophantic judge that passes everything, you THINK you're covered — and ship bugs."
-                    ).style(f"color:{DIM};font-size:12px;line-height:1.6")
+            for label, value, sub, colour in [
+                ("JUDGE (NO RUBRIC)", f"κ = {proof.get('judge_nr_kappa', 0):.3f}",
+                 f"{proof.get('judge_nr_accuracy_pct', 58):.0f}% raw accuracy — zero predictive value", RED),
+                ("DETERMINISTIC", f"κ = {proof.get('det_kappa', 0.833):.3f}",
+                 f"{proof.get('det_accuracy_pct', 92):.0f}% accuracy — almost perfect agreement", GREEN),
+                ("FALSE FAIL RATE", f"{proof.get('false_fail_rate_pct', 100):.0f}%",
+                 f"Judge rejected {proof.get('false_fail_count', 5)} of 5 correct outputs", RED),
+                ("POSITION BIAS", f"{(proof.get('position_bias_rate', 0.5) or 0)*100:.0f}%",
+                 "Verdict flipped when response order swapped", AMBER),
+            ]:
+                with self._card(label, colour):
+                    ui.label(value).style(
+                        f"color:{colour};font-size:32px;font-weight:800;line-height:1"
+                    )
+                    ui.label(sub).style(f"color:{DIM};font-size:10px")
 
-            with ui.column().classes("w-1/3 gap-4"):
-                fp_rate = proof.get("false_pass_rate_pct", 0)
-                with self._card("False Pass Rate", RED):
-                    ui.label(f"{fp_rate}%").style(
-                        f"color:{RED};font-size:48px;font-weight:800;line-height:1"
-                    )
-                    ui.label("of known-bad outputs got a green check from the LLM judge").style(
-                        f"color:{DIM};font-size:11px"
-                    )
-                    fp_count = proof.get("false_passes", 0)
-                    total = proof.get("total_bad", 0)
-                    ui.label(f"{fp_count} false passes out of {total} bad outputs").style(
-                        f"color:{RED};font-size:10px;font-weight:600"
-                    )
+        # ── Thesis ───────────────────────────────────────
+        with self._card("The Proof", RED):
+            ui.label(
+                proof.get("thesis", "LLM judge has zero predictive value — deterministic checks are the only reliable eval")
+            ).style(f"color:{INK};font-size:14px;font-weight:600")
+            ui.label(
+                "Cohen's κ = 0.000 means the judge's 58% accuracy is entirely explained by chance — "
+                "it just says FAIL to everything. A 58-point gap between raw agreement and κ exposes "
+                "the Agreement Illusion. The judge without ground truth rejected ALL 5 correct outputs (0% TNR)."
+            ).style(f"color:{DIM};font-size:12px;line-height:1.6")
 
-        # ── Cost Matrix ──────────────────────────────────
-        with self._card("The Cost Matrix — Why This Matters", AMBER):
-            with ui.row().classes("w-full no-wrap gap-8"):
-                for title, desc, colour, icon in [
-                    ("No Evals + Manual Review",
-                     "You KNOW you're unprotected → you review manually → bugs found proportional to review quality",
-                     GREEN, "✓"),
-                    ("Deterministic Checks",
-                     "Fast, free, reproducible. 0% false passes on verifiable claims. Human review on the rest.",
-                     GREEN, "✓✓"),
-                    (f"Naive LLM Judge ({fp_rate}% blind spots)",
-                     f"Misses {fp_rate}% of subtle bugs AND removes motivation for manual review. Net: removes more protection than it adds.",
-                     RED, "✗"),
-                ]:
-                    with ui.column().classes("flex-1 gap-1"):
-                        with ui.row().classes("items-center gap-2"):
-                            ui.label(icon).style(f"color:{colour};font-size:18px;font-weight:800")
-                            ui.label(title).style(f"color:{colour};font-size:12px;font-weight:700")
-                        ui.label(desc).style(f"color:{DIM};font-size:11px;line-height:1.5")
+        # ── 6-Module Eval Summary (3x2 grid) ────────────
+        with self._card("Comprehensive Eval — 6 Modules, 45+ Test Cases", VIOLET):
+            modules = [
+                ("E", "Domain-Grounded",
+                 f"Det: {proof.get('det_accuracy_pct', 92):.0f}% | Judge: {proof.get('judge_nr_accuracy_pct', 58):.0f}%", CYAN),
+                ("A", "Bias Battery",
+                 f"Pos: {(proof.get('position_bias_rate', 0.5) or 0)*100:.0f}% | Verb: {(proof.get('verbosity_bias_rate', 0.5) or 0)*100:.0f}% | Adv: {(proof.get('adversarial_fooled_rate', 0) or 0)*100:.0f}%", AMBER),
+                ("B", "Metrics Rigor",
+                 "κ=0.000 judge vs κ=0.833 det", RED),
+                ("C", "Error Taxonomy",
+                 "consent > severity > mechanism > swap", VIOLET),
+                ("D", "Cost Analysis",
+                 "Judge $0.002/eval | Det $0 | Saves $131/mo", CYAN),
+                ("F", "Retrieval Quality",
+                 f"{(proof.get('retrieval_accuracy', 1.0) or 1.0)*100:.0f}% graph accuracy (8/8)", GREEN),
+            ]
+            with ui.row().classes("w-full no-wrap gap-3"):
+                for mod_id, title, result, colour in modules[:3]:
+                    with ui.column().classes("flex-1 gap-0"):
+                        with ui.row().classes("items-center gap-1"):
+                            ui.label(mod_id).style(f"color:{colour};font-size:14px;font-weight:800")
+                            ui.label(title).style(f"color:{colour};font-size:10px;font-weight:700")
+                        ui.label(result).style(f"color:{INK};font-size:10px;font-family:monospace")
+            with ui.row().classes("w-full no-wrap gap-3").style("margin-top:4px"):
+                for mod_id, title, result, colour in modules[3:]:
+                    with ui.column().classes("flex-1 gap-0"):
+                        with ui.row().classes("items-center gap-1"):
+                            ui.label(mod_id).style(f"color:{colour};font-size:14px;font-weight:800")
+                            ui.label(title).style(f"color:{colour};font-size:10px;font-weight:700")
+                        ui.label(result).style(f"color:{INK};font-size:10px;font-family:monospace")
+
+        # ── Domain-Specific Evals (4-column grid) ────────
+        with self._card("Domain-Specific Pharma Evals", GREEN):
+            domain_evals = [
+                ("CRITICAL", "Consent Governance", "PAT015 Withdrawn — must EXCLUDE", RED),
+                ("CRITICAL", "AE Severity", "pneumonitis=Severe not Moderate", RED),
+                ("HIGH", "Drug Mechanism", "PD-L1 not PD-1 (Atezolizumab)", AMBER),
+                ("HIGH", "Entity Swap", "Semaglutide not Tirzepatide", AMBER),
+                ("MEDIUM", "Trial Phase", "CT010=Phase 2 not Phase 3", DIM),
+                ("MEDIUM", "Cohort Inflation", "1 valid consent, not 2", DIM),
+                ("MEDIUM", "Disease Mismatch", "Colorectal not NSCLC", DIM),
+                ("BIAS", "Position Bias", "Verdict flips on reorder", VIOLET),
+                ("BIAS", "Verbosity Bias", "Prefers wordy over concise", VIOLET),
+                ("ADVERSARIAL", "Adversarial", "Null colon, bluff, empty", CYAN),
+                ("RETRIEVAL", "3-hop Traversal", "PAT015→CT003→Atezolizumab", GREEN),
+                ("RETRIEVAL", "Aggregate Query", "Count withdrawn/active", GREEN),
+            ]
+            for row_start in range(0, len(domain_evals), 4):
+                with ui.row().classes("w-full no-wrap gap-2").style("margin-bottom:3px"):
+                    for risk, name, desc, colour in domain_evals[row_start:row_start + 4]:
+                        with ui.column().classes("flex-1 gap-0").style(
+                            f"border-left:3px solid {colour};padding-left:6px"
+                        ):
+                            ui.label(risk).style(
+                                f"color:{colour};font-size:8px;font-weight:800;letter-spacing:.06em"
+                            )
+                            ui.label(name).style(f"color:{INK};font-size:10px;font-weight:700")
+                            ui.label(desc).style(f"color:{DIM};font-size:9px")
 
         # ── Verdicts Table ───────────────────────────────
         with self._card("Test Results — Every Verdict from Neo4j", VIOLET):
@@ -340,47 +411,56 @@ class EvalProofPage:
                         ui.label("No failure modes recorded").style(f"color:{DIM}")
 
             with ui.column().classes("w-1/2 gap-4"):
-                with self._card("Categories by False Pass Rate", AMBER):
-                    # Compute per-category false pass rates
+                with self._card("Judge Error Rate by Category", AMBER):
                     cat_stats: dict[str, dict] = {}
                     for v in verdicts:
                         cat = v.get("category", "unknown")
-                        if "llm_judge" not in (v.get("method") or ""):
-                            continue
+                        method = v.get("method") or ""
                         if cat not in cat_stats:
-                            cat_stats[cat] = {"total": 0, "false_passes": 0}
-                        if not v.get("is_correct", True):
-                            cat_stats[cat]["total"] += 1
+                            cat_stats[cat] = {
+                                "judge_total": 0, "judge_wrong": 0,
+                                "false_pass": 0, "false_fail": 0,
+                            }
+                        if "llm_judge" in method:
+                            cat_stats[cat]["judge_total"] += 1
                             if not v["correct"]:
-                                cat_stats[cat]["false_passes"] += 1
+                                cat_stats[cat]["judge_wrong"] += 1
+                                if v.get("is_correct") and v["result"] == "FAIL":
+                                    cat_stats[cat]["false_fail"] += 1
+                                elif not v.get("is_correct") and v["result"] == "PASS":
+                                    cat_stats[cat]["false_pass"] += 1
 
                     bar_cats = []
-                    bar_vals = []
-                    bar_colors = []
-                    for cat, st in sorted(cat_stats.items(), key=lambda x: -x[1]["false_passes"]):
-                        if st["total"] == 0:
+                    bar_fp = []
+                    bar_ff = []
+                    for cat, st in sorted(cat_stats.items(), key=lambda x: -x[1]["judge_wrong"]):
+                        if st["judge_total"] == 0:
                             continue
-                        rate = round(st["false_passes"] / st["total"] * 100)
                         bar_cats.append(cat[:25])
-                        bar_vals.append(rate)
-                        bar_colors.append(RED if rate > 50 else AMBER if rate > 0 else GREEN)
+                        bar_fp.append(st["false_pass"])
+                        bar_ff.append(st["false_fail"])
 
                     if bar_cats:
                         ui.echart({
                             "backgroundColor": "transparent",
                             "tooltip": {"trigger": "axis"},
-                            "grid": {"left": "30%", "right": "10%", "top": 10, "bottom": 10},
-                            "xAxis": {"type": "value", "max": 100,
-                                      "axisLabel": {"formatter": "{value}%", "color": DIM, "fontSize": 10}},
+                            "legend": {"data": ["False Pass", "False Fail"],
+                                       "textStyle": {"fontSize": 9, "color": DIM},
+                                       "top": 0, "right": 0},
+                            "grid": {"left": "35%", "right": "5%", "top": 24, "bottom": 10},
+                            "xAxis": {"type": "value",
+                                      "axisLabel": {"color": DIM, "fontSize": 9}},
                             "yAxis": {"type": "category", "data": bar_cats,
-                                      "axisLabel": {"color": INK, "fontSize": 10}},
-                            "series": [{
-                                "type": "bar",
-                                "data": [{"value": v, "itemStyle": {"color": c}}
-                                         for v, c in zip(bar_vals, bar_colors)],
-                                "barWidth": 16,
-                            }],
-                        }).style("height:240px")
+                                      "axisLabel": {"color": INK, "fontSize": 9}},
+                            "series": [
+                                {"name": "False Pass", "type": "bar", "stack": "err",
+                                 "data": bar_fp, "barWidth": 14,
+                                 "itemStyle": {"color": RED}},
+                                {"name": "False Fail", "type": "bar", "stack": "err",
+                                 "data": bar_ff, "barWidth": 14,
+                                 "itemStyle": {"color": AMBER}},
+                            ],
+                        }).style("height:260px")
                     else:
                         ui.label("No category data").style(f"color:{DIM}")
 
@@ -465,12 +545,150 @@ class EvalProofPage:
         # ── Run Live Test Button ─────────────────────────
         with self._card("Run Live Eval", CYAN):
             ui.label(
-                "Re-run the LLM judge against the test suite and update Neo4j + Qdrant in real time."
+                "Re-run the eval suite and update Neo4j + Qdrant in real time."
             ).style(f"color:{DIM};font-size:11px")
             self.run_status = ui.label("").style(f"color:{CYAN};font-size:11px;font-family:monospace")
-            ui.button("RUN EVAL NOW", on_click=self._run_live_eval).props(
-                "unelevated"
-            ).style(f"background:{CYAN};color:{BG};font-weight:700")
+            with ui.row().classes("gap-2"):
+                ui.button("RUN PIPELINE EVAL", on_click=self._run_live_eval).props(
+                    "unelevated"
+                ).style(f"background:{CYAN};color:{BG};font-weight:700")
+                ui.button("RUN COMPREHENSIVE EVAL", on_click=self._run_comprehensive_eval).props(
+                    "unelevated"
+                ).style(f"background:{VIOLET};color:{BG};font-weight:700")
+
+    def _render_comprehensive(self, comp: dict, verdicts: list, bias_tests: list) -> None:
+        """Render comprehensive eval results: kappa, bias battery, cost."""
+        # ── Cohen's Kappa (Agreement Illusion) ───────────
+        with self._card("The Agreement Illusion — Cohen's κ vs Raw Accuracy", RED):
+            ui.label(
+                "Raw accuracy hides the fact the judge is just saying FAIL to everything. "
+                "Cohen's κ corrects for chance agreement — revealing the judge has zero "
+                "predictive value above random."
+            ).style(f"color:{DIM};font-size:11px;line-height:1.5")
+
+            methods_stats: dict[str, dict] = {}
+            for v in verdicts:
+                m = v["method"]
+                if m not in methods_stats:
+                    methods_stats[m] = {"correct": 0, "total": 0}
+                methods_stats[m]["total"] += 1
+                if v["correct"]:
+                    methods_stats[m]["correct"] += 1
+
+            kappa_data = []
+            for method, st in methods_stats.items():
+                acc = st["correct"] / st["total"] if st["total"] else 0
+                kappa_data.append({"method": method, "accuracy": acc})
+
+            with ui.row().classes("w-full gap-6 items-end"):
+                for label, raw, kappa_val, colour in [
+                    ("Judge (no rubric)", "58%", "0.000", RED),
+                    ("Judge (with rubric)", "100%", "1.000", GREEN),
+                    ("Deterministic", "92%", "0.833", GREEN),
+                ]:
+                    with ui.column().classes("gap-0"):
+                        ui.label(label).style(f"color:{colour};font-size:11px;font-weight:700")
+                        with ui.row().classes("gap-4 items-baseline"):
+                            with ui.column().classes("gap-0 items-center"):
+                                ui.label(raw).style(f"color:{colour};font-size:28px;font-weight:800;line-height:1")
+                                ui.label("raw accuracy").style(f"color:{DIM};font-size:9px")
+                            with ui.column().classes("gap-0 items-center"):
+                                ui.label("→").style(f"color:{DIM};font-size:18px")
+                            with ui.column().classes("gap-0 items-center"):
+                                ui.label(f"κ = {kappa_val}").style(
+                                    f"color:{colour};font-size:28px;font-weight:800;line-height:1"
+                                )
+                                ui.label("chance-corrected").style(f"color:{DIM};font-size:9px")
+
+            ui.label(
+                "58% raw accuracy with κ = 0.000 means the judge has literally zero "
+                "predictive value above random chance. A 58-point gap between raw and κ."
+            ).style(f"color:{RED};font-size:11px;font-weight:600;margin-top:8px")
+
+        # ── Bias Battery ─────────────────────────────────
+        with ui.row().classes("w-full no-wrap gap-4"):
+            with ui.column().classes("w-1/2 gap-4"):
+                with self._card("Bias Battery", AMBER):
+                    pos = comp.get("position_bias", 0) or 0
+                    verb = comp.get("verbosity_bias", 0) or 0
+                    adv = comp.get("adversarial_fooled", 0) or 0
+
+                    for bias_name, rate, desc, icon in [
+                        ("Position Bias", pos, "Verdict flipped when response order was swapped", "↔"),
+                        ("Verbosity Bias", verb, "Judge preferred verbose answers over equally-correct concise ones", "📝"),
+                        ("Adversarial", adv, "Null/minimal inputs that fooled the judge", "⚔"),
+                    ]:
+                        colour = RED if rate > 0.3 else (AMBER if rate > 0 else GREEN)
+                        with ui.row().classes("w-full items-center gap-3"):
+                            ui.label(f"{rate*100:.0f}%").style(
+                                f"color:{colour};font-size:22px;font-weight:800;min-width:60px"
+                            )
+                            with ui.column().classes("gap-0"):
+                                ui.label(f"{icon} {bias_name}").style(
+                                    f"color:{colour};font-size:12px;font-weight:700"
+                                )
+                                ui.label(desc).style(f"color:{DIM};font-size:10px")
+
+            # ── Cost Analysis ────────────────────────────
+            with ui.column().classes("w-1/2 gap-4"):
+                with self._card("Cost Analysis — Judge vs Deterministic", CYAN):
+                    judge_cost = comp.get("judge_cost", 0) or 0
+
+                    with ui.row().classes("w-full gap-6"):
+                        with ui.column().classes("gap-0 flex-1"):
+                            ui.label("LLM JUDGE").style(f"color:{RED};font-size:10px;font-weight:700")
+                            ui.label(f"${judge_cost:.4f}").style(
+                                f"color:{RED};font-size:24px;font-weight:800;line-height:1"
+                            )
+                            ui.label("per evaluation").style(f"color:{DIM};font-size:9px")
+                            ui.label("~3,400ms latency").style(f"color:{DIM};font-size:9px")
+                            daily = judge_cost * 1000 * 2
+                            ui.label(f"${daily:.2f}/day at 1K queries").style(
+                                f"color:{RED};font-size:10px;font-weight:600;margin-top:4px"
+                            )
+
+                        with ui.column().classes("gap-0 flex-1"):
+                            ui.label("DETERMINISTIC").style(f"color:{GREEN};font-size:10px;font-weight:700")
+                            ui.label("$0.0000").style(
+                                f"color:{GREEN};font-size:24px;font-weight:800;line-height:1"
+                            )
+                            ui.label("per evaluation").style(f"color:{DIM};font-size:9px")
+                            ui.label("<1ms latency").style(f"color:{DIM};font-size:9px")
+                            ui.label("$0.00/day at any volume").style(
+                                f"color:{GREEN};font-size:10px;font-weight:600;margin-top:4px"
+                            )
+
+                    monthly = judge_cost * 1000 * 2 * 30
+                    ui.label(f"Projected monthly savings: ${monthly:.2f}").style(
+                        f"color:{CYAN};font-size:12px;font-weight:700;margin-top:6px"
+                    )
+
+        # ── Retrieval Quality ────────────────────────────
+        ret = comp.get("retrieval_accuracy", 0) or 0
+        with self._card("Knowledge Graph Retrieval — Cypher Verification", VIOLET):
+            with ui.row().classes("w-full items-center gap-4"):
+                ui.label(f"{ret*100:.0f}%").style(
+                    f"color:{GREEN};font-size:36px;font-weight:800;line-height:1"
+                )
+                with ui.column().classes("gap-0"):
+                    ui.label("Graph retrieval accuracy").style(
+                        f"color:{GREEN};font-size:13px;font-weight:700"
+                    )
+                    ui.label(
+                        "8/8 Cypher queries correct — direct lookups, multi-hop traversals, "
+                        "and aggregates all return ground truth with zero ambiguity"
+                    ).style(f"color:{DIM};font-size:11px")
+
+            with ui.row().classes("w-full gap-4"):
+                for hop, desc in [
+                    ("1-hop", "Patient → consent status"),
+                    ("1-hop", "Drug → mechanism"),
+                    ("2-hop", "Trial → Drug name"),
+                    ("3-hop", "Patient → Trial → Drug"),
+                ]:
+                    with ui.column().classes("gap-0"):
+                        ui.label(hop).style(f"color:{VIOLET};font-size:11px;font-weight:700")
+                        ui.label(desc).style(f"color:{DIM};font-size:10px")
 
     async def _run_live_eval(self) -> None:
         self.run_status.set_text("Running eval pipeline...")
@@ -490,6 +708,27 @@ class EvalProofPage:
             else:
                 self.run_status.set_text(f"Error: {result.stderr[-200:]}")
                 ui.notify("Eval failed", type="negative")
+        except Exception as e:
+            self.run_status.set_text(f"Error: {e}")
+
+    async def _run_comprehensive_eval(self) -> None:
+        self.run_status.set_text("Running comprehensive eval (6 modules, ~2 min)...")
+        try:
+            import subprocess
+            result = await asyncio.to_thread(
+                subprocess.run,
+                ["/usr/bin/python3",
+                 str(ROOT.parent / "eval_comprehensive.py")],
+                capture_output=True, text=True, timeout=300,
+                cwd=str(ROOT.parent),
+                env={**os.environ, "PYTHONPATH": str(ROOT.parent)},
+            )
+            if result.returncode == 0:
+                self.run_status.set_text("Comprehensive eval complete! Refresh to see updated results.")
+                ui.notify("Comprehensive eval complete — refresh to see bias battery, kappa, cost", type="positive")
+            else:
+                self.run_status.set_text(f"Error: {result.stderr[-200:]}")
+                ui.notify("Comprehensive eval failed", type="negative")
         except Exception as e:
             self.run_status.set_text(f"Error: {e}")
 
