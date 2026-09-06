@@ -1,0 +1,270 @@
+{
+  "ontology_stats": {
+    "objects": {
+      "TestCase": 53,
+      "Judge": 8,
+      "EvalRun": 4,
+      "Verdict": 132,
+      "BiasPattern": 8,
+      "CostRecord": 0,
+      "Category": 22,
+      "FailureMode": 0
+    },
+    "total_objects": 227,
+    "total_links": 449,
+    "total_actions": 2
+  },
+  "judge_leaderboard": [
+    {
+      "judge_id": "judge-with_rubric",
+      "label": "With-Rubric LLM",
+      "method": "with_rubric",
+      "accuracy": 1.0,
+      "false_pass_rate": 0.0,
+      "total_cost": 0,
+      "bias_profile": {}
+    },
+    {
+      "judge_id": "judge-llm_basic",
+      "label": "Basic LLM Judge",
+      "method": "llm_basic",
+      "accuracy": 1.0,
+      "false_pass_rate": 0.0,
+      "total_cost": 0,
+      "bias_profile": {}
+    },
+    {
+      "judge_id": "judge-wr",
+      "label": "Wide-Retrieval LLM",
+      "method": "wr",
+      "accuracy": 1.0,
+      "false_pass_rate": 0.0,
+      "total_cost": 0.001844,
+      "bias_profile": {}
+    },
+    {
+      "judge_id": "judge-det",
+      "label": "Deterministic",
+      "method": "det",
+      "accuracy": 0.971,
+      "false_pass_rate": 0.043,
+      "total_cost": 0,
+      "bias_profile": {}
+    },
+    {
+      "judge_id": "judge-no_rubric",
+      "label": "No-Rubric LLM",
+      "method": "no_rubric",
+      "accuracy": 0.714,
+      "false_pass_rate": 0.0,
+      "total_cost": 0,
+      "bias_profile": {}
+    },
+    {
+      "judge_id": "judge-domain_expert",
+      "label": "Domain Expert LLM",
+      "method": "domain_expert",
+      "accuracy": 0.636,
+      "false_pass_rate": 0.0,
+      "total_cost": 0,
+      "bias_profile": {}
+    },
+    {
+      "judge_id": "judge-nr",
+      "label": "Narrow LLM",
+      "method": "nr",
+      "accuracy": 0.583,
+      "false_pass_rate": 0.0,
+      "total_cost": 0.004211,
+      "bias_profile": {}
+    },
+    {
+      "judge_id": "judge-bias_test",
+      "label": "Bias Probe",
+      "method": "bias_test",
+      "accuracy": 0.0,
+      "false_pass_rate": 0.0,
+      "total_cost": 0,
+      "bias_profile": {}
+    }
+  ],
+  "bias_report": {
+    "position_bias": {
+      "count": 2,
+      "ids": [
+        "bias-position_bias-A01-position",
+        "bias-position_bias-A02-position"
+      ]
+    },
+    "verbosity_bias": {
+      "count": 2,
+      "ids": [
+        "bias-verbosity_bias-A03-verbose",
+        "bias-verbosity_bias-A04-verbose"
+      ]
+    },
+    "adversarial": {
+      "count": 4,
+      "ids": [
+        "bias-adversarial-A05-null-model",
+        "bias-adversarial-A06-null-thought",
+        "bias-adversarial-A07-confident-wrong",
+        "bias-adversarial-A08-empty"
+      ]
+    }
+  },
+  "hardest_tests": [
+    {
+      "test_id": "A01-position",
+      "category": "position_bias",
+      "difficulty": 1.0
+    },
+    {
+      "test_id": "A02-position",
+      "category": "position_bias",
+      "difficulty": 1.0
+    },
+    {
+      "test_id": "A03-verbose",
+      "category": "verbosity_bias",
+      "difficulty": 1.0
+    },
+    {
+      "test_id": "A04-verbose",
+      "category": "verbosity_bias",
+      "difficulty": 1.0
+    },
+    {
+      "test_id": "A05-null-model",
+      "category": "adversarial",
+      "difficulty": 1.0
+    }
+  ],
+  "cost_analysis": {
+    "total_cost_usd": 0.006055,
+    "by_judge": {
+      "det": 0.0,
+      "nr": 0.004211,
+      "wr": 0.001844,
+      "bias_test": 0.0,
+      "no_rubric": 0.0,
+      "with_rubric": 0.0,
+      "domain_expert": 0.0,
+      "llm_basic": 0.0
+    },
+    "total_verdicts": 132,
+    "cost_per_verdict": 4.6e-05
+  },
+  "category_breakdown": [
+    {
+      "category": "Cross-domain",
+      "module": "E",
+      "test_count": 2
+    },
+    {
+      "category": "position_bias",
+      "module": "A",
+      "test_count": 2
+    },
+    {
+      "category": "verbosity_bias",
+      "module": "A",
+      "test_count": 2
+    },
+    {
+      "category": "adversarial",
+      "module": "A",
+      "test_count": 4
+    },
+    {
+      "category": "Consent Governance",
+      "module": "P",
+      "test_count": 5
+    },
+    {
+      "category": "Drug Grounding",
+      "module": "P",
+      "test_count": 4
+    },
+    {
+      "category": "Adverse Event Safety",
+      "module": "P",
+      "test_count": 4
+    },
+    {
+      "category": "Trial Status",
+      "module": "P",
+      "test_count": 3
+    },
+    {
+      "category": "Cross-domain Query",
+      "module": "P",
+      "test_count": 2
+    },
+    {
+      "category": "Aggregate Governance",
+      "module": "P",
+      "test_count": 2
+    },
+    {
+      "category": "Drug Mechanism",
+      "module": "P",
+      "test_count": 4
+    },
+    {
+      "category": "Patient Governance",
+      "module": "P",
+      "test_count": 3
+    },
+    {
+      "category": "Adverse Event",
+      "module": "P",
+      "test_count": 2
+    },
+    {
+      "category": "Clinical Trial",
+      "module": "P",
+      "test_count": 1
+    },
+    {
+      "category": "Biomarker",
+      "module": "P",
+      "test_count": 1
+    },
+    {
+      "category": "Patient Data",
+      "module": "P",
+      "test_count": 2
+    },
+    {
+      "category": "Drug Mechanism (Subtle)",
+      "module": "P",
+      "test_count": 3
+    },
+    {
+      "category": "Governance (Subtle)",
+      "module": "P",
+      "test_count": 2
+    },
+    {
+      "category": "Patient Safety (Subtle)",
+      "module": "P",
+      "test_count": 1
+    },
+    {
+      "category": "Control (Correct)",
+      "module": "P",
+      "test_count": 2
+    },
+    {
+      "category": "Clinical Trial (Subtle)",
+      "module": "P",
+      "test_count": 1
+    },
+    {
+      "category": "Biomarker (Subtle)",
+      "module": "P",
+      "test_count": 1
+    }
+  ]
+}

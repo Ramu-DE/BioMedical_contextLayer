@@ -18,9 +18,8 @@ venv/
 *.log
 .DS_Store
 
-# LinkedIn images (keep only linkedin_edge)
-linkedin_proof.*
-linkedin_edge.svg
+# LinkedIn / presentation materials (hidden from public repo)
+linkedin/
 
 # IDE
 .idea/
